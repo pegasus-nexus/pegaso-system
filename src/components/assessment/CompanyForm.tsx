@@ -62,7 +62,7 @@ export const CompanyForm: React.FC<CompanyFormProps> = ({ initialData, onNext, o
           <div className="grid md:grid-cols-2 gap-6">
             <div>
               <label className={labelClass}>Nombre de la empresa *</label>
-              <input required type="text" name="companyName" value={formData.companyName} onChange={handleChange} className={inputClass} placeholder="Ej. ACME Corp" />
+              <input required type="text" name="companyName" value={formData.companyName} onChange={handleChange} className={inputClass} placeholder="Ej. Pegasus Nexus" />
             </div>
             <div>
               <label className={labelClass}>Sector o actividad económica</label>
