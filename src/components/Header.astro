@@ -8,13 +8,26 @@
           <img id="nav-logo" src="/logo-pegasus-nexus.png" alt="Pegasus Nexus Logo" class="absolute left-0 top-1/2 -translate-y-1/2 h-24 sm:h-28 md:h-32 object-contain drop-shadow-[0_0_12px_rgba(255,255,255,0.4)] group-hover:drop-shadow-[0_0_18px_rgba(255,255,255,0.6)]" />
         </a>
       </div>
-      <nav class="hidden md:flex space-x-8">
-        <a href="#servicios" class="text-white hover:text-gold-bright transition-colors font-medium text-sm uppercase tracking-widest text-glow hover:scale-105 transform">Servicios</a>
-        <a href="#tecnologia" class="text-white hover:text-gold-bright transition-colors font-medium text-sm uppercase tracking-widest text-glow hover:scale-105 transform">Tecnología</a>
-        <a href="#contacto" class="text-white hover:text-gold-bright transition-colors font-medium text-sm uppercase tracking-widest text-glow hover:scale-105 transform">Contacto</a>
+      <nav class="hidden md:flex items-center space-x-6 lg:space-x-8">
+        <a href="#inicio" class="text-xs uppercase tracking-[0.2em] font-semibold px-3 py-1 rounded-full bg-sky-500/20 text-sky-300 border border-sky-400/40 shadow-[0_0_12px_rgba(56,189,248,0.35)] transition-all">Inicio</a>
+        <a href="#por-que-nexus" class="text-xs uppercase tracking-[0.2em] font-medium text-gray-300 hover:text-white transition-colors">Nosotros</a>
+        <a href="#servicios" class="text-xs uppercase tracking-[0.2em] font-medium text-gray-300 hover:text-white transition-colors">Servicios</a>
+        <a href="#tecnologia" class="text-xs uppercase tracking-[0.2em] font-medium text-gray-300 hover:text-white transition-colors">Tecnología</a>
+        <a href="#contacto" class="text-xs uppercase tracking-[0.2em] font-medium text-gray-300 hover:text-white transition-colors">Contacto</a>
       </nav>
-      <div class="md:hidden">
-        <button id="mobile-menu-open" class="text-white hover:text-gold-bright focus:outline-none cursor-pointer">
+
+      <div class="flex items-center gap-3">
+        <a
+          href="https://wa.me/59179786916?text=Hola%20Pegasus%20Nexus!%20Me%20gustar%C3%ADa%20solicitar%20un%20diagn%C3%B3stico%20para%20mi%20empresa."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-sky-400/50 hover:border-sky-300 text-white hover:bg-sky-500/10 text-xs font-semibold tracking-wider uppercase transition-all shadow-[0_0_15px_rgba(14,165,233,0.3)] hover:shadow-[0_0_25px_rgba(56,189,248,0.5)] cursor-pointer"
+        >
+          <span>Solicitar Diagnóstico</span>
+          <span class="text-sm leading-none">→</span>
+        </a>
+
+        <button id="mobile-menu-open" class="text-white hover:text-sky-300 focus:outline-none cursor-pointer p-1">
           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
