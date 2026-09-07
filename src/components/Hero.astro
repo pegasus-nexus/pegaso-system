@@ -93,12 +93,13 @@
       </div>
 
       <!-- Main Title: PEGASUS NEXUS -->
-      <h1
-        class="pegasus-title select-none"
-        aria-label="Pegasus Nexus"
-      >
-        <span class="pegasus-word">PEGASUS</span>
-        <span class="nexus-word">NEXUS</span>
+      <h1 class="pegasus-title select-none" aria-label="Pegasus Nexus">
+        <span class="pegasus-word">
+          PEGASUS
+        </span>
+        <span class="nexus-word">
+          NEXUS
+        </span>
       </h1>
 
       <!-- Value Proposition Punchline -->
@@ -250,24 +251,68 @@
 
 <style>
   /* =====================================================
-     PEGASUS NEXUS — TITULO PRINCIPAL
-     Estilo: oscuro + borde luminoso + glow azul
+     PEGASUS NEXUS
+     TITULO LIMPIO — SIN LINEAS DENTRO DE LAS LETRAS
      ===================================================== */
 
   .pegasus-title {
+    position: relative;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 
     width: 100%;
+
     margin: 0 0 2rem 0;
 
     text-align: center;
-    line-height: 0.78;
 
-    position: relative;
-    z-index: 10;
+    line-height: 0.82;
+
+    isolation: isolate;
+  }
+
+
+  /* =====================================================
+     LINEA DE LUZ
+     IMPORTANTE:
+     LA LINEA QUEDA DETRAS DEL TEXTO
+     ===================================================== */
+
+  .pegasus-title::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    top: 46%;
+
+    height: 2px;
+
+    z-index: -1;
+
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      transparent 8%,
+      rgba(35, 155, 255, 0.25) 18%,
+      #ffffff 35%,
+      #2da8ff 50%,
+      #ffffff 65%,
+      rgba(35, 155, 255, 0.25) 82%,
+      transparent 92%,
+      transparent 100%
+    );
+
+    box-shadow:
+      0 0 6px rgba(255,255,255,0.9),
+      0 0 18px rgba(0,140,255,0.9),
+      0 0 35px rgba(0,100,255,0.65);
+
+    pointer-events: none;
   }
 
 
@@ -276,104 +321,61 @@
      ===================================================== */
 
   .pegasus-word {
+
     position: relative;
+
     display: inline-block;
+
+    z-index: 2;
 
     font-family: 'Montserrat', sans-serif;
 
     font-size: clamp(
-      4.5rem,
+      4rem,
       9vw,
       8.5rem
     );
 
     font-weight: 900;
 
-    letter-spacing: 0.025em;
+    letter-spacing: 0.02em;
+
     line-height: 0.9;
 
     text-transform: uppercase;
 
-    /* INTERIOR OSCURO */
-    color: #050914;
-
     /*
-     * IMPORTANTE:
-     * NO usar background-clip:text
-     * NO usar text-fill transparent
+     * INTERIOR TOTALMENTE OSCURO
      */
 
-    -webkit-text-fill-color: #050914;
+    color: #030711;
 
-    /* BORDE */
-    -webkit-text-stroke: 2px #eaf5ff;
+    -webkit-text-fill-color: #030711;
 
-    /* =================================================
-       GLOW EXTERIOR
-       ================================================= */
+    /*
+     * BORDE BLANCO LIMPIO
+     */
+
+    -webkit-text-stroke:
+      2px #eaf5ff;
+
+    /*
+     * BRILLO EXTERIOR
+     */
 
     text-shadow:
 
-      /* borde blanco */
       0 0 2px #ffffff,
 
-      /* halo cercano */
-      0 0 7px #ffffff,
-
-      /* azul eléctrico */
-      0 0 14px #55baff,
-
-      0 0 25px #168cff,
-
-      0 0 45px rgba(0, 132, 255, 0.95),
-
-      0 0 75px rgba(0, 100, 255, 0.65);
-
-    filter:
-      drop-shadow(
-        0 0 10px rgba(0, 150, 255, 0.85)
-      )
-      drop-shadow(
-        0 0 30px rgba(0, 110, 255, 0.65)
-      );
-  }
-
-
-  /* =====================================================
-     LÍNEA DE LUZ QUE ATRAVIESA PEGASUS
-     ===================================================== */
-
-  .pegasus-word::after {
-    content: "";
-
-    position: absolute;
-
-    left: -7%;
-    right: -7%;
-
-    top: 52%;
-
-    height: 2px;
-
-    background: linear-gradient(
-      90deg,
-      transparent 0%,
-      rgba(255,255,255,0.15) 10%,
-      #ffffff 25%,
-      #43b8ff 50%,
-      #ffffff 75%,
-      rgba(255,255,255,0.15) 90%,
-      transparent 100%
-    );
-
-    box-shadow:
       0 0 5px #ffffff,
-      0 0 14px #168cff,
-      0 0 28px #168cff;
 
-    opacity: 0.9;
+      0 0 12px #8ed4ff,
 
-    pointer-events: none;
+      0 0 22px #159cff,
+
+      0 0 42px rgba(0,135,255,0.95),
+
+      0 0 70px rgba(0,100,255,0.65);
   }
 
 
@@ -382,18 +384,19 @@
      ===================================================== */
 
   .nexus-word {
+
     position: relative;
 
-    z-index: 20;
-
     display: inline-block;
+
+    z-index: 3;
 
     margin-top: -0.04em;
 
     font-family: 'Montserrat', sans-serif;
 
     font-size: clamp(
-      2.2rem,
+      2rem,
       5vw,
       5.2rem
     );
@@ -408,142 +411,163 @@
 
     text-transform: uppercase;
 
-    /* INTERIOR OSCURO */
-    color: #050914;
+    /*
+     * MISMO INTERIOR OSCURO
+     */
 
-    -webkit-text-fill-color: #050914;
+    color: #030711;
 
-    /* BORDE */
-    -webkit-text-stroke: 1.6px #eaf5ff;
+    -webkit-text-fill-color: #030711;
 
-    /* GLOW */
+    /*
+     * BORDE
+     */
+
+    -webkit-text-stroke:
+      1.6px #eaf5ff;
+
+    /*
+     * GLOW
+     */
 
     text-shadow:
 
       0 0 2px #ffffff,
 
-      0 0 7px #ffffff,
+      0 0 6px #ffffff,
 
-      0 0 15px #58bfff,
+      0 0 13px #8ed4ff,
 
-      0 0 28px #168cff,
+      0 0 25px #159cff,
 
-      0 0 45px rgba(0, 130, 255, 0.9);
-
-    filter:
-      drop-shadow(
-        0 0 8px rgba(0, 150, 255, 0.85)
-      )
-      drop-shadow(
-        0 0 22px rgba(0, 110, 255, 0.6)
-      );
+      0 0 45px rgba(0,135,255,0.9);
   }
 
 
   /* =====================================================
-     BRILLO SUTIL ANIMADO
+     BRILLO SUTIL
      ===================================================== */
 
-  @keyframes pegasusGlow {
+  @keyframes nexusGlow {
 
     0% {
-      filter:
-        drop-shadow(
-          0 0 8px rgba(0, 150, 255, 0.65)
-        )
-        drop-shadow(
-          0 0 22px rgba(0, 110, 255, 0.4)
-        );
+      text-shadow:
+        0 0 2px #ffffff,
+        0 0 6px #ffffff,
+        0 0 13px #8ed4ff,
+        0 0 25px #159cff,
+        0 0 42px rgba(0,135,255,0.8);
     }
 
     50% {
-      filter:
-        drop-shadow(
-          0 0 14px rgba(0, 180, 255, 0.95)
-        )
-        drop-shadow(
-          0 0 35px rgba(0, 120, 255, 0.7)
-        );
+      text-shadow:
+        0 0 2px #ffffff,
+        0 0 8px #ffffff,
+        0 0 17px #9cddff,
+        0 0 32px #159cff,
+        0 0 58px rgba(0,135,255,0.95);
     }
 
     100% {
-      filter:
-        drop-shadow(
-          0 0 8px rgba(0, 150, 255, 0.65)
-        )
-        drop-shadow(
-          0 0 22px rgba(0, 110, 255, 0.4)
-        );
+      text-shadow:
+        0 0 2px #ffffff,
+        0 0 6px #ffffff,
+        0 0 13px #8ed4ff,
+        0 0 25px #159cff,
+        0 0 42px rgba(0,135,255,0.8);
     }
 
   }
 
-  .pegasus-word {
+  .pegasus-word,
+  .nexus-word {
     animation:
-      pegasusGlow 4s ease-in-out infinite;
+      nexusGlow 4s ease-in-out infinite;
   }
 
 
   /* =====================================================
-     RESPONSIVE
+     DESKTOP GRANDE
      ===================================================== */
 
-  @media (max-width: 768px) {
+  @media (min-width: 1200px) {
+
+    .pegasus-word {
+      font-size: 8.5rem;
+    }
+
+    .nexus-word {
+      font-size: 5.2rem;
+    }
+
+  }
+
+
+  /* =====================================================
+     TABLET
+     ===================================================== */
+
+  @media (max-width: 900px) {
+
+    .pegasus-word {
+      font-size: clamp(
+        4rem,
+        11vw,
+        7rem
+      );
+    }
+
+    .nexus-word {
+      font-size: clamp(
+        2rem,
+        6vw,
+        4rem
+      );
+    }
+
+  }
+
+
+  /* =====================================================
+     CELULAR
+     ===================================================== */
+
+  @media (max-width: 640px) {
 
     .pegasus-title {
-      line-height: 0.84;
-      margin-bottom: 1.5rem;
+      line-height: 0.85;
     }
 
     .pegasus-word {
 
       font-size:
         clamp(
-          3.4rem,
+          3rem,
           16vw,
-          6rem
+          5rem
         );
 
-      letter-spacing: 0.015em;
+      letter-spacing: 0.01em;
 
       -webkit-text-stroke:
-        1.5px #eaf5ff;
+        1.4px #eaf5ff;
     }
 
     .nexus-word {
 
       font-size:
         clamp(
-          1.8rem,
+          1.6rem,
           9vw,
-          3.5rem
+          3rem
         );
 
-      letter-spacing: 0.30em;
+      letter-spacing: 0.28em;
 
-      padding-left: 0.30em;
+      padding-left: 0.28em;
 
       -webkit-text-stroke:
-        1.3px #eaf5ff;
-    }
-
-  }
-
-
-  /* =====================================================
-     PANTALLAS MUY PEQUEÑAS
-     ===================================================== */
-
-  @media (max-width: 480px) {
-
-    .pegasus-word {
-      font-size: 3.1rem;
-    }
-
-    .nexus-word {
-      font-size: 1.7rem;
-      letter-spacing: 0.25em;
-      padding-left: 0.25em;
+        1.2px #eaf5ff;
     }
 
   }
