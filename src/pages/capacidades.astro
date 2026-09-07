@@ -2,19 +2,20 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { AssessmentApp } from '../components/assessment/AssessmentApp';
+import '../styles/capacidades.css';
+import { CapacidadesApp } from '../components/assessment/CapacidadesApp';
 ---
 
 <Layout 
-  title="Pegasus Assessment - Evaluación de Madurez Empresarial"
-  description="Conoce el nivel de madurez de tu empresa en 15 minutos con nuestra evaluación gratuita."
+  title="Capacidades - Evaluación de Capacidades Empresariales"
+  description="Descubre las capacidades de gestión de tu empresa en minutos con nuestra evaluación orientativa."
 >
   <Header />
   
   <main class="pt-32 pb-20 min-h-screen relative z-10">
     <div class="container mx-auto px-4">
-      {/* El componente React se carga y ejecuta solo en el cliente para tener acceso a localStorage y estados */}
-      <AssessmentApp client:only="react" />
+      {/* Evaluación de Capacidades: flujo de 5 pasos que se ejecuta en el cliente */}
+      <CapacidadesApp client:only="react" />
     </div>
   </main>
   
