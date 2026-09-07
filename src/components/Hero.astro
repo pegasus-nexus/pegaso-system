@@ -589,4 +589,53 @@
       transform: translateY(0px) rotate(0deg);
     }
   }
+
+  /* =====================================================
+     LIMPIAR CUALQUIER ELEMENTO SOBRE EL TÍTULO
+     ===================================================== */
+
+  .pegasus-title,
+  .pegasus-word,
+  .nexus-word {
+    position: relative;
+  }
+
+  .pegasus-title {
+    isolation: isolate;
+    z-index: 100 !important;
+  }
+
+  .pegasus-word,
+  .nexus-word {
+    z-index: 101 !important;
+
+    background: #030711 !important;
+    background-image: none !important;
+
+    color: #030711 !important;
+    -webkit-text-fill-color: #030711 !important;
+
+    -webkit-background-clip: initial !important;
+    background-clip: initial !important;
+  }
+
+  /* El único pseudo-elemento permitido será la línea de luz */
+  .pegasus-word::before,
+  .pegasus-word::after,
+  .nexus-word::before,
+  .nexus-word::after {
+    pointer-events: none;
+  }
+
+  /* Elimina específicamente cualquier contenido
+     accidental en los pseudo-elementos */
+  .pegasus-word::before,
+  .nexus-word::before {
+    content: none !important;
+  }
+
+  /* Línea horizontal detrás del título */
+  .pegasus-title::before {
+    z-index: -1 !important;
+  }
 </style>
