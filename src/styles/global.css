@@ -2,7 +2,7 @@
 
 @theme {
   --color-cosmos-dark: #030712; /* Very deep, elegant navy/black */
-  --color-cosmos-light: #0B1120; /* Subtle lighter navy for depth */
+  --color-cosmos-light: #030712; /* Unified with cosmos dark for complete color harmony */
   --color-gold-bright: #F8FAFC; /* Pure starlight white */
   --color-gold-deep: #94A3B8; /* Elegant silver/muted blue */
   --color-cosmos-blue: #3B82F6; /* Bright star blue for accents */
