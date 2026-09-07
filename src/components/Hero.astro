@@ -506,4 +506,75 @@
   }
 
 }
+
+/* =====================================================
+   LIMPIEZA DEFINITIVA DEL TÍTULO
+   ===================================================== */
+
+.pegasus-title,
+.pegasus-title * {
+  position: relative;
+}
+
+.pegasus-title {
+  isolation: isolate;
+  z-index: 9999 !important;
+}
+
+/* Texto completamente limpio */
+.pegasus-word,
+.nexus-word {
+  position: relative;
+  z-index: 10000 !important;
+
+  color: #030711 !important;
+  background: transparent !important;
+  background-image: none !important;
+
+  -webkit-text-fill-color: #030711 !important;
+  -webkit-background-clip: border-box !important;
+  background-clip: border-box !important;
+
+  mix-blend-mode: normal !important;
+}
+
+/* Eliminar cualquier pseudo-elemento de las letras */
+.pegasus-word::before,
+.pegasus-word::after,
+.nexus-word::before,
+.nexus-word::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* La única línea permitida */
+.pegasus-title::before {
+  content: "" !important;
+  display: block !important;
+
+  position: absolute !important;
+  z-index: -1 !important;
+
+  left: -10%;
+  right: -10%;
+  top: 52%;
+
+  height: 2px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,.8),
+    #159cff,
+    rgba(255,255,255,.8),
+    transparent
+  );
+
+  box-shadow:
+    0 0 8px rgba(255,255,255,.9),
+    0 0 20px rgba(21,156,255,.8),
+    0 0 40px rgba(21,156,255,.5);
+
+  pointer-events: none;
+}
 </style>
