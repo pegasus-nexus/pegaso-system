@@ -1,63 +1,109 @@
 ---
+interface Project {
+  name: string;
+  tag: string;
+  url: string;
+  logo: string;
+  alt: string;
+  logoClass: string;
+}
+
+const projects: Project[] = [
+  {
+    name: "Chocolates Taboada Oficial",
+    tag: "SISTEMA DE PRODUCCIÓN Y DISTRIBUCIÓN",
+    url: "https://chocolatestaboada.pro/",
+    logo: "/logo-taboada-gold.png",
+    alt: "Chocolates Taboada - Sistema de Producción y Distribución",
+    logoClass: "h-14 sm:h-16 w-auto max-w-[200px] object-contain filter drop-shadow-[0_0_10px_rgba(212,175,55,0.25)] group-hover:drop-shadow-[0_0_20px_rgba(212,175,55,0.6)] transition-all duration-300 group-hover:scale-105",
+  },
+  {
+    name: "Chocolates Taboada Campaña",
+    tag: "AUTOMATIZACIÓN COMERCIAL",
+    url: "https://dia-de-la-madre-taboada.vercel.app/",
+    logo: "/logo-taboada-brown.png",
+    alt: "Chocolates Taboada - Automatización Comercial Día de la Madre",
+    logoClass: "h-14 sm:h-16 w-auto max-w-[200px] object-contain filter brightness-125 contrast-125 drop-shadow-[0_0_10px_rgba(180,100,50,0.25)] group-hover:drop-shadow-[0_0_20px_rgba(210,120,60,0.6)] transition-all duration-300 group-hover:scale-105",
+  },
+  {
+    name: "Montalvo Catering",
+    tag: "CONTROL DE INVENTARIO Y PEDIDOS",
+    url: "https://caterin-pegaso.vercel.app/",
+    logo: "/logo-montalvo-clean.png",
+    alt: "Montalvo Catering - Control de Inventario y Pedidos",
+    logoClass: "h-12 sm:h-14 w-auto max-w-[200px] object-contain filter drop-shadow-[0_0_10px_rgba(255,255,255,0.15)] group-hover:drop-shadow-[0_0_20px_rgba(255,255,255,0.4)] transition-all duration-300 group-hover:scale-105",
+  },
+];
 ---
-<section class="py-10 bg-[#0e1220] border-b border-gray-900 relative z-30">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
+
+<section id="proyectos-destacados" class="relative py-20 sm:py-24 overflow-hidden border-y border-white/[0.06] z-20" style="background: radial-gradient(ellipse 80% 60% at 50% 20%, rgba(14, 30, 60, 0.45), #060a14 80%);">
+  
+  <!-- Ambient background glow accents -->
+  <div class="absolute inset-0 pointer-events-none overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-sky-600/[0.07] blur-[120px] rounded-full"></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    
+    <!-- Top Header Section -->
+    <div class="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
       
-      <!-- Label -->
-      <div class="flex-shrink-0 text-center md:text-left">
-        <span class="text-xs font-semibold uppercase tracking-[0.3em] text-gray-500 font-montserrat">
-          Proyectos Destacados
+      <!-- Top Pill / Lines -->
+      <div class="flex items-center justify-center gap-3 sm:gap-4 mb-4 select-none">
+        <div class="w-10 sm:w-16 h-px bg-gradient-to-r from-transparent to-sky-400"></div>
+        <span class="text-[10px] sm:text-xs font-semibold tracking-[0.3em] uppercase text-gray-300 font-montserrat">
+          PROYECTOS <span class="text-sky-400 font-bold">DESTACADOS</span>
         </span>
+        <div class="w-10 sm:w-16 h-px bg-gradient-to-l from-transparent to-sky-400"></div>
       </div>
-      
-      <!-- Logos Container -->
-      <div class="flex flex-wrap items-center justify-center gap-10 sm:gap-16 md:gap-20 flex-grow">
-        
-        <!-- Chocolates Taboada (Día de la Madre) -->
-        <a 
-          href="https://dia-de-la-madre-taboada.vercel.app/" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          class="group transition-all duration-300 transform hover:scale-110 flex items-center justify-center"
-        >
-          <img 
-            src="/logo-taboada-gold.png" 
-            alt="Chocolates Taboada - Madre" 
-            class="h-10 sm:h-12 w-auto object-contain opacity-70 group-hover:opacity-100 filter brightness-110 drop-shadow-[0_0_8px_rgba(212,175,55,0.2)] group-hover:drop-shadow-[0_0_15px_rgba(212,175,55,0.5)] transition-all duration-300" 
-          />
-        </a>
 
-        <!-- Chocolates Taboada (Fexco) -->
-        <a 
-          href="https://taboada-fexco.vercel.app" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          class="group transition-all duration-300 transform hover:scale-110 flex items-center justify-center"
-        >
-          <img 
-            src="/logo-taboada-brown.png" 
-            alt="Chocolates Taboada - Fexco" 
-            class="h-10 sm:h-12 w-auto object-contain opacity-70 group-hover:opacity-100 filter brightness-125 contrast-125 drop-shadow-[0_0_8px_rgba(101,67,33,0.2)] group-hover:drop-shadow-[0_0_15px_rgba(101,67,33,0.5)] transition-all duration-300" 
-          />
-        </a>
+      <!-- Main Heading -->
+      <h2 class="text-2xl sm:text-4xl md:text-5xl font-normal font-heading text-white tracking-normal leading-tight mb-3">
+        Empresas que confían en nuestra <span class="text-sky-400 font-semibold italic">tecnología</span>
+      </h2>
 
-        <!-- Montalvo Catering -->
-        <a 
-          href="https://caterin-pegaso.vercel.app/" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          class="group transition-all duration-300 transform hover:scale-110 flex items-center justify-center"
-        >
-          <img 
-            src="/logo-catering.png" 
-            alt="Montalvo Catering" 
-            class="h-9 sm:h-11 w-auto object-contain opacity-80 group-hover:opacity-100 drop-shadow-[0_0_8px_rgba(255,255,255,0.05)] group-hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-all duration-300" 
-          />
-        </a>
+      <!-- Subtitle -->
+      <p class="text-xs sm:text-sm text-gray-400 font-montserrat font-light tracking-wide max-w-lg mx-auto">
+        Juntos transformamos procesos en resultados reales.
+      </p>
 
-      </div>
-      
     </div>
+
+    <!-- Projects Grid (3 items balanced) -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 items-stretch max-w-6xl mx-auto">
+      {projects.map((project) => (
+        <a
+          href={project.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group relative flex flex-col items-center justify-between p-8 sm:p-10 rounded-2xl bg-white/[0.02] border border-white/[0.05] hover:border-sky-500/30 hover:bg-white/[0.04] transition-all duration-500 backdrop-blur-sm shadow-[0_4px_20px_rgba(0,0,0,0.2)] hover:shadow-[0_8px_30px_rgba(14,165,233,0.15)]"
+        >
+          <!-- Subtle hover backlight -->
+          <div class="absolute inset-0 rounded-2xl bg-gradient-to-b from-sky-500/[0.04] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+
+          <!-- Logo Container -->
+          <div class="w-full h-24 flex items-center justify-center relative z-10 px-4">
+            <img
+              src={project.logo}
+              alt={project.alt}
+              class={project.logoClass}
+              loading="lazy"
+            />
+          </div>
+
+          <!-- Cyan accent dash -->
+          <div class="w-8 h-[2px] bg-sky-400/80 rounded-full shadow-[0_0_8px_rgba(56,189,248,0.7)] my-6 group-hover:w-14 group-hover:bg-sky-300 transition-all duration-300"></div>
+
+          <!-- Description / Tag -->
+          <div class="text-center relative z-10">
+            <span class="text-[10px] sm:text-[11px] font-semibold tracking-[0.22em] uppercase text-gray-400 group-hover:text-gray-100 transition-colors duration-300 font-montserrat leading-relaxed block">
+              {project.tag}
+            </span>
+          </div>
+
+        </a>
+      ))}
+    </div>
+
   </div>
 </section>
