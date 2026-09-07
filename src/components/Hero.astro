@@ -92,16 +92,12 @@
         <div class="w-8 sm:w-16 h-px bg-white/40"></div>
       </div>
 
-      <!-- Main Title: PEGASUS NEXUS with electric blue neon backlight glow on borders (no internal lines) -->
-      <h1 class="flex flex-col mb-5 items-center w-full select-none">
-        <span
-          class="neon-title-pegasus font-montserrat text-6xl sm:text-8xl md:text-9xl lg:text-[7.5rem] xl:text-[8.5rem] font-black uppercase tracking-wider leading-none"
-        >
+      <!-- Main Title: PEGASUS NEXUS -->
+      <h1 class="flex flex-col items-center w-full select-none pegasus-title" aria-label="Pegasus Nexus">
+        <span class="pegasus-word">
           PEGASUS
         </span>
-        <span
-          class="neon-title-nexus font-montserrat font-black text-3xl sm:text-5xl md:text-6xl lg:text-[4.5rem] xl:text-[5.2rem] tracking-[0.38em] uppercase mt-[-4px] sm:mt-[-12px] md:mt-[-16px] leading-none"
-        >
+        <span class="nexus-word">
           NEXUS
         </span>
       </h1>
@@ -254,31 +250,190 @@
 </section>
 
 <style>
-  .neon-title-pegasus,
-  .neon-title-nexus {
-    color: #000000;
-    -webkit-text-fill-color: #000000;
-    -webkit-text-stroke: 1.5px #ffffff;
+  /* =========================================
+     PEGASUS NEXUS — TÍTULO PRINCIPAL
+     ========================================= */
+
+  .pegasus-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    line-height: 0.82;
+    text-align: center;
+  }
+
+  /* PEGASUS */
+
+  .pegasus-word {
+    position: relative;
+    display: inline-block;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(4rem, 9vw, 8.5rem);
+    font-weight: 900;
+    letter-spacing: 0.025em;
+
+    text-transform: uppercase;
+
+    /* Interior oscuro */
+    color: #050914;
+
+    /* Borde metálico */
+    -webkit-text-stroke: 2px #dcecff;
+
+    /* Brillo exterior */
     text-shadow:
       0 0 2px #ffffff,
-      0 0 6px #60a5fa,
-      0 0 14px #3b82f6,
-      0 0 24px #2563eb,
-      0 0 38px #1d4ed8;
-    filter: drop-shadow(0 0 12px rgba(37, 99, 235, 0.95)) drop-shadow(0 0 24px rgba(29, 78, 216, 0.75));
-    will-change: filter, transform;
+      0 0 8px #ffffff,
+      0 0 18px #5eb8ff,
+      0 0 35px #168cff,
+      0 0 65px rgba(0, 132, 255, 0.85);
+
+    filter:
+      drop-shadow(0 0 12px rgba(0, 145, 255, 0.8))
+      drop-shadow(0 0 30px rgba(0, 115, 255, 0.45));
   }
-  @media (max-width: 640px) {
-    .neon-title-pegasus,
-    .neon-title-nexus {
-      -webkit-text-stroke: 1px #ffffff;
-      text-shadow:
-        0 0 2px #ffffff,
-        0 0 5px #60a5fa,
-        0 0 10px #3b82f6,
-        0 0 18px #2563eb;
-      filter: drop-shadow(0 0 8px rgba(37, 99, 235, 0.9));
+
+
+  /* Línea de luz horizontal */
+
+  .pegasus-word::after {
+    content: "";
+    position: absolute;
+
+    left: -8%;
+    right: -8%;
+
+    top: 53%;
+
+    height: 2px;
+
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255,255,255,0.95),
+      #159cff,
+      rgba(255,255,255,0.95),
+      transparent
+    );
+
+    box-shadow:
+      0 0 8px #ffffff,
+      0 0 20px #168cff,
+      0 0 40px #168cff;
+
+    opacity: 0.9;
+  }
+
+
+  /* NEXUS */
+
+  .nexus-word {
+    position: relative;
+    z-index: 2;
+
+    margin-top: -0.08em;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(2rem, 5vw, 5.2rem);
+    font-weight: 900;
+
+    letter-spacing: 0.38em;
+    padding-left: 0.38em;
+
+    text-transform: uppercase;
+
+    color: #07111f;
+
+    -webkit-text-stroke: 1.5px #e8f5ff;
+
+    text-shadow:
+      0 0 3px #ffffff,
+      0 0 10px #d8efff,
+      0 0 20px #149cff,
+      0 0 38px rgba(0, 132, 255, 0.9);
+  }
+
+
+  /* =========================================
+     EFECTO METÁLICO
+     ========================================= */
+
+  .pegasus-word,
+  .nexus-word {
+    background: linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #eaf5ff 22%,
+      #9bb9d6 48%,
+      #ffffff 57%,
+      #b9d3ec 78%,
+      #ffffff 100%
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+  /* =========================================
+     ANIMACIÓN SUTIL
+     ========================================= */
+
+  @keyframes pegasusGlow {
+
+    0% {
+      filter:
+        drop-shadow(0 0 8px rgba(0,145,255,0.55))
+        drop-shadow(0 0 22px rgba(0,115,255,0.35));
     }
+
+    50% {
+      filter:
+        drop-shadow(0 0 15px rgba(0,180,255,0.85))
+        drop-shadow(0 0 38px rgba(0,115,255,0.55));
+    }
+
+    100% {
+      filter:
+        drop-shadow(0 0 8px rgba(0,145,255,0.55))
+        drop-shadow(0 0 22px rgba(0,115,255,0.35));
+    }
+
+  }
+
+  .pegasus-word {
+    animation: pegasusGlow 4s ease-in-out infinite;
+  }
+
+
+  /* =========================================
+     RESPONSIVE
+     ========================================= */
+
+  @media (max-width: 640px) {
+
+    .pegasus-title {
+      line-height: 0.86;
+      margin-bottom: 1.5rem;
+    }
+
+    .pegasus-word {
+      font-size: clamp(3.2rem, 18vw, 5rem);
+      letter-spacing: 0.01em;
+      -webkit-text-stroke: 1.5px #dcecff;
+    }
+
+    .nexus-word {
+      font-size: clamp(1.7rem, 10vw, 3rem);
+      letter-spacing: 0.30em;
+      padding-left: 0.30em;
+    }
+
   }
 
   .animate-float {
