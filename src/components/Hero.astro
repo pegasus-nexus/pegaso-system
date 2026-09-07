@@ -76,41 +76,10 @@
     <div class="w-px h-20 bg-white/25"></div>
   </div>
 
-  <!-- Right vertical section tracker (Dots navigation from mockup) -->
-  <div class="hidden xl:flex fixed right-8 top-1/2 -translate-y-1/2 flex-col items-end gap-5 z-30 select-none">
-    <a href="#inicio" class="flex items-center gap-3 text-[10px] tracking-[0.22em] font-montserrat uppercase text-white font-semibold group transition-all">
-      <span class="group-hover:text-sky-300">INICIO</span>
-      <span class="w-2.5 h-2.5 rounded-full bg-sky-400 shadow-[0_0_12px_#38bdf8] ring-4 ring-sky-400/25"></span>
-    </a>
-    <a href="#por-que-nexus" class="flex items-center gap-3 text-[10px] tracking-[0.22em] font-montserrat uppercase text-gray-400 hover:text-white font-medium group transition-all">
-      <span class="group-hover:text-sky-300">NOSOTROS</span>
-      <span class="w-2 h-2 rounded-full border border-white/40 bg-transparent group-hover:bg-sky-400 group-hover:border-sky-400 transition-colors"></span>
-    </a>
-    <a href="#servicios" class="flex items-center gap-3 text-[10px] tracking-[0.22em] font-montserrat uppercase text-gray-400 hover:text-white font-medium group transition-all">
-      <span class="group-hover:text-sky-300">SERVICIOS</span>
-      <span class="w-2 h-2 rounded-full border border-white/40 bg-transparent group-hover:bg-sky-400 group-hover:border-sky-400 transition-colors"></span>
-    </a>
-    <a href="#tecnologia" class="flex items-center gap-3 text-[10px] tracking-[0.22em] font-montserrat uppercase text-gray-400 hover:text-white font-medium group transition-all">
-      <span class="group-hover:text-sky-300">TECNOLOGÍA</span>
-      <span class="w-2 h-2 rounded-full border border-white/40 bg-transparent group-hover:bg-sky-400 group-hover:border-sky-400 transition-colors"></span>
-    </a>
-    <a href="#paquetes" class="flex items-center gap-3 text-[10px] tracking-[0.22em] font-montserrat uppercase text-gray-400 hover:text-white font-medium group transition-all">
-      <span class="group-hover:text-sky-300">SOLUCIONES</span>
-      <span class="w-2 h-2 rounded-full border border-white/40 bg-transparent group-hover:bg-sky-400 group-hover:border-sky-400 transition-colors"></span>
-    </a>
-    <a href="#contacto" class="flex items-center gap-3 text-[10px] tracking-[0.22em] font-montserrat uppercase text-gray-400 hover:text-white font-medium group transition-all">
-      <span class="group-hover:text-sky-300">CONTACTO</span>
-      <span class="w-2 h-2 rounded-full border border-white/40 bg-transparent group-hover:bg-sky-400 group-hover:border-sky-400 transition-colors"></span>
-    </a>
-  </div>
-
   <div
     class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex-grow flex flex-col items-center justify-center pt-8 pb-8"
   >
     <div class="text-center w-full max-w-4xl mx-auto flex flex-col items-center relative">
-      
-      <!-- Ambient glowing aura centered behind PEGASUS NEXUS -->
-      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] sm:w-[720px] h-[200px] sm:h-[300px] bg-blue-600/15 blur-[100px] rounded-full pointer-events-none -z-10"></div>
 
       <!-- Subtitle badge with horizontal lines -->
       <div class="flex items-center justify-center gap-4 mb-5">
@@ -287,31 +256,28 @@
 <style>
   .neon-title-pegasus,
   .neon-title-nexus {
-    color: #01040a;
-    -webkit-text-fill-color: #01040a;
-    -webkit-text-stroke: 1.8px #ffffff;
+    color: #000000;
+    -webkit-text-fill-color: #000000;
+    -webkit-text-stroke: 1.5px #ffffff;
     text-shadow:
       0 0 2px #ffffff,
-      0 0 7px #93c5fd,
-      0 0 15px #60a5fa,
-      0 0 26px #3b82f6,
-      0 0 45px #2563eb,
-      0 0 70px #1d4ed8,
-      0 0 95px #1e40af;
-    filter: drop-shadow(0 0 14px rgba(37, 99, 235, 0.95)) drop-shadow(0 0 30px rgba(30, 64, 175, 0.85));
+      0 0 6px #60a5fa,
+      0 0 14px #3b82f6,
+      0 0 24px #2563eb,
+      0 0 38px #1d4ed8;
+    filter: drop-shadow(0 0 12px rgba(37, 99, 235, 0.95)) drop-shadow(0 0 24px rgba(29, 78, 216, 0.75));
     will-change: filter, transform;
   }
   @media (max-width: 640px) {
     .neon-title-pegasus,
     .neon-title-nexus {
-      -webkit-text-stroke: 1.2px #ffffff;
+      -webkit-text-stroke: 1px #ffffff;
       text-shadow:
         0 0 2px #ffffff,
-        0 0 5px #93c5fd,
-        0 0 12px #3b82f6,
-        0 0 22px #2563eb,
-        0 0 38px #1d4ed8;
-      filter: drop-shadow(0 0 10px rgba(37, 99, 235, 0.9));
+        0 0 5px #60a5fa,
+        0 0 10px #3b82f6,
+        0 0 18px #2563eb;
+      filter: drop-shadow(0 0 8px rgba(37, 99, 235, 0.9));
     }
   }
 
