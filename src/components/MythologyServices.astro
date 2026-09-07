@@ -1,132 +1,251 @@
 ---
 ---
-<section id="servicios" class="py-24 bg-cosmos-dark relative z-10">
-  <!-- Subtle continuous ambient glow -->
-  <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(14,165,233,0.05),transparent)] pointer-events-none"></div>
+<section id="servicios" class="py-28 bg-cosmos-dark relative z-10 overflow-hidden border-t border-white/[0.05]">
+  <!-- Subtle continuous ambient background glow -->
+  <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(14,165,233,0.07),transparent)] pointer-events-none"></div>
+  <div class="absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_50%_100%,rgba(56,189,248,0.04),transparent)] pointer-events-none"></div>
+  
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-    <div class="animate-on-scroll fade-in-up text-center max-w-3xl mx-auto mb-24">
-      <h2 class="text-gold-deep text-xs font-bold tracking-[0.3em] uppercase mb-4 text-glow">Soluciones Especializadas</h2>
-      <h3 class="text-2xl sm:text-4xl md:text-5xl font-normal font-heading text-white mb-6">Ingeniería de Software <br/><span class="italic text-gold-bright">de Alto Nivel</span></h3>
-      <div class="w-16 h-px bg-gold-deep/50 mx-auto shadow-[0_0_10px_rgba(136,192,208,0.8)]"></div>
-    </div>
-
-    <div class="space-y-32">
+    
+    <!-- Encabezado Central -->
+    <div class="animate-on-scroll fade-in-up text-center max-w-3xl mx-auto mb-20">
+      <div class="flex items-center justify-center gap-3 mb-4">
+        <div class="w-8 sm:w-12 h-px bg-gradient-to-r from-transparent to-sky-400"></div>
+        <span class="text-sky-400 text-[10px] sm:text-xs font-bold tracking-[0.25em] uppercase text-glow">SOLUCIONES ESPECIALIZADAS</span>
+        <div class="w-8 sm:w-12 h-px bg-gradient-to-l from-transparent to-sky-400"></div>
+      </div>
       
-      <!-- Tauro -->
-      <div class="animate-on-scroll flex flex-col md:flex-row items-center gap-12 md:gap-24 group">
-        <div class="w-full md:w-1/2 order-2 md:order-1 relative">
-          <div class="absolute inset-0 bg-amber-500/10 blur-3xl rounded-full"></div>
-          <div class="glass-card p-10 relative z-10 border-l-4 border-amber-500 transition-all duration-700">
-            <h4 class="text-3xl font-heading text-white mb-4 group-hover:text-amber-400 transition-colors">Seguridad y Fortaleza Digital</h4>
-            <p class="text-gray-300 mb-6 font-light leading-relaxed">
-              Garantizamos la máxima protección para sus sistemas críticos. Desarrollamos arquitecturas de red diseñadas bajo estrictos estándares internacionales de ciberseguridad, implementando capas de defensa impenetrables.
-            </p>
-            <div class="h-px w-full bg-gradient-to-r from-amber-500/50 to-transparent mb-6"></div>
-            <h5 class="text-amber-400 uppercase tracking-widest text-xs font-bold mb-3">Servicio: Seguridad Informática</h5>
-            <p class="text-gray-400 text-sm">
-              Implementación de firewalls corporativos de última generación, encriptación avanzada de datos en tránsito y reposo, y auditorías proactivas de vulnerabilidades para salvaguardar sus activos digitales más valiosos.
+      <h2 class="text-3xl sm:text-5xl md:text-6xl font-normal font-heading text-white tracking-wide mb-5">
+        Arquitectura Digital <span class="italic text-sky-400">Pegasus</span>
+      </h2>
+      
+      <p class="text-white text-base sm:text-lg font-medium mb-2">
+        Cinco pilares. Un mismo propósito.
+      </p>
+      <p class="text-gray-400 text-xs sm:text-sm font-light max-w-2xl mx-auto leading-relaxed">
+        Soluciones que trabajan en conjunto para una empresa más segura, eficiente y preparada para el futuro.
+      </p>
+    </div>
+
+    <!-- Grilla de las 5 Tarjetas / Pilares Cósmicos -->
+    <div class="relative">
+      
+      <!-- Línea conectora cósmica sutil por detrás de las esferas (visible en pantallas grandes) -->
+      <div class="hidden lg:block absolute top-[54px] left-[6%] right-[6%] h-[1px] bg-gradient-to-r from-transparent via-sky-500/20 to-transparent pointer-events-none -z-0"></div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-5 lg:gap-4 items-stretch">
+        
+        <!-- 01. TAURO -->
+        <div class="animate-on-scroll fade-in-up group relative flex flex-col pt-14">
+          <!-- Esfera de Icono Cósmico superior centrada y flotante -->
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 z-20 transition-transform duration-500 group-hover:scale-110">
+            <div class="w-24 h-24 rounded-full p-1 relative flex items-center justify-center">
+              <div class="absolute inset-0 rounded-full bg-sky-500/20 blur-xl group-hover:bg-sky-400/40 transition-colors"></div>
+              <img src="/solucion-tauro.png" alt="Tauro - Seguridad y Fortaleza Digital" class="w-20 h-20 object-contain relative z-10 drop-shadow-[0_0_15px_rgba(56,189,248,0.5)]" />
+            </div>
+          </div>
+
+          <!-- Tarjeta de Contenido -->
+          <div class="flex-1 pt-12 pb-8 px-5 rounded-2xl bg-[#081020]/70 border border-sky-500/20 backdrop-blur-md flex flex-col items-center text-center transition-all duration-500 group-hover:border-sky-400/50 group-hover:shadow-[0_10px_30px_rgba(14,165,233,0.15)] group-hover:-translate-y-1 relative overflow-hidden">
+            <!-- Indicador Numérico -->
+            <span class="absolute top-4 right-4 text-[11px] font-mono font-semibold text-gray-500/60 group-hover:text-sky-400 transition-colors">01</span>
+
+            <h3 class="text-white font-montserrat font-bold text-sm tracking-[0.18em] uppercase mt-2 mb-2">
+              TAURO
+            </h3>
+            
+            <h4 class="text-sky-400 font-medium text-xs tracking-wide leading-snug mb-4 min-h-[32px] flex items-center justify-center">
+              Seguridad y<br/>Fortaleza Digital
+            </h4>
+
+            <p class="text-gray-300 text-[11px] sm:text-xs font-light leading-relaxed">
+              Protegemos tu <strong class="text-white font-medium">información</strong> con arquitecturas seguras, monitoreo continuo y ciberseguridad de alto nivel.
             </p>
           </div>
         </div>
-        <div class="w-full md:w-1/2 order-1 md:order-2 text-center md:text-left">
-          <div class="text-6xl sm:text-8xl md:text-[10rem] lg:text-[14rem] leading-none font-heading text-amber-500/22 select-none transition-all duration-700 group-hover:text-amber-400/70 group-hover:scale-105 drop-shadow-[0_0_30px_rgba(245,158,11,0.25)]">
-            Tauro
+
+        <!-- 02. FÉNIX -->
+        <div class="animate-on-scroll fade-in-up group relative flex flex-col pt-14" style="animation-delay: 100ms;">
+          <!-- Esfera de Icono Cósmico superior centrada y flotante -->
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 z-20 transition-transform duration-500 group-hover:scale-110">
+            <div class="w-24 h-24 rounded-full p-1 relative flex items-center justify-center">
+              <div class="absolute inset-0 rounded-full bg-orange-500/20 blur-xl group-hover:bg-orange-400/40 transition-colors"></div>
+              <img src="/solucion-fenix.png" alt="Fénix - Resiliencia y Continuidad" class="w-20 h-20 object-contain relative z-10 drop-shadow-[0_0_15px_rgba(249,115,22,0.5)]" />
+            </div>
           </div>
+
+          <!-- Tarjeta de Contenido -->
+          <div class="flex-1 pt-12 pb-8 px-5 rounded-2xl bg-[#081020]/70 border border-orange-500/20 backdrop-blur-md flex flex-col items-center text-center transition-all duration-500 group-hover:border-orange-400/50 group-hover:shadow-[0_10px_30px_rgba(249,115,22,0.15)] group-hover:-translate-y-1 relative overflow-hidden">
+            <!-- Indicador Numérico -->
+            <span class="absolute top-4 right-4 text-[11px] font-mono font-semibold text-gray-500/60 group-hover:text-orange-400 transition-colors">02</span>
+
+            <h3 class="text-white font-montserrat font-bold text-sm tracking-[0.18em] uppercase mt-2 mb-2">
+              FÉNIX
+            </h3>
+            
+            <h4 class="text-orange-400 font-medium text-xs tracking-wide leading-snug mb-4 min-h-[32px] flex items-center justify-center">
+              Resiliencia y<br/>Continuidad Operativa
+            </h4>
+
+            <p class="text-gray-300 text-[11px] sm:text-xs font-light leading-relaxed">
+              Tu <strong class="text-white font-medium">negocio siempre activo</strong>. Backups, recuperación y alta disponibilidad ante cualquier escenario.
+            </p>
+          </div>
+        </div>
+
+        <!-- 03. ARIES -->
+        <div class="animate-on-scroll fade-in-up group relative flex flex-col pt-14" style="animation-delay: 200ms;">
+          <!-- Esfera de Icono Cósmico superior centrada y flotante -->
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 z-20 transition-transform duration-500 group-hover:scale-110">
+            <div class="w-24 h-24 rounded-full p-1 relative flex items-center justify-center">
+              <div class="absolute inset-0 rounded-full bg-teal-500/20 blur-xl group-hover:bg-teal-400/40 transition-colors"></div>
+              <img src="/solucion-aries.png" alt="Aries - Mantenimiento y Soporte Especializado" class="w-20 h-20 object-contain relative z-10 drop-shadow-[0_0_15px_rgba(20,184,166,0.5)]" />
+            </div>
+          </div>
+
+          <!-- Tarjeta de Contenido -->
+          <div class="flex-1 pt-12 pb-8 px-5 rounded-2xl bg-[#081020]/70 border border-teal-500/20 backdrop-blur-md flex flex-col items-center text-center transition-all duration-500 group-hover:border-teal-400/50 group-hover:shadow-[0_10px_30px_rgba(20,184,166,0.15)] group-hover:-translate-y-1 relative overflow-hidden">
+            <!-- Indicador Numérico -->
+            <span class="absolute top-4 right-4 text-[11px] font-mono font-semibold text-gray-500/60 group-hover:text-teal-400 transition-colors">03</span>
+
+            <h3 class="text-white font-montserrat font-bold text-sm tracking-[0.18em] uppercase mt-2 mb-2">
+              ARIES
+            </h3>
+            
+            <h4 class="text-teal-400 font-medium text-xs tracking-wide leading-snug mb-4 min-h-[32px] flex items-center justify-center">
+              Mantenimiento y<br/>Soporte Especializado
+            </h4>
+
+            <p class="text-gray-300 text-[11px] sm:text-xs font-light leading-relaxed">
+              Garantizamos <strong class="text-white font-medium">el rendimiento</strong> de tus sistemas con soporte continuo y optimización constante.
+            </p>
+          </div>
+        </div>
+
+        <!-- 04. ANDRÓMEDA -->
+        <div class="animate-on-scroll fade-in-up group relative flex flex-col pt-14" style="animation-delay: 300ms;">
+          <!-- Esfera de Icono Cósmico superior centrada y flotante -->
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 z-20 transition-transform duration-500 group-hover:scale-110">
+            <div class="w-24 h-24 rounded-full p-1 relative flex items-center justify-center">
+              <div class="absolute inset-0 rounded-full bg-purple-500/20 blur-xl group-hover:bg-purple-400/40 transition-colors"></div>
+              <img src="/solucion-andromeda.png" alt="Andrómeda - Integración de Sistemas" class="w-20 h-20 object-contain relative z-10 drop-shadow-[0_0_15px_rgba(168,85,247,0.5)]" />
+            </div>
+          </div>
+
+          <!-- Tarjeta de Contenido -->
+          <div class="flex-1 pt-12 pb-8 px-5 rounded-2xl bg-[#081020]/70 border border-purple-500/20 backdrop-blur-md flex flex-col items-center text-center transition-all duration-500 group-hover:border-purple-400/50 group-hover:shadow-[0_10px_30px_rgba(168,85,247,0.15)] group-hover:-translate-y-1 relative overflow-hidden">
+            <!-- Indicador Numérico -->
+            <span class="absolute top-4 right-4 text-[11px] font-mono font-semibold text-gray-500/60 group-hover:text-purple-400 transition-colors">04</span>
+
+            <h3 class="text-white font-montserrat font-bold text-sm tracking-[0.18em] uppercase mt-2 mb-2">
+              ANDRÓMEDA
+            </h3>
+            
+            <h4 class="text-purple-400 font-medium text-xs tracking-wide leading-snug mb-4 min-h-[32px] flex items-center justify-center">
+              Integración e<br/>Interconectividad
+            </h4>
+
+            <p class="text-gray-300 text-[11px] sm:text-xs font-light leading-relaxed">
+              Conectamos tus <strong class="text-white font-medium">plataformas y datos</strong> a través de APIs, microservicios e integraciones seguras.
+            </p>
+          </div>
+        </div>
+
+        <!-- 05. PEGASO -->
+        <div class="animate-on-scroll fade-in-up group relative flex flex-col pt-14" style="animation-delay: 400ms;">
+          <!-- Esfera de Icono Cósmico superior centrada y flotante -->
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 z-20 transition-transform duration-500 group-hover:scale-110">
+            <div class="w-24 h-24 rounded-full p-1 relative flex items-center justify-center">
+              <div class="absolute inset-0 rounded-full bg-amber-400/20 blur-xl group-hover:bg-amber-300/40 transition-colors"></div>
+              <img src="/solucion-pegaso.png" alt="Pegaso - Soluciones SaaS" class="w-20 h-20 object-contain relative z-10 drop-shadow-[0_0_15px_rgba(245,158,11,0.5)]" />
+            </div>
+          </div>
+
+          <!-- Tarjeta de Contenido -->
+          <div class="flex-1 pt-12 pb-8 px-5 rounded-2xl bg-[#081020]/70 border border-amber-500/20 backdrop-blur-md flex flex-col items-center text-center transition-all duration-500 group-hover:border-amber-400/50 group-hover:shadow-[0_10px_30px_rgba(245,158,11,0.15)] group-hover:-translate-y-1 relative overflow-hidden">
+            <!-- Indicador Numérico -->
+            <span class="absolute top-4 right-4 text-[11px] font-mono font-semibold text-gray-500/60 group-hover:text-amber-400 transition-colors">05</span>
+
+            <h3 class="text-white font-montserrat font-bold text-sm tracking-[0.18em] uppercase mt-2 mb-2">
+              PEGASO
+            </h3>
+            
+            <h4 class="text-amber-400 font-medium text-xs tracking-wide leading-snug mb-4 min-h-[32px] flex items-center justify-center">
+              Soluciones SaaS<br/>de Alta Escalabilidad
+            </h4>
+
+            <p class="text-gray-300 text-[11px] sm:text-xs font-light leading-relaxed">
+              Desarrollamos <strong class="text-white font-medium">plataformas ágiles</strong>, robustas y preparadas para crecer sin límites.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Barra Inferior de Pilares de Valor (Estrategia, Tecnología, Alianzas, Resultados) -->
+    <div class="mt-20 pt-10 border-t border-white/[0.06] grid grid-cols-2 md:grid-cols-4 gap-6 items-center">
+      
+      <!-- Estrategia -->
+      <div class="flex items-center gap-3.5 group">
+        <div class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 group-hover:border-sky-400 group-hover:shadow-[0_0_15px_rgba(56,189,248,0.3)] transition-all">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="12" cy="12" r="10"></circle>
+            <circle cx="12" cy="12" r="6"></circle>
+            <circle cx="12" cy="12" r="2"></circle>
+          </svg>
+        </div>
+        <div>
+          <div class="text-[11px] font-bold tracking-[0.16em] uppercase text-white">ESTRATEGIA</div>
+          <div class="text-[10px] text-gray-400 font-light">En cada solución</div>
         </div>
       </div>
 
-      <!-- Fénix -->
-      <div class="animate-on-scroll flex flex-col md:flex-row items-center gap-12 md:gap-24 group">
-        <div class="w-full md:w-1/2 text-center md:text-right">
-          <div class="text-6xl sm:text-8xl md:text-[10rem] lg:text-[14rem] leading-none font-heading text-rose-500/22 select-none transition-all duration-700 group-hover:text-rose-400/70 group-hover:scale-105 drop-shadow-[0_0_30px_rgba(244,63,94,0.25)]">
-            Fénix
-          </div>
+      <!-- Tecnología -->
+      <div class="flex items-center gap-3.5 group">
+        <div class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 group-hover:border-sky-400 group-hover:shadow-[0_0_15px_rgba(56,189,248,0.3)] transition-all">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+            <circle cx="12" cy="12" r="4"></circle>
+          </svg>
         </div>
-        <div class="w-full md:w-1/2 relative">
-          <div class="absolute inset-0 bg-rose-500/10 blur-3xl rounded-full"></div>
-          <div class="glass-card p-10 relative z-10 border-r-4 border-rose-500 transition-all duration-700">
-            <h4 class="text-3xl font-heading text-white mb-4 group-hover:text-rose-400 transition-colors">Resiliencia y Continuidad Operativa</h4>
-            <p class="text-gray-300 mb-6 font-light leading-relaxed">
-              Aseguramos la disponibilidad continua de sus operaciones ante cualquier eventualidad. Nuestros sistemas están diseñados para recuperarse de forma automática frente a incidentes críticos, minimizando el tiempo de inactividad.
-            </p>
-            <div class="h-px w-full bg-gradient-to-l from-rose-500/50 to-transparent mb-6"></div>
-            <h5 class="text-rose-500 uppercase tracking-widest text-xs font-bold mb-3">Servicio: Backups y Disaster Recovery</h5>
-            <p class="text-gray-400 text-sm">
-              Estrategias de Disaster Recovery en la nube, copias de seguridad incrementales en tiempo real y pruebas periódicas de restauración que aseguran que su negocio mantenga la operatividad sin interrupciones.
-            </p>
-          </div>
+        <div>
+          <div class="text-[11px] font-bold tracking-[0.16em] uppercase text-white">TECNOLOGÍA</div>
+          <div class="text-[10px] text-gray-400 font-light">Con propósito</div>
         </div>
       </div>
 
-      <!-- Aries -->
-      <div class="animate-on-scroll flex flex-col md:flex-row items-center gap-12 md:gap-24 group">
-        <div class="w-full md:w-1/2 order-2 md:order-1 relative">
-          <div class="absolute inset-0 bg-emerald-500/10 blur-3xl rounded-full"></div>
-          <div class="glass-card p-10 relative z-10 border-l-4 border-emerald-500 transition-all duration-700">
-            <h4 class="text-3xl font-heading text-white mb-4 group-hover:text-emerald-400 transition-colors">Mantenimiento y Soporte Especializado</h4>
-            <p class="text-gray-300 mb-6 font-light leading-relaxed">
-              Preservamos la eficiencia y la calidad de su base de código a largo plazo. Ofrecemos un servicio de soporte continuo y mantenimiento de software que optimiza el rendimiento y previene la obsolescencia técnica.
-            </p>
-            <div class="h-px w-full bg-gradient-to-r from-emerald-500/50 to-transparent mb-6"></div>
-            <h5 class="text-emerald-500 uppercase tracking-widest text-xs font-bold mb-3">Servicio: Soporte y Mantenimiento</h5>
-            <p class="text-gray-400 text-sm">
-              Refactorización de sistemas heredados (legacy), auditorías periódicas de código, corrección proactiva de fallas y soporte técnico dedicado para que su plataforma rinda siempre a su máxima capacidad.
-            </p>
-          </div>
+      <!-- Alianzas -->
+      <div class="flex items-center gap-3.5 group">
+        <div class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 group-hover:border-sky-400 group-hover:shadow-[0_0_15px_rgba(56,189,248,0.3)] transition-all">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
         </div>
-        <div class="w-full md:w-1/2 order-1 md:order-2 text-center md:text-left">
-          <div class="text-6xl sm:text-8xl md:text-[10rem] lg:text-[14rem] leading-none font-heading text-emerald-500/22 select-none transition-all duration-700 group-hover:text-emerald-400/70 group-hover:scale-105 drop-shadow-[0_0_30px_rgba(16,185,129,0.25)]">
-            Aries
-          </div>
+        <div>
+          <div class="text-[11px] font-bold tracking-[0.16em] uppercase text-white">ALIANZAS</div>
+          <div class="text-[10px] text-gray-400 font-light">Que multiplican</div>
         </div>
       </div>
 
-      <!-- Andrómeda -->
-      <div class="animate-on-scroll flex flex-col md:flex-row items-center gap-12 md:gap-24 group">
-        <div class="w-full md:w-1/2 text-center md:text-right">
-          <div class="text-5xl sm:text-7xl md:text-[8rem] lg:text-[11rem] leading-none font-heading text-cyan-500/22 select-none transition-all duration-700 group-hover:text-cyan-400/70 group-hover:scale-105 drop-shadow-[0_0_30px_rgba(6,182,212,0.25)]">
-            Andrómeda
-          </div>
+      <!-- Resultados -->
+      <div class="flex items-center gap-3.5 group">
+        <div class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 group-hover:border-sky-400 group-hover:shadow-[0_0_15px_rgba(56,189,248,0.3)] transition-all">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M18.178 8c5.096 0 5.096 8 0 8-5.095 0-7.133-8-12.739-8-4.585 0-4.585 8 0 8 5.606 0 7.644-8 12.74-8z"></path>
+          </svg>
         </div>
-        <div class="w-full md:w-1/2 relative">
-          <div class="absolute inset-0 bg-cyan-500/10 blur-3xl rounded-full"></div>
-          <div class="glass-card p-10 relative z-10 border-r-4 border-cyan-500 transition-all duration-700">
-            <h4 class="text-3xl font-heading text-white mb-4 group-hover:text-cyan-400 transition-colors">Integración e Interconectividad de Sistemas</h4>
-            <p class="text-gray-300 mb-6 font-light leading-relaxed">
-              Conectamos sus diferentes plataformas tecnológicas de manera fluida y robusta. Diseñamos e implementamos capas de integración empresarial que unifican el flujo de información en toda su organización.
-            </p>
-            <div class="h-px w-full bg-gradient-to-l from-cyan-500/50 to-transparent mb-6"></div>
-            <h5 class="text-cyan-500 uppercase tracking-widest text-xs font-bold mb-3">Servicio: Integración de Redes y APIs</h5>
-            <p class="text-gray-400 text-sm">
-              Desarrollo de APIs RESTful y GraphQL de alto rendimiento, microservicios distribuidos e integraciones seguras con pasarelas de pago y proveedores de servicios externos.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Pegaso -->
-      <div class="animate-on-scroll flex flex-col md:flex-row items-center gap-12 md:gap-24 group">
-        <div class="w-full md:w-1/2 order-2 md:order-1 relative">
-          <div class="absolute inset-0 bg-indigo-500/10 blur-3xl rounded-full"></div>
-          <div class="glass-card p-10 relative z-10 border-l-4 border-indigo-500 transition-all duration-700">
-            <h4 class="text-3xl font-heading text-white mb-4 group-hover:text-indigo-300 transition-colors">Soluciones SaaS de Alta Escalabilidad</h4>
-            <p class="text-gray-300 mb-6 font-light leading-relaxed">
-              Desarrollamos soluciones de software como servicio (SaaS) ágiles, rápidas y preparadas para soportar altos volúmenes de usuarios. Optimizamos cada línea de código para brindar una experiencia de usuario sobresaliente.
-            </p>
-            <div class="h-px w-full bg-gradient-to-r from-indigo-500/50 to-transparent mb-6"></div>
-            <h5 class="text-indigo-400 uppercase tracking-widest text-xs font-bold mb-3">Servicio: Rendimiento y Escalabilidad SaaS</h5>
-            <p class="text-gray-400 text-sm">
-              Implementación en infraestructura cloud elástica, optimización de velocidad de carga, diseño de bases de datos de alta velocidad y arquitectura preparada para el crecimiento global de su modelo de negocio.
-            </p>
-          </div>
-        </div>
-        <div class="w-full md:w-1/2 order-1 md:order-2 text-center md:text-left">
-          <div class="text-6xl sm:text-8xl md:text-[10rem] lg:text-[14rem] leading-none font-heading text-indigo-400/22 select-none transition-all duration-700 group-hover:text-indigo-300/70 group-hover:scale-105 drop-shadow-[0_0_30px_rgba(129,140,248,0.25)]">
-            Pegaso
-          </div>
+        <div>
+          <div class="text-[11px] font-bold tracking-[0.16em] uppercase text-white">RESULTADOS</div>
+          <div class="text-[10px] text-gray-400 font-light">Que trascienden</div>
         </div>
       </div>
 
     </div>
+
   </div>
 </section>
