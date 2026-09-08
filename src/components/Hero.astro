@@ -65,7 +65,9 @@
   </div>
 
   <!-- Space subtle lighting without heavy dark blanket overlay -->
-  <div class="absolute inset-0 bg-black/10 pointer-events-none z-0"></div>
+  <div class="absolute inset-0 bg-black/15 pointer-events-none z-0"></div>
+  <!-- Bottom smooth blend to seamless cosmos-dark -->
+  <div class="absolute bottom-0 inset-x-0 h-40 bg-gradient-to-t from-cosmos-dark via-cosmos-dark/60 to-transparent pointer-events-none z-0"></div>
 
   <!-- Left vertical watermark -->
   <div class="hidden xl:flex absolute left-8 top-1/2 -translate-y-1/2 flex-col items-center select-none pointer-events-none z-20">
