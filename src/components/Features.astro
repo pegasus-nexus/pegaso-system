@@ -344,62 +344,127 @@
 
     </div>
 
-    <!-- Barra Inferior de Pilares de Valor (Seguridad, Alto Rendimiento, Escalabilidad, Soluciones) -->
-    <div class="mt-20 pt-10 border-t border-white/[0.06] grid grid-cols-2 md:grid-cols-4 gap-6 items-center">
-      
-      <!-- Seguridad -->
-      <div class="flex items-center gap-3.5 group">
-        <div class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 group-hover:border-sky-400 group-hover:shadow-[0_0_15px_rgba(56,189,248,0.3)] transition-all">
-          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-          </svg>
+    <!-- =========================================================
+         NUESTROS PILARES TÉCNICOS
+         Tecnología que impulsa tu negocio siempre
+         ========================================================= -->
+    <div class="mt-32 pt-20 border-t border-white/[0.08] relative">
+      <!-- Glow ambiental central sutil -->
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-sky-500/[0.04] blur-[100px] rounded-full pointer-events-none -z-0"></div>
+
+      <!-- Encabezado de Pilares Técnicos -->
+      <div class="animate-on-scroll fade-in-up text-center max-w-3xl mx-auto mb-20 relative z-10">
+        <div class="flex items-center justify-center gap-3 mb-4">
+          <div class="w-8 sm:w-12 h-px bg-gradient-to-r from-transparent to-sky-400"></div>
+          <span class="text-sky-400 text-[10px] sm:text-xs font-bold tracking-[0.25em] uppercase text-glow">NUESTROS PILARES TÉCNICOS</span>
+          <div class="w-8 sm:w-12 h-px bg-gradient-to-l from-transparent to-sky-400"></div>
         </div>
-        <div>
-          <div class="text-[11px] font-bold tracking-[0.16em] uppercase text-white">SEGURIDAD</div>
-          <div class="text-[10px] text-gray-400 font-light">En cada proceso</div>
-        </div>
+        
+        <h3 class="text-3xl sm:text-4xl md:text-5xl font-normal font-heading text-white tracking-wide mb-4">
+          Tecnología que impulsa <br/>
+          <span class="font-semibold text-sky-400">tu negocio siempre</span>
+        </h3>
+        
+        <p class="text-gray-300 text-xs sm:text-sm font-light max-w-xl mx-auto leading-relaxed">
+          La infraestructura robusta y los estándares de seguridad que respaldan el funcionamiento estable de nuestras plataformas.
+        </p>
       </div>
 
-      <!-- Alto Rendimiento -->
-      <div class="flex items-center gap-3.5 group">
-        <div class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 group-hover:border-sky-400 group-hover:shadow-[0_0_15px_rgba(56,189,248,0.3)] transition-all">
-          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <circle cx="12" cy="12" r="10"></circle>
-            <polyline points="12 6 12 12 14 14"></polyline>
-          </svg>
+      <!-- Grilla 2x2 de Pilares Técnicos (Diseño fiel al mockup) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-14 max-w-5xl mx-auto relative z-10">
+        
+        <!-- 01. Infraestructura Confiable -->
+        <div class="animate-on-scroll fade-in-up flex items-center gap-6 group">
+          <!-- Gráfico 3D -->
+          <div class="w-28 sm:w-36 shrink-0 relative flex items-center justify-center">
+            <div class="absolute inset-0 bg-sky-500/20 blur-xl rounded-full group-hover:bg-sky-400/40 transition-colors"></div>
+            <img src="/pilar-infraestructura.png" alt="Infraestructura Confiable" class="w-28 sm:w-32 h-auto object-contain relative z-10 drop-shadow-[0_0_20px_rgba(56,189,248,0.5)] group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <!-- Contenido -->
+          <div class="flex-1">
+            <div class="w-8 h-[2px] bg-sky-400 mb-3"></div>
+            <h4 class="text-white font-montserrat font-bold text-base sm:text-lg mb-2 group-hover:text-sky-300 transition-colors">
+              Infraestructura Confiable
+            </h4>
+            <p class="text-gray-400 text-xs sm:text-sm font-light leading-relaxed">
+              Servidores de alto rendimiento, monitoreo 24/7 y respaldos automatizados para garantizar la continuidad de tu negocio.
+            </p>
+          </div>
         </div>
-        <div>
-          <div class="text-[11px] font-bold tracking-[0.16em] uppercase text-white">ALTO RENDIMIENTO</div>
-          <div class="text-[10px] text-gray-400 font-light">Sin interrupciones</div>
+
+        <!-- 02. Protección de Datos y Ciberseguridad -->
+        <div class="animate-on-scroll fade-in-up flex items-center gap-6 group" style="animation-delay: 100ms;">
+          <!-- Gráfico 3D -->
+          <div class="w-28 sm:w-36 shrink-0 relative flex items-center justify-center">
+            <div class="absolute inset-0 bg-sky-500/20 blur-xl rounded-full group-hover:bg-sky-400/40 transition-colors"></div>
+            <img src="/pilar-seguridad.png" alt="Protección de Datos y Ciberseguridad" class="w-28 sm:w-32 h-auto object-contain relative z-10 drop-shadow-[0_0_20px_rgba(56,189,248,0.5)] group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <!-- Contenido -->
+          <div class="flex-1">
+            <div class="w-8 h-[2px] bg-sky-400 mb-3"></div>
+            <h4 class="text-white font-montserrat font-bold text-base sm:text-lg mb-2 group-hover:text-sky-300 transition-colors">
+              Protección de Datos y Ciberseguridad
+            </h4>
+            <p class="text-gray-400 text-xs sm:text-sm font-light leading-relaxed">
+              Protegemos la información sensible de tu empresa con cifrado avanzado, control de accesos y cumplimiento de estándares internacionales (Zero Trust).
+            </p>
+          </div>
         </div>
+
+        <!-- 03. Software Inteligente y Automatización -->
+        <div class="animate-on-scroll fade-in-up flex items-center gap-6 group" style="animation-delay: 200ms;">
+          <!-- Gráfico 3D -->
+          <div class="w-28 sm:w-36 shrink-0 relative flex items-center justify-center">
+            <div class="absolute inset-0 bg-sky-500/20 blur-xl rounded-full group-hover:bg-sky-400/40 transition-colors"></div>
+            <img src="/pilar-software-ia.png" alt="Software Inteligente y Automatización" class="w-28 sm:w-32 h-auto object-contain relative z-10 drop-shadow-[0_0_20px_rgba(56,189,248,0.5)] group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <!-- Contenido -->
+          <div class="flex-1">
+            <div class="w-8 h-[2px] bg-sky-400 mb-3"></div>
+            <h4 class="text-white font-montserrat font-bold text-base sm:text-lg mb-2 group-hover:text-sky-300 transition-colors">
+              Software Inteligente y Automatización
+            </h4>
+            <p class="text-gray-400 text-xs sm:text-sm font-light leading-relaxed">
+              Desarrollamos soluciones a la medida que integran inteligencia artificial y análisis de datos en tiempo real para optimizar tus operaciones.
+            </p>
+          </div>
+        </div>
+
+        <!-- 04. Ecosistema Tecnológico de Alta Velocidad -->
+        <div class="animate-on-scroll fade-in-up flex items-center gap-6 group" style="animation-delay: 300ms;">
+          <!-- Gráfico 3D -->
+          <div class="w-28 sm:w-36 shrink-0 relative flex items-center justify-center">
+            <div class="absolute inset-0 bg-sky-500/20 blur-xl rounded-full group-hover:bg-sky-400/40 transition-colors"></div>
+            <img src="/pilar-ecosistema.png" alt="Ecosistema Tecnológico de Alta Velocidad" class="w-28 sm:w-32 h-auto object-contain relative z-10 drop-shadow-[0_0_20px_rgba(56,189,248,0.5)] group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <!-- Contenido -->
+          <div class="flex-1">
+            <div class="w-8 h-[2px] bg-sky-400 mb-3"></div>
+            <h4 class="text-white font-montserrat font-bold text-base sm:text-lg mb-2 group-hover:text-sky-300 transition-colors">
+              Ecosistema Tecnológico de Alta Velocidad
+            </h4>
+            <p class="text-gray-400 text-xs sm:text-sm font-light leading-relaxed">
+              Conectamos de forma fluida el diseño visual rápido (Frontend) con bases de datos y servidores estables en la nube global. Esto garantiza que tu plataforma crezca contigo, sin límites.
+            </p>
+          </div>
+        </div>
+
       </div>
 
-      <!-- Escalabilidad -->
-      <div class="flex items-center gap-3.5 group">
-        <div class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 group-hover:border-sky-400 group-hover:shadow-[0_0_15px_rgba(56,189,248,0.3)] transition-all">
-          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <path d="M18.178 8c5.096 0 5.096 8 0 8-5.095 0-7.133-8-12.739-8-4.585 0-4.585 8 0 8 5.606 0 7.644-8 12.74-8z"></path>
-          </svg>
+      <!-- Pie sutil con logo e indicador Un mundo de posibilidades -->
+      <div class="mt-20 pt-8 border-t border-white/[0.05] flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+        <div class="flex items-center gap-3">
+          <img src="/logo-pegasus-only.png" alt="Pegasus Nexus Logo" class="h-7 w-auto object-contain drop-shadow-[0_0_8px_rgba(56,189,248,0.6)]" />
+          <div class="flex flex-col leading-tight">
+            <span class="font-montserrat font-black text-xs text-white tracking-[0.16em] uppercase">PEGASUS NEXUS</span>
+            <span class="text-[8px] text-sky-400 font-medium tracking-[0.2em] uppercase">IDEAS QUE CONECTAN REALIDADES</span>
+          </div>
         </div>
-        <div>
-          <div class="text-[11px] font-bold tracking-[0.16em] uppercase text-white">ESCALABILIDAD</div>
-          <div class="text-[10px] text-gray-400 font-light">Para el futuro</div>
-        </div>
-      </div>
 
-      <!-- Soluciones a Tu Medida -->
-      <div class="flex items-center gap-3.5 group">
-        <div class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 group-hover:border-sky-400 group-hover:shadow-[0_0_15px_rgba(56,189,248,0.3)] transition-all">
-          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-            <circle cx="9" cy="7" r="4"></circle>
-            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-          </svg>
-        </div>
-        <div>
-          <div class="text-[11px] font-bold tracking-[0.16em] uppercase text-white">SOLUCIONES</div>
-          <div class="text-[10px] text-gray-400 font-light">A tu medida</div>
+        <div class="flex items-center gap-3 text-[9px] sm:text-[10px] font-mono tracking-[0.25em] text-gray-500 uppercase">
+          <div class="w-8 h-px bg-gradient-to-r from-transparent to-sky-400/50"></div>
+          <span>UN MUNDO DE POSIBILIDADES</span>
+          <div class="w-8 h-px bg-gradient-to-l from-transparent to-sky-400/50"></div>
         </div>
       </div>
 
