@@ -1,364 +1,409 @@
 ---
 ---
-<section id="tecnologia" class="py-24 relative overflow-hidden bg-cosmos-dark border-y border-gray-800">
-  <!-- Watermark Map and Backlight Glows -->
-  <div class="absolute right-[-10%] top-[10%] w-[600px] h-[600px] bg-contain bg-no-repeat opacity-[0.03] pointer-events-none select-none -z-10 mix-blend-screen" style="background-image: url('/wheel.png');"></div>
-  <div class="absolute left-1/4 top-1/4 w-[400px] h-[400px] rounded-full bg-cosmos-blue/10 blur-[120px] pointer-events-none -z-10"></div>
-  <div class="absolute right-1/4 bottom-1/4 w-[400px] h-[400px] rounded-full bg-gold-deep/5 blur-[120px] pointer-events-none -z-10"></div>
+<section id="tecnologia" class="py-28 relative overflow-hidden bg-cosmos-dark border-t border-white/[0.05]">
+  <!-- Continuous subtle ambient glow & Earth horizon curve feel -->
+  <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(14,165,233,0.06),transparent)] pointer-events-none"></div>
+  <div class="absolute bottom-0 inset-x-0 h-96 bg-[radial-gradient(ellipse_100%_50%_at_50%_120%,rgba(14,165,233,0.08),transparent)] pointer-events-none"></div>
 
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
     
-    <!-- Cabecera Limpia -->
-    <div class="animate-on-scroll text-center max-w-4xl mx-auto mb-16">
-      <h2 class="text-gold-deep text-[10px] sm:text-xs font-bold tracking-[0.2em] sm:tracking-[0.3em] uppercase mb-4 text-glow">INGENIERÍA DE SOFTWARE DE ALTO NIVEL</h2>
-      <h3 class="text-3xl md:text-5xl font-normal font-heading mb-6 text-white tracking-wide">Sistemas Digitales <span class="italic text-gold-bright">Estables, Rápidos y Seguros</span></h3>
-      <div class="w-16 h-px bg-gold-deep/50 mx-auto mb-8 shadow-[0_0_10px_rgba(136,192,208,0.8)]"></div>
-      <p class="text-gray-300 text-base md:text-lg font-light leading-relaxed max-w-3xl mx-auto">
+    <!-- Encabezado Central -->
+    <div class="animate-on-scroll fade-in-up text-center max-w-4xl mx-auto mb-20">
+      <div class="flex items-center justify-center gap-3 mb-4">
+        <div class="w-8 sm:w-12 h-px bg-gradient-to-r from-transparent to-sky-400"></div>
+        <span class="text-sky-400 text-[10px] sm:text-xs font-bold tracking-[0.25em] uppercase text-glow">NUESTRAS PLATAFORMAS</span>
+        <div class="w-8 sm:w-12 h-px bg-gradient-to-l from-transparent to-sky-400"></div>
+      </div>
+      
+      <h2 class="text-3xl sm:text-5xl md:text-6xl font-normal font-heading text-white tracking-wide mb-5">
+        Sistemas Digitales <br/>
+        <span class="italic text-sky-400">Estables, Rápidos y Seguros</span>
+      </h2>
+      
+      <p class="text-gray-300 text-xs sm:text-sm md:text-base font-light max-w-2xl mx-auto leading-relaxed">
         Creamos plataformas digitales de alta ingeniería diseñadas para funcionar sin interrupciones, garantizando velocidad extrema y protegiendo la información de su empresa bajo estándares de seguridad avanzados.
       </p>
     </div>
 
-    <!-- Plataformas Especializadas Grid (4 Columnas) -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto mb-20">
+    <!-- Grilla de las 4 Plataformas (Pegasus Retail, Pegasus School, Pegasus BI, Pegasus AI) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
       
-      <!-- Pegasus Retail -->
-      <div class="animate-on-scroll glass-card p-6 flex flex-col justify-between rounded-xl border border-gray-800 relative group overflow-hidden transition-all hover:border-gold-deep/30">
-        <!-- Inside Card Glow -->
-        <div class="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-gold-deep/5 to-transparent pointer-events-none"></div>
+      <!-- 01. Pegasus Retail -->
+      <div class="animate-on-scroll fade-in-up group rounded-3xl p-7 flex flex-col justify-between relative overflow-hidden bg-[#070e1c]/80 border border-sky-500/20 backdrop-blur-md transition-all duration-500 hover:border-sky-400/50 hover:shadow-[0_15px_35px_rgba(14,165,233,0.18)] hover:-translate-y-1.5">
+        <!-- Inside top-right 3D Graphic & ambient glow -->
+        <div class="absolute top-0 right-0 w-36 h-36 pointer-events-none overflow-hidden rounded-tr-3xl">
+          <div class="absolute inset-0 bg-sky-500/10 blur-2xl"></div>
+          <img src="/plataforma-visual-retail.png" alt="Pegasus Retail 3D" class="w-full h-full object-contain object-top-right transition-transform duration-700 group-hover:scale-105" />
+        </div>
+
         <div>
-          <!-- Icon: Storefront / network -->
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-10 h-10 text-gold-deep mb-5 group-hover:text-gold-bright transition-colors" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/>
-            <line x1="9" y1="22" x2="9" y2="16"/>
-            <line x1="15" y1="22" x2="15" y2="16"/>
-            <path d="M20 9H4"/>
-            <circle cx="12" cy="13" r="2.5"/>
-          </svg>
+          <!-- Header de la tarjeta con número e icono -->
+          <div class="flex items-center gap-3 mb-5">
+            <span class="text-xs font-mono font-bold text-gray-500 group-hover:text-sky-400 transition-colors">01</span>
+            <div class="w-6 h-px bg-gray-700 group-hover:bg-sky-500/40 transition-colors"></div>
+          </div>
+
+          <!-- Icono de categoría en caja de cristal -->
+          <div class="w-12 h-12 rounded-xl bg-sky-500/10 border border-sky-500/25 flex items-center justify-center text-sky-400 mb-6 group-hover:border-sky-400 group-hover:shadow-[0_0_15px_rgba(56,189,248,0.3)] transition-all">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="w-6 h-6">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"></path>
+              <rect x="9" y="13" width="6" height="8" rx="1"></rect>
+            </svg>
+          </div>
+
+          <h3 class="text-white font-heading font-semibold text-xl mb-1.5 group-hover:text-sky-300 transition-colors">
+            Pegasus Retail
+          </h3>
           
-          <h4 class="text-xl font-heading text-white mb-2 group-hover:text-gold-bright transition-colors">Pegasus Retail</h4>
-          <p class="text-[11px] text-gold-deep/80 italic font-montserrat font-light mb-4">
-            Para distribuidoras, comercializadoras y empresas de ventas.
+          <p class="text-gray-400 italic text-xs font-light mb-6 leading-relaxed">
+            Para distribuidores, comercializadoras y empresas de ventas.
           </p>
-          
-          <!-- Feature List -->
-          <ul class="space-y-3 border-t border-gray-800 pt-4 mb-6">
-            <li class="flex items-center text-gray-300 font-light text-xs">
-              <span class="text-gold-deep mr-2 text-glow">✦</span>
-              Inventarios
+
+          <!-- Lista de características con iconos dedicados -->
+          <ul class="space-y-3.5 mb-8 border-t border-white/[0.06] pt-5">
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              </svg>
+              <span>Inventarios</span>
             </li>
-            <li class="flex items-center text-gray-300 font-light text-xs">
-              <span class="text-gold-deep mr-2 text-glow">✦</span>
-              Pedidos
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
+              <span>Pedidos</span>
             </li>
-            <li class="flex items-center text-gray-300 font-light text-xs">
-              <span class="text-gold-deep mr-2 text-glow">✦</span>
-              Cobranza
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+              <span>Cobranza</span>
             </li>
-            <li class="flex items-center text-gray-300 font-light text-xs">
-              <span class="text-gold-deep mr-2 text-glow">✦</span>
-              Distribución
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+              <span>Distribución</span>
             </li>
-            <li class="flex items-center text-gray-300 font-light text-xs">
-              <span class="text-gold-deep mr-2 text-glow">✦</span>
-              KPIs
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="6"></circle>
+                <circle cx="12" cy="12" r="2"></circle>
+              </svg>
+              <span>KPIs</span>
             </li>
           </ul>
         </div>
-        
-        <!-- CTA -->
-        <a href="https://wa.me/59179786916?text=Hola%20Pegasus%20Nexus!%20Me%20interesa%20conocer%20m%C3%A1s%20sobre%20Pegasus%20Retail." target="_blank" rel="noopener noreferrer" class="w-full py-2.5 text-center bg-transparent border border-gray-700 text-gray-300 hover:text-white hover:border-gold-deep font-semibold transition-all text-[10px] tracking-widest uppercase cursor-pointer">
-          Consultar Solución
+
+        <!-- Botón Consultar Solución -->
+        <a 
+          href="https://wa.me/59179786916?text=Hola%20Pegasus%20Nexus!%20Deseo%20consultar%20sobre%20la%20soluci%C3%B3n%20Pegasus%20Retail." 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="w-full py-3 px-4 rounded-xl border border-sky-500/30 text-sky-300 hover:text-white hover:bg-sky-500/20 hover:border-sky-400 transition-all text-center text-xs font-bold tracking-[0.14em] uppercase flex items-center justify-center gap-2 group-hover:border-sky-400"
+        >
+          <span>CONSULTAR SOLUCIÓN</span>
+          <span class="text-sm">→</span>
         </a>
       </div>
 
-      <!-- Pegasus School -->
-      <div class="animate-on-scroll glass-card p-6 flex flex-col justify-between rounded-xl border border-gray-800 relative group overflow-hidden transition-all hover:border-gold-deep/30">
-        <!-- Inside Card Glow -->
-        <div class="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-gold-deep/5 to-transparent pointer-events-none"></div>
+      <!-- 02. Pegasus School -->
+      <div class="animate-on-scroll fade-in-up group rounded-3xl p-7 flex flex-col justify-between relative overflow-hidden bg-[#070e1c]/80 border border-indigo-500/20 backdrop-blur-md transition-all duration-500 hover:border-indigo-400/50 hover:shadow-[0_15px_35px_rgba(99,102,241,0.18)] hover:-translate-y-1.5" style="animation-delay: 100ms;">
+        <!-- Inside top-right 3D Graphic & ambient glow -->
+        <div class="absolute top-0 right-0 w-36 h-36 pointer-events-none overflow-hidden rounded-tr-3xl">
+          <div class="absolute inset-0 bg-indigo-500/10 blur-2xl"></div>
+          <img src="/plataforma-visual-school.png" alt="Pegasus School 3D" class="w-full h-full object-contain object-top-right transition-transform duration-700 group-hover:scale-105" />
+        </div>
+
         <div>
-          <!-- Icon: Graduation cap -->
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-10 h-10 text-gold-deep mb-5 group-hover:text-gold-bright transition-colors" xmlns="http://www.w3.org/2000/svg">
-            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
-            <path d="M6 12v5c0 2 2.5 3 6 3s6-1 6-3v-5"/>
-            <circle cx="12" cy="10" r="1.5" fill="currentColor" fill-opacity="0.3"/>
-          </svg>
+          <!-- Header de la tarjeta con número e icono -->
+          <div class="flex items-center gap-3 mb-5">
+            <span class="text-xs font-mono font-bold text-gray-500 group-hover:text-indigo-400 transition-colors">02</span>
+            <div class="w-6 h-px bg-gray-700 group-hover:bg-indigo-500/40 transition-colors"></div>
+          </div>
+
+          <!-- Icono de categoría en caja de cristal -->
+          <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/25 flex items-center justify-center text-indigo-400 mb-6 group-hover:border-indigo-400 group-hover:shadow-[0_0_15px_rgba(99,102,241,0.3)] transition-all">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="w-6 h-6">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c0 2 2.5 3 6 3s6-1 6-3v-5"></path>
+            </svg>
+          </div>
+
+          <h3 class="text-white font-heading font-semibold text-xl mb-1.5 group-hover:text-indigo-300 transition-colors">
+            Pegasus School
+          </h3>
           
-          <h4 class="text-xl font-heading text-white mb-2 group-hover:text-gold-bright transition-colors">Pegasus School</h4>
-          <p class="text-[11px] text-gold-deep/80 italic font-montserrat font-light mb-4">
+          <p class="text-gray-400 italic text-xs font-light mb-6 leading-relaxed">
             Para colegios, institutos y universidades.
           </p>
-          
-          <!-- Feature List -->
-          <ul class="space-y-3 border-t border-gray-800 pt-4 mb-6">
-            <li class="flex items-center text-gray-300 font-light text-xs">
-              <span class="text-gold-deep mr-2 text-glow">✦</span>
-              Gestión académica
+
+          <!-- Lista de características con iconos dedicados -->
+          <ul class="space-y-3.5 mb-8 border-t border-white/[0.06] pt-5">
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-indigo-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+              <span>Gestión académica</span>
             </li>
-            <li class="flex items-center text-gray-300 font-light text-xs">
-              <span class="text-gold-deep mr-2 text-glow">✦</span>
-              Indicadores
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-indigo-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+              <span>Indicadores</span>
             </li>
-            <li class="flex items-center text-gray-300 font-light text-xs">
-              <span class="text-gold-deep mr-2 text-glow">✦</span>
-              Seguimiento estudiantil
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-indigo-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                <polyline points="16 7 22 7 22 13"></polyline>
+              </svg>
+              <span>Seguimiento estudiantil</span>
             </li>
-            <li class="flex items-center text-gray-300 font-light text-xs">
-              <span class="text-gold-deep mr-2 text-glow">✦</span>
-              Reportes
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-indigo-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+              </svg>
+              <span>Reportes</span>
             </li>
           </ul>
         </div>
-        
-        <!-- CTA -->
-        <a href="https://wa.me/59179786916?text=Hola%20Pegasus%20Nexus!%20Me%20interesa%20conocer%20m%C3%A1s%20sobre%20Pegasus%20School." target="_blank" rel="noopener noreferrer" class="w-full py-2.5 text-center bg-transparent border border-gray-700 text-gray-300 hover:text-white hover:border-gold-deep font-semibold transition-all text-[10px] tracking-widest uppercase cursor-pointer">
-          Consultar Solución
+
+        <!-- Botón Consultar Solución -->
+        <a 
+          href="https://wa.me/59179786916?text=Hola%20Pegasus%20Nexus!%20Deseo%20consultar%20sobre%20la%20soluci%C3%B3n%20Pegasus%20School." 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="w-full py-3 px-4 rounded-xl border border-indigo-500/30 text-indigo-300 hover:text-white hover:bg-indigo-500/20 hover:border-indigo-400 transition-all text-center text-xs font-bold tracking-[0.14em] uppercase flex items-center justify-center gap-2 group-hover:border-indigo-400"
+        >
+          <span>CONSULTAR SOLUCIÓN</span>
+          <span class="text-sm">→</span>
         </a>
       </div>
 
-      <!-- Pegasus BI -->
-      <div class="animate-on-scroll glass-card p-6 flex flex-col justify-between rounded-xl border border-gray-800 relative group overflow-hidden transition-all hover:border-gold-deep/30">
-        <!-- Inside Card Glow -->
-        <div class="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-gold-deep/5 to-transparent pointer-events-none"></div>
+      <!-- 03. Pegasus BI -->
+      <div class="animate-on-scroll fade-in-up group rounded-3xl p-7 flex flex-col justify-between relative overflow-hidden bg-[#070e1c]/80 border border-teal-500/20 backdrop-blur-md transition-all duration-500 hover:border-teal-400/50 hover:shadow-[0_15px_35px_rgba(20,184,166,0.18)] hover:-translate-y-1.5" style="animation-delay: 200ms;">
+        <!-- Inside top-right 3D Graphic & ambient glow -->
+        <div class="absolute top-0 right-0 w-36 h-36 pointer-events-none overflow-hidden rounded-tr-3xl">
+          <div class="absolute inset-0 bg-teal-500/10 blur-2xl"></div>
+          <img src="/plataforma-visual-bi.png" alt="Pegasus BI 3D" class="w-full h-full object-contain object-top-right transition-transform duration-700 group-hover:scale-105" />
+        </div>
+
         <div>
-          <!-- Icon: Dashboard / metrics -->
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-10 h-10 text-gold-deep mb-5 group-hover:text-gold-bright transition-colors" xmlns="http://www.w3.org/2000/svg">
-            <rect x="3" y="3" width="18" height="18" rx="2"/>
-            <line x1="9" y1="3" x2="9" y2="21"/>
-            <line x1="9" y1="12" x2="21" y2="12"/>
-            <line x1="6" y1="17" x2="6" y2="10"/>
-            <path d="M12 8l3-3 4 4" stroke-linecap="round"/>
-          </svg>
+          <!-- Header de la tarjeta con número e icono -->
+          <div class="flex items-center gap-3 mb-5">
+            <span class="text-xs font-mono font-bold text-gray-500 group-hover:text-teal-400 transition-colors">03</span>
+            <div class="w-6 h-px bg-gray-700 group-hover:bg-teal-500/40 transition-colors"></div>
+          </div>
+
+          <!-- Icono de categoría en caja de cristal -->
+          <div class="w-12 h-12 rounded-xl bg-teal-500/10 border border-teal-500/25 flex items-center justify-center text-teal-400 mb-6 group-hover:border-teal-400 group-hover:shadow-[0_0_15px_rgba(20,184,166,0.3)] transition-all">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="w-6 h-6">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+          </div>
+
+          <h3 class="text-white font-heading font-semibold text-xl mb-1.5 group-hover:text-teal-300 transition-colors">
+            Pegasus BI
+          </h3>
           
-          <h4 class="text-xl font-heading text-white mb-2 group-hover:text-gold-bright transition-colors">Pegasus BI</h4>
-          <p class="text-[11px] text-gold-deep/80 italic font-montserrat font-light mb-4">
+          <p class="text-gray-400 italic text-xs font-light mb-6 leading-relaxed">
             Centro de inteligencia empresarial.
           </p>
-          
-          <!-- Feature List -->
-          <ul class="space-y-3 border-t border-gray-800 pt-4 mb-6">
-            <li class="flex items-center text-gray-300 font-light text-xs">
-              <span class="text-gold-deep mr-2 text-glow">✦</span>
-              Dashboards
+
+          <!-- Lista de características con iconos dedicados -->
+          <ul class="space-y-3.5 mb-8 border-t border-white/[0.06] pt-5">
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-teal-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                <line x1="3" y1="9" x2="21" y2="9"></line>
+                <line x1="9" y1="21" x2="9" y2="9"></line>
+              </svg>
+              <span>Dashboards</span>
             </li>
-            <li class="flex items-center text-gray-300 font-light text-xs">
-              <span class="text-gold-deep mr-2 text-glow">✦</span>
-              KPIs
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-teal-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+              </svg>
+              <span>KPIs</span>
             </li>
-            <li class="flex items-center text-gray-300 font-light text-xs">
-              <span class="text-gold-deep mr-2 text-glow">✦</span>
-              Analítica avanzada
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-teal-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                <polyline points="16 7 22 7 22 13"></polyline>
+              </svg>
+              <span>Analítica avanzada</span>
             </li>
           </ul>
         </div>
-        
-        <!-- CTA -->
-        <a href="https://wa.me/59179786916?text=Hola%20Pegasus%20Nexus!%20Me%20interesa%20conocer%20m%C3%A1s%20sobre%20Pegasus%20BI." target="_blank" rel="noopener noreferrer" class="w-full py-2.5 text-center bg-transparent border border-gray-700 text-gray-300 hover:text-white hover:border-gold-deep font-semibold transition-all text-[10px] tracking-widest uppercase cursor-pointer">
-          Consultar Solución
+
+        <!-- Botón Consultar Solución -->
+        <a 
+          href="https://wa.me/59179786916?text=Hola%20Pegasus%20Nexus!%20Deseo%20consultar%20sobre%20la%20soluci%C3%B3n%20Pegasus%20BI." 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="w-full py-3 px-4 rounded-xl border border-teal-500/30 text-teal-300 hover:text-white hover:bg-teal-500/20 hover:border-teal-400 transition-all text-center text-xs font-bold tracking-[0.14em] uppercase flex items-center justify-center gap-2 group-hover:border-teal-400"
+        >
+          <span>CONSULTAR SOLUCIÓN</span>
+          <span class="text-sm">→</span>
         </a>
       </div>
 
-      <!-- Pegasus AI -->
-      <div class="animate-on-scroll glass-card p-6 flex flex-col justify-between rounded-xl border border-gray-800 relative group overflow-hidden transition-all hover:border-gold-deep/30">
-        <!-- Inside Card Glow -->
-        <div class="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-gold-deep/5 to-transparent pointer-events-none"></div>
+      <!-- 04. Pegasus AI -->
+      <div class="animate-on-scroll fade-in-up group rounded-3xl p-7 flex flex-col justify-between relative overflow-hidden bg-[#070e1c]/80 border border-purple-500/20 backdrop-blur-md transition-all duration-500 hover:border-purple-400/50 hover:shadow-[0_15px_35px_rgba(168,85,247,0.18)] hover:-translate-y-1.5" style="animation-delay: 300ms;">
+        <!-- Inside top-right 3D Graphic & ambient glow -->
+        <div class="absolute top-0 right-0 w-36 h-36 pointer-events-none overflow-hidden rounded-tr-3xl">
+          <div class="absolute inset-0 bg-purple-500/10 blur-2xl"></div>
+          <img src="/plataforma-visual-ai.png" alt="Pegasus AI 3D" class="w-full h-full object-contain object-top-right transition-transform duration-700 group-hover:scale-105" />
+        </div>
+
         <div>
-          <!-- Icon: AI brain network -->
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-10 h-10 text-gold-deep mb-5 group-hover:text-gold-bright transition-colors" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.9-1M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.9-1"/>
-            <circle cx="6" cy="12" r="1.5" fill="currentColor" stroke="none"/>
-            <circle cx="18" cy="12" r="1.5" fill="currentColor" stroke="none"/>
-            <path d="M6 12h12M12 5h4M8 19h4" stroke-dasharray="2 2"/>
-          </svg>
+          <!-- Header de la tarjeta con número e icono -->
+          <div class="flex items-center gap-3 mb-5">
+            <span class="text-xs font-mono font-bold text-gray-500 group-hover:text-purple-400 transition-colors">04</span>
+            <div class="w-6 h-px bg-gray-700 group-hover:bg-purple-500/40 transition-colors"></div>
+          </div>
+
+          <!-- Icono de categoría en caja de cristal -->
+          <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/25 flex items-center justify-center text-purple-400 mb-6 group-hover:border-purple-400 group-hover:shadow-[0_0_15px_rgba(168,85,247,0.3)] transition-all">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="w-6 h-6">
+              <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+              <rect x="9" y="9" width="6" height="6"></rect>
+              <line x1="9" y1="1" x2="9" y2="4"></line>
+              <line x1="15" y1="1" x2="15" y2="4"></line>
+              <line x1="9" y1="20" x2="9" y2="23"></line>
+              <line x1="15" y1="20" x2="15" y2="23"></line>
+              <line x1="20" y1="9" x2="23" y2="9"></line>
+              <line x1="20" y1="14" x2="23" y2="14"></line>
+              <line x1="1" y1="9" x2="4" y2="9"></line>
+              <line x1="1" y1="14" x2="4" y2="14"></line>
+            </svg>
+          </div>
+
+          <h3 class="text-white font-heading font-semibold text-xl mb-1.5 group-hover:text-purple-300 transition-colors">
+            Pegasus AI
+          </h3>
           
-          <h4 class="text-xl font-heading text-white mb-2 group-hover:text-gold-bright transition-colors">Pegasus AI</h4>
-          <p class="text-[11px] text-gold-deep/80 italic font-montserrat font-light mb-4">
+          <p class="text-gray-400 italic text-xs font-light mb-6 leading-relaxed">
             Automatización e inteligencia artificial.
           </p>
-          
-          <!-- Feature List -->
-          <ul class="space-y-3 border-t border-gray-800 pt-4 mb-6">
-            <li class="flex items-center text-gray-300 font-light text-xs">
-              <span class="text-gold-deep mr-2 text-glow">✦</span>
-              Chatbots
+
+          <!-- Lista de características con iconos dedicados -->
+          <ul class="space-y-3.5 mb-8 border-t border-white/[0.06] pt-5">
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-purple-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+              </svg>
+              <span>Chatbots</span>
             </li>
-            <li class="flex items-center text-gray-300 font-light text-xs">
-              <span class="text-gold-deep mr-2 text-glow">✦</span>
-              Agentes IA
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-purple-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span>Agentes IA</span>
             </li>
-            <li class="flex items-center text-gray-300 font-light text-xs">
-              <span class="text-gold-deep mr-2 text-glow">✦</span>
-              Automatización de soluciones
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-purple-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+              <span>Automatización de soluciones</span>
             </li>
           </ul>
         </div>
-        
-        <!-- CTA -->
-        <a href="https://wa.me/59179786916?text=Hola%20Pegasus%20Nexus!%20Me%20interesa%20conocer%20m%C3%A1s%20sobre%20Pegasus%20AI." target="_blank" rel="noopener noreferrer" class="w-full py-2.5 text-center bg-transparent border border-gray-700 text-gray-300 hover:text-white hover:border-gold-deep font-semibold transition-all text-[10px] tracking-widest uppercase cursor-pointer">
-          Consultar Solución
+
+        <!-- Botón Consultar Solución -->
+        <a 
+          href="https://wa.me/59179786916?text=Hola%20Pegasus%20Nexus!%20Deseo%20consultar%20sobre%20la%20soluci%C3%B3n%20Pegasus%20AI." 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="w-full py-3 px-4 rounded-xl border border-purple-500/30 text-purple-300 hover:text-white hover:bg-purple-500/20 hover:border-purple-400 transition-all text-center text-xs font-bold tracking-[0.14em] uppercase flex items-center justify-center gap-2 group-hover:border-purple-400"
+        >
+          <span>CONSULTAR SOLUCIÓN</span>
+          <span class="text-sm">→</span>
         </a>
       </div>
 
     </div>
 
-    <!-- Separador y Subtítulo de Pilares -->
-    <div class="animate-on-scroll text-center max-w-3xl mx-auto mb-12 mt-10">
-      <h4 class="text-lg md:text-xl font-normal font-heading text-white tracking-wide">Nuestros Pilares Técnicos y Arquitectura</h4>
-      <div class="w-12 h-px bg-gold-deep/30 mx-auto mt-4 mb-6"></div>
-      <p class="text-gray-400 text-xs sm:text-sm font-light max-w-xl mx-auto">
-        La infraestructura robusta y los estándares de seguridad que respaldan el funcionamiento estable de nuestras plataformas.
-      </p>
+    <!-- Barra Inferior de Pilares de Valor (Seguridad, Alto Rendimiento, Escalabilidad, Soluciones) -->
+    <div class="mt-20 pt-10 border-t border-white/[0.06] grid grid-cols-2 md:grid-cols-4 gap-6 items-center">
+      
+      <!-- Seguridad -->
+      <div class="flex items-center gap-3.5 group">
+        <div class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 group-hover:border-sky-400 group-hover:shadow-[0_0_15px_rgba(56,189,248,0.3)] transition-all">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+        </div>
+        <div>
+          <div class="text-[11px] font-bold tracking-[0.16em] uppercase text-white">SEGURIDAD</div>
+          <div class="text-[10px] text-gray-400 font-light">En cada proceso</div>
+        </div>
+      </div>
+
+      <!-- Alto Rendimiento -->
+      <div class="flex items-center gap-3.5 group">
+        <div class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 group-hover:border-sky-400 group-hover:shadow-[0_0_15px_rgba(56,189,248,0.3)] transition-all">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 14 14"></polyline>
+          </svg>
+        </div>
+        <div>
+          <div class="text-[11px] font-bold tracking-[0.16em] uppercase text-white">ALTO RENDIMIENTO</div>
+          <div class="text-[10px] text-gray-400 font-light">Sin interrupciones</div>
+        </div>
+      </div>
+
+      <!-- Escalabilidad -->
+      <div class="flex items-center gap-3.5 group">
+        <div class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 group-hover:border-sky-400 group-hover:shadow-[0_0_15px_rgba(56,189,248,0.3)] transition-all">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M18.178 8c5.096 0 5.096 8 0 8-5.095 0-7.133-8-12.739-8-4.585 0-4.585 8 0 8 5.606 0 7.644-8 12.74-8z"></path>
+          </svg>
+        </div>
+        <div>
+          <div class="text-[11px] font-bold tracking-[0.16em] uppercase text-white">ESCALABILIDAD</div>
+          <div class="text-[10px] text-gray-400 font-light">Para el futuro</div>
+        </div>
+      </div>
+
+      <!-- Soluciones a Tu Medida -->
+      <div class="flex items-center gap-3.5 group">
+        <div class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 group-hover:border-sky-400 group-hover:shadow-[0_0_15px_rgba(56,189,248,0.3)] transition-all">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+        </div>
+        <div>
+          <div class="text-[11px] font-bold tracking-[0.16em] uppercase text-white">SOLUCIONES</div>
+          <div class="text-[10px] text-gray-400 font-light">A tu medida</div>
+        </div>
+      </div>
+
     </div>
 
-    <!-- Bento Grid Layout: Compact & Clean -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 max-w-5xl mx-auto">
-      
-      <!-- Card 1: Alta Disponibilidad (lg:col-span-5) -->
-      <div class="animate-on-scroll lg:col-span-5 glass-card p-6 flex flex-col justify-between rounded-xl border border-gray-800 relative group overflow-hidden transition-all hover:border-gold-deep/30">
-        <!-- Inside Card Glow -->
-        <div class="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-gold-deep/5 to-transparent pointer-events-none"></div>
-
-        <!-- Diagrama SVG Explicativo (Grande, Centrado, Brillante y Compacto) -->
-        <div class="w-full flex items-center justify-center py-2 mb-2">
-          <svg viewBox="0 0 300 80" fill="none" stroke="currentColor" stroke-width="1.6" class="w-full max-w-[280px] h-20 sm:h-24 text-gray-300 group-hover:text-emerald-400 transition-colors">
-            <!-- Server A -->
-            <rect x="25" y="10" width="60" height="25" rx="3" fill="currentColor" fill-opacity="0.08" />
-            <circle cx="37" cy="22" r="2.5" fill="currentColor" />
-            <line x1="47" y1="22" x2="75" y2="22" />
-            <text x="55" y="52" fill="#E2E8F0" stroke="none" font-size="8.5" font-family="sans-serif" text-anchor="middle" class="font-medium tracking-wide">Servidor Principal</text>
-
-            <!-- Enlace Redundante -->
-            <path d="M95 22 h110" stroke-dasharray="3 3" />
-            <path d="M152 18 l6 4-6 4" fill="currentColor" stroke="none" />
-            <text x="150" y="14" fill="#94A3B8" stroke="none" font-size="6.5" font-family="sans-serif" text-anchor="middle" class="tracking-wider uppercase">Auto-Soporte</text>
-
-            <!-- Server B (Backup) -->
-            <rect x="215" y="10" width="60" height="25" rx="3" fill="currentColor" fill-opacity="0.08" />
-            <circle cx="227" cy="22" r="2.5" fill="currentColor" />
-            <line x1="237" y1="22" x2="265" y2="22" />
-            <text x="245" y="52" fill="#E2E8F0" stroke="none" font-size="8.5" font-family="sans-serif" text-anchor="middle" class="font-medium tracking-wide">Respaldo Activo</text>
-          </svg>
-        </div>
-
-        <!-- Card Text -->
-        <div class="text-left relative z-10">
-          <h4 class="text-base font-heading font-semibold text-white mb-2 text-glow">Sistemas que Nunca se Caen</h4>
-          <p class="text-gray-400 text-xs sm:text-sm font-light leading-relaxed">
-            Si un servidor principal falla, un sistema de respaldo entra en acción al instante. Su plataforma sigue activa las 24 horas del día, asegurando ventas continuas y cero interrupciones.
-          </p>
-        </div>
-      </div>
-      
-      <!-- Card 2: Ciberseguridad (lg:col-span-7) -->
-      <div class="animate-on-scroll lg:col-span-7 glass-card p-6 flex flex-col justify-between rounded-xl border border-gray-800 relative group overflow-hidden transition-all hover:border-cosmos-blue/30">
-        <!-- Inside Card Glow -->
-        <div class="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-cosmos-blue/10 to-transparent pointer-events-none"></div>
-
-        <!-- Diagrama SVG Explicativo (Grande, Centrado, Brillante y Compacto) -->
-        <div class="w-full flex items-center justify-center py-2 mb-2">
-          <svg viewBox="0 0 300 80" fill="none" stroke="currentColor" stroke-width="1.6" class="w-full max-w-[320px] h-20 sm:h-24 text-gray-300 group-hover:text-cosmos-blue transition-colors">
-            <!-- Data Node -->
-            <circle cx="55" cy="22" r="14" fill="currentColor" fill-opacity="0.08" />
-            <!-- Padlock visual inside circle -->
-            <path d="M51 20 h8 v6 h-8 z" />
-            <path d="M53 20 v-3 a2 2 0 0 1 4 0 v3" />
-            <text x="55" y="52" fill="#E2E8F0" stroke="none" font-size="8.5" font-family="sans-serif" text-anchor="middle" class="font-medium tracking-wide">Datos Protegidos</text>
-            
-            <!-- Firewall Barrier -->
-            <path d="M150 8 v28" stroke-dasharray="2 2" />
-            <text x="150" y="52" fill="#94A3B8" stroke="none" font-size="6.5" font-family="sans-serif" text-anchor="middle" class="tracking-wider uppercase">Filtro Zero-Trust</text>
-            
-            <!-- Shield -->
-            <path d="M225 20 c0-6 10-10 20-10 s20 4 20 10 c0 18-10 28-20 33 c-10-5-20-15-20-33 z" fill="currentColor" fill-opacity="0.08" />
-            <path d="M237 26 l6 6 l10-10" stroke-width="2.2" />
-            <text x="245" y="52" fill="#E2E8F0" stroke="none" font-size="8.5" font-family="sans-serif" text-anchor="middle" class="font-medium tracking-wide">Protección Activa</text>
-
-            <!-- Arrows connecting -->
-            <path d="M75 22 h65 M160 22 h58" />
-          </svg>
-        </div>
-
-        <!-- Card Text -->
-        <div class="text-left relative z-10">
-          <h4 class="text-base font-heading font-semibold text-white mb-2 text-glow">Protección de Datos y Ciberseguridad</h4>
-          <p class="text-gray-400 text-xs sm:text-sm font-light leading-relaxed">
-            Protegemos la información sensible de su empresa y de sus clientes contra accesos no autorizados. Implementamos encriptación avanzada y blindaje de red (Zero Trust) de nivel bancario.
-          </p>
-        </div>
-      </div>
-      
-      <!-- Card 3: SaaS Inteligente (lg:col-span-7) -->
-      <div class="animate-on-scroll lg:col-span-7 glass-card p-6 flex flex-col justify-between rounded-xl border border-gray-800 relative group overflow-hidden transition-all hover:border-cosmos-blue/30">
-        <!-- Inside Card Glow -->
-        <div class="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-cosmos-blue/10 to-transparent pointer-events-none"></div>
-
-        <!-- Diagrama SVG Explicativo (Grande, Centrado, Brillante y Compacto) -->
-        <div class="w-full flex items-center justify-center py-2 mb-2">
-          <svg viewBox="0 0 300 80" fill="none" stroke="currentColor" stroke-width="1.6" class="w-full max-w-[320px] h-20 sm:h-24 text-gray-300 group-hover:text-amber-400 transition-colors">
-            <!-- Data Input -->
-            <rect x="25" y="10" width="60" height="24" rx="3" fill="currentColor" fill-opacity="0.08" />
-            <line x1="35" y1="22" x2="75" y2="22" stroke-width="2" />
-            <text x="55" y="52" fill="#E2E8F0" stroke="none" font-size="8.5" font-family="sans-serif" text-anchor="middle" class="font-medium tracking-wide">Datos de Ventas</text>
-            
-            <!-- IA Processing Node -->
-            <circle cx="150" cy="22" r="12" stroke-dasharray="2 2" />
-            <!-- Small stars to represent AI spark -->
-            <path d="M148 20l2 2 2-2-2-2z M152 26l1 1 1-1-1-1z" fill="currentColor" stroke="none" />
-            <text x="150" y="52" fill="#E2E8F0" stroke="none" font-size="8.5" font-family="sans-serif" text-anchor="middle" class="font-medium tracking-wide">Procesamiento IA</text>
-
-            <!-- Output Dashboard -->
-            <rect x="215" y="10" width="60" height="24" rx="3" fill="currentColor" fill-opacity="0.08" stroke-width="1.5" />
-            <path d="M225 26 l10-8 l6 4 l12-10" stroke-width="1.8" />
-            <text x="245" y="52" fill="#E2E8F0" stroke="none" font-size="8.5" font-family="sans-serif" text-anchor="middle" class="font-medium tracking-wide">Gráficos y Reportes</text>
-            
-            <!-- Connection arrows -->
-            <path d="M90 22 h48 M162 22 h48" />
-          </svg>
-        </div>
-
-        <!-- Card Text -->
-        <div class="text-left relative z-10">
-          <h4 class="text-base font-heading font-semibold text-white mb-2 text-glow">Software Inteligente y Automatización</h4>
-          <p class="text-gray-400 text-xs sm:text-sm font-light leading-relaxed">
-            Desarrollamos aplicaciones a la medida que simplifican las tareas diarias de su empresa. Integramos Inteligencia Artificial y análisis de datos en tiempo real para optimizar sus operaciones.
-          </p>
-        </div>
-      </div>
-      
-      <!-- Card 4: Ecosistema Tecnológico (lg:col-span-5) -->
-      <div class="animate-on-scroll lg:col-span-5 glass-card p-6 flex flex-col justify-between rounded-xl border border-gray-800 relative group overflow-hidden transition-all hover:border-gold-deep/30">
-        <!-- Inside Card Glow -->
-        <div class="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-gold-deep/5 to-transparent pointer-events-none"></div>
-
-        <!-- Diagrama SVG Explicativo (Grande, Centrado, Brillante y Compacto) -->
-        <div class="w-full flex items-center justify-center py-2 mb-2">
-          <svg viewBox="0 0 300 80" fill="none" stroke="currentColor" stroke-width="1.6" class="w-full max-w-[280px] h-20 sm:h-24 text-gray-300 group-hover:text-indigo-400 transition-colors">
-            <!-- Device -->
-            <rect x="35" y="8" width="40" height="28" rx="2" fill="currentColor" fill-opacity="0.08" />
-            <line x1="55" y1="32" x2="55" y2="32" stroke-width="2" />
-            <text x="55" y="52" fill="#E2E8F0" stroke="none" font-size="8.5" font-family="sans-serif" text-anchor="middle" class="font-medium tracking-wide">Diseño Frontend</text>
-
-            <!-- Lightning / Speed Arrow -->
-            <path d="M142 16 l12 0-4 8 12-10-12 0 4-8z" fill="currentColor" stroke="none" />
-            <text x="150" y="52" fill="#94A3B8" stroke="none" font-size="6.5" font-family="sans-serif" text-anchor="middle" class="tracking-wider uppercase">Carga Inmediata</text>
-            
-            <!-- Cloud Database -->
-            <path d="M225 28 c-3-2-3-8 1-10 c1-4 6-6 10-4 c2-2 7-2 9 1 c3-1 7 2 6 6 c2 1 2 6-1 7 z" fill="currentColor" fill-opacity="0.08" />
-            <text x="245" y="52" fill="#E2E8F0" stroke="none" font-size="8.5" font-family="sans-serif" text-anchor="middle" class="font-medium tracking-wide">Nube de Datos</text>
-            
-            <!-- Connections -->
-            <path d="M80 22 h48 M168 22 h50" stroke-dasharray="2 2" />
-          </svg>
-        </div>
-
-        <!-- Card Text -->
-        <div class="text-left relative z-10">
-          <h4 class="text-base font-heading font-semibold text-white mb-2 text-glow">Ecosistema Tecnológico de Alta Velocidad</h4>
-          <p class="text-gray-400 text-xs sm:text-sm font-light leading-relaxed">
-            Conectamos de forma fluida el diseño visual rápido (Frontend) con bases de datos y servidores estables en la nube global. Esto garantiza que su web cargue de inmediato.
-          </p>
-        </div>
-      </div>
-      
-    </div>
   </div>
 </section>
