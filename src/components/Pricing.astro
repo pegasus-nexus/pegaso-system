@@ -1,190 +1,478 @@
 ---
 ---
-<section id="paquetes" class="py-24 relative overflow-hidden bg-cosmos-dark border-t border-gray-800">
-  <div class="absolute inset-0 bg-stars opacity-30"></div>
+<section id="paquetes" class="py-28 relative overflow-hidden bg-cosmos-dark border-t border-white/[0.05]">
+  <!-- Subtle continuous ambient glow -->
+  <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(14,165,233,0.06),transparent)] pointer-events-none"></div>
+  <div class="absolute bottom-0 inset-x-0 h-96 bg-[radial-gradient(ellipse_100%_50%_at_50%_120%,rgba(14,165,233,0.08),transparent)] pointer-events-none"></div>
+
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-    <div class="animate-on-scroll text-center max-w-3xl mx-auto mb-20">
-      <h2 class="text-gold-deep text-xs font-bold tracking-[0.3em] uppercase mb-4 text-glow">Nuestros Planos de Solución</h2>
-      <h3 class="text-3xl md:text-5xl font-normal font-heading mb-6 text-white tracking-wide">Modelos de <span class="italic text-gold-bright">Arquitectura Digital</span></h3>
-      <div class="w-16 h-px bg-gold-deep/50 mx-auto shadow-[0_0_10px_rgba(136,192,208,0.8)]"></div>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    
+    <!-- Encabezado con nuestro estilo estándar unificado -->
+    <div class="animate-on-scroll fade-in-up text-center max-w-4xl mx-auto mb-20">
+      <div class="flex items-center justify-center gap-3 mb-4">
+        <div class="w-8 sm:w-12 h-px bg-gradient-to-r from-transparent to-sky-400"></div>
+        <span class="text-sky-400 text-[10px] sm:text-xs font-bold tracking-[0.25em] uppercase text-glow">NUESTROS PLANOS DE SOLUCIÓN</span>
+        <div class="w-8 sm:w-12 h-px bg-gradient-to-l from-transparent to-sky-400"></div>
+      </div>
       
-      <!-- PLAN FUNDACIÓN (WEB & LANDING) -->
-      <div class="animate-on-scroll glass-card p-10 flex flex-col transition-all duration-500 rounded-none relative group">
-        <!-- Icono Libra (Balanza) en SVG elegante y minimalista -->
-        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5" class="w-16 h-16 text-gold-deep mb-6 mx-auto opacity-80 group-hover:opacity-100 transition-opacity">
-          <!-- Top decorative Star -->
-          <path d="M50 12l2 4 4 2-4 2-2 4-2-4-4-2 4-2z" fill="currentColor" stroke="none" />
-          <!-- Horizontal balance beam -->
-          <line x1="20" y1="35" x2="80" y2="35" stroke="currentColor" stroke-width="2" />
-          <!-- Center vertical pillar -->
-          <line x1="50" y1="20" x2="50" y2="80" stroke="currentColor" stroke-dasharray="2 3" />
-          <!-- Left scale strings and pan -->
-          <line x1="20" y1="35" x2="15" y2="60" />
-          <line x1="20" y1="35" x2="25" y2="60" />
-          <path d="M10 60h20l-3 6h-14z" fill="currentColor" fill-opacity="0.1" />
-          <!-- Right scale strings and pan -->
-          <line x1="80" y1="35" x2="75" y2="60" />
-          <line x1="80" y1="35" x2="85" y2="60" />
-          <path d="M70 60h20l-3 6h-14z" fill="currentColor" fill-opacity="0.1" />
-          <!-- Stand base -->
-          <path d="M35 80h30" stroke-width="2" />
-          <!-- Zodiac Glyph of Libra -->
-          <path d="M42 70h16 M42 74c2-4 14-4 16 0" />
-        </svg>
+      <h2 class="text-3xl sm:text-5xl md:text-6xl font-normal font-heading text-white tracking-wide mb-5">
+        Arquitecturas digitales <br/>
+        <span class="italic text-sky-400">para cada etapa de tu crecimiento</span>
+      </h2>
+      
+      <p class="text-gray-300 text-xs sm:text-sm md:text-base font-light max-w-2xl mx-auto leading-relaxed">
+        Soluciones flexibles y personalizables que se adaptan a tus objetivos, desde una presencia digital hasta ecosistemas empresariales completos.
+      </p>
+    </div>
 
-        <div class="mb-4 text-gray-400 font-bold tracking-[0.2em] text-xs uppercase border-b border-gray-700 pb-2">Plan Fundación</div>
-        <div class="text-3xl font-heading text-white mb-6 group-hover:text-gold-bright transition-colors">Web & Landing</div>
-        
-        <p class="text-gray-300 mb-6 font-light leading-relaxed text-sm">
-          Presencia digital optimizada y de alto impacto. Soluciones diseñadas para consolidar su marca de manera profesional y veloz.
-        </p>
+    <!-- Grilla de los 4 Planes (Web & Landing, Software a tu medida, Ecosistema Empresarial, Infraestructura sin límites) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch mb-16">
+      
+      <!-- 01. PLAN FUNDACIÓN: Web & Landing -->
+      <div class="animate-on-scroll fade-in-up group rounded-3xl p-7 flex flex-col justify-between relative overflow-hidden bg-[#070e1c]/80 border border-sky-500/20 backdrop-blur-md transition-all duration-500 hover:border-sky-400/50 hover:shadow-[0_15px_35px_rgba(14,165,233,0.18)] hover:-translate-y-1.5">
+        <div>
+          <!-- Icono & Tag de Plan -->
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/25 flex items-center justify-center text-sky-400 group-hover:border-sky-400 group-hover:shadow-[0_0_15px_rgba(56,189,248,0.3)] transition-all">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-5 h-5">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <span class="text-[10px] font-mono font-bold tracking-[0.18em] uppercase text-gray-400 group-hover:text-sky-400 transition-colors">
+              PLAN FUNDACIÓN
+            </span>
+          </div>
 
-        <div class="bg-cosmos-dark/40 border border-gray-800 p-4 mb-6 rounded">
-          <div class="text-gold-deep text-xs font-bold uppercase tracking-wider mb-1">Enfoque Técnico</div>
-          <p class="text-gray-400 text-xs font-light leading-relaxed">
-            JAMstack (Astro/Tailwind) para rendimiento crítico y tiempos de carga ultrarrápidos, ideal para posicionamiento y vitrina corporativa.
+          <h3 class="text-white font-heading font-semibold text-2xl mb-3 group-hover:text-sky-300 transition-colors">
+            Web & Landing
+          </h3>
+          
+          <p class="text-gray-400 text-xs font-light mb-6 leading-relaxed">
+            La base ideal para iniciar tu crecimiento con una presencia digital profesional, rápida y segura.
           </p>
+
+          <!-- Lista de características -->
+          <ul class="space-y-3.5 mb-8 border-t border-white/[0.06] pt-5">
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+              <span>Sitios web y landing pages</span>
+            </li>
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+              <span>Diseño UI/UX responsive</span>
+            </li>
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+              <span>Optimización SEO básica</span>
+            </li>
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="18" cy="5" r="3"></circle>
+                <circle cx="6" cy="12" r="3"></circle>
+                <circle cx="18" cy="19" r="3"></circle>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+              </svg>
+              <span>Integración con redes sociales</span>
+            </li>
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+              <span>Soporte inicial</span>
+            </li>
+          </ul>
         </div>
 
-        <ul class="space-y-4 mb-10 border-t border-gray-800 pt-6 flex-grow">
-          <li class="flex items-start text-gray-300 font-light text-sm">
-            <span class="text-gold-deep mr-3 mt-1 text-glow">✦</span>
-            Arquitectura optimizada (SSG para velocidad).
-          </li>
-          <li class="flex items-start text-gray-300 font-light text-sm">
-            <span class="text-gold-deep mr-3 mt-1 text-glow">✦</span>
-            Diseño Responsivo Premium (Mobile-first).
-          </li>
-          <li class="flex items-start text-gray-300 font-light text-sm">
-            <span class="text-gold-deep mr-3 mt-1 text-glow">✦</span>
-            Optimización SEO Básica y estructuración de meta-etiquetas para indexación avanzada.
-          </li>
-        </ul>
-
-        <a href="https://wa.me/59179786916?text=Hola%20Pegaso%20System!%20Me%20interesa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20Plan%20Fundaci%C3%B3n%20(Web%20%26%20Landing)." target="_blank" rel="noopener noreferrer" class="w-full py-4 text-center border border-gray-600 text-gray-300 hover:text-white hover:border-gold-deep font-semibold transition-colors text-xs tracking-widest uppercase cursor-pointer">
-          Solicitar Plan Fundación
+        <!-- Botón Comenzar Ahora -->
+        <a 
+          href="https://wa.me/59179786916?text=Hola%20Pegasus%20Nexus!%20Deseo%20iniciar%20con%20el%20Plan%20Fundaci%C3%B3n%20(Web%20%26%20Landing)." 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="w-full py-3 px-4 rounded-xl border border-sky-500/30 text-sky-300 hover:text-white hover:bg-sky-500/20 hover:border-sky-400 transition-all text-center text-xs font-bold tracking-[0.14em] uppercase flex items-center justify-center gap-2 group-hover:border-sky-400 cursor-pointer"
+        >
+          <span>COMENZAR AHORA</span>
+          <span class="text-sm">→</span>
         </a>
       </div>
 
-      <!-- PLAN SAAS INTEGRAL (DESTACADO) -->
-      <div class="animate-on-scroll glass-card p-10 flex flex-col transition-all duration-500 border-t-2 border-gold-bright relative transform md:-translate-y-4 rounded-none shadow-[0_0_30px_rgba(136,192,208,0.2)] z-10 group">
-        <div class="absolute top-0 inset-x-0 h-[2px] bg-gold-bright shadow-[0_0_15px_rgba(229,233,240,0.8)]"></div>
-        <div class="absolute -top-3 right-8 bg-gold-bright text-cosmos-dark text-[10px] font-bold px-3 py-1 uppercase tracking-widest shadow-[0_0_10px_rgba(229,233,240,0.5)]">Destacado</div>
-        
-        <!-- Icono Leo (León) en SVG elegante -->
-        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5" class="w-16 h-16 text-gold-bright mb-6 mx-auto opacity-95 transition-all drop-shadow-[0_0_12px_rgba(255,255,255,0.3)]">
-          <!-- Lion head shape -->
-          <path d="M50 15 L25 35 L30 60 L50 85 L70 60 L75 35 Z" stroke-width="2" fill="currentColor" fill-opacity="0.05" />
-          <!-- Inner geometry -->
-          <line x1="50" y1="15" x2="50" y2="85" stroke-dasharray="1 3" />
-          <line x1="25" y1="35" x2="75" y2="35" />
-          <line x1="30" y1="60" x2="70" y2="60" />
-          <path d="M35 35 L50 50 L65 35" />
-          <path d="M50 50 L50 70 M42 60 L50 70 L58 60" />
-          <!-- Stars -->
-          <circle cx="50" cy="15" r="2.5" fill="#FFF" />
-          <circle cx="25" cy="35" r="2.5" fill="#FFF" />
-          <circle cx="75" cy="35" r="2.5" fill="#FFF" />
-          <circle cx="50" cy="50" r="2" fill="#FFF" />
-          <circle cx="50" cy="85" r="2.5" fill="#FFF" />
-        </svg>
+      <!-- 02. PLAN COMPLETO: Software a tu medida -->
+      <div class="animate-on-scroll fade-in-up group rounded-3xl p-7 flex flex-col justify-between relative overflow-hidden bg-[#070e1c]/80 border border-sky-500/20 backdrop-blur-md transition-all duration-500 hover:border-sky-400/50 hover:shadow-[0_15px_35px_rgba(14,165,233,0.18)] hover:-translate-y-1.5" style="animation-delay: 100ms;">
+        <div>
+          <!-- Icono & Tag de Plan -->
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/25 flex items-center justify-center text-sky-400 group-hover:border-sky-400 group-hover:shadow-[0_0_15px_rgba(56,189,248,0.3)] transition-all">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-5 h-5">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <span class="text-[10px] font-mono font-bold tracking-[0.18em] uppercase text-gray-400 group-hover:text-sky-400 transition-colors">
+              PLAN COMPLETO
+            </span>
+          </div>
 
-        <div class="mb-4 text-gold-bright font-bold tracking-[0.2em] text-xs uppercase border-b border-gold-deep/30 pb-2">Plan SaaS Integral</div>
-        <div class="text-4xl font-heading text-white mb-6 text-glow">SaaS Completo</div>
-        
-        <p class="text-gray-200 mb-6 font-light leading-relaxed text-sm">
-          Solución integral de software empresarial. Sistemas robustos con arquitectura escalable, bases de datos optimizadas y paneles de administración a medida.
-        </p>
-
-        <div class="bg-cosmos-dark/60 border border-gold-deep/20 p-4 mb-6 rounded shadow-[0_0_10px_rgba(255,255,255,0.05)]">
-          <div class="text-gold-bright text-xs font-bold uppercase tracking-wider mb-1">Enfoque Técnico</div>
-          <p class="text-gray-300 text-xs font-light leading-relaxed">
-            Desarrollo full-stack (React/Angular/Astro + Backend Custom y DB Híbridas) para digitalización de procesos operativos complejos (POS, Inventarios, E-commerce).
+          <h3 class="text-white font-heading font-semibold text-2xl mb-3 group-hover:text-sky-300 transition-colors">
+            Software a tu medida
+          </h3>
+          
+          <p class="text-gray-400 text-xs font-light mb-6 leading-relaxed">
+            Soluciones personalizadas y escalables para digitalizar, automatizar y optimizar tu negocio, sin depender de Odoo.
           </p>
+
+          <!-- Lista de características -->
+          <ul class="space-y-3.5 mb-8 border-t border-white/[0.06] pt-5">
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+              </svg>
+              <span>Desarrollo de aplicaciones web</span>
+            </li>
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+              <span>Automatización de procesos</span>
+            </li>
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+              <span>Business Intelligence y reportes</span>
+            </li>
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+              </svg>
+              <span>Integración con sistemas externos</span>
+            </li>
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="3" y1="9" x2="21" y2="9"></line>
+                <line x1="9" y1="21" x2="9" y2="9"></line>
+              </svg>
+              <span>Paneles de administración</span>
+            </li>
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+              </svg>
+              <span>Soporte y mantenimiento continuo</span>
+            </li>
+          </ul>
         </div>
 
-        <ul class="space-y-4 mb-10 border-t border-gold-deep/20 pt-6 flex-grow">
-          <li class="flex items-start text-gray-300 font-light text-sm">
-            <span class="text-gold-bright mr-3 mt-1 text-glow">✦</span>
-            Aplicación Web interactiva (SPA) de alto rendimiento.
-          </li>
-          <li class="flex items-start text-gray-300 font-light text-sm">
-            <span class="text-gold-bright mr-3 mt-1 text-glow">✦</span>
-            Seguridad de grado empresarial (JWT/OAuth) y gestión de roles avanzada.
-          </li>
-          <li class="flex items-start text-gray-300 font-light text-sm">
-            <span class="text-gold-bright mr-3 mt-1 text-glow">✦</span>
-            Integración fluida de Pasarelas de Pago y consumo de APIs de terceros.
-          </li>
-        </ul>
-
-        <a href="https://wa.me/59179786916?text=Hola%20Pegaso%20System!%20Me%20interesa%20iniciar%20un%20proyecto%20con%20el%20Plan%20SaaS%20Integral." target="_blank" rel="noopener noreferrer" class="w-full py-4 text-center bg-transparent border border-gold-bright text-gold-bright hover:bg-gold-bright hover:text-cosmos-dark font-bold transition-all text-xs tracking-widest uppercase shadow-[0_0_15px_rgba(229,233,240,0.2)] cursor-pointer">
-          Iniciar Proyecto SaaS
+        <!-- Botón Solicitar Plan Completo -->
+        <a 
+          href="https://wa.me/59179786916?text=Hola%20Pegasus%20Nexus!%20Deseo%20solicitar%20el%20Plan%20Completo%20(Software%20a%20tu%20medida)." 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="w-full py-3 px-4 rounded-xl border border-sky-500/30 text-sky-300 hover:text-white hover:bg-sky-500/20 hover:border-sky-400 transition-all text-center text-xs font-bold tracking-[0.14em] uppercase flex items-center justify-center gap-2 group-hover:border-sky-400 cursor-pointer"
+        >
+          <span>SOLICITAR PLAN COMPLETO</span>
+          <span class="text-sm">→</span>
         </a>
       </div>
 
-      <!-- SOLUCIÓN ENTERPRISE (CORPORATIVA & ESCALABLE) -->
-      <div class="animate-on-scroll glass-card p-10 flex flex-col transition-all duration-500 rounded-none relative group">
-        <!-- Icono Fénix/Tauro entrelazado SVG minimalista -->
-        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5" class="w-16 h-16 text-gold-deep mb-6 mx-auto opacity-80 group-hover:opacity-100 transition-opacity">
-          <!-- Wings (Phoenix) -->
-          <path d="M50 65 C30 50, 10 45, 5 30 C15 35, 30 40, 45 45 M50 65 C70 50, 90 45, 95 30 C85 35, 70 40, 55 45" stroke-width="1.5" />
-          <!-- Inner layers of wings -->
-          <path d="M50 65 C35 55, 20 50, 15 40 C25 43, 35 46, 47 48 M50 65 C65 55, 80 50, 85 40 C75 43, 65 46, 53 48" />
-          <!-- Horns and Head (Tauro + Bird head) -->
-          <circle cx="50" cy="55" r="10" fill="currentColor" fill-opacity="0.05" />
-          <path d="M38 43 C38 33, 44 25, 50 25 C56 25, 62 33, 62 43" stroke-width="2" />
-          <path d="M50 48l-3 5h6z" fill="currentColor" />
-          <!-- Tail / Flames rising -->
-          <path d="M50 65v20 M45 72l5 8 5-8" />
-          <!-- Stars -->
-          <circle cx="50" cy="25" r="2" fill="currentColor" />
-          <circle cx="5" cy="30" r="2.5" fill="currentColor" />
-          <circle cx="95" cy="30" r="2.5" fill="currentColor" />
-          <circle cx="50" cy="85" r="2" fill="currentColor" />
-        </svg>
+      <!-- 03. PLAN CON ODOO (MÁS POPULAR / DESTACADO): Ecosistema Empresarial -->
+      <div class="animate-on-scroll fade-in-up group rounded-3xl p-7 flex flex-col justify-between relative overflow-hidden bg-[#070e1c] border-2 border-sky-400 shadow-[0_0_35px_rgba(14,165,233,0.25)] backdrop-blur-md transition-all duration-500 hover:shadow-[0_0_50px_rgba(56,189,248,0.35)] hover:-translate-y-2" style="animation-delay: 200ms;">
+        <!-- Glow ambiental superior -->
+        <div class="absolute -top-10 -right-10 w-40 h-40 bg-sky-500/20 blur-3xl rounded-full pointer-events-none"></div>
 
-        <div class="mb-4 text-gray-400 font-bold tracking-[0.2em] text-xs uppercase border-b border-gray-700 pb-2">Servicios Enterprise</div>
-        <div class="text-3xl font-heading text-white mb-6">Enterprise</div>
-        
-        <p class="text-gray-300 mb-6 font-light leading-relaxed text-sm">
-          Solución corporativa de alto rendimiento. Infraestructura de nube dedicada y escalabilidad sin límites para organizaciones líderes.
-        </p>
+        <div>
+          <!-- Icono, Tag de Plan y Badge "MÁS POPULAR" -->
+          <div class="flex items-center justify-between gap-2 mb-6">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-sky-500/20 border border-sky-400 flex items-center justify-center text-sky-300 shadow-[0_0_15px_rgba(56,189,248,0.4)]">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-5 h-5">
+                  <circle cx="18" cy="18" r="3"></circle>
+                  <circle cx="6" cy="6" r="3"></circle>
+                  <path d="M13 6h3a2 2 0 0 1 2 2v7"></path>
+                  <line x1="6" y1="9" x2="6" y2="21"></line>
+                </svg>
+              </div>
+              <span class="text-[10px] font-mono font-bold tracking-[0.18em] uppercase text-sky-400">
+                PLAN CON ODOO
+              </span>
+            </div>
 
-        <div class="bg-cosmos-dark/40 border border-gray-800 p-4 mb-6 rounded">
-          <div class="text-gold-deep text-xs font-bold uppercase tracking-wider mb-1">Enfoque Técnico</div>
-          <p class="text-gray-400 text-xs font-light leading-relaxed">
-            Arquitecturas de microservicios distribuidos, bases de datos híbridas y cloud elástica, orientadas a Business Intelligence y resiliencia crítica.
+            <!-- Badge Más Popular -->
+            <span class="px-2.5 py-1 rounded-full bg-sky-500/20 border border-sky-400 text-sky-300 text-[9px] font-bold uppercase tracking-wider shadow-[0_0_10px_rgba(56,189,248,0.3)]">
+              MÁS POPULAR
+            </span>
+          </div>
+
+          <h3 class="text-white font-heading font-semibold text-2xl mb-3 text-glow">
+            Ecosistema Empresarial
+          </h3>
+          
+          <p class="text-gray-300 text-xs font-light mb-6 leading-relaxed">
+            Implementación y personalización de Odoo para centralizar todos tus procesos en una sola plataforma, adaptada a tus necesidades.
           </p>
+
+          <!-- Lista de características -->
+          <ul class="space-y-3.5 mb-6 border-t border-white/[0.08] pt-5">
+            <li class="flex items-center gap-3 text-xs text-gray-200 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+              </svg>
+              <span>Implementación y personalización Odoo</span>
+            </li>
+            <li class="flex items-center gap-3 text-xs text-gray-200 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
+              <span>Ventas, inventario y facturación</span>
+            </li>
+            <li class="flex items-center gap-3 text-xs text-gray-200 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+              <span>CRM y marketing</span>
+            </li>
+            <li class="flex items-center gap-3 text-xs text-gray-200 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+              <span>Contabilidad y finanzas</span>
+            </li>
+            <li class="flex items-center gap-3 text-xs text-gray-200 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="8.5" cy="7" r="4"></circle>
+                <polyline points="17 11 19 13 23 9"></polyline>
+              </svg>
+              <span>Recursos humanos</span>
+            </li>
+            <li class="flex items-center gap-3 text-xs text-gray-200 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+              </svg>
+              <span>Integraciones y desarrollos a medida</span>
+            </li>
+            <li class="flex items-center gap-3 text-xs text-gray-200 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c0 2 2.5 3 6 3s6-1 6-3v-5"></path>
+              </svg>
+              <span>Capacitación y soporte continuo</span>
+            </li>
+          </ul>
+
+          <!-- Logo Odoo Partner Integrado -->
+          <div class="flex items-center justify-center gap-2 py-2 mb-6 border-t border-b border-white/[0.08]">
+            <img src="/logo-odoo.png" alt="Odoo" class="h-5 w-auto object-contain filter drop-shadow-[0_0_8px_rgba(169,76,146,0.6)]" />
+            <span class="text-[10px] text-gray-400 font-montserrat">Official Partner</span>
+          </div>
         </div>
 
-        <ul class="space-y-4 mb-10 border-t border-gray-800 pt-6 flex-grow">
-          <li class="flex items-start text-gray-300 font-light text-sm">
-            <span class="text-gold-deep mr-3 mt-1 text-glow">✦</span>
-            SaaS Completo altamente escalable con arquitectura de nube dedicada.
-          </li>
-          <li class="flex items-start text-gray-300 font-light text-sm">
-            <span class="text-gold-deep mr-3 mt-1 text-glow">✦</span>
-            Despliegue en Infraestructura Dedicada (AWS/GCP/Azure) con elasticidad global.
-          </li>
-          <li class="flex items-start text-gray-300 font-light text-sm">
-            <span class="text-gold-deep mr-3 mt-1 text-glow">✦</span>
-            Soporte Continuo 24/7 de grado empresarial.
-          </li>
-          <li class="flex items-start text-gray-300 font-light text-sm">
-            <span class="text-gold-deep mr-3 mt-1 text-glow">✦</span>
-            Auditorías periódicas de seguridad, SLA estricto y Disaster Recovery avanzado.
-          </li>
-        </ul>
+        <!-- Botón Implementar Odoo (Destacado lleno azul brillante) -->
+        <a 
+          href="https://wa.me/59179786916?text=Hola%20Pegasus%20Nexus!%20Me%20interesa%20implementar%20el%20Plan%20con%20Odoo%20(Ecosistema%20Empresarial)." 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-bold text-xs tracking-[0.14em] uppercase shadow-[0_0_25px_rgba(14,165,233,0.7)] hover:shadow-[0_0_35px_rgba(56,189,248,0.9)] transition-all flex items-center justify-center gap-2 cursor-pointer"
+        >
+          <span>IMPLEMENTAR ODOO</span>
+          <span class="text-sm">→</span>
+        </a>
+      </div>
 
-        <a href="https://wa.me/59179786916?text=Hola%20Pegaso%20System!%20Me%20gustar%C3%ADa%20agendar%20una%20consultor%C3%ADa%20para%20la%20Soluci%C3%B3n%20Enterprise." target="_blank" rel="noopener noreferrer" class="w-full py-4 text-center border border-gray-600 text-gray-300 hover:text-white hover:border-gold-deep font-semibold transition-colors text-xs tracking-widest uppercase cursor-pointer">
-          Agendar Consultoría Enterprise
+      <!-- 04. PLAN ENTERPRISE: Infraestructura sin límites -->
+      <div class="animate-on-scroll fade-in-up group rounded-3xl p-7 flex flex-col justify-between relative overflow-hidden bg-[#070e1c]/80 border border-sky-500/20 backdrop-blur-md transition-all duration-500 hover:border-sky-400/50 hover:shadow-[0_15px_35px_rgba(14,165,233,0.18)] hover:-translate-y-1.5" style="animation-delay: 300ms;">
+        <div>
+          <!-- Icono & Tag de Plan -->
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/25 flex items-center justify-center text-sky-400 group-hover:border-sky-400 group-hover:shadow-[0_0_15px_rgba(56,189,248,0.3)] transition-all">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-5 h-5">
+                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+              </svg>
+            </div>
+            <span class="text-[10px] font-mono font-bold tracking-[0.18em] uppercase text-gray-400 group-hover:text-sky-400 transition-colors">
+              PLAN ENTERPRISE
+            </span>
+          </div>
+
+          <h3 class="text-white font-heading font-semibold text-2xl mb-3 group-hover:text-sky-300 transition-colors">
+            Infraestructura sin límites
+          </h3>
+          
+          <p class="text-gray-400 text-xs font-light mb-6 leading-relaxed">
+            Soluciones corporativas de alto rendimiento para organizaciones que requieren máxima seguridad, escalabilidad y disponibilidad.
+          </p>
+
+          <!-- Lista de características -->
+          <ul class="space-y-3.5 mb-8 border-t border-white/[0.06] pt-5">
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+              </svg>
+              <span>Arquitectura en la nube (AWS / Azure)</span>
+            </li>
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+              <span>Microservicios y contenedores</span>
+            </li>
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <span>Seguridad avanzada (Zero Trust)</span>
+            </li>
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+              <span>Alta disponibilidad y escalabilidad</span>
+            </li>
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              <span>Integraciones complejas (APIs)</span>
+            </li>
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+              <span>Auditorías y cumplimiento normativo</span>
+            </li>
+            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+              </svg>
+              <span>Soporte 24/7 y consultoría especializada</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Botón Hablar con un especialista -->
+        <a 
+          href="https://wa.me/59179786916?text=Hola%20Pegasus%20Nexus!%20Me%20gustar%C3%ADa%20hablar%20con%20un%20especialista%20sobre%20el%20Plan%20Enterprise." 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="w-full py-3 px-4 rounded-xl border border-sky-500/30 text-sky-300 hover:text-white hover:bg-sky-500/20 hover:border-sky-400 transition-all text-center text-xs font-bold tracking-[0.14em] uppercase flex items-center justify-center gap-2 group-hover:border-sky-400 cursor-pointer"
+        >
+          <span>HABLAR CON UN ESPECIALISTA</span>
+          <span class="text-sm">→</span>
         </a>
       </div>
 
     </div>
+
+    <!-- Barra Inferior "TODOS LOS PLANES INCLUYEN" -->
+    <div class="mt-14 pt-8 border-t border-white/[0.08] grid grid-cols-1 md:grid-cols-5 gap-6 items-center">
+      
+      <!-- Label "TODOS LOS PLANES INCLUYEN" -->
+      <div class="text-left">
+        <span class="text-[11px] font-mono font-bold tracking-[0.2em] uppercase text-sky-400">
+          TODOS LOS PLANES INCLUYEN
+        </span>
+      </div>
+
+      <!-- 1: Acompañamiento -->
+      <div class="flex items-center gap-3.5 group">
+        <div class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 group-hover:border-sky-400 group-hover:shadow-[0_0_15px_rgba(56,189,248,0.3)] transition-all">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+        </div>
+        <div>
+          <div class="text-[11px] font-bold tracking-[0.16em] uppercase text-white">ACOMPAÑAMIENTO</div>
+          <div class="text-[10px] text-gray-400 font-light">En cada etapa</div>
+        </div>
+      </div>
+
+      <!-- 2: Tecnología -->
+      <div class="flex items-center gap-3.5 group">
+        <div class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 group-hover:border-sky-400 group-hover:shadow-[0_0_15px_rgba(56,189,248,0.3)] transition-all">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M18.178 8c5.096 0 5.096 8 0 8-5.095 0-7.133-8-12.739-8-4.585 0-4.585 8 0 8 5.606 0 7.644-8 12.74-8z"></path>
+          </svg>
+        </div>
+        <div>
+          <div class="text-[11px] font-bold tracking-[0.16em] uppercase text-white">TECNOLOGÍA</div>
+          <div class="text-[10px] text-gray-400 font-light">Que impulsa</div>
+        </div>
+      </div>
+
+      <!-- 3: Escalabilidad -->
+      <div class="flex items-center gap-3.5 group">
+        <div class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 group-hover:border-sky-400 group-hover:shadow-[0_0_15px_rgba(56,189,248,0.3)] transition-all">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <line x1="18" y1="20" x2="18" y2="10"></line>
+            <line x1="12" y1="20" x2="12" y2="4"></line>
+            <line x1="6" y1="20" x2="6" y2="14"></line>
+          </svg>
+        </div>
+        <div>
+          <div class="text-[11px] font-bold tracking-[0.16em] uppercase text-white">ESCALABILIDAD</div>
+          <div class="text-[10px] text-gray-400 font-light">Sin límites</div>
+        </div>
+      </div>
+
+      <!-- 4: Resultados -->
+      <div class="flex items-center gap-3.5 group">
+        <div class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 group-hover:border-sky-400 group-hover:shadow-[0_0_15px_rgba(56,189,248,0.3)] transition-all">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="12" cy="8" r="7"></circle>
+            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+          </svg>
+        </div>
+        <div>
+          <div class="text-[11px] font-bold tracking-[0.16em] uppercase text-white">RESULTADOS</div>
+          <div class="text-[10px] text-gray-400 font-light">Tangibles</div>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 </section>
