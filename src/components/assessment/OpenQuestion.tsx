@@ -6,9 +6,11 @@ interface OpenQuestionProps {
   onAnswerChange: (value: string) => void;
   onNext: () => void;
   onBack: () => void;
+  submitting?: boolean;
+  submitError?: string | null;
 }
 
-export const OpenQuestion: React.FC<OpenQuestionProps> = ({ answer, onAnswerChange, onNext, onBack }) => {
+export const OpenQuestion: React.FC<OpenQuestionProps> = ({ answer, onAnswerChange, onNext, onBack, submitting, submitError }) => {
   return (
     <div className="max-w-3xl mx-auto px-4 py-8 opacity-100">
       <div className="glass-card rounded-2xl p-6 md:p-10 shadow-2xl">
@@ -32,19 +34,27 @@ export const OpenQuestion: React.FC<OpenQuestionProps> = ({ answer, onAnswerChan
           </p>
         </div>
 
+        {submitError && (
+          <div className="mt-4 p-4 bg-red-900/50 border border-red-500 rounded-lg text-red-200">
+            {submitError}
+          </div>
+        )}
+
         <div className="flex justify-between items-center mt-10">
           <button 
             onClick={onBack}
-            className="flex items-center gap-2 text-slate-300 hover:text-white px-4 py-2 transition-colors"
+            disabled={submitting}
+            className={`flex items-center gap-2 px-4 py-2 transition-colors ${submitting ? 'text-slate-500 cursor-not-allowed' : 'text-slate-300 hover:text-white'}`}
           >
             <ArrowLeft size={18} /> Anterior
           </button>
           
           <button 
             onClick={onNext}
-            className="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 shadow-[0_0_15px_rgba(37,99,235,0.4)]"
+            disabled={submitting}
+            className={`flex items-center gap-2 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 ${submitting ? 'bg-slate-600 cursor-not-allowed' : 'bg-blue-600 hover:bg-blue-500 shadow-[0_0_15px_rgba(37,99,235,0.4)]'}`}
           >
-            Ver Resultados <ArrowRight size={18} />
+            {submitting ? 'Guardando...' : 'Ver Resultados'} {!submitting && <ArrowRight size={18} />}
           </button>
         </div>
       </div>

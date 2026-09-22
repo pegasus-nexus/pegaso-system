@@ -266,6 +266,7 @@ export const CapacidadesApp: React.FC = () => {
   const [submitting, setSubmitting] = useState(false);
   const [result, setResult] = useState<CapacidadesResult | null>(null);
   const [startTime] = useState<number>(Date.now());
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   useEffect(() => {
     try {
@@ -321,6 +322,7 @@ export const CapacidadesApp: React.FC = () => {
   const submit = async () => {
     if (!validate()) return;
     setSubmitting(true);
+    setSubmitError(null);
     try {
       const sessionId = sessionStorage.getItem(SESSION_KEY) || crypto.randomUUID();
       sessionStorage.setItem(SESSION_KEY, sessionId);
@@ -344,7 +346,7 @@ export const CapacidadesApp: React.FC = () => {
               }
           }
 
-          await fetch('/api/save-capacidades', {
+          const response = await fetch('/api/save-capacidades', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -370,12 +372,17 @@ export const CapacidadesApp: React.FC = () => {
                 data_processing_consent: answers.consent === 'yes'
             })
           });
+
+          if (!response.ok) {
+              throw new Error("Respuesta no satisfactoria del servidor");
+          }
+
+          setResult(resultData);
+          sessionStorage.removeItem(STORAGE_KEY);
       } catch (error) {
           console.error('Error saving to database:', error);
+          setSubmitError("No se pudo guardar la evaluación. Por favor revisa tu conexión e intenta de nuevo.");
       }
-
-      setResult(resultData);
-      sessionStorage.removeItem(STORAGE_KEY);
     } catch {
       setErrors(['submit']);
     } finally {
@@ -512,12 +519,18 @@ export const CapacidadesApp: React.FC = () => {
             <ContactForm answers={answers} setAnswer={setAnswer} errors={errors} />
           )}
 
+          {submitError && (
+            <div className="error-summary" role="alert" style={{ backgroundColor: '#450a0a', color: '#fca5a5', borderColor: '#ef4444' }}>
+              {submitError}
+            </div>
+          )}
+
           <div className="form-actions">
             {step > 0 && (
-              <button className="back-button" onClick={() => setStep(s => s - 1)}>← Atrás</button>
+              <button className="back-button" onClick={() => setStep(s => s - 1)} disabled={submitting}>← Atrás</button>
             )}
             <button className="next-button" onClick={step === 4 ? submit : next} disabled={submitting}>
-              {submitting ? 'Calculando tu resultado…' : step === 4 ? 'Ver mi resultado' : 'Siguiente →'}
+              {submitting ? 'Guardando...' : step === 4 ? 'Ver mi resultado' : 'Siguiente →'}
             </button>
           </div>
         </section>
