@@ -1,12 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { createClient } from '@supabase/supabase-js';
-import type { AssessmentState, CompanyData, Answer, AssessmentResult } from '../../types/assessment';
-import { dimensions } from '../../data/assessmentQuestions';
-import { calculateResults } from '../../utils/assessmentScoring';
+// Remove direct Supabase client imports
 
-// Get env variables in Vite/Astro
-const supabaseUrl = import.meta.env.PUBLIC_SUPABASE_URL;
-const supabaseKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY;
 
 import { WelcomeScreen } from './WelcomeScreen';
 import { CompanyForm } from './CompanyForm';
@@ -28,6 +22,7 @@ export const AssessmentApp: React.FC = () => {
   
   const [isLoaded, setIsLoaded] = useState(false);
   const [results, setResults] = useState<AssessmentResult | null>(null);
+  const [startTime] = useState<number>(Date.now());
 
   // Load from localStorage on mount
   useEffect(() => {
@@ -87,14 +82,27 @@ export const AssessmentApp: React.FC = () => {
     setState(finalState);
     setResults(calcResults);
 
-    // Guardar en base de datos (Supabase) directamente desde el cliente
-    if (supabaseUrl && supabaseKey && finalState.companyData) {
+    if (finalState.companyData) {
       try {
-        const supabase = createClient(supabaseUrl, supabaseKey);
-        await supabase
-          .from('assessment_leads')
-          .insert([
-            {
+        const session_duration_seconds = Math.floor((Date.now() - startTime) / 1000);
+        const urlParams = new URLSearchParams(window.location.search);
+        const utm_source = urlParams.get('utm_source');
+        const utm_medium = urlParams.get('utm_medium');
+        const utm_campaign = urlParams.get('utm_campaign');
+        const user_agent = navigator.userAgent;
+        
+        let company_domain = null;
+        if (finalState.companyData.email) {
+            const parts = finalState.companyData.email.split('@');
+            if (parts.length === 2) {
+                company_domain = parts[1];
+            }
+        }
+
+        await fetch('/api/save-assessment', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
               company_name: finalState.companyData.companyName,
               contact_name: finalState.companyData.contactName,
               role: finalState.companyData.role,
@@ -110,9 +118,16 @@ export const AssessmentApp: React.FC = () => {
               level: calcResults.level,
               level_name: calcResults.levelName,
               open_question_answer: finalState.openQuestionAnswer,
-              created_at: new Date().toISOString()
-            }
-          ]);
+              responses: state.answers,
+              user_agent,
+              utm_source,
+              utm_medium,
+              utm_campaign,
+              session_duration_seconds,
+              company_domain,
+              data_processing_consent: true // asumido dado que están llenando el assessment, aunque idealmente habría un checkbox
+          })
+        });
       } catch (error) {
         console.error("Error saving to database:", error);
       }

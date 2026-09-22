@@ -23,7 +23,16 @@ CREATE TABLE IF NOT EXISTS public.assessment_capacidades (
     dimensions jsonb,
     strength text,
     priority text,
-    message text
+    message text,
+    
+    -- Tracking and Analytics
+    user_agent text,
+    utm_source text,
+    utm_medium text,
+    utm_campaign text,
+    session_duration_seconds integer,
+    company_domain text,
+    data_processing_consent boolean
 );
 
 -- Permite inserción anónima desde la API pública del navegador

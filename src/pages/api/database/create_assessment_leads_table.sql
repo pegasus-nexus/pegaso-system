@@ -21,7 +21,17 @@ CREATE TABLE IF NOT EXISTS public.assessment_leads (
     maturity_index numeric NOT NULL,
     level integer NOT NULL,
     level_name text NOT NULL,
-    open_question_answer text
+    open_question_answer text,
+    responses jsonb,
+    
+    -- Tracking and Analytics
+    user_agent text,
+    utm_source text,
+    utm_medium text,
+    utm_campaign text,
+    session_duration_seconds integer,
+    company_domain text,
+    data_processing_consent boolean
 );
 
 -- Para este caso donde no tenemos un sistema de inicio de sesión configurado para los usuarios finales,

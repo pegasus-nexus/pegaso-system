@@ -1,10 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { createClient } from '@supabase/supabase-js';
-
 type Answers = Record<string, string | string[]>;
-
-const supabaseUrl = import.meta.env.PUBLIC_SUPABASE_URL;
-const supabaseKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY;
 
 const STORAGE_KEY = 'pegasus-capacidades-assessment';
 const SESSION_KEY = 'pegasus-capacidades-session';
@@ -270,6 +265,7 @@ export const CapacidadesApp: React.FC = () => {
   const [errors, setErrors] = useState<string[]>([]);
   const [submitting, setSubmitting] = useState(false);
   const [result, setResult] = useState<CapacidadesResult | null>(null);
+  const [startTime] = useState<number>(Date.now());
 
   useEffect(() => {
     try {
@@ -331,29 +327,51 @@ export const CapacidadesApp: React.FC = () => {
 
       const resultData = computeResult(answers);
 
-      if (supabaseUrl && supabaseKey) {
-        try {
-          const supabase = createClient(supabaseUrl, supabaseKey);
-          await supabase.from('assessment_capacidades').insert([
-            {
-              lead_id: resultData.leadId,
-              name: String(answers.name || ''),
-              company: String(answers.company || ''),
-              email: String(answers.email || ''),
-              phone: String(answers.phone || ''),
-              city: String(answers.city || ''),
-              responses: answers,
-              result_index: resultData.index,
-              band: resultData.band,
-              dimensions: resultData.dimensions,
-              strength: resultData.strength,
-              priority: resultData.priority,
-              message: resultData.message
-            }
-          ]);
-        } catch (error) {
+      try {
+          const session_duration_seconds = Math.floor((Date.now() - startTime) / 1000);
+          const urlParams = new URLSearchParams(window.location.search);
+          const utm_source = urlParams.get('utm_source');
+          const utm_medium = urlParams.get('utm_medium');
+          const utm_campaign = urlParams.get('utm_campaign');
+          const user_agent = navigator.userAgent;
+          
+          let company_domain = null;
+          const email = String(answers.email || '');
+          if (email) {
+              const parts = email.split('@');
+              if (parts.length === 2) {
+                  company_domain = parts[1];
+              }
+          }
+
+          await fetch('/api/save-capacidades', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                lead_id: resultData.leadId,
+                name: String(answers.name || ''),
+                company: String(answers.company || ''),
+                email: email,
+                phone: String(answers.phone || ''),
+                city: String(answers.city || ''),
+                responses: answers,
+                result_index: resultData.index,
+                band: resultData.band,
+                dimensions: resultData.dimensions,
+                strength: resultData.strength,
+                priority: resultData.priority,
+                message: resultData.message,
+                user_agent,
+                utm_source,
+                utm_medium,
+                utm_campaign,
+                session_duration_seconds,
+                company_domain,
+                data_processing_consent: answers.consent === 'yes'
+            })
+          });
+      } catch (error) {
           console.error('Error saving to database:', error);
-        }
       }
 
       setResult(resultData);
