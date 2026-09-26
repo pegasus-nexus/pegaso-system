@@ -36,7 +36,7 @@ const projects: Project[] = [
 ];
 ---
 
-<section id="proyectos-destacados" class="relative py-20 sm:py-24 overflow-hidden bg-cosmos-dark z-20">
+<section id="proyectos-destacados" class="relative py-14 sm:py-20 lg:py-24 overflow-hidden bg-cosmos-dark z-20">
   
   <!-- Subtle continuous ambient glow -->
   <div class="absolute inset-0 pointer-events-none overflow-hidden">
@@ -46,43 +46,43 @@ const projects: Project[] = [
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
     
     <!-- Top Header Section -->
-    <div class="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
+    <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-16 lg:mb-20 px-2 sm:px-4">
       
       <!-- Top Pill / Lines -->
-      <div class="flex items-center justify-center gap-3 sm:gap-4 mb-4 select-none">
-        <div class="w-10 sm:w-16 h-px bg-gradient-to-r from-transparent to-sky-400"></div>
-        <span class="text-[10px] sm:text-xs font-semibold tracking-[0.3em] uppercase text-gray-300 font-montserrat">
+      <div class="flex items-center justify-center gap-2.5 sm:gap-4 mb-3 sm:mb-4 select-none">
+        <div class="w-8 sm:w-16 h-[1.5px] bg-gradient-to-r from-transparent to-sky-400"></div>
+        <span class="text-[10px] sm:text-xs font-semibold tracking-[0.22em] sm:tracking-[0.3em] uppercase text-gray-300 font-montserrat">
           PROYECTOS <span class="text-sky-400 font-bold">DESTACADOS</span>
         </span>
-        <div class="w-10 sm:w-16 h-px bg-gradient-to-l from-transparent to-sky-400"></div>
+        <div class="w-8 sm:w-16 h-[1.5px] bg-gradient-to-l from-transparent to-sky-400"></div>
       </div>
 
-      <!-- Main Heading -->
-      <h2 class="text-2xl sm:text-4xl md:text-5xl font-normal font-heading text-white tracking-normal leading-tight mb-3">
-        Empresas que confían en nuestra <span class="text-sky-400 font-semibold italic">tecnología</span>
+      <!-- Main Heading (Clean 2-line break on mobile, flowing on desktop) -->
+      <h2 class="text-2xl sm:text-4xl md:text-5xl font-normal font-heading text-white tracking-normal leading-[1.25] sm:leading-tight mb-3">
+        Empresas que confían <br class="sm:hidden" />en nuestra <span class="text-sky-400 font-semibold italic">tecnología</span>
       </h2>
 
-      <!-- Subtitle -->
-      <p class="text-xs sm:text-sm text-gray-400 font-montserrat font-light tracking-wide max-w-lg mx-auto">
-        Juntos transformamos procesos en resultados reales.
+      <!-- Subtitle (Clean balanced line break on mobile) -->
+      <p class="text-xs sm:text-sm text-gray-400 font-montserrat font-light tracking-wide max-w-sm sm:max-w-lg mx-auto leading-relaxed">
+        Juntos transformamos procesos <br class="sm:hidden" />en resultados reales.
       </p>
 
     </div>
 
-    <!-- Projects Grid (3 items balanced) -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 items-stretch max-w-6xl mx-auto">
+    <!-- Projects Grid (3 items balanced, responsive gap and padding) -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-10 items-stretch max-w-6xl mx-auto">
       {projects.map((project) => (
         <a
           href={project.url}
           target="_blank"
           rel="noopener noreferrer"
-          class="group relative flex flex-col items-center justify-between p-8 sm:p-10 rounded-2xl bg-white/[0.02] hover:bg-white/[0.04] transition-all duration-500 backdrop-blur-sm shadow-[0_4px_20px_rgba(0,0,0,0.2)] hover:shadow-[0_8px_30px_rgba(14,165,233,0.15)]"
+          class="group relative flex flex-col items-center justify-between p-6 sm:p-8 lg:p-10 rounded-2xl bg-white/[0.02] hover:bg-white/[0.04] border border-white/[0.06] hover:border-sky-500/30 transition-all duration-500 backdrop-blur-sm shadow-[0_4px_20px_rgba(0,0,0,0.2)] hover:shadow-[0_8px_30px_rgba(14,165,233,0.15)]"
         >
           <!-- Subtle hover backlight -->
           <div class="absolute inset-0 rounded-2xl bg-gradient-to-b from-sky-500/[0.04] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
 
           <!-- Logo Container -->
-          <div class="w-full h-24 flex items-center justify-center relative z-10 px-4">
+          <div class="w-full h-20 sm:h-24 flex items-center justify-center relative z-10 px-4">
             <img
               src={project.logo}
               alt={project.alt}
@@ -92,7 +92,7 @@ const projects: Project[] = [
           </div>
 
           <!-- Cyan accent dash -->
-          <div class="w-8 h-[2px] bg-sky-400/80 rounded-full shadow-[0_0_8px_rgba(56,189,248,0.7)] my-6 group-hover:w-14 group-hover:bg-sky-300 transition-all duration-300"></div>
+          <div class="w-8 h-[2px] bg-sky-400/80 rounded-full shadow-[0_0_8px_rgba(56,189,248,0.7)] my-4 sm:my-6 group-hover:w-14 group-hover:bg-sky-300 transition-all duration-300"></div>
 
           <!-- Description / Tag -->
           <div class="text-center relative z-10">
