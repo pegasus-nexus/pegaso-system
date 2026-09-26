@@ -42,22 +42,172 @@
   </div>
 </header>
 
-<!-- Mobile menu overlay -->
-<div id="mobile-menu" class="fixed inset-0 z-[60] bg-cosmos-dark/95 backdrop-blur-xl flex flex-col justify-center items-center space-y-8 transition-transform duration-300 translate-x-full lg:hidden">
-  <!-- Close Button -->
-  <button id="mobile-menu-close" class="absolute top-6 right-6 text-white hover:text-gold-bright focus:outline-none cursor-pointer">
-    <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-    </svg>
-  </button>
-  
-  <a href="#inicio" class="mobile-nav-link text-2xl text-white hover:text-gold-bright font-medium tracking-widest uppercase transition-colors">Inicio</a>
-  <a href="#servicios" class="mobile-nav-link text-2xl text-white hover:text-gold-bright font-medium tracking-widest uppercase transition-colors">Servicios</a>
-  <a href="#tecnologia" class="mobile-nav-link text-2xl text-white hover:text-gold-bright font-medium tracking-widest uppercase transition-colors">Tecnología</a>
-  <a href="#paquetes" class="mobile-nav-link text-2xl text-white hover:text-gold-bright font-medium tracking-widest uppercase transition-colors">Planes</a>
-  <a href="#equipo" class="mobile-nav-link text-2xl text-white hover:text-gold-bright font-medium tracking-widest uppercase transition-colors">Equipo</a>
-  <a href="#contacto" class="mobile-nav-link text-2xl text-white hover:text-gold-bright font-medium tracking-widest uppercase transition-colors">Contacto</a>
-</div>
+<!-- Mobile Drawer Backdrop -->
+<div
+  id="mobile-menu-backdrop"
+  class="fixed inset-0 z-[60] bg-black/70 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 lg:hidden"
+></div>
+
+<!-- Mobile Drawer Sidebar (Matching media_1790422774519.png) -->
+<aside
+  id="mobile-menu"
+  class="fixed top-0 right-0 bottom-0 z-[70] w-[86%] max-w-[340px] bg-[#030917]/95 backdrop-blur-2xl border-l border-white/10 flex flex-col justify-between p-6 overflow-y-auto transition-transform duration-300 translate-x-full lg:hidden shadow-[-15px_0_35px_rgba(0,0,0,0.85)]"
+  aria-label="Menú de navegación móvil"
+>
+  <!-- Top: Logo + Close Button -->
+  <div class="flex items-center justify-between pb-6 border-b border-white/[0.08]">
+    <a href="/" class="flex items-center gap-3">
+      <img
+        src="/logo-pegasus-new.png"
+        alt="Pegasus Nexus"
+        class="h-9 w-auto object-contain drop-shadow-[0_0_12px_rgba(56,189,248,0.8)]"
+      />
+      <div class="flex flex-col leading-none">
+        <span class="font-montserrat font-black text-xs text-white tracking-[0.16em] uppercase">PEGASUS</span>
+        <span class="font-montserrat font-semibold text-[9px] text-sky-400 tracking-[0.28em] uppercase mt-0.5">NEXUS</span>
+      </div>
+    </a>
+
+    <button
+      id="mobile-menu-close"
+      class="p-2 -mr-2 text-gray-300 hover:text-white transition-colors cursor-pointer"
+      aria-label="Cerrar menú"
+    >
+      <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Middle: Nav Links (With active luminous state on INICIO, matching screenshot) -->
+  <nav class="flex flex-col space-y-1 py-4">
+    <!-- 1: INICIO (Active State) -->
+    <a
+      href="#inicio"
+      class="mobile-nav-link relative flex items-center gap-4 px-4 py-3 rounded-xl bg-gradient-to-r from-sky-500/20 via-sky-500/5 to-transparent text-white font-semibold text-xs uppercase tracking-[0.2em] transition-all group before:content-[''] before:absolute before:left-0 before:top-1.5 before:bottom-1.5 before:w-[3px] before:bg-sky-400 before:shadow-[0_0_10px_#38bdf8]"
+    >
+      <svg class="w-5 h-5 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+        <polyline points="9 22 9 12 15 12 15 22" />
+      </svg>
+      <span>INICIO</span>
+    </a>
+
+    <!-- 2: NOSOTROS -->
+    <a
+      href="#por-que-nexus"
+      class="mobile-nav-link flex items-center gap-4 px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/5 font-semibold text-xs uppercase tracking-[0.2em] transition-all group"
+    >
+      <svg class="w-5 h-5 text-gray-400 group-hover:text-sky-400 transition-colors shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+        <circle cx="9" cy="7" r="4" />
+        <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+      </svg>
+      <span>NOSOTROS</span>
+    </a>
+
+    <!-- 3: SERVICIOS -->
+    <a
+      href="#paquetes"
+      class="mobile-nav-link flex items-center gap-4 px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/5 font-semibold text-xs uppercase tracking-[0.2em] transition-all group"
+    >
+      <svg class="w-5 h-5 text-gray-400 group-hover:text-sky-400 transition-colors shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="12 2 2 7 12 12 22 7 12 2" />
+        <polyline points="2 17 12 22 22 17" />
+        <polyline points="2 12 12 17 22 12" />
+      </svg>
+      <span>SERVICIOS</span>
+    </a>
+
+    <!-- 4: SOLUCIONES -->
+    <a
+      href="#servicios"
+      class="mobile-nav-link flex items-center gap-4 px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/5 font-semibold text-xs uppercase tracking-[0.2em] transition-all group"
+    >
+      <svg class="w-5 h-5 text-gray-400 group-hover:text-sky-400 transition-colors shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect width="7" height="7" x="3" y="3" rx="1" />
+        <rect width="7" height="7" x="14" y="3" rx="1" />
+        <rect width="7" height="7" x="14" y="14" rx="1" />
+        <rect width="7" height="7" x="3" y="14" rx="1" />
+      </svg>
+      <span>SOLUCIONES</span>
+    </a>
+
+    <!-- 5: TECNOLOGÍA -->
+    <a
+      href="#tecnologia"
+      class="mobile-nav-link flex items-center gap-4 px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/5 font-semibold text-xs uppercase tracking-[0.2em] transition-all group"
+    >
+      <svg class="w-5 h-5 text-gray-400 group-hover:text-sky-400 transition-colors shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect width="16" height="16" x="4" y="4" rx="2" />
+        <rect width="6" height="6" x="9" y="9" rx="1" />
+        <path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2" />
+      </svg>
+      <span>TECNOLOGÍA</span>
+    </a>
+
+    <!-- 6: CONTACTO -->
+    <a
+      href="#contacto"
+      class="mobile-nav-link flex items-center gap-4 px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/5 font-semibold text-xs uppercase tracking-[0.2em] transition-all group"
+    >
+      <svg class="w-5 h-5 text-gray-400 group-hover:text-sky-400 transition-colors shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect width="20" height="16" x="2" y="4" rx="2" />
+        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+      </svg>
+      <span>CONTACTO</span>
+    </a>
+  </nav>
+
+  <!-- Divider -->
+  <div class="w-full h-px bg-white/[0.08] my-3"></div>
+
+  <!-- Action Buttons (Matching screenshot) -->
+  <div class="flex flex-col gap-3 pt-1">
+    <a
+      href="https://wa.me/59179786916?text=Hola%20Pegasus%20Nexus!%20Me%20gustar%C3%ADa%20solicitar%20una%20evaluaci%C3%B3n%20inicial%20para%20mi%20empresa."
+      target="_blank"
+      rel="noopener noreferrer"
+      class="w-full inline-flex items-center justify-center gap-2 py-3.5 px-5 rounded-full bg-gradient-to-r from-blue-600 via-sky-500 to-sky-400 text-white font-bold text-xs uppercase tracking-wider shadow-[0_0_25px_rgba(56,189,248,0.5)] hover:shadow-[0_0_35px_rgba(56,189,248,0.7)] transition-all cursor-pointer text-center"
+    >
+      <span>SOLICITAR EVALUACIÓN</span>
+      <span class="text-sm">→</span>
+    </a>
+
+    <a
+      href="#servicios"
+      class="mobile-nav-link w-full inline-flex items-center justify-center gap-2 py-3 px-5 rounded-full border border-white/20 bg-white/5 hover:bg-white/10 text-white font-semibold text-xs uppercase tracking-wider transition-all cursor-pointer text-center"
+    >
+      <svg class="w-3.5 h-3.5 fill-current text-white shrink-0" viewBox="0 0 24 24">
+        <polygon points="6 3 20 12 6 21 6 3"></polygon>
+      </svg>
+      <span>VER SOLUCIONES</span>
+    </a>
+  </div>
+
+  <!-- Bottom: Social Icons + Slogan -->
+  <div class="pt-6 pb-2">
+    <div class="flex items-center justify-center gap-6 text-gray-400">
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="hover:text-sky-400 transition-colors" aria-label="LinkedIn">
+        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 0 0 1.64-1.64c0-.9-.74-1.64-1.64-1.64a1.64 1.64 0 0 0-1.64 1.64c0 .9.74 1.64 1.64 1.64m1.39 9.74v-8.37H5.07v8.37h2.78z"/></svg>
+      </a>
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="hover:text-sky-400 transition-colors" aria-label="Instagram">
+        <svg class="w-4 h-4 fill-none stroke-current stroke-2" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+      </a>
+      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="hover:text-sky-400 transition-colors" aria-label="Facebook">
+        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      </a>
+      <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="hover:text-sky-400 transition-colors" aria-label="YouTube">
+        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.5l5.75 3.26-5.75 3.26z"/></svg>
+      </a>
+    </div>
+
+    <p class="text-center text-[10px] italic text-gray-400 font-montserrat pt-4">
+      "Ideas que conectan realidades"
+    </p>
+  </div>
+</aside>
 
 <style>
   /* Base state transitions for hardware acceleration */
@@ -121,25 +271,37 @@
     checkScroll();
   }
 
-  // Mobile menu open/close logic
+  // Mobile menu drawer open/close logic
   const openBtn = document.getElementById('mobile-menu-open');
   const closeBtn = document.getElementById('mobile-menu-close');
   const mobileMenu = document.getElementById('mobile-menu');
+  const backdrop = document.getElementById('mobile-menu-backdrop');
   const mobileLinks = document.querySelectorAll('.mobile-nav-link');
 
   if (openBtn && closeBtn && mobileMenu) {
     const openMenu = () => {
       mobileMenu.classList.remove('translate-x-full');
+      if (backdrop) {
+        backdrop.classList.remove('opacity-0', 'pointer-events-none');
+        backdrop.classList.add('opacity-100');
+      }
       document.body.classList.add('overflow-hidden');
     };
 
     const closeMenu = () => {
       mobileMenu.classList.add('translate-x-full');
+      if (backdrop) {
+        backdrop.classList.add('opacity-0', 'pointer-events-none');
+        backdrop.classList.remove('opacity-100');
+      }
       document.body.classList.remove('overflow-hidden');
     };
 
     openBtn.addEventListener('click', openMenu);
     closeBtn.addEventListener('click', closeMenu);
+    if (backdrop) {
+      backdrop.addEventListener('click', closeMenu);
+    }
 
     // Auto-close menu drawer when selecting a section
     mobileLinks.forEach(link => {
