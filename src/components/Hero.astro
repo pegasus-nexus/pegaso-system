@@ -77,32 +77,33 @@
   </div>
 
   <div
-    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex-grow flex flex-col justify-between pt-4 sm:pt-8 pb-4"
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex-grow flex flex-col justify-between pt-2 sm:pt-8 pb-4"
   >
-    <!-- Left Hero Content Block -->
-    <div class="hero-content-block text-left w-full max-w-2xl flex flex-col items-start relative mb-10 sm:mb-14">
+    <!-- Hero Content Block (Centered container on mobile, left-aligned on desktop) -->
+    <div class="hero-content-block text-left w-full max-w-2xl flex flex-col items-center sm:items-start relative mb-8 sm:mb-14">
       
-      <!-- Difuminado negro leve EXCLUSIVAMENTE en el área del texto (el resto del fondo se mantiene 100% brillante) -->
+      <!-- Difuminado negro leve EXCLUSIVAMENTE en el área del texto -->
       <div class="absolute -inset-4 sm:-inset-6 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.6)_0%,rgba(0,0,0,0.25)_50%,transparent_75%)] blur-xl -z-10 pointer-events-none"></div>
 
-      <!-- Subtitle badge with accent line -->
-      <div class="flex items-center gap-3 mb-4 select-none">
-        <div class="w-8 sm:w-12 h-[2px] bg-sky-400 shadow-[0_0_8px_rgba(56,189,248,0.8)]"></div>
+      <!-- Subtitle badge with accent lines (Centered on mobile with 2 lines, left on desktop) -->
+      <div class="w-full flex items-center justify-center sm:justify-start gap-2.5 sm:gap-3 mb-3 sm:mb-4 select-none">
+        <div class="w-8 sm:w-12 h-[1.5px] bg-sky-400 shadow-[0_0_8px_rgba(56,189,248,0.8)]"></div>
         <h2
-          class="text-sky-300 font-bold tracking-[0.3em] uppercase text-xs sm:text-sm font-montserrat drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"
+          class="text-sky-300 font-bold tracking-[0.25em] sm:tracking-[0.3em] uppercase text-[10px] sm:text-sm font-montserrat drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"
         >
           EXCELENCIA EN SOFTWARE
         </h2>
+        <div class="w-8 h-[1.5px] bg-sky-400 shadow-[0_0_8px_rgba(56,189,248,0.8)] sm:hidden"></div>
       </div>
 
-      <!-- PEGASUS NEXUS — TÍTULO PRINCIPAL -->
-      <h1 class="pn-title" aria-label="Pegasus Nexus">
+      <!-- PEGASUS NEXUS — TÍTULO PRINCIPAL (Centrado en móvil, a la izquierda en desktop) -->
+      <h1 class="pn-title w-full" aria-label="Pegasus Nexus">
         <span class="pn-pegasus">PEGASUS</span>
         <span class="pn-nexus">NEXUS</span>
       </h1>
 
-      <!-- Value Proposition Punchline (Exact text from mockup) -->
-      <h3 class="text-2xl sm:text-4xl lg:text-[44px] font-bold text-white mb-4 tracking-tight leading-[1.15] font-montserrat drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
+      <!-- Value Proposition Punchline -->
+      <h3 class="w-full text-[23px] sm:text-4xl lg:text-[44px] font-bold text-white mb-3 sm:mb-4 tracking-tight leading-[1.2] sm:leading-[1.15] font-montserrat drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
         Software inteligente para <br />
         <span class="text-sky-400 drop-shadow-[0_0_20px_rgba(56,189,248,0.4)]">transformar procesos</span><br />
         <span class="text-sky-400 drop-shadow-[0_0_20px_rgba(56,189,248,0.4)]">empresariales.</span>
@@ -111,30 +112,30 @@
       <!-- Description paragraph -->
       <p
         id="hero-desc"
-        class="text-xs sm:text-sm text-gray-100 font-montserrat font-normal leading-relaxed max-w-xl mb-7 drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]"
+        class="w-full text-xs sm:text-sm text-gray-200 font-montserrat font-light leading-relaxed max-w-xl mb-5 sm:mb-7 drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]"
       >
         Desarrollamos soluciones digitales, automatización e inteligencia de negocios para que tu empresa opere mejor, decida más rápido y crezca.
       </p>
 
-      <!-- Action Buttons -->
+      <!-- Action Buttons (Full-width stacked on mobile, inline on desktop) -->
       <div
         id="hero-buttons"
-        class="flex flex-wrap items-center gap-4 mb-4"
+        class="w-full flex flex-col sm:flex-row items-center gap-3 sm:gap-4 mb-3 sm:mb-4"
       >
         <a
           href="https://wa.me/59179786916?text=Hola%20Pegasus%20Nexus!%20Me%20gustar%C3%ADa%20solicitar%20una%20evaluaci%C3%B3n%20inicial%20para%20mi%20empresa."
           target="_blank"
           rel="noopener noreferrer"
-          class="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-gradient-to-r from-sky-500 via-sky-400 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-semibold text-xs sm:text-sm shadow-[0_0_25px_rgba(14,165,233,0.5)] hover:shadow-[0_0_35px_rgba(56,189,248,0.8)] hover:scale-105 transition-all cursor-pointer"
+          class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 sm:py-3 rounded-full bg-gradient-to-r from-sky-500 via-sky-400 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-semibold text-xs sm:text-sm shadow-[0_0_25px_rgba(14,165,233,0.5)] hover:shadow-[0_0_35px_rgba(56,189,248,0.8)] hover:scale-[1.02] sm:hover:scale-105 transition-all cursor-pointer text-center"
         >
           <span>Solicitar evaluación</span>
           <span class="text-sm">→</span>
         </a>
         <a
           href="#servicios"
-          class="inline-flex items-center gap-2 px-7 py-3 rounded-full border border-white/20 bg-white/5 hover:bg-white/10 hover:border-sky-400/60 text-white font-medium text-xs sm:text-sm transition-all cursor-pointer backdrop-blur-sm"
+          class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full border border-white/20 bg-white/5 hover:bg-white/10 hover:border-sky-400/60 text-white font-medium text-xs sm:text-sm transition-all cursor-pointer backdrop-blur-sm text-center"
         >
-          <svg class="w-3.5 h-3.5 fill-current text-white" viewBox="0 0 24 24">
+          <svg class="w-3.5 h-3.5 fill-current text-white shrink-0" viewBox="0 0 24 24">
             <polygon points="6 3 20 12 6 21 6 3"></polygon>
           </svg>
           <span>Ver soluciones</span>
@@ -142,7 +143,7 @@
       </div>
 
       <!-- Micro-badge Evaluación inicial gratuita -->
-      <div class="flex items-center gap-2 text-sky-400 text-xs font-montserrat">
+      <div class="w-full flex items-center justify-center sm:justify-start gap-2 text-sky-400 text-xs font-montserrat">
         <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
           <path d="m9 12 2 2 4-4"/>
@@ -152,84 +153,82 @@
 
     </div>
 
-    <!-- Bottom Capability & Trust Modules (Matching uploaded mockup media_1790420646755.png) -->
-    <div class="w-full max-w-7xl mx-auto pt-6 pb-2 relative z-20">
+    <!-- Bottom Capability & Trust Modules (2x2 grid on mobile, 4-col bar on desktop matching mockups) -->
+    <div class="w-full max-w-7xl mx-auto pt-4 sm:pt-6 pb-2 relative z-20">
       
-      <!-- Row 1: 4 Capabilities (Transparent background, circular luminous orbs, vertical dividers) -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-0 lg:divide-x lg:divide-white/[0.12] pb-6">
+      <!-- Row 1: 4 Capabilities (2x2 cards on mobile, transparent row on desktop) -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-4 lg:gap-0 lg:divide-x lg:divide-white/[0.12] pb-4 sm:pb-6">
         
         <!-- 1: Software a medida -->
-        <div class="flex items-center gap-4 lg:px-6 first:pl-0">
+        <div class="rounded-2xl bg-[#030712]/60 border border-white/[0.1] backdrop-blur-md p-2.5 sm:p-3 flex items-center gap-2.5 sm:gap-3 lg:bg-transparent lg:border-none lg:backdrop-blur-none lg:p-0 lg:px-6 lg:first:pl-0">
           <div class="relative flex items-center justify-center shrink-0">
-            <!-- Ambient Blue Glow Halo -->
-            <div class="absolute -inset-2 rounded-full bg-sky-500/25 blur-lg"></div>
-            <!-- Orb Circle -->
-            <div class="relative w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#030917] border border-sky-400/40 flex items-center justify-center text-sky-400 shadow-[0_0_25px_rgba(56,189,248,0.35)]">
-              <svg class="w-6 h-6 sm:w-7 sm:h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <div class="absolute -inset-1 sm:-inset-2 rounded-full bg-sky-500/25 blur-md sm:blur-lg"></div>
+            <div class="relative w-9 h-9 sm:w-11 sm:h-11 lg:w-16 lg:h-16 rounded-full bg-[#030917] border border-sky-400/40 flex items-center justify-center text-sky-400 shadow-[0_0_15px_rgba(56,189,248,0.3)]">
+              <svg class="w-4 h-4 sm:w-5 sm:h-5 lg:w-7 lg:h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="16 18 22 12 16 6"></polyline>
                 <polyline points="8 6 2 12 8 18"></polyline>
               </svg>
             </div>
           </div>
-          <div>
-            <h4 class="text-sm sm:text-base font-semibold text-white font-montserrat leading-tight">
+          <div class="min-w-0">
+            <h4 class="text-[11px] sm:text-xs lg:text-base font-semibold text-white font-montserrat leading-tight truncate sm:whitespace-normal">
               Software a medida
             </h4>
-            <p class="text-xs text-gray-300 font-light font-montserrat mt-1 leading-snug">
-              Aplicaciones adaptadas<br class="hidden sm:inline" /> a tu negocio
+            <p class="text-[9px] sm:text-[10px] lg:text-xs text-gray-300 font-light font-montserrat mt-0.5 leading-snug">
+              Aplicaciones adaptadas<br class="hidden lg:inline" /> a tu negocio
             </p>
           </div>
         </div>
 
         <!-- 2: Automatización -->
-        <div class="flex items-center gap-4 lg:px-6">
+        <div class="rounded-2xl bg-[#030712]/60 border border-white/[0.1] backdrop-blur-md p-2.5 sm:p-3 flex items-center gap-2.5 sm:gap-3 lg:bg-transparent lg:border-none lg:backdrop-blur-none lg:p-0 lg:px-6">
           <div class="relative flex items-center justify-center shrink-0">
-            <div class="absolute -inset-2 rounded-full bg-sky-500/25 blur-lg"></div>
-            <div class="relative w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#030917] border border-sky-400/40 flex items-center justify-center text-sky-400 shadow-[0_0_25px_rgba(56,189,248,0.35)]">
-              <svg class="w-6 h-6 sm:w-7 sm:h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <div class="absolute -inset-1 sm:-inset-2 rounded-full bg-sky-500/25 blur-md sm:blur-lg"></div>
+            <div class="relative w-9 h-9 sm:w-11 sm:h-11 lg:w-16 lg:h-16 rounded-full bg-[#030917] border border-sky-400/40 flex items-center justify-center text-sky-400 shadow-[0_0_15px_rgba(56,189,248,0.3)]">
+              <svg class="w-4 h-4 sm:w-5 sm:h-5 lg:w-7 lg:h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="3"></circle>
                 <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
               </svg>
             </div>
           </div>
-          <div>
-            <h4 class="text-sm sm:text-base font-semibold text-white font-montserrat leading-tight">
+          <div class="min-w-0">
+            <h4 class="text-[11px] sm:text-xs lg:text-base font-semibold text-white font-montserrat leading-tight truncate sm:whitespace-normal">
               Automatización
             </h4>
-            <p class="text-xs text-gray-300 font-light font-montserrat mt-1 leading-snug">
-              Reduce tiempos<br class="hidden sm:inline" /> y errores
+            <p class="text-[9px] sm:text-[10px] lg:text-xs text-gray-300 font-light font-montserrat mt-0.5 leading-snug">
+              Reduce tiempos<br class="hidden lg:inline" /> y errores
             </p>
           </div>
         </div>
 
         <!-- 3: Inteligencia de negocios -->
-        <div class="flex items-center gap-4 lg:px-6">
+        <div class="rounded-2xl bg-[#030712]/60 border border-white/[0.1] backdrop-blur-md p-2.5 sm:p-3 flex items-center gap-2.5 sm:gap-3 lg:bg-transparent lg:border-none lg:backdrop-blur-none lg:p-0 lg:px-6">
           <div class="relative flex items-center justify-center shrink-0">
-            <div class="absolute -inset-2 rounded-full bg-sky-500/25 blur-lg"></div>
-            <div class="relative w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#030917] border border-sky-400/40 flex items-center justify-center text-sky-400 shadow-[0_0_25px_rgba(56,189,248,0.35)]">
-              <svg class="w-6 h-6 sm:w-7 sm:h-7" viewBox="0 0 24 24" fill="currentColor">
+            <div class="absolute -inset-1 sm:-inset-2 rounded-full bg-sky-500/25 blur-md sm:blur-lg"></div>
+            <div class="relative w-9 h-9 sm:w-11 sm:h-11 lg:w-16 lg:h-16 rounded-full bg-[#030917] border border-sky-400/40 flex items-center justify-center text-sky-400 shadow-[0_0_15px_rgba(56,189,248,0.3)]">
+              <svg class="w-4 h-4 sm:w-5 sm:h-5 lg:w-7 lg:h-7" viewBox="0 0 24 24" fill="currentColor">
                 <rect x="4.5" y="11" width="3" height="9" rx="0.75"></rect>
                 <rect x="10.5" y="5" width="3" height="15" rx="0.75"></rect>
                 <rect x="16.5" y="13" width="3" height="7" rx="0.75"></rect>
               </svg>
             </div>
           </div>
-          <div>
-            <h4 class="text-sm sm:text-base font-semibold text-white font-montserrat leading-tight">
+          <div class="min-w-0">
+            <h4 class="text-[11px] sm:text-xs lg:text-base font-semibold text-white font-montserrat leading-tight truncate sm:whitespace-normal">
               Inteligencia de negocios
             </h4>
-            <p class="text-xs text-gray-300 font-light font-montserrat mt-1 leading-snug">
+            <p class="text-[9px] sm:text-[10px] lg:text-xs text-gray-300 font-light font-montserrat mt-0.5 leading-snug">
               Decisiones con datos
             </p>
           </div>
         </div>
 
         <!-- 4: Integración de sistemas -->
-        <div class="flex items-center gap-4 lg:px-6 last:pr-0">
+        <div class="rounded-2xl bg-[#030712]/60 border border-white/[0.1] backdrop-blur-md p-2.5 sm:p-3 flex items-center gap-2.5 sm:gap-3 lg:bg-transparent lg:border-none lg:backdrop-blur-none lg:p-0 lg:px-6 lg:last:pr-0">
           <div class="relative flex items-center justify-center shrink-0">
-            <div class="absolute -inset-2 rounded-full bg-sky-500/25 blur-lg"></div>
-            <div class="relative w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#030917] border border-sky-400/40 flex items-center justify-center text-sky-400 shadow-[0_0_25px_rgba(56,189,248,0.35)]">
-              <svg class="w-6 h-6 sm:w-7 sm:h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <div class="absolute -inset-1 sm:-inset-2 rounded-full bg-sky-500/25 blur-md sm:blur-lg"></div>
+            <div class="relative w-9 h-9 sm:w-11 sm:h-11 lg:w-16 lg:h-16 rounded-full bg-[#030917] border border-sky-400/40 flex items-center justify-center text-sky-400 shadow-[0_0_15px_rgba(56,189,248,0.3)]">
+              <svg class="w-4 h-4 sm:w-5 sm:h-5 lg:w-7 lg:h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="2.5"></circle>
                 <circle cx="5.5" cy="5.5" r="2"></circle>
                 <circle cx="18.5" cy="5.5" r="2"></circle>
@@ -242,11 +241,11 @@
               </svg>
             </div>
           </div>
-          <div>
-            <h4 class="text-sm sm:text-base font-semibold text-white font-montserrat leading-tight">
+          <div class="min-w-0">
+            <h4 class="text-[11px] sm:text-xs lg:text-base font-semibold text-white font-montserrat leading-tight truncate sm:whitespace-normal">
               Integración de sistemas
             </h4>
-            <p class="text-xs text-gray-300 font-light font-montserrat mt-1 leading-snug">
+            <p class="text-[9px] sm:text-[10px] lg:text-xs text-gray-300 font-light font-montserrat mt-0.5 leading-snug">
               Conecta tus plataformas
             </p>
           </div>
@@ -255,42 +254,51 @@
       </div>
 
       <!-- Row 2: Horizontal line divider, 3 Trust Pillars and Mouse Scroll matching screenshot -->
-      <div class="w-full pt-4 sm:pt-5 border-t border-white/[0.15] flex flex-col items-center gap-4">
+      <div class="w-full pt-3 sm:pt-5 border-t border-white/[0.15] flex flex-col items-center gap-4">
         
         <!-- 3 Trust Pillars -->
-        <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-10 text-xs sm:text-sm text-gray-200 font-montserrat font-light">
-          <div class="flex items-center gap-3">
-            <svg class="w-5 h-5 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <div class="w-full flex items-center justify-between sm:justify-center gap-2 sm:gap-10 text-[10px] sm:text-sm text-gray-200 font-montserrat font-light">
+          <div class="flex items-center gap-1.5 sm:gap-3">
+            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polygon points="12 2 2 7 12 12 22 7 12 2" />
               <polyline points="2 17 12 22 22 17" />
               <polyline points="2 12 12 17 22 12" />
             </svg>
-            <span class="tracking-wide">Desarrollo personalizado</span>
+            <span class="tracking-tight sm:tracking-wide leading-tight sm:leading-normal">
+              <span class="sm:hidden">Desarrollo<br/>personalizado</span>
+              <span class="hidden sm:inline">Desarrollo personalizado</span>
+            </span>
           </div>
 
-          <div class="hidden sm:block w-px h-4 bg-white/20"></div>
+          <div class="w-px h-6 sm:h-4 bg-white/20"></div>
 
-          <div class="flex items-center gap-3">
-            <svg class="w-5 h-5 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <div class="flex items-center gap-1.5 sm:gap-3">
+            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
               <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
             </svg>
-            <span class="tracking-wide">Soporte continuo</span>
+            <span class="tracking-tight sm:tracking-wide leading-tight sm:leading-normal">
+              <span class="sm:hidden">Soporte<br/>continuo</span>
+              <span class="hidden sm:inline">Soporte continuo</span>
+            </span>
           </div>
 
-          <div class="hidden sm:block w-px h-4 bg-white/20"></div>
+          <div class="w-px h-6 sm:h-4 bg-white/20"></div>
 
-          <div class="flex items-center gap-3">
-            <svg class="w-5 h-5 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <div class="flex items-center gap-1.5 sm:gap-3">
+            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
               <path d="m9 12 2 2 4-4"/>
             </svg>
-            <span class="tracking-wide">Tecnología escalable</span>
+            <span class="tracking-tight sm:tracking-wide leading-tight sm:leading-normal">
+              <span class="sm:hidden">Tecnología<br/>escalable</span>
+              <span class="hidden sm:inline">Tecnología escalable</span>
+            </span>
           </div>
         </div>
 
-        <!-- Mouse Scroll Indicator (Centered) -->
-        <a href="#por-que-nexus" class="flex flex-col items-center gap-1 text-[9px] font-mono tracking-[0.25em] uppercase text-gray-400 hover:text-sky-400 transition-colors group cursor-pointer pt-1">
+        <!-- Mouse Scroll Indicator (Visible on desktop, hidden on mobile matching mockup) -->
+        <a href="#por-que-nexus" class="hidden sm:flex flex-col items-center gap-1 text-[9px] font-mono tracking-[0.25em] uppercase text-gray-400 hover:text-sky-400 transition-colors group cursor-pointer pt-1">
           <div class="w-3.5 h-6 rounded-full border border-gray-400/60 flex items-start justify-center p-0.5 group-hover:border-sky-400 transition-colors">
             <div class="w-1 h-1.5 rounded-full bg-sky-400 animate-bounce"></div>
           </div>
@@ -541,36 +549,32 @@
 
 @media (max-width: 640px) {
 
+  #inicio {
+    background-position: 78% 6% !important;
+    background-size: cover !important;
+    padding-top: 14rem !important;
+  }
+
   .pn-title {
-    line-height: 0.84;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    line-height: 0.82;
   }
 
   .pn-pegasus {
-
-    font-size: clamp(
-      2.4rem,
-      11vw,
-      3.6rem
-    );
-
-    letter-spacing: 0.005em;
-
-    -webkit-text-stroke: 1.4px #edf7ff;
+    font-size: clamp(3.2rem, 14vw, 4.5rem);
+    letter-spacing: 0.03em;
+    -webkit-text-stroke: 1.8px #edf7ff;
+    text-align: center;
   }
 
   .pn-nexus {
-
-    font-size: clamp(
-      1.2rem,
-      5.8vw,
-      1.9rem
-    );
-
-    letter-spacing: 0.32em;
-
-    padding-left: 0.05em;
-
-    -webkit-text-stroke: 1.2px #edf7ff;
+    font-size: clamp(1.8rem, 8.2vw, 2.6rem);
+    letter-spacing: 0.42em;
+    padding-left: 0.42em;
+    -webkit-text-stroke: 1.5px #edf7ff;
+    text-align: center;
   }
 
 }
