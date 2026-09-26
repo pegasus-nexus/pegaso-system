@@ -4,8 +4,8 @@
 
 <section
   id="inicio"
-  class="relative min-h-screen flex flex-col pt-32 pb-12 overflow-hidden bg-cosmos-dark"
-  style="background-image: url('/hero-cosmos.jpg'); background-size: cover; background-position: center;"
+  class="hero-cosmos-bg relative min-h-screen flex flex-col pt-32 pb-12 overflow-hidden bg-cosmos-dark"
+  style="background-image: url('/hero-cosmos.jpg'); background-size: cover;"
 >
   <!-- Lluvia de meteoritos intensa -->
   <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
@@ -77,42 +77,42 @@
   </div>
 
   <div
-    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex-grow flex flex-col justify-between pt-2 sm:pt-8 pb-4"
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex-grow flex flex-col justify-between pt-2 lg:pt-8 pb-4"
   >
-    <!-- Hero Content Block (Centered container on mobile, left-aligned on desktop) -->
-    <div class="hero-content-block text-left w-full max-w-2xl flex flex-col items-center sm:items-start relative mb-8 sm:mb-14">
+    <!-- Hero Content Block (Centered on mobile/tablet, left-aligned on desktop) -->
+    <div class="hero-content-block text-center lg:text-left w-full max-w-2xl flex flex-col items-center lg:items-start relative mb-8 lg:mb-14">
       
       <!-- Difuminado negro leve EXCLUSIVAMENTE en el área del texto -->
-      <div class="absolute -inset-4 sm:-inset-6 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.6)_0%,rgba(0,0,0,0.25)_50%,transparent_75%)] blur-xl -z-10 pointer-events-none"></div>
+      <div class="absolute -inset-4 sm:-inset-6 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.65)_0%,rgba(0,0,0,0.25)_50%,transparent_75%)] blur-xl -z-10 pointer-events-none"></div>
 
       <!-- Subtitle badge with accent lines (Centered on mobile with 2 lines, left on desktop) -->
-      <div class="w-full flex items-center justify-center sm:justify-start gap-2.5 sm:gap-3 mb-3 sm:mb-4 select-none">
-        <div class="w-8 sm:w-12 h-[1.5px] bg-sky-400 shadow-[0_0_8px_rgba(56,189,248,0.8)]"></div>
+      <div class="w-full flex items-center justify-center lg:justify-start gap-2.5 lg:gap-3 mb-3 lg:mb-4 select-none">
+        <div class="w-8 lg:w-12 h-[1.5px] bg-sky-400 shadow-[0_0_8px_rgba(56,189,248,0.8)]"></div>
         <h2
-          class="text-sky-300 font-bold tracking-[0.25em] sm:tracking-[0.3em] uppercase text-[10px] sm:text-sm font-montserrat drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"
+          class="text-sky-300 font-bold tracking-[0.25em] lg:tracking-[0.3em] uppercase text-[10px] lg:text-sm font-montserrat drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"
         >
           EXCELENCIA EN SOFTWARE
         </h2>
-        <div class="w-8 h-[1.5px] bg-sky-400 shadow-[0_0_8px_rgba(56,189,248,0.8)] sm:hidden"></div>
+        <div class="w-8 h-[1.5px] bg-sky-400 shadow-[0_0_8px_rgba(56,189,248,0.8)] lg:hidden"></div>
       </div>
 
-      <!-- PEGASUS NEXUS — TÍTULO PRINCIPAL (Centrado en móvil, a la izquierda en desktop) -->
+      <!-- PEGASUS NEXUS — TÍTULO PRINCIPAL (Centrado en móvil/tablet, a la izquierda en desktop) -->
       <h1 class="pn-title w-full" aria-label="Pegasus Nexus">
         <span class="pn-pegasus">PEGASUS</span>
         <span class="pn-nexus">NEXUS</span>
       </h1>
 
-      <!-- Value Proposition Punchline -->
-      <h3 class="w-full text-[23px] sm:text-4xl lg:text-[44px] font-bold text-white mb-3 sm:mb-4 tracking-tight leading-[1.2] sm:leading-[1.15] font-montserrat drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
+      <!-- Value Proposition Punchline (Centered on mobile, left on desktop) -->
+      <h3 class="w-full text-center lg:text-left text-[23px] sm:text-3xl lg:text-[44px] font-bold text-white mb-3 lg:mb-4 tracking-tight leading-[1.2] lg:leading-[1.15] font-montserrat drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
         Software inteligente para <br />
         <span class="text-sky-400 drop-shadow-[0_0_20px_rgba(56,189,248,0.4)]">transformar procesos</span><br />
         <span class="text-sky-400 drop-shadow-[0_0_20px_rgba(56,189,248,0.4)]">empresariales.</span>
       </h3>
 
-      <!-- Description paragraph -->
+      <!-- Description paragraph (Centered on mobile, left on desktop) -->
       <p
         id="hero-desc"
-        class="w-full text-xs sm:text-sm text-gray-200 font-montserrat font-light leading-relaxed max-w-xl mb-5 sm:mb-7 drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]"
+        class="w-full text-center lg:text-left text-xs lg:text-sm text-gray-200 font-montserrat font-light leading-relaxed max-w-xl mb-5 lg:mb-7 drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]"
       >
         Desarrollamos soluciones digitales, automatización e inteligencia de negocios para que tu empresa opere mejor, decida más rápido y crezca.
       </p>
@@ -120,20 +120,20 @@
       <!-- Action Buttons (Full-width stacked on mobile, inline on desktop) -->
       <div
         id="hero-buttons"
-        class="w-full flex flex-col sm:flex-row items-center gap-3 sm:gap-4 mb-3 sm:mb-4"
+        class="w-full flex flex-col lg:flex-row items-center gap-3 lg:gap-4 mb-3 lg:mb-4"
       >
         <a
           href="https://wa.me/59179786916?text=Hola%20Pegasus%20Nexus!%20Me%20gustar%C3%ADa%20solicitar%20una%20evaluaci%C3%B3n%20inicial%20para%20mi%20empresa."
           target="_blank"
           rel="noopener noreferrer"
-          class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 sm:py-3 rounded-full bg-gradient-to-r from-sky-500 via-sky-400 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-semibold text-xs sm:text-sm shadow-[0_0_25px_rgba(14,165,233,0.5)] hover:shadow-[0_0_35px_rgba(56,189,248,0.8)] hover:scale-[1.02] sm:hover:scale-105 transition-all cursor-pointer text-center"
+          class="w-full lg:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 lg:py-3 rounded-full bg-gradient-to-r from-sky-500 via-sky-400 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-semibold text-xs sm:text-sm shadow-[0_0_25px_rgba(14,165,233,0.5)] hover:shadow-[0_0_35px_rgba(56,189,248,0.8)] hover:scale-[1.02] lg:hover:scale-105 transition-all cursor-pointer text-center"
         >
           <span>Solicitar evaluación</span>
           <span class="text-sm">→</span>
         </a>
         <a
           href="#servicios"
-          class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full border border-white/20 bg-white/5 hover:bg-white/10 hover:border-sky-400/60 text-white font-medium text-xs sm:text-sm transition-all cursor-pointer backdrop-blur-sm text-center"
+          class="w-full lg:w-auto inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full border border-white/20 bg-white/5 hover:bg-white/10 hover:border-sky-400/60 text-white font-medium text-xs sm:text-sm transition-all cursor-pointer backdrop-blur-sm text-center"
         >
           <svg class="w-3.5 h-3.5 fill-current text-white shrink-0" viewBox="0 0 24 24">
             <polygon points="6 3 20 12 6 21 6 3"></polygon>
@@ -143,7 +143,7 @@
       </div>
 
       <!-- Micro-badge Evaluación inicial gratuita -->
-      <div class="w-full flex items-center justify-center sm:justify-start gap-2 text-sky-400 text-xs font-montserrat">
+      <div class="w-full flex items-center justify-center lg:justify-start gap-2 text-sky-400 text-xs font-montserrat">
         <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
           <path d="m9 12 2 2 4-4"/>
@@ -253,52 +253,52 @@
 
       </div>
 
-      <!-- Row 2: Horizontal line divider, 3 Trust Pillars and Mouse Scroll matching screenshot -->
-      <div class="w-full pt-3 sm:pt-5 border-t border-white/[0.15] flex flex-col items-center gap-4">
+      <!-- Row 2: Horizontal line divider, 3 Trust Pillars matching mobile mockup -->
+      <div class="w-full pt-3 lg:pt-5 border-t border-white/[0.15] flex flex-col items-center gap-4">
         
         <!-- 3 Trust Pillars -->
-        <div class="w-full flex items-center justify-between sm:justify-center gap-2 sm:gap-10 text-[10px] sm:text-sm text-gray-200 font-montserrat font-light">
-          <div class="flex items-center gap-1.5 sm:gap-3">
-            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <div class="w-full flex items-center justify-between lg:justify-center gap-2 lg:gap-10 text-[10px] sm:text-xs lg:text-sm text-gray-200 font-montserrat font-light">
+          <div class="flex items-center gap-1.5 lg:gap-3">
+            <svg class="w-4 h-4 lg:w-5 lg:h-5 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polygon points="12 2 2 7 12 12 22 7 12 2" />
               <polyline points="2 17 12 22 22 17" />
               <polyline points="2 12 12 17 22 12" />
             </svg>
-            <span class="tracking-tight sm:tracking-wide leading-tight sm:leading-normal">
-              <span class="sm:hidden">Desarrollo<br/>personalizado</span>
-              <span class="hidden sm:inline">Desarrollo personalizado</span>
+            <span class="tracking-tight lg:tracking-wide leading-tight lg:leading-normal">
+              <span class="lg:hidden">Desarrollo<br/>personalizado</span>
+              <span class="hidden lg:inline">Desarrollo personalizado</span>
             </span>
           </div>
 
-          <div class="w-px h-6 sm:h-4 bg-white/20"></div>
+          <div class="w-px h-6 lg:h-4 bg-white/20"></div>
 
-          <div class="flex items-center gap-1.5 sm:gap-3">
-            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <div class="flex items-center gap-1.5 lg:gap-3">
+            <svg class="w-4 h-4 lg:w-5 lg:h-5 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
               <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
             </svg>
-            <span class="tracking-tight sm:tracking-wide leading-tight sm:leading-normal">
-              <span class="sm:hidden">Soporte<br/>continuo</span>
-              <span class="hidden sm:inline">Soporte continuo</span>
+            <span class="tracking-tight lg:tracking-wide leading-tight lg:leading-normal">
+              <span class="lg:hidden">Soporte<br/>continuo</span>
+              <span class="hidden lg:inline">Soporte continuo</span>
             </span>
           </div>
 
-          <div class="w-px h-6 sm:h-4 bg-white/20"></div>
+          <div class="w-px h-6 lg:h-4 bg-white/20"></div>
 
-          <div class="flex items-center gap-1.5 sm:gap-3">
-            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <div class="flex items-center gap-1.5 lg:gap-3">
+            <svg class="w-4 h-4 lg:w-5 lg:h-5 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
               <path d="m9 12 2 2 4-4"/>
             </svg>
-            <span class="tracking-tight sm:tracking-wide leading-tight sm:leading-normal">
-              <span class="sm:hidden">Tecnología<br/>escalable</span>
-              <span class="hidden sm:inline">Tecnología escalable</span>
+            <span class="tracking-tight lg:tracking-wide leading-tight lg:leading-normal">
+              <span class="lg:hidden">Tecnología<br/>escalable</span>
+              <span class="hidden lg:inline">Tecnología escalable</span>
             </span>
           </div>
         </div>
 
         <!-- Mouse Scroll Indicator (Visible on desktop, hidden on mobile matching mockup) -->
-        <a href="#por-que-nexus" class="hidden sm:flex flex-col items-center gap-1 text-[9px] font-mono tracking-[0.25em] uppercase text-gray-400 hover:text-sky-400 transition-colors group cursor-pointer pt-1">
+        <a href="#por-que-nexus" class="hidden lg:flex flex-col items-center gap-1 text-[9px] font-mono tracking-[0.25em] uppercase text-gray-400 hover:text-sky-400 transition-colors group cursor-pointer pt-1">
           <div class="w-3.5 h-6 rounded-full border border-gray-400/60 flex items-start justify-center p-0.5 group-hover:border-sky-400 transition-colors">
             <div class="w-1 h-1.5 rounded-full bg-sky-400 animate-bounce"></div>
           </div>
@@ -527,32 +527,15 @@
 
 
 /* =========================================================
-   TABLET
+   TABLET & MOBILE (< 1024px)
    ========================================================= */
 
-@media (max-width: 900px) {
+@media (max-width: 1023px) {
 
-  .pn-pegasus {
-    font-size: clamp(2.8rem, 8vw, 4.5rem);
-  }
-
-  .pn-nexus {
-    font-size: clamp(1.4rem, 4.2vw, 2.4rem);
-  }
-
-}
-
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
-
-@media (max-width: 640px) {
-
-  #inicio {
-    background-position: 78% 6% !important;
+  .hero-cosmos-bg {
+    background-position: 84% 6% !important;
     background-size: cover !important;
-    padding-top: 14rem !important;
+    padding-top: 15rem !important;
   }
 
   .pn-title {
@@ -563,18 +546,35 @@
   }
 
   .pn-pegasus {
-    font-size: clamp(3.2rem, 14vw, 4.5rem);
+    font-size: clamp(3rem, 12vw, 4.8rem);
     letter-spacing: 0.03em;
     -webkit-text-stroke: 1.8px #edf7ff;
     text-align: center;
   }
 
   .pn-nexus {
-    font-size: clamp(1.8rem, 8.2vw, 2.6rem);
+    font-size: clamp(1.6rem, 7vw, 2.7rem);
     letter-spacing: 0.42em;
     padding-left: 0.42em;
     -webkit-text-stroke: 1.5px #edf7ff;
     text-align: center;
+  }
+
+}
+
+@media (max-width: 640px) {
+
+  .hero-cosmos-bg {
+    background-position: 84% 6% !important;
+    padding-top: 13.5rem !important;
+  }
+
+  .pn-pegasus {
+    font-size: clamp(3.2rem, 14vw, 4.4rem);
+  }
+
+  .pn-nexus {
+    font-size: clamp(1.7rem, 8vw, 2.5rem);
   }
 
 }

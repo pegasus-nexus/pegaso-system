@@ -12,7 +12,7 @@
           </div>
         </a>
       </div>
-      <nav class="hidden md:flex items-center space-x-5 lg:space-x-7">
+      <nav class="hidden lg:flex items-center space-x-5 lg:space-x-7">
         <a href="#inicio" class="relative text-xs uppercase tracking-[0.2em] font-semibold text-white py-1 after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-sky-400 after:shadow-[0_0_8px_#38bdf8]">INICIO</a>
         <a href="#por-que-nexus" class="text-xs uppercase tracking-[0.2em] font-medium text-gray-300 hover:text-white transition-colors">NOSOTROS</a>
         <a href="#servicios" class="text-xs uppercase tracking-[0.2em] font-medium text-gray-300 hover:text-white transition-colors">SOLUCIONES</a>
@@ -26,13 +26,13 @@
           href="https://wa.me/59179786916?text=Hola%20Pegasus%20Nexus!%20Me%20gustar%C3%ADa%20solicitar%20una%20evaluaci%C3%B3n%20inicial%20para%20mi%20empresa."
           target="_blank"
           rel="noopener noreferrer"
-          class="hidden sm:inline-flex items-center gap-1.5 px-4 sm:px-5 py-2 rounded-full border border-sky-400/80 bg-sky-950/40 text-white hover:bg-sky-500/20 text-xs font-semibold tracking-wider uppercase transition-all shadow-[0_0_15px_rgba(14,165,233,0.35)] hover:shadow-[0_0_25px_rgba(56,189,248,0.6)] cursor-pointer"
+          class="hidden lg:inline-flex items-center gap-1.5 px-4 sm:px-5 py-2 rounded-full border border-sky-400/80 bg-sky-950/40 text-white hover:bg-sky-500/20 text-xs font-semibold tracking-wider uppercase transition-all shadow-[0_0_15px_rgba(14,165,233,0.35)] hover:shadow-[0_0_25px_rgba(56,189,248,0.6)] cursor-pointer"
         >
           <span>SOLICITAR EVALUACIÓN</span>
           <span class="text-sm leading-none">→</span>
         </a>
 
-        <button id="mobile-menu-open" class="text-white hover:text-sky-300 focus:outline-none cursor-pointer p-1" aria-label="Abrir menú">
+        <button id="mobile-menu-open" class="lg:hidden text-white hover:text-sky-300 focus:outline-none cursor-pointer p-1" aria-label="Abrir menú">
           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
@@ -43,7 +43,7 @@
 </header>
 
 <!-- Mobile menu overlay -->
-<div id="mobile-menu" class="fixed inset-0 z-[60] bg-cosmos-dark/95 backdrop-blur-xl flex flex-col justify-center items-center space-y-8 transition-transform duration-300 translate-x-full md:hidden">
+<div id="mobile-menu" class="fixed inset-0 z-[60] bg-cosmos-dark/95 backdrop-blur-xl flex flex-col justify-center items-center space-y-8 transition-transform duration-300 translate-x-full lg:hidden">
   <!-- Close Button -->
   <button id="mobile-menu-close" class="absolute top-6 right-6 text-white hover:text-gold-bright focus:outline-none cursor-pointer">
     <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
