@@ -61,10 +61,110 @@ const stepTitles = [
 const stepDescriptions = [
   'Selecciona la opción que mejor describe tu realidad actual.',
   'Selecciona la opción que mejor describe tu realidad actual.',
-  'Valora cada afirmación del 1 al 5.',
+  'Valora cada afirmación del 1 al 5 según tu grado de implementación.',
   'Selecciona la opción que mejor describe tu realidad actual.',
   'Usaremos estos datos únicamente para enviarte el resultado y conversar sobre esta evaluación.'
 ];
+
+// Helper to get matching SVG icons for each option
+const getOptionIcon = (label: string) => {
+  switch (label) {
+    case 'Retail / comercio':
+      return (
+        <svg className="w-5 h-5 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+        </svg>
+      );
+    case 'Distribución':
+      return (
+        <svg className="w-5 h-5 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+          <polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/>
+        </svg>
+      );
+    case 'Alimentos':
+      return (
+        <svg className="w-5 h-5 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M18 2v20M14 2v6a3 3 0 0 0 3 3v11M6 2v7a2 2 0 0 0 2 2v11M10 2v7a2 2 0 0 1-2 2"/>
+        </svg>
+      );
+    case 'Manufactura':
+      return (
+        <svg className="w-5 h-5 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+        </svg>
+      );
+    case 'Servicios':
+      return (
+        <svg className="w-5 h-5 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="12" cy="12" r="3"/>
+          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+        </svg>
+      );
+    case 'Salud':
+      return (
+        <svg className="w-5 h-5 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+          <path d="M3.22 12H9.5l1.5-3 2 6 1.5-3h6.28"/>
+        </svg>
+      );
+    case 'Educación':
+      return (
+        <svg className="w-5 h-5 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/>
+        </svg>
+      );
+    case 'Otro':
+      return (
+        <svg className="w-5 h-5 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="12" cy="12" r="10"/><circle cx="8" cy="12" r="1" fill="currentColor"/><circle cx="12" cy="12" r="1" fill="currentColor"/><circle cx="16" cy="12" r="1" fill="currentColor"/>
+        </svg>
+      );
+    case '1–9':
+    case '10–49':
+    case '50–199':
+    case '200 o más':
+      return (
+        <svg className="w-5 h-5 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+        </svg>
+      );
+    case 'Prefiero no indicarlo':
+      return (
+        <svg className="w-5 h-5 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+        </svg>
+      );
+    case 'Una ubicación':
+    case '2–3 ubicaciones':
+    case '4 o más':
+    case 'Venta por varios canales':
+    case 'Operación distribuida sin sucursales':
+      return (
+        <svg className="w-5 h-5 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+        </svg>
+      );
+    case 'Propietario / gerencia':
+    case 'Operaciones':
+    case 'Administración / finanzas':
+    case 'Comercial / marketing':
+    case 'Tecnología':
+    case 'Consultoría':
+      return (
+        <svg className="w-5 h-5 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+        </svg>
+      );
+    default:
+      return (
+        <svg className="w-5 h-5 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="12" cy="12" r="9"/><polyline points="12 6 12 12 14 14"/>
+        </svg>
+      );
+  }
+};
 
 interface OptionGroupProps {
   q: { id: string; label: string; options: string[] };
@@ -73,22 +173,45 @@ interface OptionGroupProps {
 }
 
 const OptionGroup: React.FC<OptionGroupProps> = ({ q, answers, setAnswer }) => {
+  const isFourCols = q.options.length === 8;
+  const isThreeCols = q.options.length === 5 || q.options.length === 6;
+
   return (
-    <fieldset className="question">
-      <legend>
-        <small>{q.id}</small>
-        {q.label}
-      </legend>
-      <div className="choice-grid">
-        {q.options.map(o => (
-          <label key={o} className={answers[q.id] === o ? 'choice selected' : 'choice'}>
-            <input type="radio" name={q.id} checked={answers[q.id] === o} onChange={() => setAnswer(q.id, o)} />
-            <span>{o}</span>
-            <i aria-hidden="true">✓</i>
-          </label>
-        ))}
+    <div className="question-block mb-8">
+      <div className="flex items-center gap-2 mb-2">
+        <span className="text-[10px] font-bold text-sky-400 uppercase tracking-widest font-mono">
+          {q.id}
+        </span>
       </div>
-    </fieldset>
+      <h3 className="text-sm sm:text-base font-semibold text-white mb-3.5 leading-snug">
+        {q.label}
+      </h3>
+      <div className={`grid grid-cols-1 sm:grid-cols-2 ${isFourCols ? 'lg:grid-cols-4' : isThreeCols ? 'lg:grid-cols-3' : 'lg:grid-cols-2'} gap-3`}>
+        {q.options.map(o => {
+          const isSelected = answers[q.id] === o;
+          return (
+            <button
+              type="button"
+              key={o}
+              onClick={() => setAnswer(q.id, o)}
+              className={`choice-card p-3.5 flex items-center justify-between text-left transition-all ${isSelected ? 'selected' : ''}`}
+            >
+              <div className="flex items-center gap-3 min-w-0 pr-2">
+                {getOptionIcon(o)}
+                <span className={`text-xs leading-tight truncate ${isSelected ? 'font-semibold text-white' : 'font-medium text-gray-300'}`}>
+                  {o}
+                </span>
+              </div>
+              {isSelected && (
+                <span className="w-4 h-4 rounded-full bg-blue-500 flex items-center justify-center text-white text-[10px] font-bold shadow-[0_0_8px_#3b82f6] shrink-0">
+                  ✓
+                </span>
+              )}
+            </button>
+          );
+        })}
+      </div>
+    </div>
   );
 };
 
@@ -193,69 +316,80 @@ const Result: React.FC<ResultProps> = ({ result, onRestart }) => {
   const wa = `https://wa.me/59179786916?text=${encodeURIComponent(`Hola Marco, completé la Evaluación de Capacidades Pegasus. Mi código es ${result.leadId}. Quisiera revisar mi resultado.`)}`;
 
   return (
-    <main className="result-shell">
-      <header className="assessment-header">
-        <a href="/" className="brand">
-          <span className="brand-mark">P</span>
-          <span>Pegasus <b>Nexus</b></span>
-        </a>
-        <span className="secure-note">Evaluación completada</span>
-      </header>
-
-      <section className="result-hero">
+    <div className="max-w-4xl mx-auto py-6">
+      <section className="glass-card p-8 sm:p-10 mb-6 flex flex-col md:flex-row items-center justify-between gap-8">
         <div>
-          <span className="eyebrow">Tu resultado orientativo</span>
-          <h1>{result.band}</h1>
-          <p>{result.message}</p>
-          <div className="result-code">
-            Código de evaluación <b>{result.leadId}</b>
+          <span className="text-[10px] font-mono tracking-[0.2em] uppercase text-sky-400 font-semibold block mb-2">
+            TU RESULTADO ORIENTATIVO
+          </span>
+          <h1 className="text-2xl sm:text-3xl font-heading font-semibold text-white mb-3">
+            {result.band}
+          </h1>
+          <p className="text-xs sm:text-sm text-gray-300 font-light leading-relaxed max-w-xl mb-4">
+            {result.message}
+          </p>
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-sky-500/10 border border-sky-400/30 text-xs text-sky-300 font-mono">
+            Código de evaluación: <b className="text-white font-bold">{result.leadId}</b>
           </div>
         </div>
-        <div className="score-ring" style={{ ['--score' as string]: result.index } as React.CSSProperties}>
-          <div>
-            <strong>{result.index}</strong>
-            <span>/ 100</span>
-          </div>
+
+        <div className="w-36 h-36 rounded-full border-4 border-sky-500/30 flex flex-col items-center justify-center bg-sky-950/40 shadow-[0_0_30px_rgba(56,189,248,0.3)] shrink-0">
+          <strong className="text-4xl font-black text-white font-montserrat">{result.index}</strong>
+          <span className="text-xs text-sky-400 font-medium tracking-wider">/ 100</span>
         </div>
       </section>
 
-      <section className="result-body">
-        <div className="dimension-card">
-          <div className="section-title">
-            <span>01</span>
-            <h2>Tus cinco capacidades</h2>
-          </div>
-          {result.dimensions.map(d => (
-            <div className="dimension-row" key={d.name}>
-              <div>
-                <b>{d.name}</b>
-                <span>{d.score}%</span>
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+        <div className="md:col-span-7 glass-card p-6 sm:p-8">
+          <h2 className="text-base font-bold text-white mb-6 font-montserrat">Tus cinco capacidades</h2>
+          <div className="space-y-4">
+            {result.dimensions.map(d => (
+              <div key={d.name}>
+                <div className="flex justify-between text-xs text-gray-200 mb-1.5 font-medium">
+                  <span>{d.name}</span>
+                  <span className="text-sky-400 font-bold">{d.score}%</span>
+                </div>
+                <div className="w-full h-2 rounded-full bg-gray-800 overflow-hidden">
+                  <div className="h-full bg-gradient-to-r from-blue-600 to-sky-400 shadow-[0_0_8px_#38bdf8]" style={{ width: `${d.score}%` }} />
+                </div>
               </div>
-              <i>
-                <em style={{ width: `${d.score}%` }} />
-              </i>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
-        <aside className="insight-card">
-          <span className="mini-label">Lectura preliminar</span>
-          <h3>Fortaleza</h3>
-          <p><b>{result.strength}</b> aparece como tu capacidad más desarrollada.</p>
-          <h3>Oportunidad prioritaria</h3>
-          <p><b>{result.priority}</b> concentra la mayor oportunidad de mejora.</p>
-          <a className="whatsapp-button" href={wa} target="_blank" rel="noreferrer">
-            Conversar con Marco <span>↗</span>
-          </a>
-          <p className="privacy-note">WhatsApp recibirá únicamente tu código de evaluación.</p>
-        </aside>
-      </section>
+        <aside className="md:col-span-5 glass-card p-6 sm:p-8 flex flex-col justify-between">
+          <div>
+            <span className="text-[10px] font-mono tracking-widest text-sky-400 uppercase font-semibold block mb-2">Lectura preliminar</span>
+            <h3 className="text-xs font-semibold text-gray-300 uppercase tracking-wider mb-1">Fortaleza</h3>
+            <p className="text-xs text-gray-200 mb-4 font-light">
+              <b className="text-white font-semibold">{result.strength}</b> es tu capacidad más desarrollada.
+            </p>
+            <h3 className="text-xs font-semibold text-gray-300 uppercase tracking-wider mb-1">Oportunidad prioritaria</h3>
+            <p className="text-xs text-gray-200 mb-6 font-light">
+              <b className="text-white font-semibold">{result.priority}</b> concentra la mayor oportunidad de mejora.
+            </p>
+          </div>
 
-      <footer className="result-footer">
-        <p>Este resultado no reemplaza un diagnóstico técnico o empresarial.</p>
-        <button onClick={onRestart}>Nueva evaluación</button>
-      </footer>
-    </main>
+          <div className="space-y-3">
+            <a
+              href={wa}
+              target="_blank"
+              rel="noreferrer"
+              className="w-full py-3.5 px-5 rounded-full bg-gradient-to-r from-blue-600 via-sky-500 to-sky-400 text-white font-bold text-xs uppercase tracking-wider shadow-[0_0_20px_rgba(56,189,248,0.5)] flex items-center justify-center gap-2 hover:shadow-[0_0_30px_rgba(56,189,248,0.8)] transition-all cursor-pointer text-center"
+            >
+              <span>Conversar con Marco</span>
+              <span className="text-sm">↗</span>
+            </a>
+            <button
+              onClick={onRestart}
+              className="w-full py-2.5 px-4 rounded-full border border-white/20 text-gray-300 hover:text-white text-xs transition-colors"
+            >
+              Nueva evaluación
+            </button>
+          </div>
+        </aside>
+      </div>
+    </div>
   );
 };
 
@@ -346,36 +480,25 @@ export const CapacidadesApp: React.FC = () => {
               }
           }
 
-          const response = await fetch('/api/save-capacidades', {
+          await fetch('/api/save-capacidades', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                lead_id: resultData.leadId,
-                name: String(answers.name || ''),
-                company: String(answers.company || ''),
-                email: email,
-                phone: String(answers.phone || ''),
-                city: String(answers.city || ''),
-                responses: answers,
-                result_index: resultData.index,
-                band: resultData.band,
-                dimensions: resultData.dimensions,
-                strength: resultData.strength,
-                priority: resultData.priority,
-                message: resultData.message,
-                user_agent,
-                utm_source,
-                utm_medium,
-                utm_campaign,
-                session_duration_seconds,
-                company_domain,
-                data_processing_consent: answers.consent === 'yes'
+              session_id: sessionId,
+              lead_id: resultData.leadId,
+              score_total: resultData.index,
+              band: resultData.band,
+              strength: resultData.strength,
+              priority: resultData.priority,
+              answers,
+              duration_seconds: session_duration_seconds,
+              utm_source,
+              utm_medium,
+              utm_campaign,
+              user_agent,
+              company_domain
             })
           });
-
-          if (!response.ok) {
-              throw new Error("Respuesta no satisfactoria del servidor");
-          }
 
           setResult(resultData);
           sessionStorage.removeItem(STORAGE_KEY);
@@ -402,139 +525,238 @@ export const CapacidadesApp: React.FC = () => {
   if (result) return <Result result={result} onRestart={restart} />;
 
   return (
-    <main className="assessment-shell">
-      <header className="assessment-header">
-        <a href="/" className="brand">
-          <span className="brand-mark">P</span>
-          <span>Pegasus <b>Nexus</b></span>
-        </a>
-        <span className="secure-note">Resultado orientativo · Datos protegidos</span>
-      </header>
+    <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+      
+      {/* Left Aside Card */}
+      <aside className="lg:col-span-4 xl:col-span-3 glass-card p-6 sm:p-7 flex flex-col justify-between">
+        <div>
+          <span className="text-[10px] uppercase tracking-[0.2em] font-semibold text-sky-400 font-mono block mb-3">
+            EVALUACIÓN DE CAPACIDADES
+          </span>
+          <h2 className="text-xl sm:text-2xl font-heading font-normal text-white leading-snug mb-3">
+            Un mapa claro para tu siguiente decisión.
+          </h2>
+          <p className="text-xs text-gray-400 leading-relaxed font-light mb-8">
+            Responde según la situación actual de tu empresa. No hay respuestas correctas o incorrectas.
+          </p>
 
-      <div className="assessment-grid">
-        <aside className="step-aside">
-          <span className="eyebrow">Evaluación de capacidades</span>
-          <h2>Un mapa claro para tu siguiente decisión.</h2>
-          <p>Responde según la situación actual de tu empresa. No hay respuestas correctas o incorrectas.</p>
-          <ol>
-            {steps.map((s, i) => (
-              <li key={s} className={i === step ? 'active' : i < step ? 'done' : ''}>
-                <span>{i < step ? '✓' : i + 1}</span>
-                <b>{s}</b>
-              </li>
-            ))}
-          </ol>
-        </aside>
+          {/* Step Indicators with vertical dashed line */}
+          <div className="space-y-1 relative pl-1">
+            {steps.map((s, i) => {
+              const isActive = i === step;
+              const isDone = i < step;
 
-        <section className="form-panel">
-          <div className="mobile-progress">
-            <span>Paso {step + 1} de 5 · {steps[step]}</span>
-            <b>{Math.round((step + 1) * 20)}%</b>
-            <i style={{ width: `${(step + 1) * 20}%` }} />
+              return (
+                <React.Fragment key={s}>
+                  {i > 0 && (
+                    <div className="w-px h-3.5 border-l border-dashed border-gray-600/80 ml-6 my-0.5" />
+                  )}
+                  <div
+                    className={`flex items-center justify-between px-3.5 py-2 rounded-xl transition-all ${
+                      isActive
+                        ? 'bg-gradient-to-r from-blue-600/35 to-sky-500/15 border border-sky-400/50 text-white font-semibold shadow-[0_0_15px_rgba(56,189,248,0.25)]'
+                        : isDone
+                        ? 'text-gray-300 font-medium'
+                        : 'text-gray-500'
+                    }`}
+                  >
+                    <div className="flex items-center gap-3">
+                      <span
+                        className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold transition-all ${
+                          isActive
+                            ? 'bg-blue-500 text-white shadow-[0_0_10px_#3b82f6]'
+                            : isDone
+                            ? 'bg-sky-500/20 text-sky-300 border border-sky-400/40'
+                            : 'border border-gray-600 text-gray-400'
+                        }`}
+                      >
+                        {isDone ? '✓' : i + 1}
+                      </span>
+                      <span className="text-xs tracking-wide">{s}</span>
+                    </div>
+                    {isActive && <span className="text-sky-400 font-bold text-sm">›</span>}
+                  </div>
+                </React.Fragment>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Security Bottom Sub-card */}
+        <div className="mt-8 p-3.5 rounded-xl bg-white/[0.03] border border-white/[0.08] flex items-center gap-3">
+          <div className="w-8 h-8 rounded-lg bg-sky-500/15 border border-sky-400/30 flex items-center justify-center text-sky-400 shrink-0">
+            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <p className="text-[10.5px] text-gray-400 leading-snug font-light">
+            Tus datos están protegidos y serán utilizados únicamente para fines de evaluación.
+          </p>
+        </div>
+      </aside>
+
+      {/* Right Main Form Panel */}
+      <section className="lg:col-span-8 xl:col-span-9 glass-card p-6 sm:p-8">
+        
+        {/* Top Security & Progress Header */}
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 mb-6 border-b border-white/[0.08]">
+          <div className="flex items-center gap-2 text-[10px] uppercase tracking-wider text-sky-300 font-semibold font-mono">
+            <svg className="w-3.5 h-3.5 text-sky-400" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+            </svg>
+            <span>RESULTADO ORIENTATIVO · DATOS PROTEGIDOS</span>
           </div>
 
-          <div className="form-heading">
-            <span>0{step + 1}</span>
-            <div>
-              <h1>{stepTitles[step]}</h1>
-              <p>{stepDescriptions[step]}</p>
+          <div className="flex items-center gap-3 text-xs text-gray-400">
+            <span className="text-[11px] font-medium text-gray-300">Paso {step + 1} de 5 · {steps[step]}</span>
+            <div className="w-32 h-1.5 rounded-full bg-gray-800 overflow-hidden">
+              <div
+                className="h-full bg-gradient-to-r from-blue-500 to-sky-400 shadow-[0_0_8px_#38bdf8] transition-all duration-300"
+                style={{ width: `${(step + 1) * 20}%` }}
+              />
             </div>
+            <span className="text-[11px] font-bold text-sky-400">{Math.round((step + 1) * 20)}%</span>
           </div>
+        </div>
 
-          {errors.length > 0 && (
-            <div className="error-summary" role="alert">Revisa los campos señalados antes de continuar.</div>
-          )}
+        {/* Step Heading */}
+        <div className="flex items-start gap-4 mb-8">
+          <span className="text-3xl sm:text-4xl font-cinzel text-sky-400/90 font-bold leading-none">
+            0{step + 1}
+          </span>
+          <div className="w-px h-10 bg-white/20"></div>
+          <div>
+            <h1 className="text-xl sm:text-2xl font-heading font-semibold text-white leading-tight">
+              {stepTitles[step]}
+            </h1>
+            <p className="text-xs text-gray-400 mt-1 font-light">
+              {stepDescriptions[step]}
+            </p>
+          </div>
+        </div>
 
-          {step === 0 && profile.map(q => (
-            <OptionGroup key={q.id} q={q} answers={answers} setAnswer={setAnswer} />
-          ))}
+        {errors.length > 0 && (
+          <div className="error-summary mb-6 p-3 rounded-xl bg-red-950/40 border border-red-500/40 text-red-200 text-xs" role="alert">
+            Revisa los campos señalados antes de continuar.
+          </div>
+        )}
 
-          {step === 1 && (
-            <>
-              <fieldset className="question">
-                <legend>
-                  <small>P05</small>
-                  ¿Qué problemas te generan hoy mayor pérdida de control o tiempo? <em>Elige hasta 3</em>
+        {step === 0 && profile.map(q => (
+          <OptionGroup key={q.id} q={q} answers={answers} setAnswer={setAnswer} />
+        ))}
+
+        {step === 1 && (
+          <>
+            <fieldset className="question mb-8">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-[10px] font-bold text-sky-400 uppercase tracking-widest font-mono">P05</span>
+              </div>
+              <h3 className="text-sm sm:text-base font-semibold text-white mb-3.5 leading-snug">
+                ¿Qué problemas te generan hoy mayor pérdida de control o tiempo? <span className="text-sky-400 font-normal italic text-xs ml-1">(Elige hasta 3)</span>
+              </h3>
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5">
+                {painOptions.map(o => {
+                  const selected = ((answers.P05 as string[]) || []).includes(o);
+                  return (
+                    <button
+                      type="button"
+                      key={o}
+                      onClick={() => togglePain(o)}
+                      disabled={!selected && ((answers.P05 as string[]) || []).length >= 3}
+                      className={`choice-card p-3 flex items-center justify-between text-left transition-all ${selected ? 'selected' : ''}`}
+                    >
+                      <span className={`text-xs ${selected ? 'font-semibold text-white' : 'font-medium text-gray-300'}`}>{o}</span>
+                      {selected && (
+                        <span className="w-3.5 h-3.5 rounded-full bg-blue-500 flex items-center justify-center text-white text-[9px] font-bold shadow-[0_0_6px_#3b82f6]">✓</span>
+                      )}
+                    </button>
+                  );
+                })}
+              </div>
+            </fieldset>
+
+            {situation.map(q => (
+              <OptionGroup key={q.id} q={q} answers={answers} setAnswer={setAnswer} />
+            ))}
+          </>
+        )}
+
+        {step === 2 && (
+          <div className="scale-wrap">
+            <div className="scale-key flex justify-between text-xs text-sky-300 font-mono mb-4 px-1">
+              <span>1 · No existe</span>
+              <span>5 · Integrada y medible</span>
+            </div>
+            {maturity.map(([id, label, dim]) => (
+              <fieldset className="scale-question mb-6 p-4 rounded-xl bg-white/[0.02] border border-white/[0.06]" key={id}>
+                <legend className="text-xs sm:text-sm font-semibold text-white mb-3">
+                  <span className="text-[10px] font-mono text-sky-400 block mb-1">{id} · {dim}</span>
+                  {label}
                 </legend>
-                <div className="choice-grid compact">
-                  {painOptions.map(o => {
-                    const selected = ((answers.P05 as string[]) || []).includes(o);
+                <div className="grid grid-cols-5 gap-2">
+                  {scale.map((s, i) => {
+                    const isSelected = answers[id] === String(i + 1);
                     return (
-                      <label key={o} className={selected ? 'choice selected' : 'choice'}>
-                        <input
-                          type="checkbox"
-                          checked={selected}
-                          onChange={() => togglePain(o)}
-                          disabled={!selected && ((answers.P05 as string[]) || []).length >= 3}
-                        />
-                        <span>{o}</span>
-                        <i>✓</i>
-                      </label>
+                      <button
+                        type="button"
+                        key={s}
+                        onClick={() => setAnswer(id, String(i + 1))}
+                        className={`p-2.5 rounded-xl border text-center transition-all ${
+                          isSelected
+                            ? 'bg-blue-600/40 border-sky-400 text-white shadow-[0_0_12px_rgba(56,189,248,0.4)]'
+                            : 'bg-white/5 border-white/10 text-gray-300 hover:border-sky-400/40'
+                        }`}
+                      >
+                        <b className="block text-sm font-bold">{i + 1}</b>
+                        <span className="text-[9px] hidden sm:block text-gray-400 leading-tight mt-1 truncate">{s}</span>
+                      </button>
                     );
                   })}
                 </div>
               </fieldset>
-              {situation.map(q => (
-                <OptionGroup key={q.id} q={q} answers={answers} setAnswer={setAnswer} />
-              ))}
-            </>
-          )}
-
-          {step === 2 && (
-            <div className="scale-wrap">
-              <div className="scale-key">
-                <span>1 · No existe</span>
-                <span>5 · Integrada y medible</span>
-              </div>
-              {maturity.map(([id, label, dim]) => (
-                <fieldset className="scale-question" key={id}>
-                  <legend>
-                    <small>{id} · {dim}</small>
-                    {label}
-                  </legend>
-                  <div>
-                    {scale.map((s, i) => (
-                      <label key={s} className={answers[id] === String(i + 1) ? 'scale selected' : 'scale'}>
-                        <input
-                          type="radio"
-                          name={id}
-                          checked={answers[id] === String(i + 1)}
-                          onChange={() => setAnswer(id, String(i + 1))}
-                        />
-                        <b>{i + 1}</b>
-                        <span>{s}</span>
-                      </label>
-                    ))}
-                  </div>
-                </fieldset>
-              ))}
-            </div>
-          )}
-
-          {step === 3 && priority.map(q => (
-            <OptionGroup key={q.id} q={q} answers={answers} setAnswer={setAnswer} />
-          ))}
-
-          {step === 4 && (
-            <ContactForm answers={answers} setAnswer={setAnswer} errors={errors} />
-          )}
-
-          {submitError && (
-            <div className="error-summary" role="alert" style={{ backgroundColor: '#450a0a', color: '#fca5a5', borderColor: '#ef4444' }}>
-              {submitError}
-            </div>
-          )}
-
-          <div className="form-actions">
-            {step > 0 && (
-              <button className="back-button" onClick={() => setStep(s => s - 1)} disabled={submitting}>← Atrás</button>
-            )}
-            <button className="next-button" onClick={step === 4 ? submit : next} disabled={submitting}>
-              {submitting ? 'Guardando...' : step === 4 ? 'Ver mi resultado' : 'Siguiente →'}
-            </button>
+            ))}
           </div>
-        </section>
-      </div>
-    </main>
+        )}
+
+        {step === 3 && priority.map(q => (
+          <OptionGroup key={q.id} q={q} answers={answers} setAnswer={setAnswer} />
+        ))}
+
+        {step === 4 && (
+          <ContactForm answers={answers} setAnswer={setAnswer} errors={errors} />
+        )}
+
+        {submitError && (
+          <div className="error-summary mt-4 p-3 rounded-xl bg-red-950/60 border border-red-500/50 text-red-200 text-xs" role="alert">
+            {submitError}
+          </div>
+        )}
+
+        {/* Bottom Actions Row */}
+        <div className="flex items-center justify-between pt-6 mt-8 border-t border-white/[0.08]">
+          {step > 0 ? (
+            <button
+              type="button"
+              className="px-5 py-2.5 rounded-full border border-white/15 bg-white/5 hover:bg-white/10 text-xs font-semibold text-gray-300 hover:text-white transition-all cursor-pointer"
+              onClick={() => setStep(s => s - 1)}
+              disabled={submitting}
+            >
+              ← Anterior
+            </button>
+          ) : <div />}
+
+          <button
+            type="button"
+            className="px-7 py-2.5 rounded-full bg-gradient-to-r from-blue-600 via-sky-500 to-sky-400 hover:from-blue-500 hover:to-sky-300 text-white text-xs font-bold uppercase tracking-wider shadow-[0_0_20px_rgba(56,189,248,0.5)] transition-all cursor-pointer"
+            onClick={step === 4 ? submit : next}
+            disabled={submitting}
+          >
+            {submitting ? 'Guardando...' : step === 4 ? 'Ver mi resultado' : 'SIGUIENTE →'}
+          </button>
+        </div>
+
+      </section>
+
+    </div>
   );
 };
