@@ -536,7 +536,7 @@ export const CapacidadesApp: React.FC = () => {
           <h2 className="text-xl sm:text-2xl font-heading font-normal text-white leading-snug mb-3">
             Un mapa claro para tu siguiente decisión.
           </h2>
-          <p className="text-xs text-gray-400 leading-relaxed font-light mb-8">
+          <p className="text-xs text-slate-300 leading-relaxed font-light mb-8">
             Responde según la situación actual de tu empresa. No hay respuestas correctas o incorrectas.
           </p>
 
@@ -549,15 +549,15 @@ export const CapacidadesApp: React.FC = () => {
               return (
                 <React.Fragment key={s}>
                   {i > 0 && (
-                    <div className="w-px h-3.5 border-l border-dashed border-gray-600/80 ml-6 my-0.5" />
+                    <div className="w-px h-3.5 border-l border-dashed border-sky-400/30 ml-6 my-0.5" />
                   )}
                   <div
-                    className={`flex items-center justify-between px-3.5 py-2 rounded-xl transition-all ${
+                    className={`flex items-center justify-between px-3.5 py-2.5 rounded-xl transition-all ${
                       isActive
                         ? 'bg-gradient-to-r from-blue-600/35 to-sky-500/15 border border-sky-400/50 text-white font-semibold shadow-[0_0_15px_rgba(56,189,248,0.25)]'
                         : isDone
-                        ? 'text-gray-300 font-medium'
-                        : 'text-gray-500'
+                        ? 'text-sky-200 font-medium'
+                        : 'text-slate-200 font-medium'
                     }`}
                   >
                     <div className="flex items-center gap-3">
@@ -566,8 +566,8 @@ export const CapacidadesApp: React.FC = () => {
                           isActive
                             ? 'bg-blue-500 text-white shadow-[0_0_10px_#3b82f6]'
                             : isDone
-                            ? 'bg-sky-500/20 text-sky-300 border border-sky-400/40'
-                            : 'border border-gray-600 text-gray-400'
+                            ? 'bg-sky-500/25 text-sky-300 border border-sky-400/60 shadow-[0_0_8px_rgba(56,189,248,0.2)]'
+                            : 'border border-white/25 bg-white/10 text-slate-100 font-semibold'
                         }`}
                       >
                         {isDone ? '✓' : i + 1}
@@ -583,13 +583,13 @@ export const CapacidadesApp: React.FC = () => {
         </div>
 
         {/* Security Bottom Sub-card */}
-        <div className="mt-8 p-3.5 rounded-xl bg-white/[0.03] border border-white/[0.08] flex items-center gap-3">
-          <div className="w-8 h-8 rounded-lg bg-sky-500/15 border border-sky-400/30 flex items-center justify-center text-sky-400 shrink-0">
+        <div className="mt-8 p-3.5 rounded-xl bg-white/[0.04] border border-white/[0.12] flex items-center gap-3">
+          <div className="w-8 h-8 rounded-lg bg-sky-500/20 border border-sky-400/40 flex items-center justify-center text-sky-300 shrink-0">
             <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
             </svg>
           </div>
-          <p className="text-[10.5px] text-gray-400 leading-snug font-light">
+          <p className="text-[10.5px] text-slate-300 leading-snug font-light">
             Tus datos están protegidos y serán utilizados únicamente para fines de evaluación.
           </p>
         </div>
