@@ -158,11 +158,11 @@
     <!-- Bottom Capability & Trust Modules (2x2 grid on mobile, 4-col bar on desktop matching mockups) -->
     <div class="w-full max-w-7xl mx-auto pt-4 sm:pt-6 pb-2 relative z-20">
       
-      <!-- Row 1: 4 Capabilities (2x2 cards on mobile, transparent row on desktop) -->
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-4 lg:gap-0 lg:divide-x lg:divide-white/[0.12] pb-4 sm:pb-6">
+      <!-- Row 1: 4 Capabilities + Odoo Partner (2x2 cards on mobile, 5-col row on desktop) -->
+      <div class="grid grid-cols-2 lg:grid-cols-5 gap-2.5 sm:gap-4 lg:gap-0 lg:divide-x lg:divide-white/[0.12] pb-4 sm:pb-6">
         
         <!-- 1: Software a medida -->
-        <div class="rounded-2xl bg-[#030712]/60 border border-white/[0.1] backdrop-blur-md p-2.5 sm:p-3 flex items-center gap-2.5 sm:gap-3 lg:bg-transparent lg:border-none lg:backdrop-blur-none lg:p-0 lg:px-6 lg:first:pl-0">
+        <div class="rounded-2xl bg-[#030712]/60 border border-white/[0.1] backdrop-blur-md p-2.5 sm:p-3 flex items-center gap-2.5 sm:gap-3 lg:bg-transparent lg:border-none lg:backdrop-blur-none lg:p-0 lg:px-4 xl:px-6 lg:first:pl-0">
           <div class="relative flex items-center justify-center shrink-0">
             <div class="absolute -inset-1 sm:-inset-2 rounded-full bg-sky-500/25 blur-md sm:blur-lg"></div>
             <div class="relative w-9 h-9 sm:w-11 sm:h-11 lg:w-16 lg:h-16 rounded-full bg-[#030917] border border-sky-400/40 flex items-center justify-center text-sky-400 shadow-[0_0_15px_rgba(56,189,248,0.3)]">
@@ -183,7 +183,7 @@
         </div>
 
         <!-- 2: Automatización -->
-        <div class="rounded-2xl bg-[#030712]/60 border border-white/[0.1] backdrop-blur-md p-2.5 sm:p-3 flex items-center gap-2.5 sm:gap-3 lg:bg-transparent lg:border-none lg:backdrop-blur-none lg:p-0 lg:px-6">
+        <div class="rounded-2xl bg-[#030712]/60 border border-white/[0.1] backdrop-blur-md p-2.5 sm:p-3 flex items-center gap-2.5 sm:gap-3 lg:bg-transparent lg:border-none lg:backdrop-blur-none lg:p-0 lg:px-4 xl:px-6">
           <div class="relative flex items-center justify-center shrink-0">
             <div class="absolute -inset-1 sm:-inset-2 rounded-full bg-sky-500/25 blur-md sm:blur-lg"></div>
             <div class="relative w-9 h-9 sm:w-11 sm:h-11 lg:w-16 lg:h-16 rounded-full bg-[#030917] border border-sky-400/40 flex items-center justify-center text-sky-400 shadow-[0_0_15px_rgba(56,189,248,0.3)]">
@@ -204,7 +204,7 @@
         </div>
 
         <!-- 3: Inteligencia de negocios -->
-        <div class="rounded-2xl bg-[#030712]/60 border border-white/[0.1] backdrop-blur-md p-2.5 sm:p-3 flex items-center gap-2.5 sm:gap-3 lg:bg-transparent lg:border-none lg:backdrop-blur-none lg:p-0 lg:px-6">
+        <div class="rounded-2xl bg-[#030712]/60 border border-white/[0.1] backdrop-blur-md p-2.5 sm:p-3 flex items-center gap-2.5 sm:gap-3 lg:bg-transparent lg:border-none lg:backdrop-blur-none lg:p-0 lg:px-4 xl:px-6">
           <div class="relative flex items-center justify-center shrink-0">
             <div class="absolute -inset-1 sm:-inset-2 rounded-full bg-sky-500/25 blur-md sm:blur-lg"></div>
             <div class="relative w-9 h-9 sm:w-11 sm:h-11 lg:w-16 lg:h-16 rounded-full bg-[#030917] border border-sky-400/40 flex items-center justify-center text-sky-400 shadow-[0_0_15px_rgba(56,189,248,0.3)]">
@@ -226,7 +226,7 @@
         </div>
 
         <!-- 4: Integración de sistemas -->
-        <div class="rounded-2xl bg-[#030712]/60 border border-white/[0.1] backdrop-blur-md p-2.5 sm:p-3 flex items-center gap-2.5 sm:gap-3 lg:bg-transparent lg:border-none lg:backdrop-blur-none lg:p-0 lg:px-6 lg:last:pr-0">
+        <div class="rounded-2xl bg-[#030712]/60 border border-white/[0.1] backdrop-blur-md p-2.5 sm:p-3 flex items-center gap-2.5 sm:gap-3 lg:bg-transparent lg:border-none lg:backdrop-blur-none lg:p-0 lg:px-4 xl:px-6">
           <div class="relative flex items-center justify-center shrink-0">
             <div class="absolute -inset-1 sm:-inset-2 rounded-full bg-sky-500/25 blur-md sm:blur-lg"></div>
             <div class="relative w-9 h-9 sm:w-11 sm:h-11 lg:w-16 lg:h-16 rounded-full bg-[#030917] border border-sky-400/40 flex items-center justify-center text-sky-400 shadow-[0_0_15px_rgba(56,189,248,0.3)]">
@@ -252,6 +252,36 @@
             </p>
           </div>
         </div>
+
+        <!-- 5: Partner Odoo (Al lado derecho) -->
+        <a
+          href="https://odoo.pegasus-nexus.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="col-span-2 lg:col-span-1 rounded-2xl bg-[#030712]/60 hover:bg-[#030917]/85 border border-white/[0.1] hover:border-purple-400/40 backdrop-blur-md p-2.5 sm:p-3 flex items-center justify-center lg:justify-start gap-2.5 sm:gap-3 lg:bg-transparent lg:border-none lg:backdrop-blur-none lg:p-0 lg:px-4 xl:px-6 lg:last:pr-0 group cursor-pointer transition-all"
+        >
+          <div class="relative flex items-center justify-center shrink-0">
+            <div class="absolute -inset-1 sm:-inset-2 rounded-full bg-purple-500/25 blur-md sm:blur-lg group-hover:bg-purple-500/40 transition-all"></div>
+            <div class="relative w-9 h-9 sm:w-11 sm:h-11 lg:w-16 lg:h-16 rounded-full bg-[#030917] border border-purple-400/40 group-hover:border-purple-400/70 flex items-center justify-center p-2 sm:p-2.5 shadow-[0_0_15px_rgba(169,76,146,0.35)] transition-all">
+              <img 
+                src="/logo-odoo.png" 
+                alt="Odoo Partner Tecnológico" 
+                class="w-full h-auto object-contain filter drop-shadow-[0_0_8px_rgba(169,76,146,0.7)] group-hover:scale-105 transition-transform" 
+              />
+            </div>
+          </div>
+          <div class="min-w-0">
+            <div class="flex items-center gap-1">
+              <h4 class="text-[11px] sm:text-xs lg:text-base font-semibold text-white font-montserrat leading-tight truncate sm:whitespace-normal group-hover:text-purple-300 transition-colors">
+                Partner Odoo
+              </h4>
+              <span class="text-xs text-purple-400 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
+            </div>
+            <p class="text-[9px] sm:text-[10px] lg:text-xs text-gray-300 font-light font-montserrat mt-0.5 leading-snug">
+              ERP & Gestión integral
+            </p>
+          </div>
+        </a>
 
       </div>
 
