@@ -18,11 +18,11 @@ export const POST: APIRoute = async ({ request }) => {
         user_agent, utm_source, utm_medium, utm_campaign, 
         session_duration_seconds, company_domain, data_processing_consent
       ) VALUES (
-        ${body.lead_id || null}, ${body.name}, ${body.company}, ${body.email}, ${body.phone || null}, ${body.city || null}, 
-        ${body.responses ? sql.json(body.responses) : null}, ${body.result_index}, ${body.band}, 
-        ${body.dimensions ? sql.json(body.dimensions) : null}, ${body.strength || null}, ${body.priority || null}, ${body.message || null},
-        ${body.user_agent || null}, ${body.utm_source || null}, ${body.utm_medium || null}, ${body.utm_campaign || null}, 
-        ${body.session_duration_seconds || null}, ${body.company_domain || null}, ${body.data_processing_consent || false}
+        ${body.lead_id ?? null}, ${body.name ?? null}, ${body.company ?? null}, ${body.email ?? null}, ${body.phone ?? null}, ${body.city ?? null}, 
+        ${body.responses ? sql.json(body.responses) : null}, ${body.result_index ?? null}, ${body.band ?? null}, 
+        ${body.dimensions ? sql.json(body.dimensions) : null}, ${body.strength ?? null}, ${body.priority ?? null}, ${body.message ?? null},
+        ${body.user_agent ?? null}, ${body.utm_source ?? null}, ${body.utm_medium ?? null}, ${body.utm_campaign ?? null}, 
+        ${body.session_duration_seconds ?? null}, ${body.company_domain ?? null}, ${body.data_processing_consent ?? false}
       )
       RETURNING id;
     `;

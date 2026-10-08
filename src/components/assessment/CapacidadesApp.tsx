@@ -503,17 +503,25 @@ export const CapacidadesApp: React.FC = () => {
             body: JSON.stringify({
               session_id: sessionId,
               lead_id: resultData.leadId,
-              score_total: resultData.index,
+              name: answers.name || null,
+              company: answers.company || null,
+              email: answers.email || null,
+              phone: answers.phone || null,
+              city: answers.city || null,
+              responses: answers,
+              result_index: resultData.index,
               band: resultData.band,
+              dimensions: resultData.dimensions,
               strength: resultData.strength,
               priority: resultData.priority,
-              answers,
-              duration_seconds: session_duration_seconds,
-              utm_source,
-              utm_medium,
-              utm_campaign,
-              user_agent,
-              company_domain
+              message: resultData.message,
+              session_duration_seconds: session_duration_seconds,
+              utm_source: utm_source || null,
+              utm_medium: utm_medium || null,
+              utm_campaign: utm_campaign || null,
+              user_agent: user_agent || null,
+              company_domain: company_domain || null,
+              data_processing_consent: answers.consent === 'yes'
             })
           });
 

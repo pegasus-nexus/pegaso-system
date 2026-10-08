@@ -24,13 +24,13 @@ export const POST: APIRoute = async ({ request }) => {
         user_agent, utm_source, utm_medium, utm_campaign, 
         session_duration_seconds, company_domain, data_processing_consent
       ) VALUES (
-        ${body.company_name}, ${body.contact_name}, ${body.role || null}, ${body.email}, 
-        ${body.phone || null}, ${body.city || null}, ${body.country || null}, 
-        ${body.sector || null}, ${body.employee_count || null}, ${body.years_in_business || null}, 
-        ${body.total_score}, ${body.maturity_index}, 
-        ${body.level}, ${body.level_name}, ${body.open_question_answer || null}, ${body.responses ? sql.json(body.responses) : null},
-        ${body.user_agent || null}, ${body.utm_source || null}, ${body.utm_medium || null}, ${body.utm_campaign || null}, 
-        ${body.session_duration_seconds || null}, ${body.company_domain || null}, ${body.data_processing_consent || false}
+        ${body.company_name ?? null}, ${body.contact_name ?? null}, ${body.role ?? null}, ${body.email ?? null}, 
+        ${body.phone ?? null}, ${body.city ?? null}, ${body.country ?? null}, 
+        ${body.sector ?? null}, ${body.employee_count ?? null}, ${body.years_in_business ?? null}, 
+        ${body.total_score ?? null}, ${body.maturity_index ?? null}, 
+        ${body.level ?? null}, ${body.level_name ?? null}, ${body.open_question_answer ?? null}, ${body.responses ? sql.json(body.responses) : null},
+        ${body.user_agent ?? null}, ${body.utm_source ?? null}, ${body.utm_medium ?? null}, ${body.utm_campaign ?? null}, 
+        ${body.session_duration_seconds ?? null}, ${body.company_domain ?? null}, ${body.data_processing_consent ?? false}
       )
       RETURNING id;
     `;
