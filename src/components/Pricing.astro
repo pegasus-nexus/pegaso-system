@@ -25,269 +25,175 @@
       </p>
     </div>
 
-    <!-- Grilla de los 4 Planes (Web & Landing, Software a tu medida, Ecosistema Empresarial, Infraestructura sin límites) -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch mb-16">
+    <!-- Grilla de los 3 Planes (Plan Gratis, Plan Estándar, Plan Personalizado) -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch mb-16 max-w-6xl mx-auto">
       
-      <!-- 01. PLAN FUNDACIÓN: Web & Landing -->
-      <div class="animate-on-scroll fade-in-up group rounded-3xl p-7 flex flex-col justify-between relative overflow-hidden bg-[#070e1c]/80 border border-sky-500/20 backdrop-blur-md transition-all duration-500 hover:border-sky-400/50 hover:shadow-[0_15px_35px_rgba(14,165,233,0.18)] hover:-translate-y-1.5">
+      <!-- 01. PLAN GRATIS -->
+      <div class="animate-on-scroll fade-in-up group rounded-3xl p-7 sm:p-8 flex flex-col justify-between relative overflow-hidden bg-[#070e1c]/80 border border-sky-500/20 backdrop-blur-md transition-all duration-500 hover:border-sky-400/50 hover:shadow-[0_15px_35px_rgba(14,165,233,0.18)] hover:-translate-y-1.5">
         <div>
           <!-- Icono & Tag de Plan -->
           <div class="flex items-center gap-3 mb-6">
             <div class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/25 flex items-center justify-center text-sky-400 group-hover:border-sky-400 group-hover:shadow-[0_0_15px_rgba(56,189,248,0.3)] transition-all">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-5 h-5">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="2" y1="12" x2="22" y2="12"></line>
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
               </svg>
             </div>
             <span class="text-[10px] font-mono font-bold tracking-[0.18em] uppercase text-gray-400 group-hover:text-sky-400 transition-colors">
-              PLAN FUNDACIÓN
+              INICIAL
             </span>
           </div>
 
-          <h3 class="text-white font-heading font-semibold text-2xl mb-3 group-hover:text-sky-300 transition-colors">
-            Web & Landing
+          <h3 class="text-white font-heading font-semibold text-2xl mb-1 group-hover:text-sky-300 transition-colors">
+            Plan Gratis
           </h3>
           
+          <p class="text-sky-400 text-xs font-medium mb-3">
+            Lo esencial para empezar.
+          </p>
+
           <p class="text-gray-400 text-xs font-light mb-6 leading-relaxed">
-            La base ideal para iniciar tu crecimiento con una presencia digital profesional, rápida y segura.
+            Para una persona que necesita organizar información sencilla de su negocio.
           </p>
 
           <!-- Lista de características -->
-          <ul class="space-y-3.5 mb-8 border-t border-white/[0.06] pt-5">
-            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
-              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="2" y1="12" x2="22" y2="12"></line>
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          <ul class="space-y-3.5 mb-6 border-t border-white/[0.06] pt-5">
+            <li class="flex items-start gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
-              <span>Sitios web y landing pages</span>
+              <span>Una aplicación básica: clientes o inventario.</span>
             </li>
-            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
-              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                <line x1="8" y1="21" x2="16" y2="21"></line>
-                <line x1="12" y1="17" x2="12" y2="21"></line>
+            <li class="flex items-start gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
-              <span>Diseño UI/UX responsive</span>
+              <span>Un solo usuario.</span>
             </li>
-            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
-              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <line x1="18" y1="20" x2="18" y2="10"></line>
-                <line x1="12" y1="20" x2="12" y2="4"></line>
-                <line x1="6" y1="20" x2="6" y2="14"></line>
+            <li class="flex items-start gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
-              <span>Optimización SEO básica</span>
+              <span>Registro, consulta y edición de información.</span>
             </li>
-            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
-              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <circle cx="18" cy="5" r="3"></circle>
-                <circle cx="6" cy="12" r="3"></circle>
-                <circle cx="18" cy="19" r="3"></circle>
-                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
-                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+            <li class="flex items-start gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
-              <span>Integración con redes sociales</span>
+              <span>Acceso en línea.</span>
             </li>
-            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
-              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <circle cx="12" cy="12" r="10"></circle>
-                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
-                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            <li class="flex items-start gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
-              <span>Soporte inicial</span>
+              <span>Guía de uso para comenzar.</span>
             </li>
           </ul>
+
+          <!-- Duración y Restricción -->
+          <div class="border-t border-white/[0.06] pt-4 mb-6 space-y-2">
+            <p class="text-[11px] text-gray-400 font-light leading-relaxed">
+              <strong class="text-sky-300 font-medium">Duración:</strong> sin vencimiento, dentro de los límites del plan gratuito.
+            </p>
+            <p class="text-[11px] text-gray-500 font-light leading-relaxed italic">
+              No incluye reportes avanzados, automatizaciones, conexiones con otros sistemas ni atención personalizada.
+            </p>
+          </div>
         </div>
 
-        <!-- Botón Comenzar Ahora -->
+        <!-- Botón Comenzar Gratis -->
         <a 
-          href="https://wa.me/59179786916?text=Hola%20Pegasus%20Nexus!%20Deseo%20iniciar%20con%20el%20Plan%20Fundaci%C3%B3n%20(Web%20%26%20Landing)." 
+          href="https://wa.me/59179786916?text=Hola%20Pegasus%20Nexus!%20Me%20interesa%20comenzar%20con%20el%20Plan%20Gratis." 
           target="_blank" 
           rel="noopener noreferrer"
           class="w-full py-3 px-4 rounded-xl border border-sky-500/30 text-sky-300 hover:text-white hover:bg-sky-500/20 hover:border-sky-400 transition-all text-center text-xs font-bold tracking-[0.14em] uppercase flex items-center justify-center gap-2 group-hover:border-sky-400 cursor-pointer"
         >
-          <span>COMENZAR AHORA</span>
+          <span>COMENZAR GRATIS</span>
           <span class="text-sm">→</span>
         </a>
       </div>
 
-      <!-- 02. PLAN COMPLETO: Software a tu medida -->
-      <div class="animate-on-scroll fade-in-up group rounded-3xl p-7 flex flex-col justify-between relative overflow-hidden bg-[#070e1c]/80 border border-sky-500/20 backdrop-blur-md transition-all duration-500 hover:border-sky-400/50 hover:shadow-[0_15px_35px_rgba(14,165,233,0.18)] hover:-translate-y-1.5" style="animation-delay: 100ms;">
-        <div>
-          <!-- Icono & Tag de Plan -->
-          <div class="flex items-center gap-3 mb-6">
-            <div class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/25 flex items-center justify-center text-sky-400 group-hover:border-sky-400 group-hover:shadow-[0_0_15px_rgba(56,189,248,0.3)] transition-all">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-5 h-5">
-                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                <polyline points="2 17 12 22 22 17"></polyline>
-                <polyline points="2 12 12 17 22 12"></polyline>
-              </svg>
-            </div>
-            <span class="text-[10px] font-mono font-bold tracking-[0.18em] uppercase text-gray-400 group-hover:text-sky-400 transition-colors">
-              PLAN COMPLETO
-            </span>
-          </div>
-
-          <h3 class="text-white font-heading font-semibold text-2xl mb-3 group-hover:text-sky-300 transition-colors">
-            Software a tu medida
-          </h3>
-          
-          <p class="text-gray-400 text-xs font-light mb-6 leading-relaxed">
-            Soluciones personalizadas y escalables para digitalizar, automatizar y optimizar los procesos centrales de tu negocio.
-          </p>
-
-          <!-- Lista de características -->
-          <ul class="space-y-3.5 mb-8 border-t border-white/[0.06] pt-5">
-            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
-              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <circle cx="12" cy="12" r="3"></circle>
-                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-              </svg>
-              <span>Desarrollo de aplicaciones web</span>
-            </li>
-            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
-              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <line x1="12" y1="1" x2="12" y2="23"></line>
-                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-              </svg>
-              <span>Automatización de procesos</span>
-            </li>
-            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
-              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <line x1="18" y1="20" x2="18" y2="10"></line>
-                <line x1="12" y1="20" x2="12" y2="4"></line>
-                <line x1="6" y1="20" x2="6" y2="14"></line>
-              </svg>
-              <span>Business Intelligence y reportes</span>
-            </li>
-            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
-              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
-                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
-              </svg>
-              <span>Integración con sistemas externos</span>
-            </li>
-            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
-              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                <line x1="3" y1="9" x2="21" y2="9"></line>
-                <line x1="9" y1="21" x2="9" y2="9"></line>
-              </svg>
-              <span>Paneles de administración</span>
-            </li>
-            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
-              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
-              </svg>
-              <span>Soporte y mantenimiento continuo</span>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Botón Solicitar Plan Completo -->
-        <a 
-          href="https://wa.me/59179786916?text=Hola%20Pegasus%20Nexus!%20Deseo%20solicitar%20el%20Plan%20Completo%20(Software%20a%20tu%20medida)." 
-          target="_blank" 
-          rel="noopener noreferrer"
-          class="w-full py-3 px-4 rounded-xl border border-sky-500/30 text-sky-300 hover:text-white hover:bg-sky-500/20 hover:border-sky-400 transition-all text-center text-xs font-bold tracking-[0.14em] uppercase flex items-center justify-center gap-2 group-hover:border-sky-400 cursor-pointer"
-        >
-          <span>SOLICITAR PLAN COMPLETO</span>
-          <span class="text-sm">→</span>
-        </a>
-      </div>
-
-      <!-- 03. PLAN ECOSISTEMA (MÁS POPULAR / DESTACADO): Ecosistema Empresarial -->
-      <div class="animate-on-scroll fade-in-up group rounded-3xl p-7 flex flex-col justify-between relative overflow-hidden bg-[#070e1c] border-2 border-sky-400 shadow-[0_0_35px_rgba(14,165,233,0.25)] backdrop-blur-md transition-all duration-500 hover:shadow-[0_0_50px_rgba(56,189,248,0.35)] hover:-translate-y-2" style="animation-delay: 200ms;">
+      <!-- 02. PLAN ESTÁNDAR (DESTACADO / RECOMENDADO) -->
+      <div class="animate-on-scroll fade-in-up group rounded-3xl p-7 sm:p-8 flex flex-col justify-between relative overflow-hidden bg-[#070e1c] border-2 border-sky-400 shadow-[0_0_35px_rgba(14,165,233,0.25)] backdrop-blur-md transition-all duration-500 hover:shadow-[0_0_50px_rgba(56,189,248,0.35)] hover:-translate-y-2" style="animation-delay: 100ms;">
         <!-- Glow ambiental superior -->
-        <div class="absolute -top-10 -right-10 w-40 h-40 bg-sky-500/20 blur-3xl rounded-full pointer-events-none"></div>
+        <div class="absolute -top-10 -right-10 w-44 h-44 bg-sky-500/20 blur-3xl rounded-full pointer-events-none"></div>
 
         <div>
-          <!-- Icono, Tag de Plan y Badge "MÁS POPULAR" -->
+          <!-- Icono, Tag de Plan y Badge "MÁS ELEGIDO" -->
           <div class="flex items-center justify-between gap-2 mb-6">
             <div class="flex items-center gap-3">
               <div class="w-10 h-10 rounded-xl bg-sky-500/20 border border-sky-400 flex items-center justify-center text-sky-300 shadow-[0_0_15px_rgba(56,189,248,0.4)]">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-5 h-5">
-                  <circle cx="18" cy="18" r="3"></circle>
-                  <circle cx="6" cy="6" r="3"></circle>
-                  <path d="M13 6h3a2 2 0 0 1 2 2v7"></path>
-                  <line x1="6" y1="9" x2="6" y2="21"></line>
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
                 </svg>
               </div>
               <span class="text-[10px] font-mono font-bold tracking-[0.18em] uppercase text-sky-400">
-                PLAN ECOSISTEMA
+                RECOMENDADO
               </span>
             </div>
 
-            <!-- Badge Más Popular -->
+            <!-- Badge Más Elegido -->
             <span class="px-2.5 py-1 rounded-full bg-sky-500/20 border border-sky-400 text-sky-300 text-[9px] font-bold uppercase tracking-wider shadow-[0_0_10px_rgba(56,189,248,0.3)]">
-              MÁS POPULAR
+              MÁS ELEGIDO
             </span>
           </div>
 
-          <h3 class="text-white font-heading font-semibold text-2xl mb-3 text-glow">
-            Ecosistema Empresarial
+          <h3 class="text-white font-heading font-semibold text-2xl mb-1 text-glow">
+            Plan Estándar
           </h3>
           
+          <p class="text-sky-300 text-xs font-medium mb-3">
+            Gestiona las actividades diarias de tu negocio.
+          </p>
+
           <p class="text-gray-300 text-xs font-light mb-6 leading-relaxed">
-            Plataforma centralizada para integrar y coordinar ventas, inventario, finanzas y operaciones según las necesidades de tu empresa.
+            Para negocios que necesitan conectar sus ventas, productos y clientes en un mismo sistema.
           </p>
 
           <!-- Lista de características -->
           <ul class="space-y-3.5 mb-6 border-t border-white/[0.08] pt-5">
-            <li class="flex items-center gap-3 text-xs text-gray-200 font-light">
-              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <circle cx="12" cy="12" r="3"></circle>
-                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+            <li class="flex items-start gap-3 text-xs text-gray-200 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
-              <span>Arquitectura y flujos de trabajo a la medida</span>
+              <span>Todas las aplicaciones estándar disponibles.</span>
             </li>
-            <li class="flex items-center gap-3 text-xs text-gray-200 font-light">
-              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <circle cx="9" cy="21" r="1"></circle>
-                <circle cx="20" cy="21" r="1"></circle>
-                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            <li class="flex items-start gap-3 text-xs text-gray-200 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
-              <span>Ventas, inventario y facturación</span>
+              <span>Gestión de ventas, inventario y clientes.</span>
             </li>
-            <li class="flex items-center gap-3 text-xs text-gray-200 font-light">
-              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                <circle cx="9" cy="7" r="4"></circle>
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            <li class="flex items-start gap-3 text-xs text-gray-200 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
-              <span>CRM y gestión comercial</span>
+              <span>Reportes para conocer los resultados del negocio.</span>
             </li>
-            <li class="flex items-center gap-3 text-xs text-gray-200 font-light">
-              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <line x1="18" y1="20" x2="18" y2="10"></line>
-                <line x1="12" y1="20" x2="12" y2="4"></line>
-                <line x1="6" y1="20" x2="6" y2="14"></line>
+            <li class="flex items-start gap-3 text-xs text-gray-200 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
-              <span>Contabilidad y finanzas</span>
+              <span>Trabajo en equipo con usuarios y permisos.</span>
             </li>
-            <li class="flex items-center gap-3 text-xs text-gray-200 font-light">
-              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                <circle cx="8.5" cy="7" r="4"></circle>
-                <polyline points="17 11 19 13 23 9"></polyline>
+            <li class="flex items-start gap-3 text-xs text-gray-200 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
-              <span>Recursos humanos y operaciones</span>
+              <span>Descarga de información.</span>
             </li>
-            <li class="flex items-center gap-3 text-xs text-gray-200 font-light">
-              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
-                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+            <li class="flex items-start gap-3 text-xs text-gray-200 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
-              <span>Integraciones y desarrollos a medida</span>
+              <span>Acceso en línea, actualizaciones y mantenimiento.</span>
             </li>
-            <li class="flex items-center gap-3 text-xs text-gray-200 font-light">
-              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-                <path d="M6 12v5c0 2 2.5 3 6 3s6-1 6-3v-5"></path>
+            <li class="flex items-start gap-3 text-xs text-gray-200 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
-              <span>Capacitación y soporte continuo</span>
+              <span>Soporte en horario laboral.</span>
             </li>
           </ul>
 
@@ -296,7 +202,7 @@
             href="https://odoo.pegasus-nexus.com/"
             target="_blank"
             rel="noopener noreferrer"
-            class="flex items-center justify-center gap-2.5 py-2.5 mb-6 border-t border-b border-white/[0.08] hover:border-sky-400/40 transition-all group/odoo cursor-pointer"
+            class="flex items-center justify-center gap-2.5 py-2.5 mb-4 border-t border-b border-white/[0.08] hover:border-sky-400/40 transition-all group/odoo cursor-pointer rounded-lg bg-sky-500/[0.04]"
           >
             <img 
               src="/logo-odoo.png" 
@@ -308,108 +214,123 @@
               <span class="text-sky-400">↗</span>
             </span>
           </a>
+
+          <!-- Duración y Restricción -->
+          <div class="pt-2 mb-6 space-y-2">
+            <p class="text-[11px] text-gray-300 font-light leading-relaxed">
+              <strong class="text-sky-300 font-medium">Duración:</strong> contratación mensual o anual.
+            </p>
+            <p class="text-[11px] text-gray-400 font-light leading-relaxed italic">
+              Incluye las funciones existentes de la plataforma. Los desarrollos a medida se cotizan por separado.
+            </p>
+          </div>
         </div>
 
-        <!-- Botón Solicitar Ecosistema -->
+        <!-- Botón Elegir Estándar -->
         <a 
-          href="https://wa.me/59179786916?text=Hola%20Pegasus%20Nexus!%20Me%20interesa%20implementar%20el%20Plan%20Ecosistema%20Empresarial." 
+          href="https://wa.me/59179786916?text=Hola%20Pegasus%20Nexus!%20Me%20interesa%20contratar%20el%20Plan%20Est%C3%A1ndar." 
           target="_blank" 
           rel="noopener noreferrer"
           class="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-bold text-xs tracking-[0.14em] uppercase shadow-[0_0_25px_rgba(14,165,233,0.7)] hover:shadow-[0_0_35px_rgba(56,189,248,0.9)] transition-all flex items-center justify-center gap-2 cursor-pointer"
         >
-          <span>SOLICITAR ECOSISTEMA</span>
+          <span>ELEGIR ESTÁNDAR</span>
           <span class="text-sm">→</span>
         </a>
       </div>
 
-      <!-- 04. PLAN ENTERPRISE: Infraestructura sin límites -->
-      <div class="animate-on-scroll fade-in-up group rounded-3xl p-7 flex flex-col justify-between relative overflow-hidden bg-[#070e1c]/80 border border-sky-500/20 backdrop-blur-md transition-all duration-500 hover:border-sky-400/50 hover:shadow-[0_15px_35px_rgba(14,165,233,0.18)] hover:-translate-y-1.5" style="animation-delay: 300ms;">
+      <!-- 03. PLAN PERSONALIZADO -->
+      <div class="animate-on-scroll fade-in-up group rounded-3xl p-7 sm:p-8 flex flex-col justify-between relative overflow-hidden bg-[#070e1c]/80 border border-sky-500/20 backdrop-blur-md transition-all duration-500 hover:border-sky-400/50 hover:shadow-[0_15px_35px_rgba(14,165,233,0.18)] hover:-translate-y-1.5" style="animation-delay: 200ms;">
         <div>
           <!-- Icono & Tag de Plan -->
           <div class="flex items-center gap-3 mb-6">
             <div class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/25 flex items-center justify-center text-sky-400 group-hover:border-sky-400 group-hover:shadow-[0_0_15px_rgba(56,189,248,0.3)] transition-all">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-5 h-5">
-                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
               </svg>
             </div>
             <span class="text-[10px] font-mono font-bold tracking-[0.18em] uppercase text-gray-400 group-hover:text-sky-400 transition-colors">
-              PLAN ENTERPRISE
+              A MEDIDA
             </span>
           </div>
 
-          <h3 class="text-white font-heading font-semibold text-2xl mb-3 group-hover:text-sky-300 transition-colors">
-            Infraestructura sin límites
+          <h3 class="text-white font-heading font-semibold text-2xl mb-1 group-hover:text-sky-300 transition-colors">
+            Plan Personalizado
           </h3>
           
+          <p class="text-sky-400 text-xs font-medium mb-3">
+            Adapta el sistema a las necesidades de tu empresa.
+          </p>
+
           <p class="text-gray-400 text-xs font-light mb-6 leading-relaxed">
-            Soluciones corporativas de alto rendimiento para organizaciones que requieren máxima seguridad, escalabilidad y disponibilidad.
+            Para empresas que necesitan procesos especiales, administrar varias empresas o conectar otras herramientas.
           </p>
 
           <!-- Lista de características -->
-          <ul class="space-y-3.5 mb-8 border-t border-white/[0.06] pt-5">
-            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
-              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+          <ul class="space-y-3.5 mb-6 border-t border-white/[0.06] pt-5">
+            <li class="flex items-start gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
-              <span>Arquitectura en la nube (AWS / Azure)</span>
+              <span>Todo lo incluido en Estándar.</span>
             </li>
-            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
-              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+            <li class="flex items-start gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
-              <span>Microservicios y contenedores</span>
+              <span>Formularios y campos adaptados al negocio.</span>
             </li>
-            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
-              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            <li class="flex items-start gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
-              <span>Seguridad avanzada (Zero Trust)</span>
+              <span>Permisos según las responsabilidades del equipo.</span>
             </li>
-            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
-              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <line x1="18" y1="20" x2="18" y2="10"></line>
-                <line x1="12" y1="20" x2="12" y2="4"></line>
-                <line x1="6" y1="20" x2="6" y2="14"></line>
+            <li class="flex items-start gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
-              <span>Alta disponibilidad y escalabilidad</span>
+              <span>Automatización de tareas y procesos acordados.</span>
             </li>
-            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
-              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <polyline points="16 18 22 12 16 6"></polyline>
-                <polyline points="8 6 2 12 8 18"></polyline>
+            <li class="flex items-start gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
-              <span>Integraciones complejas (APIs)</span>
+              <span>Gestión de varias empresas.</span>
             </li>
-            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
-              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                <polyline points="14 2 14 8 20 8"></polyline>
-                <line x1="16" y1="13" x2="8" y2="13"></line>
-                <line x1="16" y1="17" x2="8" y2="17"></line>
+            <li class="flex items-start gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
-              <span>Auditorías y cumplimiento normativo</span>
+              <span>Integración con otros sistemas según el alcance contratado.</span>
             </li>
-            <li class="flex items-center gap-3 text-xs text-gray-300 font-light">
-              <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
-                <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+            <li class="flex items-start gap-3 text-xs text-gray-300 font-light">
+              <svg class="w-4 h-4 text-sky-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
-              <span>Soporte según horario y SLA acordado</span>
+              <span>Capacitación y soporte prioritario.</span>
             </li>
           </ul>
+
+          <!-- Duración y Restricción -->
+          <div class="border-t border-white/[0.06] pt-4 mb-6 space-y-2">
+            <p class="text-[11px] text-gray-400 font-light leading-relaxed">
+              <strong class="text-sky-300 font-medium">Duración:</strong> contratación mensual o anual. La implementación se realiza por etapas acordadas.
+            </p>
+            <p class="text-[11px] text-gray-500 font-light leading-relaxed italic">
+              La configuración, las integraciones y el desarrollo a medida se definen y cotizan antes de comenzar.
+            </p>
+          </div>
         </div>
 
-        <!-- Botón Hablar con un especialista -->
+        <!-- Botón Solicitar Personalizado -->
         <a 
-          href="https://wa.me/59179786916?text=Hola%20Pegasus%20Nexus!%20Me%20gustar%C3%ADa%20hablar%20con%20un%20especialista%20sobre%20el%20Plan%20Enterprise." 
+          href="https://wa.me/59179786916?text=Hola%20Pegasus%20Nexus!%20Me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20el%20Plan%20Personalizado." 
           target="_blank" 
           rel="noopener noreferrer"
           class="w-full py-3 px-4 rounded-xl border border-sky-500/30 text-sky-300 hover:text-white hover:bg-sky-500/20 hover:border-sky-400 transition-all text-center text-xs font-bold tracking-[0.14em] uppercase flex items-center justify-center gap-2 group-hover:border-sky-400 cursor-pointer"
         >
-          <span>HABLAR CON UN ESPECIALISTA</span>
+          <span>SOLICITAR PERSONALIZADO</span>
           <span class="text-sm">→</span>
         </a>
       </div>
