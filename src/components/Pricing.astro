@@ -8,7 +8,7 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
     
     <!-- Encabezado con nuestro estilo estándar unificado -->
-    <div class="animate-on-scroll fade-in-up text-center max-w-4xl mx-auto mb-20">
+    <div class="animate-on-scroll fade-in-up text-center max-w-4xl mx-auto mb-14">
       <div class="flex items-center justify-center gap-3 mb-4">
         <div class="w-8 sm:w-12 h-px bg-gradient-to-r from-transparent to-sky-400"></div>
         <span class="text-sky-400 text-[10px] sm:text-xs font-bold tracking-[0.25em] uppercase text-glow">NUESTROS PLANOS DE SOLUCIÓN</span>
@@ -23,6 +23,27 @@
       <p class="text-gray-300 text-xs sm:text-sm md:text-base font-light max-w-2xl mx-auto leading-relaxed">
         Soluciones flexibles y personalizables que se adaptan a tus objetivos, desde una presencia digital hasta ecosistemas empresariales completos.
       </p>
+    </div>
+
+    <!-- Selector Mensual / Anual -->
+    <div class="animate-on-scroll fade-in-up flex items-center justify-center gap-3 mb-12">
+      <div class="inline-flex p-1 rounded-full bg-[#0a1528]/80 border border-sky-500/25 backdrop-blur-md">
+        <button
+          id="billing-monthly-btn"
+          type="button"
+          class="px-5 py-2 rounded-full text-xs font-semibold transition-all duration-300 text-white bg-sky-500/20 border border-sky-400 shadow-[0_0_15px_rgba(56,189,248,0.25)] cursor-pointer"
+        >
+          Facturación Mensual
+        </button>
+        <button
+          id="billing-annual-btn"
+          type="button"
+          class="px-5 py-2 rounded-full text-xs font-semibold transition-all duration-300 text-gray-400 hover:text-white border border-transparent cursor-pointer flex items-center gap-2"
+        >
+          <span>Facturación Anual</span>
+          <span class="text-[10px] text-sky-300 bg-sky-500/20 px-2 py-0.5 rounded-full border border-sky-400/30 font-bold">Ahorra ~20%</span>
+        </button>
+      </div>
     </div>
 
     <!-- Grilla de los 3 Planes (Plan Gratis, Plan Estándar, Plan Personalizado) -->
@@ -55,8 +76,31 @@
             Para una persona que necesita organizar información sencilla de su negocio.
           </p>
 
+          <!-- Bloque de Precio -->
+          <div class="mb-6">
+            <div class="flex items-baseline gap-1.5">
+              <span class="text-4xl sm:text-5xl font-bold font-heading text-white tracking-tight">$0.00</span>
+              <span class="text-xs text-gray-400 font-light">USD</span>
+            </div>
+            <div class="text-[11px] text-sky-400 mt-1 font-medium">
+              0.00 dólares por 30 días
+            </div>
+            <div class="inline-flex items-center gap-1.5 mt-2.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-[11px] font-medium">
+              <svg class="w-3.5 h-3.5 text-emerald-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Gratis por 30 días</span>
+            </div>
+          </div>
+
           <!-- Lista de características -->
-          <ul class="space-y-3.5 mb-6 pt-2">
+          <ul class="space-y-3.5 mb-8 pt-2">
+            <li class="flex items-start gap-3 text-xs text-sky-300 font-medium">
+              <svg class="w-4 h-4 text-sky-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Ingreso a todos los módulos que quieras.</span>
+            </li>
             <li class="flex items-start gap-3 text-xs text-gray-300 font-light">
               <svg class="w-4 h-4 text-sky-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="20 6 9 17 4 12"></polyline>
@@ -79,7 +123,7 @@
               <svg class="w-4 h-4 text-sky-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
-              <span>Acceso en línea.</span>
+              <span>Acceso en línea sin costo por 30 días.</span>
             </li>
             <li class="flex items-start gap-3 text-xs text-gray-300 font-light">
               <svg class="w-4 h-4 text-sky-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -88,26 +132,16 @@
               <span>Guía de uso para comenzar.</span>
             </li>
           </ul>
-
-          <!-- Duración y Restricción -->
-          <div class="pt-2 mb-6 space-y-2">
-            <p class="text-[11px] text-gray-400 font-light leading-relaxed">
-              <strong class="text-sky-300 font-medium">Duración:</strong> sin vencimiento, dentro de los límites del plan gratuito.
-            </p>
-            <p class="text-[11px] text-gray-500 font-light leading-relaxed italic">
-              No incluye reportes avanzados, automatizaciones, conexiones con otros sistemas ni atención personalizada.
-            </p>
-          </div>
         </div>
 
-        <!-- Botón Comenzar Gratis -->
+        <!-- Botón Quiero Empezar Ahora -->
         <a 
-          href="https://wa.me/59179786916?text=Hola%20Pegasus%20Nexus!%20Me%20interesa%20comenzar%20con%20el%20Plan%20Gratis." 
+          href="https://wa.me/59179786916?text=Hola%20Pegasus%20Nexus!%20Quiero%20empezar%20ahora%20con%20el%20Plan%20Gratis." 
           target="_blank" 
           rel="noopener noreferrer"
-          class="w-full py-3 px-4 rounded-xl border border-sky-500/30 text-sky-300 hover:text-white hover:bg-sky-500/20 hover:border-sky-400 transition-all text-center text-xs font-bold tracking-[0.14em] uppercase flex items-center justify-center gap-2 group-hover:border-sky-400 cursor-pointer"
+          class="w-full py-3.5 px-4 rounded-xl border border-sky-500/30 text-sky-300 hover:text-white hover:bg-sky-500/20 hover:border-sky-400 transition-all text-center text-xs font-bold tracking-[0.14em] uppercase flex items-center justify-center gap-2 group-hover:border-sky-400 cursor-pointer"
         >
-          <span>COMENZAR GRATIS</span>
+          <span>QUIERO EMPEZAR AHORA</span>
           <span class="text-sm">→</span>
         </a>
       </div>
@@ -150,6 +184,24 @@
           <p class="text-gray-300 text-xs font-light mb-6 leading-relaxed">
             Para negocios que necesitan conectar sus ventas, productos y clientes en un mismo sistema.
           </p>
+
+          <!-- Bloque de Precio -->
+          <div class="mb-6">
+            <div class="flex items-baseline gap-1.5">
+              <span class="text-4xl sm:text-5xl font-bold font-heading text-white tracking-tight price-monthly">$8.15</span>
+              <span class="text-4xl sm:text-5xl font-bold font-heading text-white tracking-tight price-annual hidden">$6.52</span>
+              <span class="text-xs text-gray-400 font-light billing-cycle-text">USD / mes</span>
+            </div>
+            <div class="text-[11px] text-gray-400 mt-1 font-light">
+              <span>Mensual: <strong class="text-sky-300 font-medium">$8.15</strong> • Anual: <strong class="text-sky-300 font-medium">$6.52</strong>/mes</span>
+            </div>
+            <div class="inline-flex items-center gap-1.5 mt-2.5 px-3 py-1 rounded-full bg-sky-500/20 border border-sky-400/40 text-sky-300 text-[11px] font-medium shadow-[0_0_12px_rgba(56,189,248,0.25)]">
+              <svg class="w-3.5 h-3.5 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Gratis por 15 días</span>
+            </div>
+          </div>
 
           <!-- Lista de características -->
           <ul class="space-y-3.5 mb-6 pt-2">
@@ -216,14 +268,14 @@
           </a>
         </div>
 
-        <!-- Botón Elegir Estándar -->
+        <!-- Botón Quiero Empezar Ahora -->
         <a 
-          href="https://wa.me/59179786916?text=Hola%20Pegasus%20Nexus!%20Me%20interesa%20contratar%20el%20Plan%20Est%C3%A1ndar." 
+          href="https://wa.me/59179786916?text=Hola%20Pegasus%20Nexus!%20Quiero%20empezar%20ahora%20con%20el%20Plan%20Est%C3%A1ndar." 
           target="_blank" 
           rel="noopener noreferrer"
           class="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-bold text-xs tracking-[0.14em] uppercase shadow-[0_0_25px_rgba(14,165,233,0.7)] hover:shadow-[0_0_35px_rgba(56,189,248,0.9)] transition-all flex items-center justify-center gap-2 cursor-pointer"
         >
-          <span>ELEGIR ESTÁNDAR</span>
+          <span>QUIERO EMPEZAR AHORA</span>
           <span class="text-sm">→</span>
         </a>
       </div>
@@ -255,6 +307,24 @@
           <p class="text-gray-400 text-xs font-light mb-6 leading-relaxed">
             Para empresas que necesitan procesos especiales, administrar varias empresas o conectar otras herramientas.
           </p>
+
+          <!-- Bloque de Precio -->
+          <div class="mb-6">
+            <div class="flex items-baseline gap-1.5">
+              <span class="text-4xl sm:text-5xl font-bold font-heading text-white tracking-tight price-monthly">$15.10</span>
+              <span class="text-4xl sm:text-5xl font-bold font-heading text-white tracking-tight price-annual hidden">$12.38</span>
+              <span class="text-xs text-gray-400 font-light billing-cycle-text">USD / mes</span>
+            </div>
+            <div class="text-[11px] text-gray-400 mt-1 font-light">
+              <span>Mensual: <strong class="text-sky-300 font-medium">$15.10</strong> • Anual: <strong class="text-sky-300 font-medium">$12.38</strong>/mes</span>
+            </div>
+            <div class="inline-flex items-center gap-1.5 mt-2.5 px-3 py-1 rounded-full bg-sky-500/15 border border-sky-400/40 text-sky-300 text-[11px] font-medium">
+              <svg class="w-3.5 h-3.5 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Gratis por 15 días</span>
+            </div>
+          </div>
 
           <!-- Lista de características -->
           <ul class="space-y-3.5 mb-8 pt-2">
@@ -303,19 +373,60 @@
           </ul>
         </div>
 
-        <!-- Botón Solicitar Personalizado -->
+        <!-- Botón Quiero Empezar Ahora -->
         <a 
-          href="https://wa.me/59179786916?text=Hola%20Pegasus%20Nexus!%20Me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20el%20Plan%20Personalizado." 
+          href="https://wa.me/59179786916?text=Hola%20Pegasus%20Nexus!%20Quiero%20empezar%20ahora%20con%20el%20Plan%20Personalizado." 
           target="_blank" 
           rel="noopener noreferrer"
-          class="w-full py-3 px-4 rounded-xl border border-sky-500/30 text-sky-300 hover:text-white hover:bg-sky-500/20 hover:border-sky-400 transition-all text-center text-xs font-bold tracking-[0.14em] uppercase flex items-center justify-center gap-2 group-hover:border-sky-400 cursor-pointer"
+          class="w-full py-3.5 px-4 rounded-xl border border-sky-500/30 text-sky-300 hover:text-white hover:bg-sky-500/20 hover:border-sky-400 transition-all text-center text-xs font-bold tracking-[0.14em] uppercase flex items-center justify-center gap-2 group-hover:border-sky-400 cursor-pointer"
         >
-          <span>SOLICITAR PERSONALIZADO</span>
+          <span>QUIERO EMPEZAR AHORA</span>
           <span class="text-sm">→</span>
         </a>
       </div>
 
     </div>
+
+    <!-- Script interactivo para alternar facturación mensual/anual -->
+    <script is:inline>
+      function setupPricingToggle() {
+        const monthlyBtn = document.getElementById('billing-monthly-btn');
+        const annualBtn = document.getElementById('billing-annual-btn');
+        const monthlyPrices = document.querySelectorAll('.price-monthly');
+        const annualPrices = document.querySelectorAll('.price-annual');
+        const billingCycles = document.querySelectorAll('.billing-cycle-text');
+
+        if (!monthlyBtn || !annualBtn) return;
+
+        function setBilling(isAnnual) {
+          if (isAnnual) {
+            monthlyBtn.className = 'px-5 py-2 rounded-full text-xs font-semibold transition-all duration-300 text-gray-400 hover:text-white border border-transparent cursor-pointer';
+            annualBtn.className = 'px-5 py-2 rounded-full text-xs font-semibold transition-all duration-300 text-white bg-sky-500/20 border border-sky-400 shadow-[0_0_15px_rgba(56,189,248,0.25)] cursor-pointer flex items-center gap-2';
+
+            monthlyPrices.forEach((el) => el.classList.add('hidden'));
+            annualPrices.forEach((el) => el.classList.remove('hidden'));
+            billingCycles.forEach((el) => (el.textContent = 'USD / mes (anual)'));
+          } else {
+            annualBtn.className = 'px-5 py-2 rounded-full text-xs font-semibold transition-all duration-300 text-gray-400 hover:text-white border border-transparent cursor-pointer flex items-center gap-2';
+            monthlyBtn.className = 'px-5 py-2 rounded-full text-xs font-semibold transition-all duration-300 text-white bg-sky-500/20 border border-sky-400 shadow-[0_0_15px_rgba(56,189,248,0.25)] cursor-pointer';
+
+            annualPrices.forEach((el) => el.classList.add('hidden'));
+            monthlyPrices.forEach((el) => el.classList.remove('hidden'));
+            billingCycles.forEach((el) => (el.textContent = 'USD / mes'));
+          }
+        }
+
+        monthlyBtn.onclick = () => setBilling(false);
+        annualBtn.onclick = () => setBilling(true);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', setupPricingToggle);
+      } else {
+        setupPricingToggle();
+      }
+      document.addEventListener('astro:page-load', setupPricingToggle);
+    </script>
 
   </div>
 </section>
