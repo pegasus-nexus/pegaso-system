@@ -12,13 +12,21 @@
           </div>
         </a>
       </div>
-      <nav class="hidden lg:flex items-center space-x-5 lg:space-x-7">
-        <a href="/#inicio" class="relative text-xs uppercase tracking-[0.2em] font-semibold text-white py-1 after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-sky-400 after:shadow-[0_0_8px_#38bdf8]">INICIO</a>
-        <a href="/#por-que-nexus" class="text-xs uppercase tracking-[0.2em] font-medium text-gray-300 hover:text-white transition-colors">NOSOTROS</a>
-        <a href="/#servicios" class="text-xs uppercase tracking-[0.2em] font-medium text-gray-300 hover:text-white transition-colors">SOLUCIONES</a>
-        <a href="/planes" class="text-xs uppercase tracking-[0.2em] font-medium text-gray-300 hover:text-white transition-colors">PLANES</a>
-        <a href="/#tecnologia" class="text-xs uppercase tracking-[0.2em] font-medium text-gray-300 hover:text-white transition-colors">TECNOLOGÍA</a>
-        <a href="/#contacto" class="text-xs uppercase tracking-[0.2em] font-medium text-gray-300 hover:text-white transition-colors">CONTACTO</a>
+
+      <!-- Navegación Desktop con indicador luminoso deslizante animado -->
+      <nav class="hidden lg:flex items-center space-x-5 lg:space-x-7 relative py-1" id="desktop-nav">
+        <a href="/#inicio" data-nav="inicio" class="nav-item relative text-xs uppercase tracking-[0.2em] font-medium text-gray-300 hover:text-white transition-colors py-1 cursor-pointer">INICIO</a>
+        <a href="/#por-que-nexus" data-nav="por-que-nexus" class="nav-item relative text-xs uppercase tracking-[0.2em] font-medium text-gray-300 hover:text-white transition-colors py-1 cursor-pointer">NOSOTROS</a>
+        <a href="/#servicios" data-nav="servicios" class="nav-item relative text-xs uppercase tracking-[0.2em] font-medium text-gray-300 hover:text-white transition-colors py-1 cursor-pointer">SOLUCIONES</a>
+        <a href="/planes" data-nav="planes" class="nav-item relative text-xs uppercase tracking-[0.2em] font-medium text-gray-300 hover:text-white transition-colors py-1 cursor-pointer">PLANES</a>
+        <a href="/#tecnologia" data-nav="tecnologia" class="nav-item relative text-xs uppercase tracking-[0.2em] font-medium text-gray-300 hover:text-white transition-colors py-1 cursor-pointer">TECNOLOGÍA</a>
+        <a href="/#contacto" data-nav="contacto" class="nav-item relative text-xs uppercase tracking-[0.2em] font-medium text-gray-300 hover:text-white transition-colors py-1 cursor-pointer">CONTACTO</a>
+
+        <!-- Línea luminosa animada que se desplaza fluidamente entre secciones -->
+        <div
+          id="nav-indicator"
+          class="absolute -bottom-1 h-[2px] bg-sky-400 shadow-[0_0_10px_#38bdf8,0_0_20px_rgba(56,189,248,0.7)] rounded-full transition-all duration-300 ease-out pointer-events-none opacity-0"
+        ></div>
       </nav>
 
       <div class="flex items-center gap-3 sm:gap-4">
@@ -46,7 +54,7 @@
   class="fixed inset-0 z-[60] bg-black/70 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 lg:hidden"
 ></div>
 
-<!-- Mobile Drawer Sidebar (Matching media_1790422774519.png) -->
+<!-- Mobile Drawer Sidebar -->
 <aside
   id="mobile-menu"
   class="fixed top-0 right-0 bottom-0 z-[70] w-[86%] max-w-[340px] bg-[#030917]/95 backdrop-blur-2xl border-l border-white/10 flex flex-col justify-between p-6 overflow-y-auto transition-transform duration-300 translate-x-full lg:hidden shadow-[-15px_0_35px_rgba(0,0,0,0.85)]"
@@ -77,14 +85,15 @@
     </button>
   </div>
 
-  <!-- Middle: Nav Links (With active luminous state on INICIO, matching screenshot) -->
-  <nav class="flex flex-col space-y-1 py-4">
-    <!-- 1: INICIO (Active State) -->
+  <!-- Middle: Nav Links Dinámicos -->
+  <nav class="flex flex-col space-y-1 py-4" id="mobile-nav">
+    <!-- 1: INICIO -->
     <a
       href="/#inicio"
+      data-mobile-nav="inicio"
       class="mobile-nav-link relative flex items-center gap-4 px-4 py-3 rounded-xl bg-gradient-to-r from-sky-500/20 via-sky-500/5 to-transparent text-white font-semibold text-xs uppercase tracking-[0.2em] transition-all group before:content-[''] before:absolute before:left-0 before:top-1.5 before:bottom-1.5 before:w-[3px] before:bg-sky-400 before:shadow-[0_0_10px_#38bdf8]"
     >
-      <svg class="w-5 h-5 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <svg class="w-5 h-5 text-sky-400 shrink-0 nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
         <polyline points="9 22 9 12 15 12 15 22" />
       </svg>
@@ -94,9 +103,10 @@
     <!-- 2: NOSOTROS -->
     <a
       href="/#por-que-nexus"
-      class="mobile-nav-link flex items-center gap-4 px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/5 font-semibold text-xs uppercase tracking-[0.2em] transition-all group"
+      data-mobile-nav="por-que-nexus"
+      class="mobile-nav-link relative flex items-center gap-4 px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/5 font-semibold text-xs uppercase tracking-[0.2em] transition-all group"
     >
-      <svg class="w-5 h-5 text-gray-400 group-hover:text-sky-400 transition-colors shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <svg class="w-5 h-5 text-gray-400 group-hover:text-sky-400 transition-colors shrink-0 nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
         <circle cx="9" cy="7" r="4" />
         <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
@@ -105,12 +115,13 @@
       <span>NOSOTROS</span>
     </a>
 
-    <!-- 3: SERVICIOS -->
+    <!-- 3: PLANES -->
     <a
       href="/planes"
-      class="mobile-nav-link flex items-center gap-4 px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/5 font-semibold text-xs uppercase tracking-[0.2em] transition-all group"
+      data-mobile-nav="planes"
+      class="mobile-nav-link relative flex items-center gap-4 px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/5 font-semibold text-xs uppercase tracking-[0.2em] transition-all group"
     >
-      <svg class="w-5 h-5 text-gray-400 group-hover:text-sky-400 transition-colors shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <svg class="w-5 h-5 text-gray-400 group-hover:text-sky-400 transition-colors shrink-0 nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <polygon points="12 2 2 7 12 12 22 7 12 2" />
         <polyline points="2 17 12 22 22 17" />
         <polyline points="2 12 12 17 22 12" />
@@ -121,9 +132,10 @@
     <!-- 4: SOLUCIONES -->
     <a
       href="/#servicios"
-      class="mobile-nav-link flex items-center gap-4 px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/5 font-semibold text-xs uppercase tracking-[0.2em] transition-all group"
+      data-mobile-nav="servicios"
+      class="mobile-nav-link relative flex items-center gap-4 px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/5 font-semibold text-xs uppercase tracking-[0.2em] transition-all group"
     >
-      <svg class="w-5 h-5 text-gray-400 group-hover:text-sky-400 transition-colors shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <svg class="w-5 h-5 text-gray-400 group-hover:text-sky-400 transition-colors shrink-0 nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <rect width="7" height="7" x="3" y="3" rx="1" />
         <rect width="7" height="7" x="14" y="3" rx="1" />
         <rect width="7" height="7" x="14" y="14" rx="1" />
@@ -135,9 +147,10 @@
     <!-- 5: TECNOLOGÍA -->
     <a
       href="/#tecnologia"
-      class="mobile-nav-link flex items-center gap-4 px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/5 font-semibold text-xs uppercase tracking-[0.2em] transition-all group"
+      data-mobile-nav="tecnologia"
+      class="mobile-nav-link relative flex items-center gap-4 px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/5 font-semibold text-xs uppercase tracking-[0.2em] transition-all group"
     >
-      <svg class="w-5 h-5 text-gray-400 group-hover:text-sky-400 transition-colors shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <svg class="w-5 h-5 text-gray-400 group-hover:text-sky-400 transition-colors shrink-0 nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <rect width="16" height="16" x="4" y="4" rx="2" />
         <rect width="6" height="6" x="9" y="9" rx="1" />
         <path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2" />
@@ -148,9 +161,10 @@
     <!-- 6: CONTACTO -->
     <a
       href="/#contacto"
-      class="mobile-nav-link flex items-center gap-4 px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/5 font-semibold text-xs uppercase tracking-[0.2em] transition-all group"
+      data-mobile-nav="contacto"
+      class="mobile-nav-link relative flex items-center gap-4 px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/5 font-semibold text-xs uppercase tracking-[0.2em] transition-all group"
     >
-      <svg class="w-5 h-5 text-gray-400 group-hover:text-sky-400 transition-colors shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <svg class="w-5 h-5 text-gray-400 group-hover:text-sky-400 transition-colors shrink-0 nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <rect width="20" height="16" x="2" y="4" rx="2" />
         <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
       </svg>
@@ -161,7 +175,7 @@
   <!-- Divider -->
   <div class="w-full h-px bg-white/[0.08] my-3"></div>
 
-  <!-- Action Buttons (Matching screenshot) -->
+  <!-- Action Buttons -->
   <div class="flex flex-col gap-3 pt-1">
     <a
       href="/capacidades"
@@ -242,6 +256,12 @@
       height: 7rem; /* 112px (equiv. to h-28) */
     }
   }
+
+  /* Animación suave para la línea indicadora */
+  #nav-indicator {
+    transition: left 0.35s cubic-bezier(0.25, 1, 0.5, 1), width 0.35s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.25s ease-out;
+    will-change: left, width, opacity;
+  }
 </style>
 
 <script>
@@ -257,10 +277,8 @@
     }
   };
 
-  // Bind scroll event
   window.addEventListener('scroll', checkScroll);
 
-  // Execute immediately to catch correct scroll state on page load/refresh
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', checkScroll);
   } else {
@@ -299,9 +317,151 @@
       backdrop.addEventListener('click', closeMenu);
     }
 
-    // Auto-close menu drawer when selecting a section
     mobileLinks.forEach(link => {
       link.addEventListener('click', closeMenu);
     });
   }
+
+  // =========================================================================
+  // ANIMACIÓN DESLIZANTE DE LA LÍNEA INDICADORA AL CAMBIAR DE SECCIÓN
+  // =========================================================================
+  const initNavIndicator = () => {
+    const desktopNav = document.getElementById('desktop-nav');
+    const indicator = document.getElementById('nav-indicator');
+    if (!desktopNav || !indicator) return;
+
+    const desktopLinks = Array.from(desktopNav.querySelectorAll('.nav-item'));
+    const mobileLinks = Array.from(document.querySelectorAll('#mobile-nav [data-mobile-nav]'));
+    let currentKey = 'inicio';
+
+    // Desplaza suavemente la línea indicadora bajo el enlace destino
+    const updateIndicatorTo = (link) => {
+      if (!link) {
+        indicator.style.opacity = '0';
+        return;
+      }
+      const navRect = desktopNav.getBoundingClientRect();
+      const linkRect = link.getBoundingClientRect();
+      const left = linkRect.left - navRect.left;
+      const width = linkRect.width;
+
+      indicator.style.left = `${left}px`;
+      indicator.style.width = `${width}px`;
+      indicator.style.opacity = '1';
+    };
+
+    // Actualiza el estado activo tanto en Desktop como en Mobile
+    const setActive = (key, moveLine = true) => {
+      currentKey = key;
+      const activeDesktop = desktopLinks.find(l => l.getAttribute('data-nav') === key);
+      
+      desktopLinks.forEach(l => {
+        l.classList.remove('text-white', 'font-semibold');
+        l.classList.add('text-gray-300', 'font-medium');
+      });
+
+      if (activeDesktop) {
+        activeDesktop.classList.remove('text-gray-300', 'font-medium');
+        activeDesktop.classList.add('text-white', 'font-semibold');
+        if (moveLine) {
+          updateIndicatorTo(activeDesktop);
+        }
+      }
+
+      // Actualizar enlace activo en Mobile Drawer
+      mobileLinks.forEach(m => {
+        const mKey = m.getAttribute('data-mobile-nav');
+        const icon = m.querySelector('.nav-icon');
+        if (mKey === key) {
+          m.className = "mobile-nav-link relative flex items-center gap-4 px-4 py-3 rounded-xl bg-gradient-to-r from-sky-500/20 via-sky-500/5 to-transparent text-white font-semibold text-xs uppercase tracking-[0.2em] transition-all group before:content-[''] before:absolute before:left-0 before:top-1.5 before:bottom-1.5 before:w-[3px] before:bg-sky-400 before:shadow-[0_0_10px_#38bdf8]";
+          if (icon) icon.className = "w-5 h-5 text-sky-400 shrink-0 nav-icon";
+        } else {
+          m.className = "mobile-nav-link relative flex items-center gap-4 px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/5 font-semibold text-xs uppercase tracking-[0.2em] transition-all group";
+          if (icon) icon.className = "w-5 h-5 text-gray-400 group-hover:text-sky-400 transition-colors shrink-0 nav-icon";
+        }
+      });
+    };
+
+    // Si estamos en la página /planes
+    if (window.location.pathname.startsWith('/planes')) {
+      setActive('planes');
+    } else {
+      // Por defecto en la página de inicio
+      setActive('inicio');
+
+      // Mapeo de IDs de sección a la clave de navegación
+      const sectionMap = {
+        'inicio': 'inicio',
+        'por-que-nexus': 'por-que-nexus',
+        'servicios': 'servicios',
+        'planes': 'planes',
+        'paquetes': 'planes',
+        'tecnologia': 'tecnologia',
+        'contacto': 'contacto'
+      };
+
+      const sections = document.querySelectorAll('section[id], footer[id]');
+      if (sections.length > 0) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const id = entry.target.getAttribute('id');
+              const key = sectionMap[id];
+              if (key) {
+                setActive(key);
+              }
+            }
+          });
+        }, {
+          rootMargin: "-20% 0px -55% 0px"
+        });
+
+        sections.forEach(s => observer.observe(s));
+      }
+
+      // Comprobación de borde superior o inferior al hacer scroll
+      window.addEventListener('scroll', () => {
+        if (window.scrollY < 120) {
+          setActive('inicio');
+        } else if ((window.innerHeight + window.scrollY) >= (document.documentElement.scrollHeight - 100)) {
+          setActive('contacto');
+        }
+      }, { passive: true });
+    }
+
+    // Efecto hover interactivo: la línea luminosa planea suavemente hacia el elemento sobre el que está el cursor
+    desktopLinks.forEach(link => {
+      link.addEventListener('mouseenter', () => updateIndicatorTo(link));
+      link.addEventListener('mouseleave', () => {
+        const activeDesktop = desktopLinks.find(l => l.getAttribute('data-nav') === currentKey);
+        updateIndicatorTo(activeDesktop);
+      });
+      link.addEventListener('click', () => {
+        const key = link.getAttribute('data-nav');
+        if (key) setActive(key);
+      });
+    });
+
+    // Reajustar posición en caso de redimensionar la ventana
+    window.addEventListener('resize', () => {
+      const activeDesktop = desktopLinks.find(l => l.getAttribute('data-nav') === currentKey);
+      updateIndicatorTo(activeDesktop);
+    });
+
+    // Si hay un hash directo en la URL
+    if (window.location.hash) {
+      const hash = window.location.hash.replace('#', '');
+      const matched = desktopLinks.find(l => l.getAttribute('data-nav') === hash);
+      if (matched) {
+        setTimeout(() => setActive(hash), 200);
+      }
+    }
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initNavIndicator);
+  } else {
+    initNavIndicator();
+  }
+  document.addEventListener('astro:page-load', initNavIndicator);
 </script>
