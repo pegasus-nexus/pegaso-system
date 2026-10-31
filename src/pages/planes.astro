@@ -494,551 +494,608 @@ import Footer from '../components/Footer.astro';
         </div>
 
         <!-- =====================================================================
-             SECCIÓN DE APLICACIONES Y MÓDULOS DEL SISTEMA
+             SECCIÓN DE MÓDULOS EMPRESARIALES (DISEÑO DESTACADO Y EXPANDIDO)
              ===================================================================== -->
-        <div class="max-w-6xl mx-auto rounded-3xl p-6 sm:p-10 bg-[#070e1c]/80 border border-sky-500/25 backdrop-blur-xl mb-16 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
-          <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/10 border border-sky-400/30 text-sky-300 text-[11px] font-semibold tracking-wider uppercase mb-3">
-              <span class="w-1.5 h-1.5 rounded-full bg-sky-400 animate-pulse"></span>
-              Ecosistema Modular Integrado
+        <div class="max-w-7xl mx-auto rounded-3xl p-6 sm:p-12 bg-gradient-to-b from-[#070e1c]/90 via-[#050a14]/90 to-[#02050b]/95 border border-sky-500/25 backdrop-blur-2xl mb-16 shadow-[0_20px_60px_rgba(0,0,0,0.6)]">
+          
+          <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-500/10 border border-sky-400/30 text-sky-300 text-[11px] font-semibold tracking-wider uppercase mb-4">
+              <span class="w-2 h-2 rounded-full bg-sky-400 animate-pulse shadow-[0_0_8px_#38bdf8]"></span>
+              Ecosistema Modular Pegasus Nexus
             </div>
-            <h4 class="text-2xl sm:text-3xl font-heading font-semibold text-white tracking-tight mb-3">
-              Módulos y Aplicaciones Disponibles
+            <h4 class="text-2xl sm:text-4xl font-heading font-bold text-white tracking-tight mb-4">
+              Módulos del Sistema
             </h4>
-            <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
-              Activa las aplicaciones que tu negocio necesita hoy y añade nuevos módulos a medida que tu empresa crece. Conexión total sin duplicar información.
+            <p class="text-gray-300 text-sm sm:text-base font-light leading-relaxed">
+              Herramientas operativas diseñadas para potenciar cada área de tu empresa. Conecta ventas, inventarios, finanzas, sucursales y auditoría bajo una sola plataforma de alto rendimiento.
             </p>
-
-            <!-- Pestañas de Selección de Vista -->
-            <div class="inline-flex p-1.5 rounded-2xl bg-sky-950/40 border border-sky-500/20 backdrop-blur-md mt-6 gap-2">
-              <button
-                id="tab-btn-suite"
-                type="button"
-                class="px-4 sm:px-6 py-2 rounded-xl text-xs font-semibold transition-all duration-300 text-white bg-sky-500/25 border border-sky-400 shadow-[0_0_15px_rgba(56,189,248,0.25)] cursor-pointer flex items-center gap-2"
-              >
-                <svg class="w-4 h-4 text-sky-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="3" y="3" width="7" height="7" rx="1.5"></rect>
-                  <rect x="14" y="3" width="7" height="7" rx="1.5"></rect>
-                  <rect x="14" y="14" width="7" height="7" rx="1.5"></rect>
-                  <rect x="3" y="14" width="7" height="7" rx="1.5"></rect>
-                </svg>
-                <span>Suite de Aplicaciones (24)</span>
-              </button>
-              <button
-                id="tab-btn-operativos"
-                type="button"
-                class="px-4 sm:px-6 py-2 rounded-xl text-xs font-semibold transition-all duration-300 text-gray-400 hover:text-white border border-transparent cursor-pointer flex items-center gap-2"
-              >
-                <svg class="w-4 h-4 text-sky-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                </svg>
-                <span>Módulos Operativos y Especializados</span>
-              </button>
-            </div>
           </div>
 
-          <!-- ===================================================================
-               VISTA 1: SUITE DE 24 APLICACIONES (ESTILO SQUIRCLE ILUSTRADO)
-               =================================================================== -->
-          <div id="view-suite" class="transition-opacity duration-300">
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6">
-              
-              <!-- 1. Contabilidad -->
-              <div class="group flex flex-col items-center text-center p-3 sm:p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12" viewBox="0 0 64 64" fill="none">
-                    <circle cx="22" cy="22" r="7" fill="#00A09D" />
-                    <circle cx="42" cy="42" r="7" fill="#00A09D" />
-                    <line x1="44" y1="18" x2="20" y2="46" stroke="#714B67" stroke-width="9" stroke-linecap="round" />
+          <!-- Grid de Módulos Operativos (Tarjetas Grandes con Diseño de Alto Impacto) -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-7">
+
+            <!-- 1. Ventas y POS -->
+            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 border border-sky-500/20 hover:border-sky-400 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
+              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
+              <div>
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-br from-white/[0.08] via-sky-500/[0.12] to-sky-900/[0.25] border border-sky-400/30 group-hover:border-sky-300 group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(56,189,248,0.4)] flex items-center justify-center p-4 mb-6 transition-all duration-300 shadow-inner">
+                  <svg class="w-12 h-12 sm:w-14 sm:h-14 text-sky-300 group-hover:text-cyan-200 transition-colors" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 20h40l-3 6H15l-3-6z" />
+                    <rect x="14" y="26" width="36" height="22" rx="2" />
+                    <circle cx="24" cy="37" r="3" />
+                    <path d="M34 32h10v10H34z" />
+                    <path d="M26 48v5M38 48v5M18 53h28" />
                   </svg>
                 </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Contabilidad</span>
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                  Ventas y POS
+                </h5>
+                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                  Terminal de punto de venta rápido para facturación ágil, lectores de código de barras y cobros multimoneda en segundos.
+                </p>
               </div>
-
-              <!-- 2. Artículos -->
-              <div class="group flex flex-col items-center text-center p-3 sm:p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12" viewBox="0 0 64 64" fill="none">
-                    <path d="M26 14h18a3 3 0 0 1 3 3v30l-12-6-9 6V17a3 3 0 0 1 3-3z" fill="#48B3A4" opacity="0.85" />
-                    <path d="M18 20h18a3 3 0 0 1 3 3v28l-12-6-9 6V23a3 3 0 0 1 3-3z" fill="#714B67" />
-                  </svg>
-                </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Artículos</span>
+              <div class="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
+                <span class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                  Punto de Venta
+                </span>
+                <span class="text-gray-400 group-hover:text-sky-300 group-hover:translate-x-1 transition-all">Disponible →</span>
               </div>
-
-              <!-- 3. Firma electrónica -->
-              <div class="group flex flex-col items-center text-center p-3 sm:p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12" viewBox="0 0 64 64" fill="none">
-                    <path d="M20 38c-3-8-2-16 4-18 6-2 5 10 3 17 4-5 9-10 13-10s4 7 3 11c5-2 10-3 12 1" stroke="#1D70B8" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <circle cx="21" cy="20" r="2.5" fill="#1D70B8" />
-                  </svg>
-                </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Firma electrónica</span>
-              </div>
-
-              <!-- 4. CRM -->
-              <div class="group flex flex-col items-center text-center p-3 sm:p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12" viewBox="0 0 64 64" fill="none">
-                    <path d="M14 24l14 12 8-8-12-8a4 4 0 0 0-5 0l-5 4z" fill="#00A09D" opacity="0.9" />
-                    <path d="M50 24l-14 12-8-8 12-8a4 4 0 0 1 5 0l5 4z" fill="#714B67" />
-                    <path d="M28 36l4 4 4-4-4-4-4 4z" fill="#005B58" />
-                  </svg>
-                </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">CRM</span>
-              </div>
-
-              <!-- 5. Studio -->
-              <div class="group flex flex-col items-center text-center p-3 sm:p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12" viewBox="0 0 64 64" fill="none">
-                    <path d="M18 18l28 28" stroke="#714B67" stroke-width="8" stroke-linecap="round" />
-                    <path d="M46 18L18 46" stroke="#2196F3" stroke-width="8" stroke-linecap="round" />
-                    <circle cx="46" cy="18" r="6" fill="#2196F3" />
-                    <circle cx="18" cy="18" r="6" fill="#714B67" />
-                  </svg>
-                </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Studio</span>
-              </div>
-
-              <!-- 6. Suscripciones -->
-              <div class="group flex flex-col items-center text-center p-3 sm:p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12" viewBox="0 0 64 64" fill="none">
-                    <circle cx="20" cy="22" r="4.5" fill="#E26D5C" />
-                    <path d="M20 22a16 16 0 0 1 24 4" stroke="#E26D5C" stroke-width="6" stroke-linecap="round" />
-                    <circle cx="44" cy="42" r="4.5" fill="#00A09D" />
-                    <path d="M44 42a16 16 0 0 1-24-4" stroke="#00A09D" stroke-width="6" stroke-linecap="round" />
-                  </svg>
-                </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Suscripciones</span>
-              </div>
-
-              <!-- 7. IA -->
-              <div class="group flex flex-col items-center text-center p-3 sm:p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12" viewBox="0 0 64 64" fill="none">
-                    <path d="M18 44c3-16 10-24 14-24s11 8 14 24" stroke="#714B67" stroke-width="6" stroke-linecap="round" />
-                    <path d="M22 36h20" stroke="#E59866" stroke-width="5" stroke-linecap="round" />
-                    <path d="M48 20v24" stroke="#E59866" stroke-width="6" stroke-linecap="round" />
-                  </svg>
-                </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">IA</span>
-              </div>
-
-              <!-- 8. Punto de venta -->
-              <div class="group flex flex-col items-center text-center p-3 sm:p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12" viewBox="0 0 64 64" fill="none">
-                    <path d="M16 24h32v4a5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1-2-4z" fill="#714B67" />
-                    <path d="M16 24l4 14c0 3 2 4 4 4h16c2 0 4-1 4-4l4-14" fill="none" stroke="#E59866" stroke-width="5" stroke-linecap="round" />
-                    <path d="M24 24l2 18M32 24v18M40 24l-2 18" stroke="#E59866" stroke-width="4" stroke-linecap="round" />
-                  </svg>
-                </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Punto de venta</span>
-              </div>
-
-              <!-- 9. Conversaciones -->
-              <div class="group flex flex-col items-center text-center p-3 sm:p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12" viewBox="0 0 64 64" fill="none">
-                    <path d="M32 16C22 16 16 22 16 31c0 6 3 11 9 13v6l8-4c1 0 2 0 3 0 10 0 18-7 18-15s-8-15-18-15z" fill="#E67E22" />
-                  </svg>
-                </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Conversaciones</span>
-              </div>
-
-              <!-- 10. Documentos -->
-              <div class="group flex flex-col items-center text-center p-3 sm:p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12" viewBox="0 0 64 64" fill="none">
-                    <rect x="18" y="18" width="20" height="26" rx="3" fill="#2196F3" opacity="0.9" />
-                    <rect x="24" y="20" width="20" height="26" rx="3" fill="#E74C3C" opacity="0.8" />
-                    <rect x="28" y="24" width="20" height="24" rx="3" fill="#F39C12" opacity="0.9" />
-                  </svg>
-                </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Documentos</span>
-              </div>
-
-              <!-- 11. Proyectos -->
-              <div class="group flex flex-col items-center text-center p-3 sm:p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12" viewBox="0 0 64 64" fill="none">
-                    <path d="M20 32l10 10 20-22" stroke="#48B3A4" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M20 32l6 6" stroke="#714B67" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Proyectos</span>
-              </div>
-
-              <!-- 12. Registro de horas -->
-              <div class="group flex flex-col items-center text-center p-3 sm:p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12" viewBox="0 0 64 64" fill="none">
-                    <circle cx="32" cy="34" r="16" fill="#3E6B89" />
-                    <path d="M32 18a16 16 0 0 1 14 8" stroke="#E74C3C" stroke-width="4.5" stroke-linecap="round" />
-                    <line x1="32" y1="34" x2="24" y2="22" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
-                  </svg>
-                </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Registro de horas</span>
-              </div>
-
-              <!-- 13. Servicio externo -->
-              <div class="group flex flex-col items-center text-center p-3 sm:p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12" viewBox="0 0 64 64" fill="none">
-                    <path d="M34 14L22 34h10l-4 16 18-22H32l6-14z" fill="#714B67" />
-                    <path d="M28 34l-6 16 16-16H28z" fill="#E59866" />
-                  </svg>
-                </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Servicio externo</span>
-              </div>
-
-              <!-- 14. Planeación -->
-              <div class="group flex flex-col items-center text-center p-3 sm:p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12" viewBox="0 0 64 64" fill="none">
-                    <rect x="18" y="20" width="13" height="24" rx="2" fill="#E59866" />
-                    <rect x="33" y="20" width="13" height="24" rx="2" fill="#48B3A4" />
-                    <path d="M27 32l-5-4v8l5-4z" fill="#FFFFFF" />
-                    <path d="M37 32l5-4v8l-5-4z" fill="#FFFFFF" />
-                  </svg>
-                </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Planeación</span>
-              </div>
-
-              <!-- 15. Soporte al cliente -->
-              <div class="group flex flex-col items-center text-center p-3 sm:p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12" viewBox="0 0 64 64" fill="none">
-                    <rect x="27" y="16" width="10" height="32" rx="3" fill="#3B7A57" />
-                    <rect x="16" y="27" width="32" height="10" rx="3" fill="#48B3A4" />
-                  </svg>
-                </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Soporte al cliente</span>
-              </div>
-
-              <!-- 16. Comercio electrónico -->
-              <div class="group flex flex-col items-center text-center p-3 sm:p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12" viewBox="0 0 64 64" fill="none">
-                    <path d="M22 26l3 18a4 4 0 0 0 4 3h10a4 4 0 0 0 4-3l3-18H22z" fill="#714B67" />
-                    <path d="M27 26a5 5 0 0 1 10 0" stroke="#714B67" stroke-width="4" stroke-linecap="round" fill="none" />
-                  </svg>
-                </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Comercio electrónico</span>
-              </div>
-
-              <!-- 17. Sitio web -->
-              <div class="group flex flex-col items-center text-center p-3 sm:p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12" viewBox="0 0 64 64" fill="none">
-                    <circle cx="32" cy="32" r="16" fill="none" />
-                    <path d="M20 28c4-5 12-6 18-3 4 2 6 2 8 0" stroke="#48B3A4" stroke-width="6" stroke-linecap="round" />
-                    <path d="M18 36c4 3 10 4 16 0 4-3 8-2 12 1" stroke="#3498DB" stroke-width="6" stroke-linecap="round" />
-                  </svg>
-                </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Sitio web</span>
-              </div>
-
-              <!-- 18. Marketing por correo -->
-              <div class="group flex flex-col items-center text-center p-3 sm:p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12" viewBox="0 0 64 64" fill="none">
-                    <path d="M16 38l32-18-14 24-4-8-14 2z" fill="#714B67" />
-                    <path d="M48 20L30 36l4 8 14-24z" fill="#3498DB" opacity="0.9" />
-                  </svg>
-                </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Marketing por correo</span>
-              </div>
-
-              <!-- 19. Compras -->
-              <div class="group flex flex-col items-center text-center p-3 sm:p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12" viewBox="0 0 64 64" fill="none">
-                    <rect x="18" y="20" width="28" height="6" rx="2" fill="#48B3A4" />
-                    <rect x="18" y="27" width="28" height="6" rx="2" fill="#2E7D76" />
-                    <rect x="18" y="34" width="28" height="12" rx="2" fill="#714B67" />
-                  </svg>
-                </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Compras</span>
-              </div>
-
-              <!-- 20. Inventario -->
-              <div class="group flex flex-col items-center text-center p-3 sm:p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12" viewBox="0 0 64 64" fill="none">
-                    <path d="M32 16l14 8-14 8-14-8 14-8z" fill="#E59866" />
-                    <path d="M18 24l14 8v16l-14-8V24z" fill="#D35400" opacity="0.85" />
-                    <path d="M32 32l14-8v16l-14 8V32z" fill="#714B67" />
-                  </svg>
-                </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Inventario</span>
-              </div>
-
-              <!-- 21. Manufactura -->
-              <div class="group flex flex-col items-center text-center p-3 sm:p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12" viewBox="0 0 64 64" fill="none">
-                    <path d="M16 42V28l10-8v22H16z" fill="#48B3A4" />
-                    <path d="M26 42V26l12 6v10H26z" fill="#2E7D76" />
-                    <path d="M38 42V30l10 4v8H38z" fill="#E59866" />
-                  </svg>
-                </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Manufactura</span>
-              </div>
-
-              <!-- 22. Ventas -->
-              <div class="group flex flex-col items-center text-center p-3 sm:p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12" viewBox="0 0 64 64" fill="none">
-                    <rect x="18" y="28" width="8" height="18" rx="3" fill="#714B67" />
-                    <rect x="28" y="20" width="8" height="26" rx="3" fill="#A93226" opacity="0.9" />
-                    <rect x="38" y="16" width="8" height="30" rx="3" fill="#E59866" />
-                  </svg>
-                </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Ventas</span>
-              </div>
-
-              <!-- 23. RR. HH. -->
-              <div class="group flex flex-col items-center text-center p-3 sm:p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12" viewBox="0 0 64 64" fill="none">
-                    <circle cx="32" cy="24" r="5" fill="#714B67" />
-                    <circle cx="21" cy="27" r="4" fill="#E59866" />
-                    <circle cx="43" cy="27" r="4" fill="#E59866" />
-                    <rect x="22" y="34" width="20" height="8" rx="4" fill="#714B67" />
-                    <rect x="16" y="38" width="32" height="6" rx="3" fill="#48B3A4" />
-                  </svg>
-                </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">RR. HH.</span>
-              </div>
-
-              <!-- 24. Tablero -->
-              <div class="group flex flex-col items-center text-center p-3 sm:p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12" viewBox="0 0 64 64" fill="none">
-                    <rect x="18" y="18" width="12" height="12" rx="3" fill="#714B67" />
-                    <rect x="34" y="18" width="12" height="7" rx="3" fill="#E74C3C" />
-                    <rect x="34" y="28" width="12" height="18" rx="3" fill="#48B3A4" />
-                    <rect x="18" y="33" width="12" height="13" rx="3" fill="#3498DB" />
-                  </svg>
-                </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Tablero</span>
-              </div>
-
             </div>
-          </div>
 
-          <!-- ===================================================================
-               VISTA 2: MÓDULOS OPERATIVOS Y ESPECIALIZADOS (ESTILO ICONOS EMPRESARIALES)
-               =================================================================== -->
-          <div id="view-operativos" class="hidden transition-opacity duration-300">
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 sm:gap-6">
-              
-              <!-- Ventas y POS -->
-              <div class="group flex flex-col items-center text-center p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3.5 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12 text-[#0A2540]" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 16h40v26H12z" />
-                    <path d="M22 42v6M42 42v6M16 52h32" />
-                    <path d="M22 24h12" />
-                    <circle cx="28" cy="32" r="3" />
-                    <path d="M38 22h6v12h-6z" />
+            <!-- 2. Ventas y Cajas -->
+            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 border border-sky-500/20 hover:border-sky-400 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
+              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
+              <div>
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-br from-white/[0.08] via-sky-500/[0.12] to-sky-900/[0.25] border border-sky-400/30 group-hover:border-sky-300 group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(56,189,248,0.4)] flex items-center justify-center p-4 mb-6 transition-all duration-300 shadow-inner">
+                  <svg class="w-12 h-12 sm:w-14 sm:h-14 text-sky-300 group-hover:text-cyan-200 transition-colors" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="26" y="10" width="12" height="12" rx="1" />
+                    <path d="M29 14h6M29 18h6" />
+                    <path d="M20 22h24l4 14H16l4-14z" />
+                    <rect x="14" y="36" width="36" height="16" rx="2" />
+                    <circle cx="32" cy="44" r="2.5" fill="currentColor" />
+                    <path d="M22 27h4M30 27h4M38 27h4M22 31h4M30 31h4M38 31h4" />
                   </svg>
                 </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Ventas y POS</span>
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                  Ventas y Cajas
+                </h5>
+                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                  Registro de transacciones diarias con emisión automática de recibos y facturas físicas o digitales.
+                </p>
               </div>
+              <div class="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
+                <span class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                  Caja Diaria
+                </span>
+                <span class="text-gray-400 group-hover:text-sky-300 group-hover:translate-x-1 transition-all">Disponible →</span>
+              </div>
+            </div>
 
-              <!-- Caja Básica -->
-              <div class="group flex flex-col items-center text-center p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3.5 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12 text-[#0A2540]" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="32" cy="20" r="9" />
-                    <path d="M32 16v8M35 18a3 3 0 0 0-6 0c0 3 6 1 6 4a3 3 0 0 1-6 0" />
+            <!-- 3. Caja Básica -->
+            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 border border-sky-500/20 hover:border-sky-400 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
+              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
+              <div>
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-br from-white/[0.08] via-sky-500/[0.12] to-sky-900/[0.25] border border-sky-400/30 group-hover:border-sky-300 group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(56,189,248,0.4)] flex items-center justify-center p-4 mb-6 transition-all duration-300 shadow-inner">
+                  <svg class="w-12 h-12 sm:w-14 sm:h-14 text-sky-300 group-hover:text-cyan-200 transition-colors" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="32" cy="18" r="9" />
+                    <path d="M32 13v10M35 15.5a3 3 0 0 0-6 0c0 3 6 1 6 4a3 3 0 0 1-6 0" />
                     <path d="M14 34l8-8h20l8 8H14z" />
                     <rect x="14" y="34" width="36" height="16" rx="2" />
                     <circle cx="32" cy="42" r="2.5" fill="currentColor" />
                   </svg>
                 </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Caja Básica</span>
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                  Caja Básica
+                </h5>
+                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                  Control sencillo e intuitivo de entradas y salidas de dinero en efectivo sin configuraciones engorrosas.
+                </p>
               </div>
+              <div class="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
+                <span class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                  Finanzas
+                </span>
+                <span class="text-gray-400 group-hover:text-sky-300 group-hover:translate-x-1 transition-all">Disponible →</span>
+              </div>
+            </div>
 
-              <!-- Módulo de Créditos -->
-              <div class="group flex flex-col items-center text-center p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3.5 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12 text-[#0A2540]" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M18 14h20l8 8v26a2 2 0 0 1-2 2H18a2 2 0 0 1-2-2V16a2 2 0 0 1 2-2z" />
-                    <circle cx="28" cy="36" r="6" />
-                    <path d="M28 33v6M30 34.5a1.5 1.5 0 0 0-3 0c0 1.5 3 0.5 3 2a1.5 1.5 0 0 1-3 0" />
-                    <rect x="36" y="28" width="14" height="14" rx="2" />
-                    <path d="M40 26v4M46 26v4M36 34h14" />
+            <!-- 4. Caja Avanzada (Arqueos) -->
+            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 border border-sky-500/20 hover:border-sky-400 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
+              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
+              <div>
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-br from-white/[0.08] via-sky-500/[0.12] to-sky-900/[0.25] border border-sky-400/30 group-hover:border-sky-300 group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(56,189,248,0.4)] flex items-center justify-center p-4 mb-6 transition-all duration-300 shadow-inner">
+                  <svg class="w-12 h-12 sm:w-14 sm:h-14 text-sky-300 group-hover:text-cyan-200 transition-colors" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 14h20v22H22zM26 20l2 2 4-4M26 26l2 2 4-4M26 32l2 2 4-4" />
+                    <rect x="14" y="36" width="36" height="16" rx="2" />
+                    <circle cx="32" cy="44" r="2.5" fill="currentColor" />
                   </svg>
                 </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Módulo de Créditos</span>
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                  Caja Avanzada (Arqueos)
+                </h5>
+                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                  Cierres de turno X y Z, arqueos a ciegas, justificación de diferencias y auditoría de fondos en tiempo real.
+                </p>
               </div>
+              <div class="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
+                <span class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                  Auditoría de Fondos
+                </span>
+                <span class="text-gray-400 group-hover:text-sky-300 group-hover:translate-x-1 transition-all">Disponible →</span>
+              </div>
+            </div>
 
-              <!-- Descuentos Dinámicos -->
-              <div class="group flex flex-col items-center text-center p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3.5 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12 text-[#0A2540]" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M36 14L16 34l12 12 20-20V14H36z" />
-                    <circle cx="40" cy="22" r="3" />
-                    <circle cx="44" cy="42" r="9" />
-                    <path d="M41 39l6 6M47 39a3 3 0 1 1-6 6" />
+            <!-- 5. Inventario y Productos -->
+            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 border border-sky-500/20 hover:border-sky-400 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
+              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
+              <div>
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-br from-white/[0.08] via-sky-500/[0.12] to-sky-900/[0.25] border border-sky-400/30 group-hover:border-sky-300 group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(56,189,248,0.4)] flex items-center justify-center p-4 mb-6 transition-all duration-300 shadow-inner">
+                  <svg class="w-12 h-12 sm:w-14 sm:h-14 text-sky-300 group-hover:text-cyan-200 transition-colors" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 26l18-10 18 10-18 10-18-10z" />
+                    <path d="M14 26v18l18 10V36M50 26v18l-18 10" />
+                    <path d="M26 19l18 10M14 26l-4-8h16l6 8M50 26l4-8H38l-6 8" />
+                    <rect x="42" y="32" width="10" height="14" rx="2" transform="rotate(15 42 32)" />
                   </svg>
                 </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Descuentos Dinámicos</span>
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                  Inventario y Productos
+                </h5>
+                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                  Catálogo centralizado de artículos, control de existencias, alertas automáticas de stock mínimo y variantes.
+                </p>
               </div>
+              <div class="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
+                <span class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                  Stock & Artículos
+                </span>
+                <span class="text-gray-400 group-hover:text-sky-300 group-hover:translate-x-1 transition-all">Disponible →</span>
+              </div>
+            </div>
 
-              <!-- Informes y BI -->
-              <div class="group flex flex-col items-center text-center p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3.5 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12 text-[#0A2540]" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M16 14h20l10 10v24a2 2 0 0 1-2 2H16a2 2 0 0 1-2-2V16a2 2 0 0 1 2-2z" />
-                    <path d="M22 38v-6M28 38v-12M34 38v-8M20 42h16" />
-                    <circle cx="42" cy="42" r="6" />
-                    <path d="M46 46l6 6" />
+            <!-- 6. Inventario Completo -->
+            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 border border-sky-500/20 hover:border-sky-400 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
+              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
+              <div>
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-br from-white/[0.08] via-sky-500/[0.12] to-sky-900/[0.25] border border-sky-400/30 group-hover:border-sky-300 group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(56,189,248,0.4)] flex items-center justify-center p-4 mb-6 transition-all duration-300 shadow-inner">
+                  <svg class="w-12 h-12 sm:w-14 sm:h-14 text-sky-300 group-hover:text-cyan-200 transition-colors" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 24l8-4 8 4-8 4-8-4z" />
+                    <path d="M12 24v12l8 4v-12M28 24v12l-8 4" />
+                    <path d="M26 36l8-4 8 4-8 4-8-4z" />
+                    <path d="M26 36v12l8 4v-12M42 36v12l-8 4" />
+                    <path d="M42 16h12v32H42zM46 22h4M46 28h4M46 34h4" />
                   </svg>
                 </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Informes y BI</span>
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                  Inventario Completo
+                </h5>
+                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                  Gestión multialmacén avanzada, números de serie, lotes, traslados entre sucursales y ajustes masivos.
+                </p>
               </div>
+              <div class="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
+                <span class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                  Multialmacén
+                </span>
+                <span class="text-gray-400 group-hover:text-sky-300 group-hover:translate-x-1 transition-all">Disponible →</span>
+              </div>
+            </div>
 
-              <!-- Gestión Multi-Sucursal -->
-              <div class="group flex flex-col items-center text-center p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3.5 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12 text-[#0A2540]" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <!-- 7. Gestión Multi-Sucursal -->
+            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 border border-sky-500/20 hover:border-sky-400 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
+              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
+              <div>
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-br from-white/[0.08] via-sky-500/[0.12] to-sky-900/[0.25] border border-sky-400/30 group-hover:border-sky-300 group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(56,189,248,0.4)] flex items-center justify-center p-4 mb-6 transition-all duration-300 shadow-inner">
+                  <svg class="w-12 h-12 sm:w-14 sm:h-14 text-sky-300 group-hover:text-cyan-200 transition-colors" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M26 14h12l2 6H24l2-6zM24 20h16v10H24V20z" />
                     <path d="M32 30v6M18 36h28v6M18 42v-6M46 42v-6" />
                     <path d="M12 42h12l2 4H10l2-4zM10 46h16v8H10V46z" />
                     <path d="M40 42h12l2 4H38l2-4zM38 46h16v8H38V46z" />
                   </svg>
                 </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Gestión Multi-Sucursal</span>
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                  Gestión Multi-Sucursal
+                </h5>
+                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                  Supervisión y control consolidado de todas tus sedes y almacenes desde una sola pantalla central.
+                </p>
               </div>
+              <div class="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
+                <span class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                  Red Comercial
+                </span>
+                <span class="text-gray-400 group-hover:text-sky-300 group-hover:translate-x-1 transition-all">Disponible →</span>
+              </div>
+            </div>
 
-              <!-- Control y Validación QR -->
-              <div class="group flex flex-col items-center text-center p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3.5 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12 text-[#0A2540]" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="14" y="14" width="12" height="12" rx="1" />
-                    <rect x="38" y="14" width="12" height="12" rx="1" />
-                    <rect x="14" y="38" width="12" height="12" rx="1" />
-                    <circle cx="44" cy="44" r="8" />
-                    <path d="M41 44l2 2 4-4" />
+            <!-- 8. Control y Validación QR -->
+            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 border border-sky-500/20 hover:border-sky-400 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
+              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
+              <div>
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-br from-white/[0.08] via-sky-500/[0.12] to-sky-900/[0.25] border border-sky-400/30 group-hover:border-sky-300 group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(56,189,248,0.4)] flex items-center justify-center p-4 mb-6 transition-all duration-300 shadow-inner">
+                  <svg class="w-12 h-12 sm:w-14 sm:h-14 text-sky-300 group-hover:text-cyan-200 transition-colors" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="14" y="14" width="14" height="14" rx="2" />
+                    <rect x="36" y="14" width="14" height="14" rx="2" />
+                    <rect x="14" y="36" width="14" height="14" rx="2" />
+                    <rect x="18" y="18" width="6" height="6" fill="currentColor" />
+                    <rect x="40" y="18" width="6" height="6" fill="currentColor" />
+                    <rect x="18" y="40" width="6" height="6" fill="currentColor" />
+                    <circle cx="43" cy="43" r="9" />
+                    <path d="M39 43l3 3 6-6" />
                   </svg>
                 </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Control y Validación QR</span>
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                  Control y Validación QR
+                </h5>
+                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                  Generación y escaneo dinámico de códigos QR para comprobantes, entradas, órdenes de retiro y entregas seguras.
+                </p>
               </div>
+              <div class="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
+                <span class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                  Validación Digital
+                </span>
+                <span class="text-gray-400 group-hover:text-sky-300 group-hover:translate-x-1 transition-all">Disponible →</span>
+              </div>
+            </div>
 
-              <!-- Solicitudes de Precio -->
-              <div class="group flex flex-col items-center text-center p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3.5 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12 text-[#0A2540]" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <!-- 9. Módulo de Créditos -->
+            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 border border-sky-500/20 hover:border-sky-400 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
+              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
+              <div>
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-br from-white/[0.08] via-sky-500/[0.12] to-sky-900/[0.25] border border-sky-400/30 group-hover:border-sky-300 group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(56,189,248,0.4)] flex items-center justify-center p-4 mb-6 transition-all duration-300 shadow-inner">
+                  <svg class="w-12 h-12 sm:w-14 sm:h-14 text-sky-300 group-hover:text-cyan-200 transition-colors" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 14h18l12 12v24a2 2 0 0 1-2 2H18a2 2 0 0 1-2-2V16a2 2 0 0 1 2-2z" />
+                    <circle cx="28" cy="38" r="6" />
+                    <path d="M28 35v6M30 36.5a1.5 1.5 0 0 0-3 0c0 1.5 3 0.5 3 2a1.5 1.5 0 0 1-3 0" />
+                    <rect x="36" y="30" width="14" height="14" rx="2" />
+                    <path d="M40 28v4M46 28v4M36 36h14" />
+                  </svg>
+                </div>
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                  Módulo de Créditos
+                </h5>
+                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                  Administración de cuentas por cobrar, fijación de límites de crédito, calendarios de cuotas y alertas de morosidad.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
+                <span class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                  Cobranzas
+                </span>
+                <span class="text-gray-400 group-hover:text-sky-300 group-hover:translate-x-1 transition-all">Disponible →</span>
+              </div>
+            </div>
+
+            <!-- 10. Descuentos Dinámicos -->
+            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 border border-sky-500/20 hover:border-sky-400 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
+              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
+              <div>
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-br from-white/[0.08] via-sky-500/[0.12] to-sky-900/[0.25] border border-sky-400/30 group-hover:border-sky-300 group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(56,189,248,0.4)] flex items-center justify-center p-4 mb-6 transition-all duration-300 shadow-inner">
+                  <svg class="w-12 h-12 sm:w-14 sm:h-14 text-sky-300 group-hover:text-cyan-200 transition-colors" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M36 14L16 34l12 12 20-20V14H36z" />
+                    <circle cx="40" cy="22" r="3" />
+                    <circle cx="44" cy="42" r="9" />
+                    <path d="M41 39l6 6M47 39a3 3 0 1 1-6 6" />
+                  </svg>
+                </div>
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                  Descuentos Dinámicos
+                </h5>
+                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                  Reglas automatizadas de descuento por volumen, días especiales, cupones promocionales o clientes frecuentes.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
+                <span class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                  Promociones
+                </span>
+                <span class="text-gray-400 group-hover:text-sky-300 group-hover:translate-x-1 transition-all">Disponible →</span>
+              </div>
+            </div>
+
+            <!-- 11. Solicitudes de Precio -->
+            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 border border-sky-500/20 hover:border-sky-400 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
+              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
+              <div>
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-br from-white/[0.08] via-sky-500/[0.12] to-sky-900/[0.25] border border-sky-400/30 group-hover:border-sky-300 group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(56,189,248,0.4)] flex items-center justify-center p-4 mb-6 transition-all duration-300 shadow-inner">
+                  <svg class="w-12 h-12 sm:w-14 sm:h-14 text-sky-300 group-hover:text-cyan-200 transition-colors" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M16 18h32a6 6 0 0 1 6 6v14a6 6 0 0 1-6 6H26l-10 6v-6h0a6 6 0 0 1-6-6V24a6 6 0 0 1 6-6z" />
                     <path d="M24 28l6-6 8 8-6 6z" />
                     <path d="M42 26a3 3 0 0 1 0 4c-2 1-2 3-2 4m0 4v.5" />
                   </svg>
                 </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Solicitudes de Precio</span>
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                  Solicitudes de Precio
+                </h5>
+                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                  Flujo de cotizaciones corporativas y aprobación de precios especiales supervisadas por gerencia.
+                </p>
               </div>
-
-              <!-- Inventario Completo -->
-              <div class="group flex flex-col items-center text-center p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3.5 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12 text-[#0A2540]" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 24l8-4 8 4-8 4-8-4z" />
-                    <path d="M12 24v12l8 4v-12M28 24v12l-8 4" />
-                    <path d="M26 36l8-4 8 4-8 4-8-4z" />
-                    <path d="M26 36v12l8 4v-12M42 36v12l-8 4" />
-                    <path d="M42 18h12v32H42zM46 24h4M46 30h4M46 36h4" />
-                  </svg>
-                </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Inventario Completo</span>
+              <div class="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
+                <span class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                  Cotizaciones
+                </span>
+                <span class="text-gray-400 group-hover:text-sky-300 group-hover:translate-x-1 transition-all">Disponible →</span>
               </div>
+            </div>
 
-              <!-- Clientes de CRM -->
-              <div class="group flex flex-col items-center text-center p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3.5 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12 text-[#0A2540]" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="24" cy="22" r="7" />
-                    <path d="M12 42c0-6 5-11 12-11s12 5 12 11" />
-                    <circle cx="42" cy="24" r="6" />
-                    <path d="M38 34c4-1 9 2 11 8" />
-                    <path d="M44 44a4 4 0 0 1 6 0 4 4 0 0 1 0 6l-6 6-6-6a4 4 0 0 1 6-6z" fill="#0A2540" />
-                  </svg>
-                </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Clientes de CRM</span>
-              </div>
-
-              <!-- Caja Avanzada (Arqueos) -->
-              <div class="group flex flex-col items-center text-center p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3.5 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12 text-[#0A2540]" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M24 16h16v20H24zM28 22l2 2 4-4M28 28l2 2 4-4" />
-                    <rect x="14" y="36" width="36" height="16" rx="2" />
-                    <circle cx="32" cy="44" r="2.5" fill="currentColor" />
-                  </svg>
-                </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Caja Avanzada (Arqueos)</span>
-              </div>
-
-              <!-- Listas de Precios -->
-              <div class="group flex flex-col items-center text-center p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3.5 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12 text-[#0A2540]" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <!-- 12. Listas de Precios -->
+            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 border border-sky-500/20 hover:border-sky-400 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
+              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
+              <div>
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-br from-white/[0.08] via-sky-500/[0.12] to-sky-900/[0.25] border border-sky-400/30 group-hover:border-sky-300 group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(56,189,248,0.4)] flex items-center justify-center p-4 mb-6 transition-all duration-300 shadow-inner">
+                  <svg class="w-12 h-12 sm:w-14 sm:h-14 text-sky-300 group-hover:text-cyan-200 transition-colors" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="16" y="14" width="32" height="38" rx="2" />
                     <path d="M22 22h8M22 30h8M22 38h8" />
                     <path d="M36 22h6M36 30h6M36 38h6" />
                   </svg>
                 </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Listas de Precios</span>
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                  Listas de Precios
+                </h5>
+                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                  Configuración de múltiples esquemas tarifarios: minoristas, mayoristas, distribuidores y campañas temporales.
+                </p>
               </div>
+              <div class="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
+                <span class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                  Tarifas
+                </span>
+                <span class="text-gray-400 group-hover:text-sky-300 group-hover:translate-x-1 transition-all">Disponible →</span>
+              </div>
+            </div>
 
-              <!-- Auditoría / Log -->
-              <div class="group flex flex-col items-center text-center p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3.5 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12 text-[#0A2540]" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="24" cy="24" r="8" />
-                    <path d="M24 20v4l3 2" />
-                    <path d="M20 38h16M20 44h12" />
-                    <circle cx="44" cy="42" r="6" />
-                    <path d="M48 46l6 6" />
+            <!-- 13. Clientes y CRM -->
+            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 border border-sky-500/20 hover:border-sky-400 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
+              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
+              <div>
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-br from-white/[0.08] via-sky-500/[0.12] to-sky-900/[0.25] border border-sky-400/30 group-hover:border-sky-300 group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(56,189,248,0.4)] flex items-center justify-center p-4 mb-6 transition-all duration-300 shadow-inner">
+                  <svg class="w-12 h-12 sm:w-14 sm:h-14 text-sky-300 group-hover:text-cyan-200 transition-colors" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="24" cy="22" r="7" />
+                    <path d="M12 42c0-6 5-11 12-11s12 5 12 11" />
+                    <circle cx="42" cy="24" r="6" />
+                    <path d="M38 34c4-1 9 2 11 8" />
+                    <path d="M44 44a4 4 0 0 1 6 0 4 4 0 0 1 0 6l-6 6-6-6a4 4 0 0 1 6-6z" fill="currentColor" />
                   </svg>
                 </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Auditoría / Log</span>
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                  Clientes y CRM
+                </h5>
+                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                  Ficha integral de cada cliente con historial de compras, créditos, frecuencia y programa de fidelización.
+                </p>
               </div>
+              <div class="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
+                <span class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                  Relación con Clientes
+                </span>
+                <span class="text-gray-400 group-hover:text-sky-300 group-hover:translate-x-1 transition-all">Disponible →</span>
+              </div>
+            </div>
 
-              <!-- Logística / Pedidos -->
-              <div class="group flex flex-col items-center text-center p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3.5 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12 text-[#0A2540]" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 22h8M10 28h12M14 34h6" />
-                    <rect x="22" y="24" width="18" height="18" rx="2" />
-                    <path d="M40 30h8l6 6v6h-14V30z" />
-                    <circle cx="28" cy="46" r="4" />
-                    <circle cx="48" cy="46" r="4" />
+            <!-- 14. Gestión y Contactos -->
+            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 border border-sky-500/20 hover:border-sky-400 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
+              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
+              <div>
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-br from-white/[0.08] via-sky-500/[0.12] to-sky-900/[0.25] border border-sky-400/30 group-hover:border-sky-300 group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(56,189,248,0.4)] flex items-center justify-center p-4 mb-6 transition-all duration-300 shadow-inner">
+                  <svg class="w-12 h-12 sm:w-14 sm:h-14 text-sky-300 group-hover:text-cyan-200 transition-colors" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="18" y="14" width="30" height="38" rx="3" />
+                    <path d="M14 20h4M14 28h4M14 36h4M14 44h4" />
+                    <circle cx="33" cy="27" r="5" />
+                    <path d="M25 40c0-4 4-7 8-7s8 3 8 7" />
+                    <path d="M48 24h3M48 32h3" />
                   </svg>
                 </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Logística / Pedidos</span>
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                  Gestión y Contactos
+                </h5>
+                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                  Agenda corporativa unificada de proveedores, aliados y contactos comerciales con sincronización rápida.
+                </p>
               </div>
+              <div class="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
+                <span class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                  Directorio
+                </span>
+                <span class="text-gray-400 group-hover:text-sky-300 group-hover:translate-x-1 transition-all">Disponible →</span>
+              </div>
+            </div>
 
-              <!-- Acceso a API Externa -->
-              <div class="group flex flex-col items-center text-center p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3.5 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12 text-[#0A2540]" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M22 22l-6 6 6 6M30 36l4-16M38 22l6 6-6 6" />
-                    <path d="M16 46h14c6 0 8-4 8-8v-2M38 36h6v4h-6zM44 38h6" />
+            <!-- 15. Contabilidad -->
+            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 border border-sky-500/20 hover:border-sky-400 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
+              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
+              <div>
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-br from-white/[0.08] via-sky-500/[0.12] to-sky-900/[0.25] border border-sky-400/30 group-hover:border-sky-300 group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(56,189,248,0.4)] flex items-center justify-center p-4 mb-6 transition-all duration-300 shadow-inner">
+                  <svg class="w-12 h-12 sm:w-14 sm:h-14 text-sky-300 group-hover:text-cyan-200 transition-colors" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="14" y="16" width="22" height="34" rx="2" />
+                    <rect x="18" y="20" width="14" height="6" rx="1" />
+                    <path d="M18 30h3M24 30h3M30 30h2M18 36h3M24 36h3M30 36h2M18 42h3M24 42h8" />
+                    <path d="M40 18h12v30H40zM44 24h4M44 30h4M44 36h4M44 42h4" />
                   </svg>
                 </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Acceso a API Externa</span>
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                  Contabilidad
+                </h5>
+                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                  Asientos contables automáticos, libros diarios, balances generales e informes tributarios ordenados.
+                </p>
               </div>
+              <div class="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
+                <span class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                  Libros Contables
+                </span>
+                <span class="text-gray-400 group-hover:text-sky-300 group-hover:translate-x-1 transition-all">Disponible →</span>
+              </div>
+            </div>
 
-              <!-- Panel General BI -->
-              <div class="group flex flex-col items-center text-center p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.06] border border-white/[0.04] hover:border-sky-400/40 transition-all duration-300">
-                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-[0_8px_20px_rgba(0,0,0,0.3)] flex items-center justify-center p-3.5 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 mb-2.5">
-                  <svg class="w-10 h-10 sm:w-12 sm:h-12 text-[#0A2540]" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <!-- 16. Sistema y Auditoría -->
+            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 border border-sky-500/20 hover:border-sky-400 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
+              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
+              <div>
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-br from-white/[0.08] via-sky-500/[0.12] to-sky-900/[0.25] border border-sky-400/30 group-hover:border-sky-300 group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(56,189,248,0.4)] flex items-center justify-center p-4 mb-6 transition-all duration-300 shadow-inner">
+                  <svg class="w-12 h-12 sm:w-14 sm:h-14 text-sky-300 group-hover:text-cyan-200 transition-colors" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="28" cy="32" r="14" />
+                    <path d="M28 14v4M28 46v4M10 32h4M42 32h4M15 19l3 3M38 42l3 3M15 45l3-3M38 22l3-3" />
+                    <path d="M38 26l12-3v9c0 7-5 12-12 14-7-2-12-7-12-14v-9l12 3z" />
+                    <path d="M34 35l3 3 6-6" />
+                  </svg>
+                </div>
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                  Sistema y Auditoría
+                </h5>
+                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                  Trazabilidad absoluta con registro de usuario, fecha, hora y cambios realizados para máxima seguridad.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
+                <span class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                  Seguridad & Roles
+                </span>
+                <span class="text-gray-400 group-hover:text-sky-300 group-hover:translate-x-1 transition-all">Disponible →</span>
+              </div>
+            </div>
+
+            <!-- 17. Auditoría / Log -->
+            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 border border-sky-500/20 hover:border-sky-400 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
+              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
+              <div>
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-br from-white/[0.08] via-sky-500/[0.12] to-sky-900/[0.25] border border-sky-400/30 group-hover:border-sky-300 group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(56,189,248,0.4)] flex items-center justify-center p-4 mb-6 transition-all duration-300 shadow-inner">
+                  <svg class="w-12 h-12 sm:w-14 sm:h-14 text-sky-300 group-hover:text-cyan-200 transition-colors" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="22" cy="22" r="8" />
+                    <path d="M22 18v4l3 2" />
+                    <path d="M16 38h20M16 44h14M16 50h8" />
+                    <circle cx="44" cy="42" r="7" />
+                    <path d="M49 47l6 6" />
+                  </svg>
+                </div>
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                  Auditoría / Log
+                </h5>
+                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                  Bitácora inmutable de eventos del sistema para revisión forense y cumplimiento de normas internas.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
+                <span class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                  Logs en Vivo
+                </span>
+                <span class="text-gray-400 group-hover:text-sky-300 group-hover:translate-x-1 transition-all">Disponible →</span>
+              </div>
+            </div>
+
+            <!-- 18. Logística / Pedidos -->
+            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 border border-sky-500/20 hover:border-sky-400 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
+              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
+              <div>
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-br from-white/[0.08] via-sky-500/[0.12] to-sky-900/[0.25] border border-sky-400/30 group-hover:border-sky-300 group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(56,189,248,0.4)] flex items-center justify-center p-4 mb-6 transition-all duration-300 shadow-inner">
+                  <svg class="w-12 h-12 sm:w-14 sm:h-14 text-sky-300 group-hover:text-cyan-200 transition-colors" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10 24h8M8 30h10M12 36h6" />
+                    <rect x="20" y="24" width="20" height="20" rx="2" />
+                    <path d="M40 30h8l6 6v8h-14V30z" />
+                    <circle cx="28" cy="48" r="4" />
+                    <circle cx="48" cy="48" r="4" />
+                  </svg>
+                </div>
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                  Logística / Pedidos
+                </h5>
+                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                  Preparación de pedidos, hojas de ruta, asignación a transportistas y confirmación de entrega al cliente.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
+                <span class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                  Despachos
+                </span>
+                <span class="text-gray-400 group-hover:text-sky-300 group-hover:translate-x-1 transition-all">Disponible →</span>
+              </div>
+            </div>
+
+            <!-- 19. Página Web -->
+            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 border border-sky-500/20 hover:border-sky-400 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
+              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
+              <div>
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-br from-white/[0.08] via-sky-500/[0.12] to-sky-900/[0.25] border border-sky-400/30 group-hover:border-sky-300 group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(56,189,248,0.4)] flex items-center justify-center p-4 mb-6 transition-all duration-300 shadow-inner">
+                  <svg class="w-12 h-12 sm:w-14 sm:h-14 text-sky-300 group-hover:text-cyan-200 transition-colors" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="14" y="16" width="36" height="32" rx="3" />
+                    <path d="M14 26h36" />
+                    <circle cx="20" cy="21" r="1.5" fill="currentColor" />
+                    <circle cx="26" cy="21" r="1.5" fill="currentColor" />
+                    <circle cx="32" cy="21" r="1.5" fill="currentColor" />
+                    <circle cx="32" cy="37" r="7" />
+                    <path d="M25 37h14M32 30c-2 2-3 4-3 7s1 5 3 7c2-2 3-4 3-7s-1-5-3-7z" />
+                  </svg>
+                </div>
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                  Página Web
+                </h5>
+                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                  Presencia institucional y catálogo web sincronizado en tiempo real con tus existencias y promociones.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
+                <span class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                  Presencia Digital
+                </span>
+                <span class="text-gray-400 group-hover:text-sky-300 group-hover:translate-x-1 transition-all">Disponible →</span>
+              </div>
+            </div>
+
+            <!-- 20. Analítica y Reportes / Informes y BI -->
+            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 border border-sky-500/20 hover:border-sky-400 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
+              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
+              <div>
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-br from-white/[0.08] via-sky-500/[0.12] to-sky-900/[0.25] border border-sky-400/30 group-hover:border-sky-300 group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(56,189,248,0.4)] flex items-center justify-center p-4 mb-6 transition-all duration-300 shadow-inner">
+                  <svg class="w-12 h-12 sm:w-14 sm:h-14 text-sky-300 group-hover:text-cyan-200 transition-colors" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="14" y="14" width="36" height="38" rx="3" />
+                    <path d="M22 28l7-6 7 5 8-7" />
+                    <path d="M40 20h4v4" />
+                    <path d="M22 42v-6M28 42v-11M34 42v-8M40 42v-14" />
+                    <circle cx="44" cy="44" r="6" />
+                    <path d="M48 48l5 5" />
+                  </svg>
+                </div>
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                  Analítica e Informes BI
+                </h5>
+                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                  Gráficos analíticos con métricas financieras, productos más vendidos, márgenes brutos y proyecciones.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
+                <span class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                  Inteligencia Comercial
+                </span>
+                <span class="text-gray-400 group-hover:text-sky-300 group-hover:translate-x-1 transition-all">Disponible →</span>
+              </div>
+            </div>
+
+            <!-- 21. Panel General BI -->
+            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 border border-sky-500/20 hover:border-sky-400 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
+              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
+              <div>
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-br from-white/[0.08] via-sky-500/[0.12] to-sky-900/[0.25] border border-sky-400/30 group-hover:border-sky-300 group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(56,189,248,0.4)] flex items-center justify-center p-4 mb-6 transition-all duration-300 shadow-inner">
+                  <svg class="w-12 h-12 sm:w-14 sm:h-14 text-sky-300 group-hover:text-cyan-200 transition-colors" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="14" y="14" width="36" height="36" rx="3" />
                     <path d="M14 24h36M32 24v26M14 36h18" />
                     <path d="M20 32v-4M26 32v-6" />
@@ -1046,10 +1103,48 @@ import Footer from '../components/Footer.astro';
                     <path d="M38 43l3-2 3 3" />
                   </svg>
                 </div>
-                <span class="text-xs sm:text-[13px] font-medium text-gray-200 group-hover:text-sky-300 transition-colors">Panel General BI</span>
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                  Panel General BI
+                </h5>
+                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                  Tablero directivo consolidado con KPIs en tiempo real, rendimiento por canal de venta y objetivos comerciales.
+                </p>
               </div>
-
+              <div class="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
+                <span class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                  Dashboard Ejecutivo
+                </span>
+                <span class="text-gray-400 group-hover:text-sky-300 group-hover:translate-x-1 transition-all">Disponible →</span>
+              </div>
             </div>
+
+            <!-- 22. Acceso a API Externa -->
+            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 border border-sky-500/20 hover:border-sky-400 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
+              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
+              <div>
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-br from-white/[0.08] via-sky-500/[0.12] to-sky-900/[0.25] border border-sky-400/30 group-hover:border-sky-300 group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(56,189,248,0.4)] flex items-center justify-center p-4 mb-6 transition-all duration-300 shadow-inner">
+                  <svg class="w-12 h-12 sm:w-14 sm:h-14 text-sky-300 group-hover:text-cyan-200 transition-colors" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 22l-6 6 6 6M30 36l4-16M38 22l6 6-6 6" />
+                    <path d="M16 46h14c6 0 8-4 8-8v-2M38 36h6v4h-6zM44 38h6" />
+                  </svg>
+                </div>
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                  Acceso a API Externa
+                </h5>
+                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                  Conexión segura mediante REST API y Webhooks para integrar pasarelas de pago, eCommerce y software de terceros.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
+                <span class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                  Conectividad REST
+                </span>
+                <span class="text-gray-400 group-hover:text-sky-300 group-hover:translate-x-1 transition-all">Disponible →</span>
+              </div>
+            </div>
+
           </div>
 
         </div>
@@ -1171,27 +1266,7 @@ import Footer from '../components/Footer.astro';
       annualBtn.onclick = () => setBilling(true);
     }
 
-    // Toggle para pestañas de Suite de Apps vs Módulos Operativos
-    const tabBtnSuite = document.getElementById('tab-btn-suite');
-    const tabBtnOperativos = document.getElementById('tab-btn-operativos');
-    const viewSuite = document.getElementById('view-suite');
-    const viewOperativos = document.getElementById('view-operativos');
 
-    if (tabBtnSuite && tabBtnOperativos && viewSuite && viewOperativos) {
-      tabBtnSuite.onclick = () => {
-        tabBtnSuite.className = 'px-4 sm:px-6 py-2 rounded-xl text-xs font-semibold transition-all duration-300 text-white bg-sky-500/25 border border-sky-400 shadow-[0_0_15px_rgba(56,189,248,0.25)] cursor-pointer flex items-center gap-2';
-        tabBtnOperativos.className = 'px-4 sm:px-6 py-2 rounded-xl text-xs font-semibold transition-all duration-300 text-gray-400 hover:text-white border border-transparent cursor-pointer flex items-center gap-2';
-        viewSuite.classList.remove('hidden');
-        viewOperativos.classList.add('hidden');
-      };
-
-      tabBtnOperativos.onclick = () => {
-        tabBtnOperativos.className = 'px-4 sm:px-6 py-2 rounded-xl text-xs font-semibold transition-all duration-300 text-white bg-sky-500/25 border border-sky-400 shadow-[0_0_15px_rgba(56,189,248,0.25)] cursor-pointer flex items-center gap-2';
-        tabBtnSuite.className = 'px-4 sm:px-6 py-2 rounded-xl text-xs font-semibold transition-all duration-300 text-gray-400 hover:text-white border border-transparent cursor-pointer flex items-center gap-2';
-        viewOperativos.classList.remove('hidden');
-        viewSuite.classList.add('hidden');
-      };
-    }
   }
 
   if (document.readyState === 'loading') {
