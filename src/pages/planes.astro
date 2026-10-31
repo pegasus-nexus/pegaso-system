@@ -496,7 +496,7 @@ import Footer from '../components/Footer.astro';
         <!-- =====================================================================
              SECCIÓN DE MÓDULOS EMPRESARIALES (DISEÑO DESTACADO Y EXPANDIDO)
              ===================================================================== -->
-        <div class="max-w-7xl mx-auto rounded-3xl p-6 sm:p-12 bg-gradient-to-b from-[#070e1c]/90 via-[#050a14]/90 to-[#02050b]/95 backdrop-blur-2xl mb-16 shadow-[0_20px_60px_rgba(0,0,0,0.6)]">
+        <div class="max-w-7xl mx-auto mb-20 px-4 sm:px-6">
           
           <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
 
@@ -512,10 +512,10 @@ import Footer from '../components/Footer.astro';
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-7">
 
             <!-- 1. Ventas y POS -->
-            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
-              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
-              <div>
-                <div class="mb-6 flex items-center">
+            <details class="group relative rounded-3xl p-6 sm:p-7 bg-gradient-to-b from-[#09152e]/85 via-[#071024]/75 to-[#040914]/90 hover:shadow-[0_0_35px_rgba(56,189,248,0.25)] hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <summary class="list-none outline-none select-none flex flex-col items-center text-center cursor-pointer">
+                <!-- Icono Centrado -->
+                <div class="mb-4 flex items-center justify-center">
                   <svg class="w-20 h-20 sm:w-24 sm:h-24 text-sky-400 group-hover:text-cyan-300 group-hover:scale-110 drop-shadow-[0_0_25px_rgba(56,189,248,0.45)] transition-all duration-300" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 20h40l-3 6H15l-3-6z" />
                     <rect x="14" y="26" width="36" height="22" rx="2" />
@@ -524,26 +524,35 @@ import Footer from '../components/Footer.astro';
                     <path d="M26 48v5M38 48v5M18 53h28" />
                   </svg>
                 </div>
-                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                <!-- Título Centrado -->
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight group-hover:text-sky-300 transition-colors">
                   Ventas y POS
                 </h5>
-                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <!-- Flecha Desplegable Centrada -->
+                <div class="mt-3 w-8 h-8 rounded-full bg-white/[0.04] group-hover:bg-sky-500/10 border border-white/[0.08] group-hover:border-sky-400/30 flex items-center justify-center text-sky-400 transition-all duration-300 shadow-sm">
+                  <svg class="w-4 h-4 text-sky-400 transition-transform duration-300 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </summary>
+
+              <!-- Contexto / Descripción Desplegable Centrada -->
+              <div class="mt-4 pt-4 border-t border-white/[0.08] text-center text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <p class="mb-3">
                   Terminal de punto de venta rápido para facturación ágil, lectores de código de barras y cobros multimoneda en segundos.
                 </p>
-              </div>
-              <div class="mt-5 flex items-center text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
-                <span class="flex items-center gap-1.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-500/10 text-[10px] text-sky-300 font-semibold tracking-wider uppercase">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
                   Punto de Venta
-                </span>
+                </div>
               </div>
-            </div>
+            </details>
 
             <!-- 2. Ventas y Cajas -->
-            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
-              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
-              <div>
-                <div class="mb-6 flex items-center">
+            <details class="group relative rounded-3xl p-6 sm:p-7 bg-gradient-to-b from-[#09152e]/85 via-[#071024]/75 to-[#040914]/90 hover:shadow-[0_0_35px_rgba(56,189,248,0.25)] hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <summary class="list-none outline-none select-none flex flex-col items-center text-center cursor-pointer">
+                <!-- Icono Centrado -->
+                <div class="mb-4 flex items-center justify-center">
                   <svg class="w-20 h-20 sm:w-24 sm:h-24 text-sky-400 group-hover:text-cyan-300 group-hover:scale-110 drop-shadow-[0_0_25px_rgba(56,189,248,0.45)] transition-all duration-300" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="26" y="10" width="12" height="12" rx="1" />
                     <path d="M29 14h6M29 18h6" />
@@ -553,26 +562,35 @@ import Footer from '../components/Footer.astro';
                     <path d="M22 27h4M30 27h4M38 27h4M22 31h4M30 31h4M38 31h4" />
                   </svg>
                 </div>
-                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                <!-- Título Centrado -->
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight group-hover:text-sky-300 transition-colors">
                   Ventas y Cajas
                 </h5>
-                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <!-- Flecha Desplegable Centrada -->
+                <div class="mt-3 w-8 h-8 rounded-full bg-white/[0.04] group-hover:bg-sky-500/10 border border-white/[0.08] group-hover:border-sky-400/30 flex items-center justify-center text-sky-400 transition-all duration-300 shadow-sm">
+                  <svg class="w-4 h-4 text-sky-400 transition-transform duration-300 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </summary>
+
+              <!-- Contexto / Descripción Desplegable Centrada -->
+              <div class="mt-4 pt-4 border-t border-white/[0.08] text-center text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <p class="mb-3">
                   Registro de transacciones diarias con emisión automática de recibos y facturas físicas o digitales.
                 </p>
-              </div>
-              <div class="mt-5 flex items-center text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
-                <span class="flex items-center gap-1.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-500/10 text-[10px] text-sky-300 font-semibold tracking-wider uppercase">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
                   Caja Diaria
-                </span>
+                </div>
               </div>
-            </div>
+            </details>
 
             <!-- 3. Caja Básica -->
-            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
-              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
-              <div>
-                <div class="mb-6 flex items-center">
+            <details class="group relative rounded-3xl p-6 sm:p-7 bg-gradient-to-b from-[#09152e]/85 via-[#071024]/75 to-[#040914]/90 hover:shadow-[0_0_35px_rgba(56,189,248,0.25)] hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <summary class="list-none outline-none select-none flex flex-col items-center text-center cursor-pointer">
+                <!-- Icono Centrado -->
+                <div class="mb-4 flex items-center justify-center">
                   <svg class="w-20 h-20 sm:w-24 sm:h-24 text-sky-400 group-hover:text-cyan-300 group-hover:scale-110 drop-shadow-[0_0_25px_rgba(56,189,248,0.45)] transition-all duration-300" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="32" cy="18" r="9" />
                     <path d="M32 13v10M35 15.5a3 3 0 0 0-6 0c0 3 6 1 6 4a3 3 0 0 1-6 0" />
@@ -581,52 +599,70 @@ import Footer from '../components/Footer.astro';
                     <circle cx="32" cy="42" r="2.5" fill="currentColor" />
                   </svg>
                 </div>
-                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                <!-- Título Centrado -->
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight group-hover:text-sky-300 transition-colors">
                   Caja Básica
                 </h5>
-                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <!-- Flecha Desplegable Centrada -->
+                <div class="mt-3 w-8 h-8 rounded-full bg-white/[0.04] group-hover:bg-sky-500/10 border border-white/[0.08] group-hover:border-sky-400/30 flex items-center justify-center text-sky-400 transition-all duration-300 shadow-sm">
+                  <svg class="w-4 h-4 text-sky-400 transition-transform duration-300 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </summary>
+
+              <!-- Contexto / Descripción Desplegable Centrada -->
+              <div class="mt-4 pt-4 border-t border-white/[0.08] text-center text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <p class="mb-3">
                   Control sencillo e intuitivo de entradas y salidas de dinero en efectivo sin configuraciones engorrosas.
                 </p>
-              </div>
-              <div class="mt-5 flex items-center text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
-                <span class="flex items-center gap-1.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-500/10 text-[10px] text-sky-300 font-semibold tracking-wider uppercase">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
                   Finanzas
-                </span>
+                </div>
               </div>
-            </div>
+            </details>
 
             <!-- 4. Caja Avanzada (Arqueos) -->
-            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
-              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
-              <div>
-                <div class="mb-6 flex items-center">
+            <details class="group relative rounded-3xl p-6 sm:p-7 bg-gradient-to-b from-[#09152e]/85 via-[#071024]/75 to-[#040914]/90 hover:shadow-[0_0_35px_rgba(56,189,248,0.25)] hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <summary class="list-none outline-none select-none flex flex-col items-center text-center cursor-pointer">
+                <!-- Icono Centrado -->
+                <div class="mb-4 flex items-center justify-center">
                   <svg class="w-20 h-20 sm:w-24 sm:h-24 text-sky-400 group-hover:text-cyan-300 group-hover:scale-110 drop-shadow-[0_0_25px_rgba(56,189,248,0.45)] transition-all duration-300" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M22 14h20v22H22zM26 20l2 2 4-4M26 26l2 2 4-4M26 32l2 2 4-4" />
                     <rect x="14" y="36" width="36" height="16" rx="2" />
                     <circle cx="32" cy="44" r="2.5" fill="currentColor" />
                   </svg>
                 </div>
-                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                <!-- Título Centrado -->
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight group-hover:text-sky-300 transition-colors">
                   Caja Avanzada (Arqueos)
                 </h5>
-                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <!-- Flecha Desplegable Centrada -->
+                <div class="mt-3 w-8 h-8 rounded-full bg-white/[0.04] group-hover:bg-sky-500/10 border border-white/[0.08] group-hover:border-sky-400/30 flex items-center justify-center text-sky-400 transition-all duration-300 shadow-sm">
+                  <svg class="w-4 h-4 text-sky-400 transition-transform duration-300 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </summary>
+
+              <!-- Contexto / Descripción Desplegable Centrada -->
+              <div class="mt-4 pt-4 border-t border-white/[0.08] text-center text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <p class="mb-3">
                   Cierres de turno X y Z, arqueos a ciegas, justificación de diferencias y auditoría de fondos en tiempo real.
                 </p>
-              </div>
-              <div class="mt-5 flex items-center text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
-                <span class="flex items-center gap-1.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-500/10 text-[10px] text-sky-300 font-semibold tracking-wider uppercase">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
                   Auditoría de Fondos
-                </span>
+                </div>
               </div>
-            </div>
+            </details>
 
             <!-- 5. Inventario y Productos -->
-            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
-              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
-              <div>
-                <div class="mb-6 flex items-center">
+            <details class="group relative rounded-3xl p-6 sm:p-7 bg-gradient-to-b from-[#09152e]/85 via-[#071024]/75 to-[#040914]/90 hover:shadow-[0_0_35px_rgba(56,189,248,0.25)] hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <summary class="list-none outline-none select-none flex flex-col items-center text-center cursor-pointer">
+                <!-- Icono Centrado -->
+                <div class="mb-4 flex items-center justify-center">
                   <svg class="w-20 h-20 sm:w-24 sm:h-24 text-sky-400 group-hover:text-cyan-300 group-hover:scale-110 drop-shadow-[0_0_25px_rgba(56,189,248,0.45)] transition-all duration-300" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M14 26l18-10 18 10-18 10-18-10z" />
                     <path d="M14 26v18l18 10V36M50 26v18l-18 10" />
@@ -634,26 +670,35 @@ import Footer from '../components/Footer.astro';
                     <rect x="42" y="32" width="10" height="14" rx="2" transform="rotate(15 42 32)" />
                   </svg>
                 </div>
-                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                <!-- Título Centrado -->
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight group-hover:text-sky-300 transition-colors">
                   Inventario y Productos
                 </h5>
-                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <!-- Flecha Desplegable Centrada -->
+                <div class="mt-3 w-8 h-8 rounded-full bg-white/[0.04] group-hover:bg-sky-500/10 border border-white/[0.08] group-hover:border-sky-400/30 flex items-center justify-center text-sky-400 transition-all duration-300 shadow-sm">
+                  <svg class="w-4 h-4 text-sky-400 transition-transform duration-300 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </summary>
+
+              <!-- Contexto / Descripción Desplegable Centrada -->
+              <div class="mt-4 pt-4 border-t border-white/[0.08] text-center text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <p class="mb-3">
                   Catálogo centralizado de artículos, control de existencias, alertas automáticas de stock mínimo y variantes.
                 </p>
-              </div>
-              <div class="mt-5 flex items-center text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
-                <span class="flex items-center gap-1.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-500/10 text-[10px] text-sky-300 font-semibold tracking-wider uppercase">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
                   Stock & Artículos
-                </span>
+                </div>
               </div>
-            </div>
+            </details>
 
             <!-- 6. Inventario Completo -->
-            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
-              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
-              <div>
-                <div class="mb-6 flex items-center">
+            <details class="group relative rounded-3xl p-6 sm:p-7 bg-gradient-to-b from-[#09152e]/85 via-[#071024]/75 to-[#040914]/90 hover:shadow-[0_0_35px_rgba(56,189,248,0.25)] hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <summary class="list-none outline-none select-none flex flex-col items-center text-center cursor-pointer">
+                <!-- Icono Centrado -->
+                <div class="mb-4 flex items-center justify-center">
                   <svg class="w-20 h-20 sm:w-24 sm:h-24 text-sky-400 group-hover:text-cyan-300 group-hover:scale-110 drop-shadow-[0_0_25px_rgba(56,189,248,0.45)] transition-all duration-300" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 24l8-4 8 4-8 4-8-4z" />
                     <path d="M12 24v12l8 4v-12M28 24v12l-8 4" />
@@ -662,26 +707,35 @@ import Footer from '../components/Footer.astro';
                     <path d="M42 16h12v32H42zM46 22h4M46 28h4M46 34h4" />
                   </svg>
                 </div>
-                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                <!-- Título Centrado -->
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight group-hover:text-sky-300 transition-colors">
                   Inventario Completo
                 </h5>
-                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <!-- Flecha Desplegable Centrada -->
+                <div class="mt-3 w-8 h-8 rounded-full bg-white/[0.04] group-hover:bg-sky-500/10 border border-white/[0.08] group-hover:border-sky-400/30 flex items-center justify-center text-sky-400 transition-all duration-300 shadow-sm">
+                  <svg class="w-4 h-4 text-sky-400 transition-transform duration-300 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </summary>
+
+              <!-- Contexto / Descripción Desplegable Centrada -->
+              <div class="mt-4 pt-4 border-t border-white/[0.08] text-center text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <p class="mb-3">
                   Gestión multialmacén avanzada, números de serie, lotes, traslados entre sucursales y ajustes masivos.
                 </p>
-              </div>
-              <div class="mt-5 flex items-center text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
-                <span class="flex items-center gap-1.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-500/10 text-[10px] text-sky-300 font-semibold tracking-wider uppercase">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
                   Multialmacén
-                </span>
+                </div>
               </div>
-            </div>
+            </details>
 
             <!-- 7. Gestión Multi-Sucursal -->
-            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
-              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
-              <div>
-                <div class="mb-6 flex items-center">
+            <details class="group relative rounded-3xl p-6 sm:p-7 bg-gradient-to-b from-[#09152e]/85 via-[#071024]/75 to-[#040914]/90 hover:shadow-[0_0_35px_rgba(56,189,248,0.25)] hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <summary class="list-none outline-none select-none flex flex-col items-center text-center cursor-pointer">
+                <!-- Icono Centrado -->
+                <div class="mb-4 flex items-center justify-center">
                   <svg class="w-20 h-20 sm:w-24 sm:h-24 text-sky-400 group-hover:text-cyan-300 group-hover:scale-110 drop-shadow-[0_0_25px_rgba(56,189,248,0.45)] transition-all duration-300" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M26 14h12l2 6H24l2-6zM24 20h16v10H24V20z" />
                     <path d="M32 30v6M18 36h28v6M18 42v-6M46 42v-6" />
@@ -689,26 +743,35 @@ import Footer from '../components/Footer.astro';
                     <path d="M40 42h12l2 4H38l2-4zM38 46h16v8H38V46z" />
                   </svg>
                 </div>
-                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                <!-- Título Centrado -->
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight group-hover:text-sky-300 transition-colors">
                   Gestión Multi-Sucursal
                 </h5>
-                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <!-- Flecha Desplegable Centrada -->
+                <div class="mt-3 w-8 h-8 rounded-full bg-white/[0.04] group-hover:bg-sky-500/10 border border-white/[0.08] group-hover:border-sky-400/30 flex items-center justify-center text-sky-400 transition-all duration-300 shadow-sm">
+                  <svg class="w-4 h-4 text-sky-400 transition-transform duration-300 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </summary>
+
+              <!-- Contexto / Descripción Desplegable Centrada -->
+              <div class="mt-4 pt-4 border-t border-white/[0.08] text-center text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <p class="mb-3">
                   Supervisión y control consolidado de todas tus sedes y almacenes desde una sola pantalla central.
                 </p>
-              </div>
-              <div class="mt-5 flex items-center text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
-                <span class="flex items-center gap-1.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-500/10 text-[10px] text-sky-300 font-semibold tracking-wider uppercase">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
                   Red Comercial
-                </span>
+                </div>
               </div>
-            </div>
+            </details>
 
             <!-- 8. Control y Validación QR -->
-            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
-              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
-              <div>
-                <div class="mb-6 flex items-center">
+            <details class="group relative rounded-3xl p-6 sm:p-7 bg-gradient-to-b from-[#09152e]/85 via-[#071024]/75 to-[#040914]/90 hover:shadow-[0_0_35px_rgba(56,189,248,0.25)] hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <summary class="list-none outline-none select-none flex flex-col items-center text-center cursor-pointer">
+                <!-- Icono Centrado -->
+                <div class="mb-4 flex items-center justify-center">
                   <svg class="w-20 h-20 sm:w-24 sm:h-24 text-sky-400 group-hover:text-cyan-300 group-hover:scale-110 drop-shadow-[0_0_25px_rgba(56,189,248,0.45)] transition-all duration-300" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="14" y="14" width="14" height="14" rx="2" />
                     <rect x="36" y="14" width="14" height="14" rx="2" />
@@ -720,26 +783,35 @@ import Footer from '../components/Footer.astro';
                     <path d="M39 43l3 3 6-6" />
                   </svg>
                 </div>
-                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                <!-- Título Centrado -->
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight group-hover:text-sky-300 transition-colors">
                   Control y Validación QR
                 </h5>
-                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <!-- Flecha Desplegable Centrada -->
+                <div class="mt-3 w-8 h-8 rounded-full bg-white/[0.04] group-hover:bg-sky-500/10 border border-white/[0.08] group-hover:border-sky-400/30 flex items-center justify-center text-sky-400 transition-all duration-300 shadow-sm">
+                  <svg class="w-4 h-4 text-sky-400 transition-transform duration-300 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </summary>
+
+              <!-- Contexto / Descripción Desplegable Centrada -->
+              <div class="mt-4 pt-4 border-t border-white/[0.08] text-center text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <p class="mb-3">
                   Generación y escaneo dinámico de códigos QR para comprobantes, entradas, órdenes de retiro y entregas seguras.
                 </p>
-              </div>
-              <div class="mt-5 flex items-center text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
-                <span class="flex items-center gap-1.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-500/10 text-[10px] text-sky-300 font-semibold tracking-wider uppercase">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
                   Validación Digital
-                </span>
+                </div>
               </div>
-            </div>
+            </details>
 
             <!-- 9. Módulo de Créditos -->
-            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
-              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
-              <div>
-                <div class="mb-6 flex items-center">
+            <details class="group relative rounded-3xl p-6 sm:p-7 bg-gradient-to-b from-[#09152e]/85 via-[#071024]/75 to-[#040914]/90 hover:shadow-[0_0_35px_rgba(56,189,248,0.25)] hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <summary class="list-none outline-none select-none flex flex-col items-center text-center cursor-pointer">
+                <!-- Icono Centrado -->
+                <div class="mb-4 flex items-center justify-center">
                   <svg class="w-20 h-20 sm:w-24 sm:h-24 text-sky-400 group-hover:text-cyan-300 group-hover:scale-110 drop-shadow-[0_0_25px_rgba(56,189,248,0.45)] transition-all duration-300" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M18 14h18l12 12v24a2 2 0 0 1-2 2H18a2 2 0 0 1-2-2V16a2 2 0 0 1 2-2z" />
                     <circle cx="28" cy="38" r="6" />
@@ -748,26 +820,35 @@ import Footer from '../components/Footer.astro';
                     <path d="M40 28v4M46 28v4M36 36h14" />
                   </svg>
                 </div>
-                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                <!-- Título Centrado -->
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight group-hover:text-sky-300 transition-colors">
                   Módulo de Créditos
                 </h5>
-                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <!-- Flecha Desplegable Centrada -->
+                <div class="mt-3 w-8 h-8 rounded-full bg-white/[0.04] group-hover:bg-sky-500/10 border border-white/[0.08] group-hover:border-sky-400/30 flex items-center justify-center text-sky-400 transition-all duration-300 shadow-sm">
+                  <svg class="w-4 h-4 text-sky-400 transition-transform duration-300 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </summary>
+
+              <!-- Contexto / Descripción Desplegable Centrada -->
+              <div class="mt-4 pt-4 border-t border-white/[0.08] text-center text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <p class="mb-3">
                   Administración de cuentas por cobrar, fijación de límites de crédito, calendarios de cuotas y alertas de morosidad.
                 </p>
-              </div>
-              <div class="mt-5 flex items-center text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
-                <span class="flex items-center gap-1.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-500/10 text-[10px] text-sky-300 font-semibold tracking-wider uppercase">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
                   Cobranzas
-                </span>
+                </div>
               </div>
-            </div>
+            </details>
 
             <!-- 10. Descuentos Dinámicos -->
-            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
-              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
-              <div>
-                <div class="mb-6 flex items-center">
+            <details class="group relative rounded-3xl p-6 sm:p-7 bg-gradient-to-b from-[#09152e]/85 via-[#071024]/75 to-[#040914]/90 hover:shadow-[0_0_35px_rgba(56,189,248,0.25)] hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <summary class="list-none outline-none select-none flex flex-col items-center text-center cursor-pointer">
+                <!-- Icono Centrado -->
+                <div class="mb-4 flex items-center justify-center">
                   <svg class="w-20 h-20 sm:w-24 sm:h-24 text-sky-400 group-hover:text-cyan-300 group-hover:scale-110 drop-shadow-[0_0_25px_rgba(56,189,248,0.45)] transition-all duration-300" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M36 14L16 34l12 12 20-20V14H36z" />
                     <circle cx="40" cy="22" r="3" />
@@ -775,78 +856,105 @@ import Footer from '../components/Footer.astro';
                     <path d="M41 39l6 6M47 39a3 3 0 1 1-6 6" />
                   </svg>
                 </div>
-                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                <!-- Título Centrado -->
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight group-hover:text-sky-300 transition-colors">
                   Descuentos Dinámicos
                 </h5>
-                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <!-- Flecha Desplegable Centrada -->
+                <div class="mt-3 w-8 h-8 rounded-full bg-white/[0.04] group-hover:bg-sky-500/10 border border-white/[0.08] group-hover:border-sky-400/30 flex items-center justify-center text-sky-400 transition-all duration-300 shadow-sm">
+                  <svg class="w-4 h-4 text-sky-400 transition-transform duration-300 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </summary>
+
+              <!-- Contexto / Descripción Desplegable Centrada -->
+              <div class="mt-4 pt-4 border-t border-white/[0.08] text-center text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <p class="mb-3">
                   Reglas automatizadas de descuento por volumen, días especiales, cupones promocionales o clientes frecuentes.
                 </p>
-              </div>
-              <div class="mt-5 flex items-center text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
-                <span class="flex items-center gap-1.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-500/10 text-[10px] text-sky-300 font-semibold tracking-wider uppercase">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
                   Promociones
-                </span>
+                </div>
               </div>
-            </div>
+            </details>
 
             <!-- 11. Solicitudes de Precio -->
-            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
-              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
-              <div>
-                <div class="mb-6 flex items-center">
+            <details class="group relative rounded-3xl p-6 sm:p-7 bg-gradient-to-b from-[#09152e]/85 via-[#071024]/75 to-[#040914]/90 hover:shadow-[0_0_35px_rgba(56,189,248,0.25)] hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <summary class="list-none outline-none select-none flex flex-col items-center text-center cursor-pointer">
+                <!-- Icono Centrado -->
+                <div class="mb-4 flex items-center justify-center">
                   <svg class="w-20 h-20 sm:w-24 sm:h-24 text-sky-400 group-hover:text-cyan-300 group-hover:scale-110 drop-shadow-[0_0_25px_rgba(56,189,248,0.45)] transition-all duration-300" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M16 18h32a6 6 0 0 1 6 6v14a6 6 0 0 1-6 6H26l-10 6v-6h0a6 6 0 0 1-6-6V24a6 6 0 0 1 6-6z" />
                     <path d="M24 28l6-6 8 8-6 6z" />
                     <path d="M42 26a3 3 0 0 1 0 4c-2 1-2 3-2 4m0 4v.5" />
                   </svg>
                 </div>
-                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                <!-- Título Centrado -->
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight group-hover:text-sky-300 transition-colors">
                   Solicitudes de Precio
                 </h5>
-                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <!-- Flecha Desplegable Centrada -->
+                <div class="mt-3 w-8 h-8 rounded-full bg-white/[0.04] group-hover:bg-sky-500/10 border border-white/[0.08] group-hover:border-sky-400/30 flex items-center justify-center text-sky-400 transition-all duration-300 shadow-sm">
+                  <svg class="w-4 h-4 text-sky-400 transition-transform duration-300 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </summary>
+
+              <!-- Contexto / Descripción Desplegable Centrada -->
+              <div class="mt-4 pt-4 border-t border-white/[0.08] text-center text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <p class="mb-3">
                   Flujo de cotizaciones corporativas y aprobación de precios especiales supervisadas por gerencia.
                 </p>
-              </div>
-              <div class="mt-5 flex items-center text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
-                <span class="flex items-center gap-1.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-500/10 text-[10px] text-sky-300 font-semibold tracking-wider uppercase">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
                   Cotizaciones
-                </span>
+                </div>
               </div>
-            </div>
+            </details>
 
             <!-- 12. Listas de Precios -->
-            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
-              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
-              <div>
-                <div class="mb-6 flex items-center">
+            <details class="group relative rounded-3xl p-6 sm:p-7 bg-gradient-to-b from-[#09152e]/85 via-[#071024]/75 to-[#040914]/90 hover:shadow-[0_0_35px_rgba(56,189,248,0.25)] hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <summary class="list-none outline-none select-none flex flex-col items-center text-center cursor-pointer">
+                <!-- Icono Centrado -->
+                <div class="mb-4 flex items-center justify-center">
                   <svg class="w-20 h-20 sm:w-24 sm:h-24 text-sky-400 group-hover:text-cyan-300 group-hover:scale-110 drop-shadow-[0_0_25px_rgba(56,189,248,0.45)] transition-all duration-300" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="16" y="14" width="32" height="38" rx="2" />
                     <path d="M22 22h8M22 30h8M22 38h8" />
                     <path d="M36 22h6M36 30h6M36 38h6" />
                   </svg>
                 </div>
-                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                <!-- Título Centrado -->
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight group-hover:text-sky-300 transition-colors">
                   Listas de Precios
                 </h5>
-                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <!-- Flecha Desplegable Centrada -->
+                <div class="mt-3 w-8 h-8 rounded-full bg-white/[0.04] group-hover:bg-sky-500/10 border border-white/[0.08] group-hover:border-sky-400/30 flex items-center justify-center text-sky-400 transition-all duration-300 shadow-sm">
+                  <svg class="w-4 h-4 text-sky-400 transition-transform duration-300 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </summary>
+
+              <!-- Contexto / Descripción Desplegable Centrada -->
+              <div class="mt-4 pt-4 border-t border-white/[0.08] text-center text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <p class="mb-3">
                   Configuración de múltiples esquemas tarifarios: minoristas, mayoristas, distribuidores y campañas temporales.
                 </p>
-              </div>
-              <div class="mt-5 flex items-center text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
-                <span class="flex items-center gap-1.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-500/10 text-[10px] text-sky-300 font-semibold tracking-wider uppercase">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
                   Tarifas
-                </span>
+                </div>
               </div>
-            </div>
+            </details>
 
             <!-- 13. Clientes y CRM -->
-            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
-              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
-              <div>
-                <div class="mb-6 flex items-center">
+            <details class="group relative rounded-3xl p-6 sm:p-7 bg-gradient-to-b from-[#09152e]/85 via-[#071024]/75 to-[#040914]/90 hover:shadow-[0_0_35px_rgba(56,189,248,0.25)] hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <summary class="list-none outline-none select-none flex flex-col items-center text-center cursor-pointer">
+                <!-- Icono Centrado -->
+                <div class="mb-4 flex items-center justify-center">
                   <svg class="w-20 h-20 sm:w-24 sm:h-24 text-sky-400 group-hover:text-cyan-300 group-hover:scale-110 drop-shadow-[0_0_25px_rgba(56,189,248,0.45)] transition-all duration-300" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="24" cy="22" r="7" />
                     <path d="M12 42c0-6 5-11 12-11s12 5 12 11" />
@@ -855,26 +963,35 @@ import Footer from '../components/Footer.astro';
                     <path d="M44 44a4 4 0 0 1 6 0 4 4 0 0 1 0 6l-6 6-6-6a4 4 0 0 1 6-6z" fill="currentColor" />
                   </svg>
                 </div>
-                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                <!-- Título Centrado -->
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight group-hover:text-sky-300 transition-colors">
                   Clientes y CRM
                 </h5>
-                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <!-- Flecha Desplegable Centrada -->
+                <div class="mt-3 w-8 h-8 rounded-full bg-white/[0.04] group-hover:bg-sky-500/10 border border-white/[0.08] group-hover:border-sky-400/30 flex items-center justify-center text-sky-400 transition-all duration-300 shadow-sm">
+                  <svg class="w-4 h-4 text-sky-400 transition-transform duration-300 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </summary>
+
+              <!-- Contexto / Descripción Desplegable Centrada -->
+              <div class="mt-4 pt-4 border-t border-white/[0.08] text-center text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <p class="mb-3">
                   Ficha integral de cada cliente con historial de compras, créditos, frecuencia y programa de fidelización.
                 </p>
-              </div>
-              <div class="mt-5 flex items-center text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
-                <span class="flex items-center gap-1.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-500/10 text-[10px] text-sky-300 font-semibold tracking-wider uppercase">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
                   Relación con Clientes
-                </span>
+                </div>
               </div>
-            </div>
+            </details>
 
             <!-- 14. Gestión y Contactos -->
-            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
-              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
-              <div>
-                <div class="mb-6 flex items-center">
+            <details class="group relative rounded-3xl p-6 sm:p-7 bg-gradient-to-b from-[#09152e]/85 via-[#071024]/75 to-[#040914]/90 hover:shadow-[0_0_35px_rgba(56,189,248,0.25)] hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <summary class="list-none outline-none select-none flex flex-col items-center text-center cursor-pointer">
+                <!-- Icono Centrado -->
+                <div class="mb-4 flex items-center justify-center">
                   <svg class="w-20 h-20 sm:w-24 sm:h-24 text-sky-400 group-hover:text-cyan-300 group-hover:scale-110 drop-shadow-[0_0_25px_rgba(56,189,248,0.45)] transition-all duration-300" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="18" y="14" width="30" height="38" rx="3" />
                     <path d="M14 20h4M14 28h4M14 36h4M14 44h4" />
@@ -883,26 +1000,35 @@ import Footer from '../components/Footer.astro';
                     <path d="M48 24h3M48 32h3" />
                   </svg>
                 </div>
-                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                <!-- Título Centrado -->
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight group-hover:text-sky-300 transition-colors">
                   Gestión y Contactos
                 </h5>
-                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <!-- Flecha Desplegable Centrada -->
+                <div class="mt-3 w-8 h-8 rounded-full bg-white/[0.04] group-hover:bg-sky-500/10 border border-white/[0.08] group-hover:border-sky-400/30 flex items-center justify-center text-sky-400 transition-all duration-300 shadow-sm">
+                  <svg class="w-4 h-4 text-sky-400 transition-transform duration-300 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </summary>
+
+              <!-- Contexto / Descripción Desplegable Centrada -->
+              <div class="mt-4 pt-4 border-t border-white/[0.08] text-center text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <p class="mb-3">
                   Agenda corporativa unificada de proveedores, aliados y contactos comerciales con sincronización rápida.
                 </p>
-              </div>
-              <div class="mt-5 flex items-center text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
-                <span class="flex items-center gap-1.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-500/10 text-[10px] text-sky-300 font-semibold tracking-wider uppercase">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
                   Directorio
-                </span>
+                </div>
               </div>
-            </div>
+            </details>
 
             <!-- 15. Contabilidad -->
-            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
-              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
-              <div>
-                <div class="mb-6 flex items-center">
+            <details class="group relative rounded-3xl p-6 sm:p-7 bg-gradient-to-b from-[#09152e]/85 via-[#071024]/75 to-[#040914]/90 hover:shadow-[0_0_35px_rgba(56,189,248,0.25)] hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <summary class="list-none outline-none select-none flex flex-col items-center text-center cursor-pointer">
+                <!-- Icono Centrado -->
+                <div class="mb-4 flex items-center justify-center">
                   <svg class="w-20 h-20 sm:w-24 sm:h-24 text-sky-400 group-hover:text-cyan-300 group-hover:scale-110 drop-shadow-[0_0_25px_rgba(56,189,248,0.45)] transition-all duration-300" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="14" y="16" width="22" height="34" rx="2" />
                     <rect x="18" y="20" width="14" height="6" rx="1" />
@@ -910,26 +1036,35 @@ import Footer from '../components/Footer.astro';
                     <path d="M40 18h12v30H40zM44 24h4M44 30h4M44 36h4M44 42h4" />
                   </svg>
                 </div>
-                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                <!-- Título Centrado -->
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight group-hover:text-sky-300 transition-colors">
                   Contabilidad
                 </h5>
-                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <!-- Flecha Desplegable Centrada -->
+                <div class="mt-3 w-8 h-8 rounded-full bg-white/[0.04] group-hover:bg-sky-500/10 border border-white/[0.08] group-hover:border-sky-400/30 flex items-center justify-center text-sky-400 transition-all duration-300 shadow-sm">
+                  <svg class="w-4 h-4 text-sky-400 transition-transform duration-300 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </summary>
+
+              <!-- Contexto / Descripción Desplegable Centrada -->
+              <div class="mt-4 pt-4 border-t border-white/[0.08] text-center text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <p class="mb-3">
                   Asientos contables automáticos, libros diarios, balances generales e informes tributarios ordenados.
                 </p>
-              </div>
-              <div class="mt-5 flex items-center text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
-                <span class="flex items-center gap-1.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-500/10 text-[10px] text-sky-300 font-semibold tracking-wider uppercase">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
                   Libros Contables
-                </span>
+                </div>
               </div>
-            </div>
+            </details>
 
             <!-- 16. Sistema y Auditoría -->
-            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
-              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
-              <div>
-                <div class="mb-6 flex items-center">
+            <details class="group relative rounded-3xl p-6 sm:p-7 bg-gradient-to-b from-[#09152e]/85 via-[#071024]/75 to-[#040914]/90 hover:shadow-[0_0_35px_rgba(56,189,248,0.25)] hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <summary class="list-none outline-none select-none flex flex-col items-center text-center cursor-pointer">
+                <!-- Icono Centrado -->
+                <div class="mb-4 flex items-center justify-center">
                   <svg class="w-20 h-20 sm:w-24 sm:h-24 text-sky-400 group-hover:text-cyan-300 group-hover:scale-110 drop-shadow-[0_0_25px_rgba(56,189,248,0.45)] transition-all duration-300" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="28" cy="32" r="14" />
                     <path d="M28 14v4M28 46v4M10 32h4M42 32h4M15 19l3 3M38 42l3 3M15 45l3-3M38 22l3-3" />
@@ -937,26 +1072,35 @@ import Footer from '../components/Footer.astro';
                     <path d="M34 35l3 3 6-6" />
                   </svg>
                 </div>
-                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                <!-- Título Centrado -->
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight group-hover:text-sky-300 transition-colors">
                   Sistema y Auditoría
                 </h5>
-                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <!-- Flecha Desplegable Centrada -->
+                <div class="mt-3 w-8 h-8 rounded-full bg-white/[0.04] group-hover:bg-sky-500/10 border border-white/[0.08] group-hover:border-sky-400/30 flex items-center justify-center text-sky-400 transition-all duration-300 shadow-sm">
+                  <svg class="w-4 h-4 text-sky-400 transition-transform duration-300 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </summary>
+
+              <!-- Contexto / Descripción Desplegable Centrada -->
+              <div class="mt-4 pt-4 border-t border-white/[0.08] text-center text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <p class="mb-3">
                   Trazabilidad absoluta con registro de usuario, fecha, hora y cambios realizados para máxima seguridad.
                 </p>
-              </div>
-              <div class="mt-5 flex items-center text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
-                <span class="flex items-center gap-1.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-500/10 text-[10px] text-sky-300 font-semibold tracking-wider uppercase">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
                   Seguridad & Roles
-                </span>
+                </div>
               </div>
-            </div>
+            </details>
 
             <!-- 17. Auditoría / Log -->
-            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
-              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
-              <div>
-                <div class="mb-6 flex items-center">
+            <details class="group relative rounded-3xl p-6 sm:p-7 bg-gradient-to-b from-[#09152e]/85 via-[#071024]/75 to-[#040914]/90 hover:shadow-[0_0_35px_rgba(56,189,248,0.25)] hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <summary class="list-none outline-none select-none flex flex-col items-center text-center cursor-pointer">
+                <!-- Icono Centrado -->
+                <div class="mb-4 flex items-center justify-center">
                   <svg class="w-20 h-20 sm:w-24 sm:h-24 text-sky-400 group-hover:text-cyan-300 group-hover:scale-110 drop-shadow-[0_0_25px_rgba(56,189,248,0.45)] transition-all duration-300" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="22" cy="22" r="8" />
                     <path d="M22 18v4l3 2" />
@@ -965,26 +1109,35 @@ import Footer from '../components/Footer.astro';
                     <path d="M49 47l6 6" />
                   </svg>
                 </div>
-                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                <!-- Título Centrado -->
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight group-hover:text-sky-300 transition-colors">
                   Auditoría / Log
                 </h5>
-                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <!-- Flecha Desplegable Centrada -->
+                <div class="mt-3 w-8 h-8 rounded-full bg-white/[0.04] group-hover:bg-sky-500/10 border border-white/[0.08] group-hover:border-sky-400/30 flex items-center justify-center text-sky-400 transition-all duration-300 shadow-sm">
+                  <svg class="w-4 h-4 text-sky-400 transition-transform duration-300 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </summary>
+
+              <!-- Contexto / Descripción Desplegable Centrada -->
+              <div class="mt-4 pt-4 border-t border-white/[0.08] text-center text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <p class="mb-3">
                   Bitácora inmutable de eventos del sistema para revisión forense y cumplimiento de normas internas.
                 </p>
-              </div>
-              <div class="mt-5 flex items-center text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
-                <span class="flex items-center gap-1.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-500/10 text-[10px] text-sky-300 font-semibold tracking-wider uppercase">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
                   Logs en Vivo
-                </span>
+                </div>
               </div>
-            </div>
+            </details>
 
             <!-- 18. Logística / Pedidos -->
-            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
-              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
-              <div>
-                <div class="mb-6 flex items-center">
+            <details class="group relative rounded-3xl p-6 sm:p-7 bg-gradient-to-b from-[#09152e]/85 via-[#071024]/75 to-[#040914]/90 hover:shadow-[0_0_35px_rgba(56,189,248,0.25)] hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <summary class="list-none outline-none select-none flex flex-col items-center text-center cursor-pointer">
+                <!-- Icono Centrado -->
+                <div class="mb-4 flex items-center justify-center">
                   <svg class="w-20 h-20 sm:w-24 sm:h-24 text-sky-400 group-hover:text-cyan-300 group-hover:scale-110 drop-shadow-[0_0_25px_rgba(56,189,248,0.45)] transition-all duration-300" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M10 24h8M8 30h10M12 36h6" />
                     <rect x="20" y="24" width="20" height="20" rx="2" />
@@ -993,26 +1146,35 @@ import Footer from '../components/Footer.astro';
                     <circle cx="48" cy="48" r="4" />
                   </svg>
                 </div>
-                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                <!-- Título Centrado -->
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight group-hover:text-sky-300 transition-colors">
                   Logística / Pedidos
                 </h5>
-                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <!-- Flecha Desplegable Centrada -->
+                <div class="mt-3 w-8 h-8 rounded-full bg-white/[0.04] group-hover:bg-sky-500/10 border border-white/[0.08] group-hover:border-sky-400/30 flex items-center justify-center text-sky-400 transition-all duration-300 shadow-sm">
+                  <svg class="w-4 h-4 text-sky-400 transition-transform duration-300 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </summary>
+
+              <!-- Contexto / Descripción Desplegable Centrada -->
+              <div class="mt-4 pt-4 border-t border-white/[0.08] text-center text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <p class="mb-3">
                   Preparación de pedidos, hojas de ruta, asignación a transportistas y confirmación de entrega al cliente.
                 </p>
-              </div>
-              <div class="mt-5 flex items-center text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
-                <span class="flex items-center gap-1.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-500/10 text-[10px] text-sky-300 font-semibold tracking-wider uppercase">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
                   Despachos
-                </span>
+                </div>
               </div>
-            </div>
+            </details>
 
             <!-- 19. Página Web -->
-            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
-              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
-              <div>
-                <div class="mb-6 flex items-center">
+            <details class="group relative rounded-3xl p-6 sm:p-7 bg-gradient-to-b from-[#09152e]/85 via-[#071024]/75 to-[#040914]/90 hover:shadow-[0_0_35px_rgba(56,189,248,0.25)] hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <summary class="list-none outline-none select-none flex flex-col items-center text-center cursor-pointer">
+                <!-- Icono Centrado -->
+                <div class="mb-4 flex items-center justify-center">
                   <svg class="w-20 h-20 sm:w-24 sm:h-24 text-sky-400 group-hover:text-cyan-300 group-hover:scale-110 drop-shadow-[0_0_25px_rgba(56,189,248,0.45)] transition-all duration-300" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="14" y="16" width="36" height="32" rx="3" />
                     <path d="M14 26h36" />
@@ -1023,26 +1185,35 @@ import Footer from '../components/Footer.astro';
                     <path d="M25 37h14M32 30c-2 2-3 4-3 7s1 5 3 7c2-2 3-4 3-7s-1-5-3-7z" />
                   </svg>
                 </div>
-                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                <!-- Título Centrado -->
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight group-hover:text-sky-300 transition-colors">
                   Página Web
                 </h5>
-                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <!-- Flecha Desplegable Centrada -->
+                <div class="mt-3 w-8 h-8 rounded-full bg-white/[0.04] group-hover:bg-sky-500/10 border border-white/[0.08] group-hover:border-sky-400/30 flex items-center justify-center text-sky-400 transition-all duration-300 shadow-sm">
+                  <svg class="w-4 h-4 text-sky-400 transition-transform duration-300 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </summary>
+
+              <!-- Contexto / Descripción Desplegable Centrada -->
+              <div class="mt-4 pt-4 border-t border-white/[0.08] text-center text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <p class="mb-3">
                   Presencia institucional y catálogo web sincronizado en tiempo real con tus existencias y promociones.
                 </p>
-              </div>
-              <div class="mt-5 flex items-center text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
-                <span class="flex items-center gap-1.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-500/10 text-[10px] text-sky-300 font-semibold tracking-wider uppercase">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
                   Presencia Digital
-                </span>
+                </div>
               </div>
-            </div>
+            </details>
 
             <!-- 20. Analítica y Reportes / Informes y BI -->
-            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
-              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
-              <div>
-                <div class="mb-6 flex items-center">
+            <details class="group relative rounded-3xl p-6 sm:p-7 bg-gradient-to-b from-[#09152e]/85 via-[#071024]/75 to-[#040914]/90 hover:shadow-[0_0_35px_rgba(56,189,248,0.25)] hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <summary class="list-none outline-none select-none flex flex-col items-center text-center cursor-pointer">
+                <!-- Icono Centrado -->
+                <div class="mb-4 flex items-center justify-center">
                   <svg class="w-20 h-20 sm:w-24 sm:h-24 text-sky-400 group-hover:text-cyan-300 group-hover:scale-110 drop-shadow-[0_0_25px_rgba(56,189,248,0.45)] transition-all duration-300" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="14" y="14" width="36" height="38" rx="3" />
                     <path d="M22 28l7-6 7 5 8-7" />
@@ -1052,26 +1223,35 @@ import Footer from '../components/Footer.astro';
                     <path d="M48 48l5 5" />
                   </svg>
                 </div>
-                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                <!-- Título Centrado -->
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight group-hover:text-sky-300 transition-colors">
                   Analítica e Informes BI
                 </h5>
-                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <!-- Flecha Desplegable Centrada -->
+                <div class="mt-3 w-8 h-8 rounded-full bg-white/[0.04] group-hover:bg-sky-500/10 border border-white/[0.08] group-hover:border-sky-400/30 flex items-center justify-center text-sky-400 transition-all duration-300 shadow-sm">
+                  <svg class="w-4 h-4 text-sky-400 transition-transform duration-300 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </summary>
+
+              <!-- Contexto / Descripción Desplegable Centrada -->
+              <div class="mt-4 pt-4 border-t border-white/[0.08] text-center text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <p class="mb-3">
                   Gráficos analíticos con métricas financieras, productos más vendidos, márgenes brutos y proyecciones.
                 </p>
-              </div>
-              <div class="mt-5 flex items-center text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
-                <span class="flex items-center gap-1.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-500/10 text-[10px] text-sky-300 font-semibold tracking-wider uppercase">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
                   Inteligencia Comercial
-                </span>
+                </div>
               </div>
-            </div>
+            </details>
 
             <!-- 21. Panel General BI -->
-            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
-              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
-              <div>
-                <div class="mb-6 flex items-center">
+            <details class="group relative rounded-3xl p-6 sm:p-7 bg-gradient-to-b from-[#09152e]/85 via-[#071024]/75 to-[#040914]/90 hover:shadow-[0_0_35px_rgba(56,189,248,0.25)] hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <summary class="list-none outline-none select-none flex flex-col items-center text-center cursor-pointer">
+                <!-- Icono Centrado -->
+                <div class="mb-4 flex items-center justify-center">
                   <svg class="w-20 h-20 sm:w-24 sm:h-24 text-sky-400 group-hover:text-cyan-300 group-hover:scale-110 drop-shadow-[0_0_25px_rgba(56,189,248,0.45)] transition-all duration-300" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="14" y="14" width="36" height="36" rx="3" />
                     <path d="M14 24h36M32 24v26M14 36h18" />
@@ -1080,45 +1260,63 @@ import Footer from '../components/Footer.astro';
                     <path d="M38 43l3-2 3 3" />
                   </svg>
                 </div>
-                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                <!-- Título Centrado -->
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight group-hover:text-sky-300 transition-colors">
                   Panel General BI
                 </h5>
-                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <!-- Flecha Desplegable Centrada -->
+                <div class="mt-3 w-8 h-8 rounded-full bg-white/[0.04] group-hover:bg-sky-500/10 border border-white/[0.08] group-hover:border-sky-400/30 flex items-center justify-center text-sky-400 transition-all duration-300 shadow-sm">
+                  <svg class="w-4 h-4 text-sky-400 transition-transform duration-300 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </summary>
+
+              <!-- Contexto / Descripción Desplegable Centrada -->
+              <div class="mt-4 pt-4 border-t border-white/[0.08] text-center text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <p class="mb-3">
                   Tablero directivo consolidado con KPIs en tiempo real, rendimiento por canal de venta y objetivos comerciales.
                 </p>
-              </div>
-              <div class="mt-5 flex items-center text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
-                <span class="flex items-center gap-1.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-500/10 text-[10px] text-sky-300 font-semibold tracking-wider uppercase">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
                   Dashboard Ejecutivo
-                </span>
+                </div>
               </div>
-            </div>
+            </details>
 
             <!-- 22. Acceso a API Externa -->
-            <div class="group relative rounded-3xl p-6 sm:p-8 bg-gradient-to-b from-[#09152e]/80 via-[#071024]/70 to-[#040914]/90 hover:shadow-[0_0_40px_rgba(56,189,248,0.25)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
-              <div class="absolute -right-12 -top-12 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl group-hover:bg-sky-400/20 transition-all duration-500 pointer-events-none"></div>
-              <div>
-                <div class="mb-6 flex items-center">
+            <details class="group relative rounded-3xl p-6 sm:p-7 bg-gradient-to-b from-[#09152e]/85 via-[#071024]/75 to-[#040914]/90 hover:shadow-[0_0_35px_rgba(56,189,248,0.25)] hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <summary class="list-none outline-none select-none flex flex-col items-center text-center cursor-pointer">
+                <!-- Icono Centrado -->
+                <div class="mb-4 flex items-center justify-center">
                   <svg class="w-20 h-20 sm:w-24 sm:h-24 text-sky-400 group-hover:text-cyan-300 group-hover:scale-110 drop-shadow-[0_0_25px_rgba(56,189,248,0.45)] transition-all duration-300" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M22 22l-6 6 6 6M30 36l4-16M38 22l6 6-6 6" />
                     <path d="M16 46h14c6 0 8-4 8-8v-2M38 36h6v4h-6zM44 38h6" />
                   </svg>
                 </div>
-                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight mb-2 group-hover:text-sky-300 transition-colors">
+                <!-- Título Centrado -->
+                <h5 class="text-lg sm:text-xl font-heading font-semibold text-white tracking-tight group-hover:text-sky-300 transition-colors">
                   Acceso a API Externa
                 </h5>
-                <p class="text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <!-- Flecha Desplegable Centrada -->
+                <div class="mt-3 w-8 h-8 rounded-full bg-white/[0.04] group-hover:bg-sky-500/10 border border-white/[0.08] group-hover:border-sky-400/30 flex items-center justify-center text-sky-400 transition-all duration-300 shadow-sm">
+                  <svg class="w-4 h-4 text-sky-400 transition-transform duration-300 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </summary>
+
+              <!-- Contexto / Descripción Desplegable Centrada -->
+              <div class="mt-4 pt-4 border-t border-white/[0.08] text-center text-gray-300 text-xs sm:text-sm font-light leading-relaxed">
+                <p class="mb-3">
                   Conexión segura mediante REST API y Webhooks para integrar pasarelas de pago, eCommerce y software de terceros.
                 </p>
-              </div>
-              <div class="mt-5 flex items-center text-[11px] text-sky-400 font-semibold tracking-wider uppercase">
-                <span class="flex items-center gap-1.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400 group-hover:animate-ping"></span>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-500/10 text-[10px] text-sky-300 font-semibold tracking-wider uppercase">
+                  <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
                   Conectividad REST
-                </span>
+                </div>
               </div>
-            </div>
+            </details>
 
           </div>
 
