@@ -11,10 +11,10 @@
 
   <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
     
-    <!-- Split Layout Grid: Left Header & Capabilities, Right 3x2 Cards -->
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 xl:gap-14 items-start">
+    <!-- Split Layout Grid: Left Header & CTAs, Right 6 Challenge Cards -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 xl:gap-14 items-center">
       
-      <!-- Left Column: Header, Description, Capabilities, and CTA Buttons -->
+      <!-- Left Column: Header, Description, and CTA Buttons -->
       <div class="lg:col-span-4 flex flex-col items-center lg:items-start text-center lg:text-left select-none">
         
         <!-- Category Top Badge -->
@@ -35,64 +35,38 @@
           Las ineficiencias operativas y la falta de datos claros frenan el crecimiento. En Pegasus Nexus transformamos estos obstáculos en flujos digitales automatizados y listos para la toma de decisiones.
         </p>
 
-        <!-- Partner Odoo Card con redirección a https://odoo.pegasus-nexus.com/ -->
-        <a 
-          href="https://odoo.pegasus-nexus.com/" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          class="w-full max-w-md rounded-2xl bg-[#0a0f1d]/75 hover:bg-[#0e162b] p-5 mb-8 text-left border border-white/[0.06] hover:border-sky-400/50 shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_0_30px_rgba(169,76,146,0.3)] transition-all duration-300 block group cursor-pointer"
-        >
-          <div class="flex items-center justify-between mb-3">
-            <span class="text-[9px] tracking-[0.25em] text-sky-400/90 uppercase font-mono font-semibold">
-              PARTNER TECNOLÓGICO · ODOO
-            </span>
-            <span class="text-xs text-sky-400 group-hover:translate-x-1 group-hover:-translate-y-0.5 transition-transform">↗</span>
-          </div>
-          
-          <div class="flex items-center gap-4 mb-3">
-            <img 
-              src="/logo-odoo.png" 
-              alt="Odoo Partner Tecnológico" 
-              class="h-7 sm:h-8 w-auto object-contain filter drop-shadow-[0_0_10px_rgba(169,76,146,0.6)] group-hover:scale-105 transition-transform shrink-0" 
-            />
-            <div class="w-px h-7 bg-white/20"></div>
-            <p class="text-[11px] sm:text-xs text-gray-300 font-light leading-snug">
-              Implementación, personalización y soporte empresarial en Odoo.
-            </p>
-          </div>
-
-          <div class="pt-2 border-t border-white/[0.06] flex items-center justify-between">
-            <span class="text-[8.5px] sm:text-[9px] tracking-[0.18em] text-gray-400 group-hover:text-sky-300 transition-colors uppercase font-mono">
-              CONOCE NUESTRO PORTAL ODOO PEGASUS
-            </span>
-            <span class="text-[10px] text-sky-400 font-mono flex items-center gap-1">
-              <span>odoo.pegasus-nexus.com</span>
-              <span>↗</span>
-            </span>
-          </div>
-        </a>
-
-        <!-- CTA Buttons Row -->
-        <div class="w-full max-w-md flex flex-col sm:flex-row items-center gap-4 mb-2 justify-center lg:justify-start">
+        <!-- CTA Action Buttons -->
+        <div class="w-full max-w-md flex flex-col sm:flex-row items-center gap-4 mb-3 justify-center lg:justify-start">
           <a
-            href="/capacidades"
-            class="w-full sm:w-auto text-center bg-gradient-to-r from-blue-600 via-sky-500 to-blue-600 hover:from-blue-500 hover:to-sky-400 text-white font-bold py-3.5 px-6 rounded-xl transition-all text-[10px] sm:text-[11px] tracking-wider uppercase shadow-[0_0_20px_rgba(56,189,248,0.35)] hover:shadow-[0_0_30px_rgba(56,189,248,0.6)] hover:scale-105 transform cursor-pointer flex items-center justify-center gap-2 shrink-0"
+            href="https://wa.me/59179786916?text=Hola%20Pegasus%20Nexus!%20Me%20gustar%C3%ADa%20recibir%20ayuda%20para%20solucionar%20los%20desaf%C3%ADos%20de%20mi%20empresa."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="relative group overflow-hidden rounded-xl p-[1px] focus:outline-none transition-all duration-300 hover:scale-[1.03] shadow-[0_0_25px_rgba(56,189,248,0.35)] hover:shadow-[0_0_35px_rgba(56,189,248,0.6)] cursor-pointer w-full sm:w-auto text-center"
           >
-            <span>HAZ CLIC AQUÍ · EVALÚA TU OPERACIÓN</span>
-            <span class="text-sm">→</span>
+            <!-- Animated glowing border -->
+            <span class="absolute inset-0 bg-gradient-to-r from-sky-400 via-blue-500 to-cyan-400 rounded-xl opacity-90 group-hover:opacity-100 transition-opacity"></span>
+            
+            <!-- Button inner container -->
+            <span class="relative flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-[11px] bg-gradient-to-r from-blue-700 via-sky-600 to-blue-700 group-hover:from-blue-600 group-hover:via-sky-500 group-hover:to-cyan-600 text-white font-montserrat font-bold text-[11px] sm:text-xs tracking-wider uppercase transition-all duration-300">
+              <span>TE AYUDAMOS A SOLUCIONARLO</span>
+              <svg class="w-4 h-4 text-white group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </span>
           </a>
           
           <a
             href="#soluciones"
-            class="text-sky-400 hover:text-sky-300 text-xs font-montserrat underline underline-offset-4 tracking-wide transition-colors whitespace-nowrap"
+            class="inline-flex items-center gap-1.5 text-sky-400 hover:text-sky-300 text-xs sm:text-sm font-montserrat font-medium tracking-wide transition-all group py-2 px-1 cursor-pointer"
           >
-            Ver soluciones
+            <span class="underline underline-offset-4">Ver soluciones</span>
+            <span class="group-hover:translate-x-1 transition-transform">→</span>
           </a>
         </div>
 
         <!-- Subtext -->
         <span class="text-[10px] text-gray-400 font-montserrat font-light mt-1 block">
-          Sin compromisos · Descubre dónde optimizar tus procesos
+          Sin compromisos · Diagnóstico y orientación personalizada
         </span>
 
       </div>
@@ -100,147 +74,178 @@
       <!-- Right Column: 6 Cards in 3x2 Grid (2 cols on mobile, 3 on desktop) -->
       <div class="lg:col-span-8 flex flex-col justify-between">
         
-        <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-4 lg:gap-5">
+        <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 lg:gap-5">
           
-          <!-- Card 1: Archivos Excel -->
-          <div class="group rounded-xl sm:rounded-2xl p-3.5 sm:p-5 lg:p-6 bg-[#0a0f1d]/85 border border-white/[0.06] hover:border-sky-500/40 hover:bg-[#0e162b]/90 transition-all duration-500 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.25)] hover:shadow-[0_8px_30px_rgba(14,165,233,0.18)] backdrop-blur-md">
+          <!-- Card 1: No controlo mi inventario -->
+          <div class="group rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 bg-[#0a0f1d]/85 border border-white/[0.06] hover:border-sky-500/40 hover:bg-[#0e162b]/90 transition-all duration-500 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.25)] hover:shadow-[0_8px_30px_rgba(14,165,233,0.18)] backdrop-blur-md">
             <div>
               <div class="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 rounded-xl sm:rounded-2xl bg-sky-600/[0.14] flex items-center justify-center mb-3 sm:mb-4 lg:mb-5 group-hover:bg-sky-500/[0.24] group-hover:scale-105 transition-all duration-300">
                 <svg class="w-6 h-6 sm:w-7 sm:h-7 lg:w-9 lg:h-9" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V8L14 2Z" fill="#0284c7" fill-opacity="0.3" stroke="#38bdf8" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M12 2L3 7V17L12 22L21 17V7L12 2Z" fill="#0284c7" fill-opacity="0.25" stroke="#38bdf8" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M12 22V12" stroke="#38bdf8" stroke-width="1.8"/>
+                  <path d="M21 7L12 12L3 7" stroke="#38bdf8" stroke-width="1.8"/>
+                  <circle cx="17.5" cy="6.5" r="3" fill="#f43f5e" stroke="#0a0f1d" stroke-width="1.5"/>
+                  <path d="M7.5 4.5L16.5 9.5" stroke="#7dd3fc" stroke-width="1.2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h4 class="text-sm sm:text-base lg:text-lg font-heading font-semibold text-white mb-1.5 sm:mb-2 group-hover:text-sky-300 transition-colors leading-snug">
+                No controlo mi inventario
+              </h4>
+              <p class="text-gray-400 font-montserrat font-light text-[11px] sm:text-xs leading-relaxed mb-3 sm:mb-5">
+                Stock, movimientos y alertas
+              </p>
+            </div>
+            <div class="w-5 sm:w-6 h-[2px] bg-sky-400/80 rounded-full group-hover:w-12 group-hover:bg-sky-300 transition-all duration-300 shadow-[0_0_8px_rgba(56,189,248,0.7)]"></div>
+          </div>
+
+          <!-- Card 2: Necesito organizar mis ventas -->
+          <div class="group rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 bg-[#0a0f1d]/85 border border-white/[0.06] hover:border-sky-500/40 hover:bg-[#0e162b]/90 transition-all duration-500 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.25)] hover:shadow-[0_8px_30px_rgba(14,165,233,0.18)] backdrop-blur-md">
+            <div>
+              <div class="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 rounded-xl sm:rounded-2xl bg-sky-600/[0.14] flex items-center justify-center mb-3 sm:mb-4 lg:mb-5 group-hover:bg-sky-500/[0.24] group-hover:scale-105 transition-all duration-300">
+                <svg class="w-6 h-6 sm:w-7 sm:h-7 lg:w-9 lg:h-9" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="3" y="13" width="18" height="8" rx="2" fill="#0284c7" fill-opacity="0.25" stroke="#38bdf8" stroke-width="1.8"/>
+                  <path d="M5 13V8C5 6.89543 5.89543 6 7 6H17C18.1046 6 19 6.89543 19 8V13" stroke="#38bdf8" stroke-width="1.8"/>
+                  <rect x="8" y="3" width="8" height="4" rx="1" fill="#0284c7" stroke="#38bdf8" stroke-width="1.4"/>
+                  <path d="M7 17H11" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round"/>
+                  <circle cx="16" cy="17" r="1.5" fill="#38bdf8"/>
+                </svg>
+              </div>
+              <h4 class="text-sm sm:text-base lg:text-lg font-heading font-semibold text-white mb-1.5 sm:mb-2 group-hover:text-sky-300 transition-colors leading-snug">
+                Necesito organizar mis ventas
+              </h4>
+              <p class="text-gray-400 font-montserrat font-light text-[11px] sm:text-xs leading-relaxed mb-3 sm:mb-5">
+                Ventas, caja, pedidos y clientes
+              </p>
+            </div>
+            <div class="w-5 sm:w-6 h-[2px] bg-sky-400/80 rounded-full group-hover:w-12 group-hover:bg-sky-300 transition-all duration-300 shadow-[0_0_8px_rgba(56,189,248,0.7)]"></div>
+          </div>
+
+          <!-- Card 3: Uso demasiados Excel -->
+          <div class="group rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 bg-[#0a0f1d]/85 border border-white/[0.06] hover:border-sky-500/40 hover:bg-[#0e162b]/90 transition-all duration-500 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.25)] hover:shadow-[0_8px_30px_rgba(14,165,233,0.18)] backdrop-blur-md">
+            <div>
+              <div class="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 rounded-xl sm:rounded-2xl bg-sky-600/[0.14] flex items-center justify-center mb-3 sm:mb-4 lg:mb-5 group-hover:bg-sky-500/[0.24] group-hover:scale-105 transition-all duration-300">
+                <svg class="w-6 h-6 sm:w-7 sm:h-7 lg:w-9 lg:h-9" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V8L14 2Z" fill="#0284c7" fill-opacity="0.25" stroke="#38bdf8" stroke-width="1.8" stroke-linejoin="round"/>
                   <path d="M14 2V8H20" stroke="#38bdf8" stroke-width="1.8" stroke-linejoin="round"/>
                   <rect x="7" y="11" width="8" height="8" rx="1.5" fill="#0284c7" stroke="#38bdf8" stroke-width="1.2"/>
                   <path d="M9 13L13 17M13 13L9 17" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
                 </svg>
               </div>
-              <h4 class="text-sm sm:text-lg lg:text-xl font-heading font-semibold text-white mb-1.5 sm:mb-2 group-hover:text-sky-300 transition-colors leading-tight">
-                Archivos Excel
+              <h4 class="text-sm sm:text-base lg:text-lg font-heading font-semibold text-white mb-1.5 sm:mb-2 group-hover:text-sky-300 transition-colors leading-snug">
+                Uso demasiados Excel
               </h4>
-              <p class="text-gray-400 font-montserrat font-light text-[10px] sm:text-xs leading-relaxed mb-3 sm:mb-6">
-                Información fragmentada y duplicada en múltiples planillas y formatos incompatibles.
+              <p class="text-gray-400 font-montserrat font-light text-[11px] sm:text-xs leading-relaxed mb-3 sm:mb-5">
+                Información centralizada
               </p>
             </div>
             <div class="w-5 sm:w-6 h-[2px] bg-sky-400/80 rounded-full group-hover:w-12 group-hover:bg-sky-300 transition-all duration-300 shadow-[0_0_8px_rgba(56,189,248,0.7)]"></div>
           </div>
 
-          <!-- Card 2: Tareas Manuales -->
-          <div class="group rounded-xl sm:rounded-2xl p-3.5 sm:p-5 lg:p-6 bg-[#0a0f1d]/85 border border-white/[0.06] hover:border-sky-500/40 hover:bg-[#0e162b]/90 transition-all duration-500 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.25)] hover:shadow-[0_8px_30px_rgba(14,165,233,0.18)] backdrop-blur-md">
-            <div>
-              <div class="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 rounded-xl sm:rounded-2xl bg-sky-600/[0.14] flex items-center justify-center mb-3 sm:mb-4 lg:mb-5 group-hover:bg-sky-500/[0.24] group-hover:scale-105 transition-all duration-300">
-                <svg class="w-6 h-6 sm:w-7 sm:h-7 lg:w-9 lg:h-9 text-sky-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="9" fill="#0284c7" fill-opacity="0.3" stroke="#38bdf8"/>
-                  <path d="M12 7V12L15.5 14" stroke="#38bdf8" stroke-width="2"/>
-                  <path d="M12 3V5" stroke="#38bdf8" stroke-width="1.5"/>
-                  <path d="M21 12H19" stroke="#38bdf8" stroke-width="1.5"/>
-                  <path d="M12 21V19" stroke="#38bdf8" stroke-width="1.5"/>
-                  <path d="M3 12H5" stroke="#38bdf8" stroke-width="1.5"/>
-                </svg>
-              </div>
-              <h4 class="text-sm sm:text-lg lg:text-xl font-heading font-semibold text-white mb-1.5 sm:mb-2 group-hover:text-sky-300 transition-colors leading-tight">
-                Tareas Manuales
-              </h4>
-              <p class="text-gray-400 font-montserrat font-light text-[10px] sm:text-xs leading-relaxed mb-3 sm:mb-6">
-                Operaciones repetitivas del día a día que consumen tiempo valioso y causan errores.
-              </p>
-            </div>
-            <div class="w-5 sm:w-6 h-[2px] bg-sky-400/80 rounded-full group-hover:w-12 group-hover:bg-sky-300 transition-all duration-300 shadow-[0_0_8px_rgba(56,189,248,0.7)]"></div>
-          </div>
-
-          <!-- Card 3: Falta de KPIs -->
-          <div class="group rounded-xl sm:rounded-2xl p-3.5 sm:p-5 lg:p-6 bg-[#0a0f1d]/85 border border-white/[0.06] hover:border-sky-500/40 hover:bg-[#0e162b]/90 transition-all duration-500 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.25)] hover:shadow-[0_8px_30px_rgba(14,165,233,0.18)] backdrop-blur-md">
+          <!-- Card 4: No conozco mis resultados -->
+          <div class="group rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 bg-[#0a0f1d]/85 border border-white/[0.06] hover:border-sky-500/40 hover:bg-[#0e162b]/90 transition-all duration-500 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.25)] hover:shadow-[0_8px_30px_rgba(14,165,233,0.18)] backdrop-blur-md">
             <div>
               <div class="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 rounded-xl sm:rounded-2xl bg-sky-600/[0.14] flex items-center justify-center mb-3 sm:mb-4 lg:mb-5 group-hover:bg-sky-500/[0.24] group-hover:scale-105 transition-all duration-300">
                 <svg class="w-6 h-6 sm:w-7 sm:h-7 lg:w-9 lg:h-9" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="4" y="14" width="4" height="6" rx="1" fill="#38bdf8" fill-opacity="0.4" stroke="#38bdf8" stroke-width="1.6"/>
                   <rect x="10" y="9" width="4" height="11" rx="1" fill="#38bdf8" fill-opacity="0.7" stroke="#38bdf8" stroke-width="1.6"/>
                   <rect x="16" y="4" width="4" height="16" rx="1" fill="#38bdf8" stroke="#7dd3fc" stroke-width="1.6"/>
+                  <path d="M4 10L10 6L16 10L20 4" stroke="#e0f2fe" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </div>
-              <h4 class="text-sm sm:text-lg lg:text-xl font-heading font-semibold text-white mb-1.5 sm:mb-2 group-hover:text-sky-300 transition-colors leading-tight">
-                Falta de KPIs
+              <h4 class="text-sm sm:text-base lg:text-lg font-heading font-semibold text-white mb-1.5 sm:mb-2 group-hover:text-sky-300 transition-colors leading-snug">
+                No conozco mis resultados
               </h4>
-              <p class="text-gray-400 font-montserrat font-light text-[10px] sm:text-xs leading-relaxed mb-3 sm:mb-6">
-                Ausencia de indicadores claros en tiempo real para tomar decisiones de negocio seguras.
+              <p class="text-gray-400 font-montserrat font-light text-[11px] sm:text-xs leading-relaxed mb-3 sm:mb-5">
+                Reportes e indicadores
               </p>
             </div>
             <div class="w-5 sm:w-6 h-[2px] bg-sky-400/80 rounded-full group-hover:w-12 group-hover:bg-sky-300 transition-all duration-300 shadow-[0_0_8px_rgba(56,189,248,0.7)]"></div>
           </div>
 
-          <!-- Card 4: Ventas y Stock -->
-          <div class="group rounded-xl sm:rounded-2xl p-3.5 sm:p-5 lg:p-6 bg-[#0a0f1d]/85 border border-white/[0.06] hover:border-sky-500/40 hover:bg-[#0e162b]/90 transition-all duration-500 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.25)] hover:shadow-[0_8px_30px_rgba(14,165,233,0.18)] backdrop-blur-md">
+          <!-- Card 5: Repito tareas manuales -->
+          <div class="group rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 bg-[#0a0f1d]/85 border border-white/[0.06] hover:border-sky-500/40 hover:bg-[#0e162b]/90 transition-all duration-500 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.25)] hover:shadow-[0_8px_30px_rgba(14,165,233,0.18)] backdrop-blur-md">
+            <div>
+              <div class="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 rounded-xl sm:rounded-2xl bg-sky-600/[0.14] flex items-center justify-center mb-3 sm:mb-4 lg:mb-5 group-hover:bg-sky-500/[0.24] group-hover:scale-105 transition-all duration-300">
+                <svg class="w-6 h-6 sm:w-7 sm:h-7 lg:w-9 lg:h-9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21.5 2v6h-6M2.5 22v-6h6" stroke="#38bdf8" stroke-width="2"/>
+                  <path d="M20 15.5A9 9 0 0 1 5.7 18.3L2.5 16M4 8.5a9 9 0 0 1 14.3-2.8L21.5 8" stroke="#38bdf8" stroke-width="1.8"/>
+                  <circle cx="12" cy="12" r="3" fill="#0284c7" fill-opacity="0.4" stroke="#7dd3fc" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <h4 class="text-sm sm:text-base lg:text-lg font-heading font-semibold text-white mb-1.5 sm:mb-2 group-hover:text-sky-300 transition-colors leading-snug">
+                Repito tareas manuales
+              </h4>
+              <p class="text-gray-400 font-montserrat font-light text-[11px] sm:text-xs leading-relaxed mb-3 sm:mb-5">
+                Automatización de procesos
+              </p>
+            </div>
+            <div class="w-5 sm:w-6 h-[2px] bg-sky-400/80 rounded-full group-hover:w-12 group-hover:bg-sky-300 transition-all duration-300 shadow-[0_0_8px_rgba(56,189,248,0.7)]"></div>
+          </div>
+
+          <!-- Card 6: Mis sistemas no se conectan -->
+          <div class="group rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 bg-[#0a0f1d]/85 border border-white/[0.06] hover:border-sky-500/40 hover:bg-[#0e162b]/90 transition-all duration-500 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.25)] hover:shadow-[0_8px_30px_rgba(14,165,233,0.18)] backdrop-blur-md">
             <div>
               <div class="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 rounded-xl sm:rounded-2xl bg-sky-600/[0.14] flex items-center justify-center mb-3 sm:mb-4 lg:mb-5 group-hover:bg-sky-500/[0.24] group-hover:scale-105 transition-all duration-300">
                 <svg class="w-6 h-6 sm:w-7 sm:h-7 lg:w-9 lg:h-9" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 2L3 7V17L12 22L21 17V7L12 2Z" fill="#0284c7" fill-opacity="0.3" stroke="#38bdf8" stroke-width="1.8" stroke-linejoin="round"/>
-                  <path d="M12 22V12" stroke="#38bdf8" stroke-width="1.8"/>
-                  <path d="M21 7L12 12L3 7" stroke="#38bdf8" stroke-width="1.8"/>
-                  <path d="M7.5 4.5L16.5 9.5" stroke="#7dd3fc" stroke-width="1.2" stroke-linecap="round"/>
+                  <circle cx="5" cy="12" r="3" fill="#0284c7" fill-opacity="0.45" stroke="#38bdf8" stroke-width="1.8"/>
+                  <circle cx="19" cy="12" r="3" fill="#0284c7" fill-opacity="0.45" stroke="#38bdf8" stroke-width="1.8"/>
+                  <circle cx="12" cy="5" r="2.5" fill="#0284c7" fill-opacity="0.45" stroke="#38bdf8" stroke-width="1.6"/>
+                  <circle cx="12" cy="19" r="2.5" fill="#0284c7" fill-opacity="0.45" stroke="#38bdf8" stroke-width="1.6"/>
+                  <path d="M8 12H16M12 7.5V16.5" stroke="#38bdf8" stroke-width="1.6" stroke-dasharray="2 2"/>
+                  <path d="M7.2 9.8L10 7M14 7L16.8 9.8M10 17L7.2 14.2M16.8 14.2L14 17" stroke="#7dd3fc" stroke-width="1.2"/>
                 </svg>
               </div>
-              <h4 class="text-sm sm:text-lg lg:text-xl font-heading font-semibold text-white mb-1.5 sm:mb-2 group-hover:text-sky-300 transition-colors leading-tight">
-                Ventas y Stock
+              <h4 class="text-sm sm:text-base lg:text-lg font-heading font-semibold text-white mb-1.5 sm:mb-2 group-hover:text-sky-300 transition-colors leading-snug">
+                Mis sistemas no se conectan
               </h4>
-              <p class="text-gray-400 font-montserrat font-light text-[10px] sm:text-xs leading-relaxed mb-3 sm:mb-6">
-                Dificultad para controlar existencias y conciliar los flujos de ventas diarias.
+              <p class="text-gray-400 font-montserrat font-light text-[11px] sm:text-xs leading-relaxed mb-3 sm:mb-5">
+                Integraciones y APIs
               </p>
             </div>
             <div class="w-5 sm:w-6 h-[2px] bg-sky-400/80 rounded-full group-hover:w-12 group-hover:bg-sky-300 transition-all duration-300 shadow-[0_0_8px_rgba(56,189,248,0.7)]"></div>
           </div>
 
-          <!-- Card 5: Áreas Aisladas -->
-          <div class="group rounded-xl sm:rounded-2xl p-3.5 sm:p-5 lg:p-6 bg-[#0a0f1d]/85 border border-white/[0.06] hover:border-sky-500/40 hover:bg-[#0e162b]/90 transition-all duration-500 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.25)] hover:shadow-[0_8px_30px_rgba(14,165,233,0.18)] backdrop-blur-md">
-            <div>
-              <div class="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 rounded-xl sm:rounded-2xl bg-sky-600/[0.14] flex items-center justify-center mb-3 sm:mb-4 lg:mb-5 group-hover:bg-sky-500/[0.24] group-hover:scale-105 transition-all duration-300">
-                <svg class="w-6 h-6 sm:w-7 sm:h-7 lg:w-9 lg:h-9" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="6" cy="9" r="3.2" fill="#0284c7" fill-opacity="0.45" stroke="#38bdf8" stroke-width="1.8"/>
-                  <circle cx="18" cy="9" r="3.2" fill="#0284c7" fill-opacity="0.45" stroke="#38bdf8" stroke-width="1.8"/>
-                  <circle cx="12" cy="18" r="3.2" fill="#0284c7" fill-opacity="0.45" stroke="#38bdf8" stroke-width="1.8"/>
-                  <path d="M8.5 10.5L10.5 15.5" stroke="#38bdf8" stroke-width="1.6" stroke-dasharray="2 2"/>
-                  <path d="M15.5 10.5L13.5 15.5" stroke="#38bdf8" stroke-width="1.6" stroke-dasharray="2 2"/>
-                  <path d="M9 9H15" stroke="#38bdf8" stroke-width="1.6" stroke-dasharray="2 2"/>
-                </svg>
-              </div>
-              <h4 class="text-sm sm:text-lg lg:text-xl font-heading font-semibold text-white mb-1.5 sm:mb-2 group-hover:text-sky-300 transition-colors leading-tight">
-                Áreas Aisladas
-              </h4>
-              <p class="text-gray-400 font-montserrat font-light text-[10px] sm:text-xs leading-relaxed mb-3 sm:mb-6">
-                Desconexión y falta de flujo integrado de información entre los departamentos.
-              </p>
-            </div>
-            <div class="w-5 sm:w-6 h-[2px] bg-sky-400/80 rounded-full group-hover:w-12 group-hover:bg-sky-300 transition-all duration-300 shadow-[0_0_8px_rgba(56,189,248,0.7)]"></div>
-          </div>
-
-          <!-- Card 6: Poca Visibilidad -->
-          <div class="group rounded-xl sm:rounded-2xl p-3.5 sm:p-5 lg:p-6 bg-[#0a0f1d]/85 border border-white/[0.06] hover:border-sky-500/40 hover:bg-[#0e162b]/90 transition-all duration-500 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.25)] hover:shadow-[0_8px_30px_rgba(14,165,233,0.18)] backdrop-blur-md">
-            <div>
-              <div class="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 rounded-xl sm:rounded-2xl bg-sky-600/[0.14] flex items-center justify-center mb-3 sm:mb-4 lg:mb-5 group-hover:bg-sky-500/[0.24] group-hover:scale-105 transition-all duration-300">
-                <svg class="w-6 h-6 sm:w-7 sm:h-7 lg:w-9 lg:h-9" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2 12C2 12 5.5 5 12 5C18.5 5 22 12 22 12C22 12 18.5 19 12 19C5.5 19 2 12 2 12Z" fill="#0284c7" fill-opacity="0.3" stroke="#38bdf8" stroke-width="1.8" stroke-linejoin="round"/>
-                  <circle cx="12" cy="12" r="3.8" fill="#38bdf8" stroke="#e0f2fe" stroke-width="1.6"/>
-                  <circle cx="13.2" cy="10.8" r="1.2" fill="white"/>
-                </svg>
-              </div>
-              <h4 class="text-sm sm:text-lg lg:text-xl font-heading font-semibold text-white mb-1.5 sm:mb-2 group-hover:text-sky-300 transition-colors leading-tight">
-                Poca Visibilidad
-              </h4>
-              <p class="text-gray-400 font-montserrat font-light text-[10px] sm:text-xs leading-relaxed mb-3 sm:mb-6">
-                Dificultad para visualizar el estado del negocio de manera oportuna y consolidada.
-              </p>
-            </div>
-            <div class="w-5 sm:w-6 h-[2px] bg-sky-400/80 rounded-full group-hover:w-12 group-hover:bg-sky-300 transition-all duration-300 shadow-[0_0_8px_rgba(56,189,248,0.7)]"></div>
-          </div>
-
-        </div>
-
-        <!-- Bottom right accent line -->
-        <div class="hidden lg:flex items-center justify-end gap-3 mt-12 select-none text-[9.5px] tracking-[0.25em] uppercase font-mono text-gray-400">
-          <div class="w-16 h-px bg-gradient-to-r from-transparent to-sky-400"></div>
-          <span>IDEAS · CÓDIGO · SOLUCIONES · RESULTADOS</span>
-          <div class="w-16 h-px bg-gradient-to-l from-transparent to-sky-400"></div>
         </div>
 
       </div>
 
+    </div>
+
+    <!-- Mini Sección Solución con Odoo (Discreta, elegante y exterior al bloque de desafíos) -->
+    <div class="mt-12 sm:mt-16 pt-8 border-t border-white/[0.06]">
+      <div class="max-w-4xl mx-auto rounded-2xl bg-gradient-to-r from-[#0a0f1d]/90 via-[#0e162b]/85 to-[#0a0f1d]/90 border border-white/[0.08] hover:border-purple-500/30 p-4 sm:p-5 backdrop-blur-md shadow-[0_4px_25px_rgba(0,0,0,0.3)] transition-all duration-300 flex flex-col sm:flex-row items-center justify-between gap-4">
+        
+        <div class="flex items-center gap-4 text-center sm:text-left">
+          <div class="p-2 sm:p-2.5 rounded-xl bg-purple-950/40 border border-purple-500/20 shrink-0 shadow-[0_0_15px_rgba(169,76,146,0.2)]">
+            <img 
+              src="/logo-odoo.png" 
+              alt="Odoo Partner Tecnológico" 
+              class="h-6 sm:h-7 w-auto object-contain filter drop-shadow-[0_0_8px_rgba(169,76,146,0.6)]" 
+            />
+          </div>
+          <div>
+            <div class="flex items-center gap-2 justify-center sm:justify-start">
+              <span class="text-[9px] tracking-[0.2em] text-purple-400 uppercase font-mono font-semibold">
+                PARTNER TECNOLÓGICO ODOO
+              </span>
+            </div>
+            <p class="text-xs sm:text-sm text-gray-300 font-light mt-0.5">
+              ¿Buscas centralizar todo en una sola plataforma? Implementamos, adaptamos y brindamos soporte en Odoo ERP.
+            </p>
+          </div>
+        </div>
+
+        <a 
+          href="https://odoo.pegasus-nexus.com/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="shrink-0 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-purple-950/30 hover:bg-purple-900/40 border border-purple-500/30 hover:border-purple-400/60 text-purple-300 hover:text-white text-xs font-medium tracking-wide transition-all duration-200 group cursor-pointer shadow-[0_0_12px_rgba(169,76,146,0.25)]"
+        >
+          <span>Conoce Odoo Pegasus</span>
+          <span class="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform text-xs text-purple-300 group-hover:text-white">↗</span>
+        </a>
+
+      </div>
     </div>
 
   </div>
